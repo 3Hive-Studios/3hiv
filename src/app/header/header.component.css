@@ -8,6 +8,9 @@
 .logo {
   font-size: 3rem;
   font-family: Courier, monospace;
+  color: var(--green);
+  text-decoration: line-through;
+  font-weight: bold;
 }
 
 .navbar {
