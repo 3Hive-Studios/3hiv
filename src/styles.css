@@ -1,0 +1,16 @@
+:root {
+--black: #0b132bff;
+--darker-gray: #1c2541ff;
+--dark-gray: #2b3b56ff;
+--gray: #6081a9ff;
+--dark-green: rgb(52, 107, 99);
+--green: rgb(133, 207, 196);
+--light-green: #e2f4f4ff;
+}
+
+body {
+  background-color: var(--black);
+  color: var(--light-green);
+  font-family: "Lucida Console", "Courier New", Courier, Monaco, monospace;
+  cursor: url('https://i.imgur.com/ktQfQ9N.png'), auto;	
+}

@@ -1,0 +1,29 @@
+.logo-wrapper {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  font-size: 3rem;
+  font-family: Courier, monospace;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar a {
+  margin-top: 0.5rem;
+  text-decoration: none;
+}
+
+.nav-item {
+  cursor: pointer;
+  color: var(--green);
+  font-size: 1.5rem;
+  background-color: var(--dark-gray);
+  padding: 0.5rem 0.5rem;
+}
