@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { WalletService } from '../wallet.service';
 import { ContractService } from '../contract.service';
 import { ConstantsService } from '../constants.service';
+import { BigNumber } from 'bignumber.js';
 
 @Component({
   selector: 'app-mons',
@@ -53,6 +54,7 @@ export class MonsComponent implements OnInit {
       let d = monData[monId];
       d["id"] = monId;
       d["img"] = this.constants.S3_URL + d["img"];
+      d["powerBits"] = d["powerBits"].toString(16);
       this.monsList.push(d);
     }
   }
