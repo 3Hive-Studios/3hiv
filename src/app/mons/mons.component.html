@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="card-holder" >
+    <div *ngFor="let m of monsList">
+      <div class="mon-card">
+        <div class="mon-name">{{m.name}}</div>
+        <hr>
+        <div><a href="https://opensea.io/assets/0xAf488234796CA27DBa8ECF17f803Ea1f4Ab33E15/{{m.id}}" title="View your monster on OpenSea"><img src="{{m.img}}"></a></div>
+        <hr>
+        <div>Series: {{m.series}}</div>
+        <hr>
+        <div>Bits: {{m.powerBits}}</div>
+      </div>
+    </div>
+  </div>
+</div>

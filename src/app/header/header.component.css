@@ -13,20 +13,46 @@
   font-weight: bold;
 }
 
+.wallet-holder {
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+}
+.wallet-button {
+  font-family: Courier, monospace;
+  color: var(--green);
+  background-color: var(--dark-gray);
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.wallet-button:hover, .navbar a:hover {
+  background-color: var(--dark-green);
+  color: var(--light-green);
+}
+
 .navbar {
+  margin-top: 1rem;
   display: flex;
+  align-items: center;
   justify-content: center;
 }
-
 .navbar a {
-  margin-top: 0.5rem;
   text-decoration: none;
+  padding: 0.5rem 0.5rem;
+  font-size: 1.2rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  background-color: var(--dark-gray);
 }
 
-.nav-item {
-  cursor: pointer;
-  color: var(--green);
-  font-size: 1.5rem;
-  background-color: var(--dark-gray);
-  padding: 0.5rem 0.5rem;
+@media only screen and (max-width: 768px) {
+  .wallet-holder {
+    position: unset;
+    right: unset;
+    top: unset;
+    display: block;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
 }

@@ -2,5 +2,18 @@
   <div class="logo">0xmons</div>
 </div>
 
+<div class="wallet-holder">
+  <button type="button" class="wallet-button" (click)="connectWallet()">
+    <div *ngIf="wallet.connected">
+      {{wallet.userAddress.substring(0, 14)}}
+    </div>
+    <div *ngIf="!wallet.connected">
+      Connect Wallet
+    </div>
+  </button>
+</div>
+
 <div class="navbar">
+  <a routerLink="/summon" routerLinkActive="active" title="Get a new monster"><span>SUMMON</span></a>
+  <a routerLink="/mons" routerLinkActive="active" title="View your monsters"><span>BESTIARY</span></a>
 </div>

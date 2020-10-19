@@ -6,7 +6,9 @@
 --dark-green: rgb(52, 107, 99);
 --med-green: rgb(102, 223, 205);
 --green: rgb(133, 207, 196);
+--solid-green: rgb(62, 150, 120);
 --light-green: #e2f4f4ff;
+--red: rgb(110, 56, 56);
 }
 
 body {
@@ -22,4 +24,41 @@ img:hover {
 
 a {
   color: var(--med-green);
+}
+
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem 0.5rem;
+}
+
+.container {
+  margin-top: 2rem;
+  max-width: 60rem;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.1rem;
+}
+
+.cursed-text {
+  color: var(--med-green);
+  font-size: 1.3rem;
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: line-through;
+  text-transform: uppercase;
+  animation: blinker 5s linear infinite;
+}
+
+@keyframes blinker {
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 1;
+  }
 }
