@@ -12,9 +12,11 @@ import BigNumber from 'bignumber.js';
 export class MonStoreComponent implements OnInit {
 
   gemsList: Array<Object>;
-  yfbBalance: BigNumber;
+  tokenBalance: BigNumber;
   price: BigNumber;
+  tokenSymbol: string;
   buyAmt: string;
+  token: any;
 
   constructor(public wallet: WalletService, public contract: ContractService, public constants: ConstantsService) { 
     this.resetData();
@@ -33,7 +35,11 @@ export class MonStoreComponent implements OnInit {
   }
 
   async loadData() {
-    this.yfbBalance = new BigNumber(await this.contract.YFB.methods.balanceOf(this.wallet.userAddress).call()).div(this.constants.PRECISION);
+    const tokenAddress = await this.contract.MONS.methods.token.call().call();
+    this.token = this.contract.ERC20(tokenAddress);
+
+    this.tokenBalance = new BigNumber(await this.token.methods.balanceOf(this.wallet.userAddress).call()).div(this.constants.PRECISION);
+    this.tokenSymbol = await this.token.methods.symbol.call().call();
     this.price = new BigNumber(await this.contract.MONS.methods.tokenPrice.call().call()).div(this.constants.PRECISION);
 
     let numGems = await this.contract.STAKER.methods.balanceOf(this.wallet.userAddress).call();
@@ -65,7 +71,9 @@ export class MonStoreComponent implements OnInit {
 
   resetData() {
     this.gemsList = [];
-    this.yfbBalance = new BigNumber(0);
+    this.tokenBalance = new BigNumber(0);
+    this.tokenSymbol = '';
+    this.price = new BigNumber(0);
   }
 
   burnGem(id, isBurnable) {
@@ -77,7 +85,11 @@ export class MonStoreComponent implements OnInit {
 
   buyMon() {
     const func = this.contract.MONS.methods.buyMonster();
-    this.getMon(func);
+    this.wallet.sendTxWithToken(func, this.token, this.constants.MON_ADDRESS, this.price, 400000, ()=>{}, ()=>{
+      this.contract.MONS.methods.numMonsCreated.call().call().then(function(num) {
+        this.showMon(num+1);
+      });
+    }, ()=>{});
   }
 
   getMon(f) {

@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { WalletService } from '../wallet.service';
 import { ContractService } from '../contract.service';
 import { ConstantsService } from '../constants.service';
-import { BigNumber } from 'bignumber.js';
 
 @Component({
   selector: 'app-mons',

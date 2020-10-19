@@ -6,6 +6,8 @@
     <div class="two-cols">
       <div class="card">
         <div class="card-title">Redeem Gems</div>
+        <hr>
+        <div class="reminder">(Gems are a staking reward from <a href="https://yflambda.finance/">yfLambda</a>.)</div>
         <div class="gem-holder" *ngFor="let g of gemsList">
           <div class="gem-item two-cols">
             <div>
@@ -22,11 +24,12 @@
       </div>
       <div class="card">
         <div class="card-title">Direct Purchase</div>
+        <hr>
         <div class="amounts">
           <div class="available">Available:
-            {{yfbBalance.toFormat(6)}} yfβ
+            {{tokenBalance.toFormat(6)}} {{tokenSymbol}}
           </div>
-          <div>Current price: {{price.toFormat()}} yfβ</div>
+          <div>Current price: {{price.toFormat()}} {{tokenSymbol}}</div>
           <div>
             <button class="purchase-btn" (click)="buyMon()">Purchase</button>
           </div>
