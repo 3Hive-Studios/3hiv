@@ -8,6 +8,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HeaderComponent } from './header/header.component';
 import { MonStoreComponent } from './mon-store/mon-store.component';
 import { MonsComponent } from './mons/mons.component';
+import { FaqComponent } from './faq/faq.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { MonsComponent } from './mons/mons.component';
     HomeComponent,
     HeaderComponent,
     MonStoreComponent,
-    MonsComponent
+    MonsComponent,
+    FaqComponent
   ],
   imports: [
     BrowserModule,

@@ -11,7 +11,6 @@ import BigNumber from 'bignumber.js';
 })
 export class MonStoreComponent implements OnInit {
 
-  isVerified: boolean;
   gemsList: Array<Object>;
   yfbBalance: BigNumber;
   price: BigNumber;
@@ -61,14 +60,10 @@ export class MonStoreComponent implements OnInit {
       }
 
       this.gemsList.push(gemData);
-      if (startBlock.isLessThan(new BigNumber(10993000))) {
-        this.isVerified = true;
-      }
     }
   }
 
   resetData() {
-    this.isVerified = false;
     this.gemsList = [];
     this.yfbBalance = new BigNumber(0);
   }
