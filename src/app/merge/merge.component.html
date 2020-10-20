@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="centered">
+    <div class="header"><span class="cursed-text">create</span> new life</div>
+    <div class="can-merge">Merge available: {{canMerge}}</div>
+  </div>
+  <div class="two-cols">
+    <div class="card">
+      <div class="card-title">Monster 1: <span class="mon-name">{{monLeft}}</span></div>
+      <hr>
+      <div><img src="{{imgMap[monLeft]}}"></div>
+      <select class="mon-select" [(ngModel)]="monLeft">
+        <option *ngFor="let n of namesList">
+          {{n}}
+        </option>
+      </select>
+    </div>
+    <div class="card">
+      <div class="card-title">Monster 2: <span class="mon-name">{{monRight}}</span></div>
+      <hr>
+      <div><img src="{{imgMap[monRight]}}"></div>
+      <select class="mon-select" [(ngModel)]="monRight">
+        <option *ngFor="let n of namesList">
+          {{n}}
+        </option>
+      </select>
+    </div>
+  </div>
+  <div class="centered merge-holder">
+    <button class="merge-btn disabled{{!canMerge}}">Merge</button>
+  </div>
+</div>

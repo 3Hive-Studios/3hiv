@@ -4,13 +4,17 @@ import { ContractService } from '../contract.service';
 import { ConstantsService } from '../constants.service';
 
 @Component({
-  selector: 'app-mons',
-  templateUrl: './mons.component.html',
-  styleUrls: ['./mons.component.css']
+  selector: 'app-merge',
+  templateUrl: './merge.component.html',
+  styleUrls: ['./merge.component.css']
 })
-export class MonsComponent implements OnInit {
+export class MergeComponent implements OnInit {
 
-  monsList: Array<Object>;
+  canMerge: boolean;
+  namesList: Array<Object>;
+  imgMap: any;
+  monLeft: any;
+  monRight: any;
 
   constructor(public wallet: WalletService, public contract: ContractService, public constants: ConstantsService) { 
     this.resetData();
@@ -29,21 +33,23 @@ export class MonsComponent implements OnInit {
   }
 
   async loadData() {
+    this.canMerge = await this.contract.MONS.methods.canMerge.call().call();
     const response = await fetch("./assets/mons-database.json");
     const monData = await response.json();
     let numMons = await this.contract.MONS.methods.balanceOf(this.wallet.userAddress).call();
     for (let i = 0; i < numMons; i++) {
       let monId = await this.contract.MONS.methods.tokenOfOwnerByIndex(this.wallet.userAddress, i).call();
-      let onChainD = await this.contract.MONS.methods.monRecords(monId).call();
       let d = monData[monId];
-      d["id"] = monId;
-      d["img"] = this.constants.S3_URL + d["img"];
-      d["powerBits"] = onChainD["powerBits"].toString(16);
-      this.monsList.push(d);
+      this.namesList.push(d["name"]);
+      this.imgMap[d["name"]] = this.constants.S3_URL + d["img"];
     }
   }
 
   resetData() {
-    this.monsList = [];
+    this.canMerge = false;
+    this.namesList = [];
+    this.monLeft = '';
+    this.monRight = this.monLeft;
+    this.imgMap = {};
   }
 }

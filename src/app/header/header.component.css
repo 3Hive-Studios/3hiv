@@ -5,13 +5,17 @@
   justify-content: center;
 }
 
+.logo-anchor {
+  text-decoration: none;
+}
 .logo {
   font-size: 3rem;
-  font-family: Courier, monospace;
-  color: var(--green);
+  color: var(--light-green);
   text-decoration: line-through;
   font-weight: bold;
-  text-decoration: none;
+}
+.logo:hover {
+  color: var(--green);
 }
 
 .wallet-holder {
@@ -21,14 +25,18 @@
 }
 .wallet-button {
   font-family: Courier, monospace;
-  color: var(--green);
+  color: var(--med-green);
   background-color: var(--dark-gray);
   font-size: 1.2rem;
   font-weight: bold;
 }
+.wallet-button, .navbar a {
+  border: 1px solid var(--darker-gray);
+}
 .wallet-button:hover, .navbar a:hover {
-  background-color: var(--dark-green);
-  color: var(--light-green);
+  background-color: var(--darker-gray);
+  color: var(--green);
+  border: 1px solid var(--light-green);
 }
 
 .navbar {
@@ -44,6 +52,9 @@
   margin-left: 0.5rem;
   margin-right: 0.5rem;
   background-color: var(--dark-gray);
+}
+.navbar a:hover {
+  font-weight: bold;
 }
 
 @media only screen and (max-width: 768px) {

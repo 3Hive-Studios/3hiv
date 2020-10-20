@@ -9,5 +9,5 @@ export class ConstantsService {
   STAKER_ADDRESS = '0xC5802bCf619301Bdc6B1B9EDA4B6fd26e63339aF';
   MON_ADDRESS = '0xAf488234796CA27DBa8ECF17f803Ea1f4Ab33E15';
   DAI_ADDRESS = '0x6b175474e89094c44da98b954eedeac495271d0f';
-  S3_URL = 'http://d3h0sbhg72k3qr.cloudfront.net/';
+  S3_URL = 'https://d3h0sbhg72k3qr.cloudfront.net/';
 }

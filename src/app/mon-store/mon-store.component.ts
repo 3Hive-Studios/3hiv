@@ -93,13 +93,19 @@ export class MonStoreComponent implements OnInit {
   buyMon() {
     const func = this.contract.MONS.methods.buyMonster();
     this.wallet.sendTxWithToken(func, this.token, this.constants.MON_ADDRESS, this.price, 400000, ()=>{}, ()=>{
-        this.showMon(this.monsMade.plus(1));
+      this.contract.MONS.methods.numMonsCreated.call().call().then(function(n) {
+        let num = new BigNumber(n);
+        this.showMon(num.plus(1));
+      });
     }, ()=>{});
   }
 
   getMon(f) {
     this.wallet.sendTxWithNFT(f, this.contract.STAKER, this.constants.MON_ADDRESS, 400000, ()=>{}, ()=>{
-        this.showMon(this.monsMade.plus(1));
+      this.contract.MONS.methods.numMonsCreated.call().call().then(function(n) {
+        let num = new BigNumber(n);
+        this.showMon(num.plus(1));
+      });
     }, ()=> {});
   }
 

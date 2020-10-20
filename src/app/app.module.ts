@@ -9,6 +9,7 @@ import { HeaderComponent } from './header/header.component';
 import { MonStoreComponent } from './mon-store/mon-store.component';
 import { MonsComponent } from './mons/mons.component';
 import { FaqComponent } from './faq/faq.component';
+import { MergeComponent } from './merge/merge.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { FaqComponent } from './faq/faq.component';
     HeaderComponent,
     MonStoreComponent,
     MonsComponent,
-    FaqComponent
+    FaqComponent,
+    MergeComponent
   ],
   imports: [
     BrowserModule,

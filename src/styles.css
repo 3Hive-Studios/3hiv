@@ -9,6 +9,7 @@
 --solid-green: rgb(62, 150, 120);
 --light-green: #e2f4f4ff;
 --red: rgb(110, 56, 56);
+--gray-green: rgb(61, 88, 84);
 }
 
 body {
@@ -18,8 +19,8 @@ body {
 }
 
 img:hover {
-  filter: hue-rotate(270deg);
-  cursor: url('assets/cursor.gif'), auto;	
+  filter: hue-rotate(45deg);
+  /* cursor: url('assets/cursor.gif'), auto;	 */
 }
 
 a {
@@ -31,6 +32,13 @@ button {
   border: none;
   cursor: pointer;
   padding: 0.5rem 0.5rem;
+}
+.disabledtrue {
+  background-color: var(--dark-gray) !important;
+  cursor: unset;
+  color: var(--gray) !important;
+  cursor: not-allowed;
+  pointer-events: none;
 }
 
 .container {
@@ -60,5 +68,45 @@ button {
   }
   75% {
     opacity: 1;
+  }
+}
+
+.card {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  background-color: var(--black);
+  border: 2px solid var(--dark-green);
+}
+
+.card-title {
+  font-size: 1.5rem;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+  color: var(--green);
+  font-weight: bold;
+}
+
+.centered {
+  text-align: center;
+}
+.header {
+  font-size: 1.75rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+.header > .cursed-text {
+  font-size: 2rem;
+}
+
+.two-cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .two-cols {
+    display: block;
   }
 }
