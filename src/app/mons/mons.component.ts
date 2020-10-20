@@ -34,10 +34,12 @@ export class MonsComponent implements OnInit {
     let numMons = await this.contract.MONS.methods.balanceOf(this.wallet.userAddress).call();
     for (let i = 0; i < numMons; i++) {
       let monId = await this.contract.MONS.methods.tokenOfOwnerByIndex(this.wallet.userAddress, i).call();
+      let onChainD = await this.contract.MONS.methods.monRecords(monId).call();
+      console.log(onChainD);
       let d = monData[monId];
       d["id"] = monId;
       d["img"] = this.constants.S3_URL + d["img"];
-      d["powerBits"] = d["powerBits"].toString(16);
+      d["powerBits"] = onChainD["powerBits"].toString(16);
       this.monsList.push(d);
     }
   }

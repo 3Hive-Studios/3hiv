@@ -10,6 +10,11 @@
   justify-content: center;
 }
 
+.mons-left {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
 .two-cols {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -78,6 +83,10 @@
 .purchase-btn {
   text-transform: uppercase;
   margin-top: 1rem;
+}
+.balance {
+  font-size: 1rem;
+  color: var(--green);
 }
 
 @media only screen and (max-width: 768px) {

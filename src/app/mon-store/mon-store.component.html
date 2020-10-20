@@ -3,6 +3,7 @@
     <div class="centered">
       <div class="header"><span class="cursed-text">Summon</span> a being from the beyond</div>
     </div>
+    <div class="mons-left">Monsters left: {{monsLeft}}</div>
     <div class="two-cols">
       <div class="card">
         <div class="card-title">Redeem Gems</div>
@@ -26,10 +27,10 @@
         <div class="card-title">Direct Purchase</div>
         <hr>
         <div class="amounts">
-          <div class="available">Available:
+          <div>Current price: {{price.toFormat()}} {{tokenSymbol}}</div>
+          <div class="balance">Your balance:
             {{tokenBalance.toFormat(6)}} {{tokenSymbol}}
           </div>
-          <div>Current price: {{price.toFormat()}} {{tokenSymbol}}</div>
           <div>
             <button class="purchase-btn" (click)="buyMon()">Purchase</button>
           </div>

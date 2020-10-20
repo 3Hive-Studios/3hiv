@@ -17,6 +17,8 @@ export class MonStoreComponent implements OnInit {
   tokenSymbol: string;
   buyAmt: string;
   token: any;
+  monsLeft: BigNumber;
+  monsMade: BigNumber;
 
   constructor(public wallet: WalletService, public contract: ContractService, public constants: ConstantsService) { 
     this.resetData();
@@ -41,6 +43,10 @@ export class MonStoreComponent implements OnInit {
     this.tokenBalance = new BigNumber(await this.token.methods.balanceOf(this.wallet.userAddress).call()).div(this.constants.PRECISION);
     this.tokenSymbol = await this.token.methods.symbol.call().call();
     this.price = new BigNumber(await this.contract.MONS.methods.tokenPrice.call().call()).div(this.constants.PRECISION);
+
+    let numMons = new BigNumber(await this.contract.MONS.methods.maxMons.call().call());
+    this.monsMade = await this.contract.MONS.methods.numMonsCreated.call().call();
+    this.monsLeft = numMons.minus(this.monsMade);
 
     let numGems = await this.contract.STAKER.methods.balanceOf(this.wallet.userAddress).call();
     const minStake = await this.contract.MONS.methods.minStakeTime.call().call();
@@ -74,6 +80,7 @@ export class MonStoreComponent implements OnInit {
     this.tokenBalance = new BigNumber(0);
     this.tokenSymbol = '';
     this.price = new BigNumber(0);
+    this.monsLeft = new BigNumber(0);
   }
 
   burnGem(id, isBurnable) {
@@ -86,17 +93,13 @@ export class MonStoreComponent implements OnInit {
   buyMon() {
     const func = this.contract.MONS.methods.buyMonster();
     this.wallet.sendTxWithToken(func, this.token, this.constants.MON_ADDRESS, this.price, 400000, ()=>{}, ()=>{
-      this.contract.MONS.methods.numMonsCreated.call().call().then(function(num) {
-        this.showMon(num+1);
-      });
+        this.showMon(this.monsMade.plus(1));
     }, ()=>{});
   }
 
   getMon(f) {
     this.wallet.sendTxWithNFT(f, this.contract.STAKER, this.constants.MON_ADDRESS, 400000, ()=>{}, ()=>{
-      this.contract.MONS.methods.numMonsCreated.call().call().then(function(num) {
-        this.showMon(num+1);
-      });
+        this.showMon(this.monsMade.plus(1));
     }, ()=> {});
   }
 
