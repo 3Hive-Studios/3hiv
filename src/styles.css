@@ -26,6 +26,9 @@ img:hover {
 a {
   color: var(--med-green);
 }
+a:hover {
+  color: var(--green);
+}
 
 button {
   outline: none;

@@ -6,8 +6,9 @@
 
 .mons-left {
   text-align: center;
-  font-size: 1.2rem;
   margin-bottom: 1rem;
+  padding: 1rem 1rem;
+  border: 1px solid var(--green);
 }
 
 .reminder {
