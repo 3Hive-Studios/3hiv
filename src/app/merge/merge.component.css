@@ -6,6 +6,7 @@
 }
 
 .mon-select {
+  font-family: Courier, monospace;
   border: 1px solid var(--green);
   background-color: var(--black);
   color: var(--light-green);

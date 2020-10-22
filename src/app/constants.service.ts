@@ -10,4 +10,5 @@ export class ConstantsService {
   MON_ADDRESS = '0xAf488234796CA27DBa8ECF17f803Ea1f4Ab33E15';
   DAI_ADDRESS = '0x6b175474e89094c44da98b954eedeac495271d0f';
   S3_URL = 'https://d3h0sbhg72k3qr.cloudfront.net/';
+  API_URL = 'https://yflambda.herokuapp.com/mons/';
 }
