@@ -67,8 +67,13 @@ export class MergeComponent implements OnInit {
   }
 
   mergeMons(id1, id2) {
-    const func = this.contract.MONS.methods.mergeMonsters(this.idMap[id1], this.idMap[id2]);
-    this.wallet.sendTxWithToken(func, this.token, this.constants.MON_ADDRESS, this.mergePrice, 400000, ()=>{}, ()=>{}, ()=>{});
+    if (id1 === id2) {
+      alert("You can't merge two of the same monster!");
+    }
+    else {
+      const func = this.contract.MONS.methods.mergeMonsters(this.idMap[id1], this.idMap[id2]);
+      this.wallet.sendTxWithToken(func, this.token, this.constants.MON_ADDRESS, this.mergePrice, 400000, ()=>{}, ()=>{}, ()=>{});
+    }
   }
 
   resetData() {
