@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { WalletService } from '../wallet.service';
 import { ContractService } from '../contract.service';
 import { ConstantsService } from '../constants.service';
+import BigNumber from 'bignumber.js';
 
 @Component({
   selector: 'app-mons',
@@ -29,15 +30,26 @@ export class MonsComponent implements OnInit {
   }
 
   async loadData() {
-    const response = await fetch("./assets/mons-database.json");
+    const totalMons = new BigNumber(await this.contract.MONS.methods.getTotalMons().call());
+    const response = await fetch("./assets/mons_database.json");
     const monData = await response.json();
     let numMons = await this.contract.MONS.methods.balanceOf(this.wallet.userAddress).call();
     for (let i = 0; i < numMons; i++) {
       let monId = await this.contract.MONS.methods.tokenOfOwnerByIndex(this.wallet.userAddress, i).call();
       let onChainD = await this.contract.MONS.methods.monRecords(monId).call();
       let d = monData[monId];
+      
       d["id"] = monId;
       d["img"] = this.constants.S3_URL + d["img"];
+
+      // load placeholder image if no image yet
+      if ((new BigNumber(monId)).isGreaterThanOrEqualTo(totalMons)) {
+        d["img"] = "./assets/placeholder.png";
+      }
+
+      d["parent1"] = onChainD["parent1"];
+      d["parent2"] = onChainD["parent2"];
+      d["series"] = onChainD["series"];
       d["powerBits"] = onChainD["powerBits"].toString(16);
       this.monsList.push(d);
     }

@@ -8,7 +8,10 @@
       <div class="card">
         <div class="card-title">Redeem Gems</div>
         <hr>
-        <div class="reminder">(Gems are a staking reward from <a href="https://yflambda.finance/">yfLambda</a>.)</div>
+        <div class="reminder">(Gems are a staking reward from <a href="https://yflambda.finance/">yfLambda</a>.)
+          <div>Min Stake Amount: {{minStakeAmt.toFormat()}}</div>
+          <div>Min Stake Duration: {{minStakeTime}}</div>
+        </div>
         <div class="gem-holder" *ngFor="let g of gemsList">
           <div class="gem-item two-cols">
             <div>

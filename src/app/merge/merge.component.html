@@ -25,7 +25,14 @@
       </select>
     </div>
   </div>
-  <div class="centered merge-holder">
+  <div class="stats centered">
+    <div>Monsters left: {{monsRemaining}}</div>
+    <div>Merge price: {{mergePrice.toFormat()}} {{tokenSymbol}}</div>
+    <div class="balance">Your balance:
+      {{tokenBalance.toFormat(6)}} {{tokenSymbol}}
+    </div>
+    <div>
+  <div class="centered merge-holder" (click)="mergeMons(monLeft,monRight)">
     <button class="merge-btn disabled{{!canMerge}}">Merge</button>
   </div>
 </div>

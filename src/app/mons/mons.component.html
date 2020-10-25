@@ -1,6 +1,7 @@
 <div class="container">
   <div class="centered">
     <div class="header"><span class="cursed-text">Revel</span> at your patrons</div>
+    <div *ngIf="monsList.length === 0">No monsters yet!</div>
   </div>
   <div class="card-holder" >
     <div *ngFor="let m of monsList">
@@ -10,8 +11,8 @@
         <div><a href="https://opensea.io/assets/0xAf488234796CA27DBa8ECF17f803Ea1f4Ab33E15/{{m.id}}" title="View your monster on OpenSea"><img src="{{m.img}}"></a></div>
         <hr>
         <div>Series: {{m.series}}</div>
-        <hr>
-        <div>Bits: {{m.powerBits}}</div>
+        <div>Parent 1: <a href="https://opensea.io/assets/0xAf488234796CA27DBa8ECF17f803Ea1f4Ab33E15/{{m.parent1}}">{{m.parent1}}</a></div>
+        <div>Parent 2: <a href="https://opensea.io/assets/0xAf488234796CA27DBa8ECF17f803Ea1f4Ab33E15/{{m.parent2}}">{{m.parent2}}</a></div>
       </div>
     </div>
   </div>

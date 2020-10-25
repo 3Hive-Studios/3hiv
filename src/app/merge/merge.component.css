@@ -21,6 +21,16 @@
   color: var(--light-green);
 }
 
+.stats {
+  font-size: 1.2rem;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+  line-height: 150%;
+}
+.balance {
+  color: var(--green);
+}
+
 .merge-holder {
   margin-top: 1rem;
 }

@@ -18,7 +18,8 @@ export class MonStoreComponent implements OnInit {
   buyAmt: string;
   token: any;
   monsLeft: BigNumber;
-  monsMade: BigNumber;
+  minStakeAmt: BigNumber;
+  minStakeTime: BigNumber;
 
   constructor(public wallet: WalletService, public contract: ContractService, public constants: ConstantsService) { 
     this.resetData();
@@ -37,16 +38,22 @@ export class MonStoreComponent implements OnInit {
   }
 
   async loadData() {
+
+    // set token values
     const tokenAddress = await this.contract.MONS.methods.token.call().call();
     this.token = this.contract.ERC20(tokenAddress);
-
     this.tokenBalance = new BigNumber(await this.token.methods.balanceOf(this.wallet.userAddress).call()).div(this.constants.PRECISION);
     this.tokenSymbol = await this.token.methods.symbol.call().call();
     this.price = new BigNumber(await this.contract.MONS.methods.tokenPrice.call().call()).div(this.constants.PRECISION);
 
-    let numMons = new BigNumber(await this.contract.MONS.methods.maxMons.call().call());
-    this.monsMade = await this.contract.MONS.methods.numMonsCreated.call().call();
-    this.monsLeft = numMons.minus(this.monsMade);
+    // set max mons values
+    const maxMons = new BigNumber(await this.contract.MONS.methods.maxMons.call().call());
+    const totalMons = await this.contract.MONS.methods.getTotalMons().call();
+    this.monsLeft = maxMons.minus(totalMons);
+
+    // set min stake values
+    this.minStakeAmt = new BigNumber(await this.contract.MONS.methods.minStakeAmt.call().call()).div(this.constants.PRECISION);
+    this.minStakeTime = new BigNumber(await this.contract.MONS.methods.minStakeTime.call().call());
 
     let numGems = await this.contract.STAKER.methods.balanceOf(this.wallet.userAddress).call();
     const minStake = await this.contract.MONS.methods.minStakeTime.call().call();
@@ -81,6 +88,8 @@ export class MonStoreComponent implements OnInit {
     this.tokenSymbol = '';
     this.price = new BigNumber(0);
     this.monsLeft = new BigNumber(0);
+    this.minStakeAmt = new BigNumber(0);
+    this.minStakeTime = new BigNumber(0);
   }
 
   burnGem(id, isBurnable) {
@@ -92,26 +101,11 @@ export class MonStoreComponent implements OnInit {
 
   buyMon() {
     const func = this.contract.MONS.methods.buyMonster();
-    this.wallet.sendTxWithToken(func, this.token, this.constants.MON_ADDRESS, this.price, 400000, ()=>{}, ()=>{
-      this.contract.MONS.methods.numMonsCreated.call().call().then(function(n) {
-        let num = new BigNumber(n);
-        this.showMon(num.plus(1));
-      });
-    }, ()=>{});
+    this.wallet.sendTxWithToken(func, this.token, this.constants.MON_ADDRESS, this.price, 400000, ()=>{}, ()=>{}, ()=>{});
   }
 
   getMon(f) {
-    this.wallet.sendTxWithNFT(f, this.contract.STAKER, this.constants.MON_ADDRESS, 400000, ()=>{}, ()=>{
-      this.contract.MONS.methods.numMonsCreated.call().call().then(function(n) {
-        let num = new BigNumber(n);
-        this.showMon(num.plus(1));
-      });
-    }, ()=> {});
+    this.wallet.sendTxWithNFT(f, this.contract.STAKER, this.constants.MON_ADDRESS, 400000, ()=>{}, ()=>{}, ()=> {});
   }
 
-  showMon(id) {
-    fetch("./assets/mons-database.json").then(resp => resp.json()).then(function(j) {
-      alert("You just unlocked: " + j[id]["name"] + ". Head to the Bestiary to view.");
-    });
-  }
 }
