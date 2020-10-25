@@ -50,6 +50,7 @@ export class MonsComponent implements OnInit {
       d["parent2"] = onChainD["parent2"];
       d["series"] = onChainD["series"];
       d["powerBits"] = onChainD["powerBits"].toString(16);
+      d["unlockBlock"] = onChainD["unlockBlock"];
       this.monsList.push(d);
     }
   }

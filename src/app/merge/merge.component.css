@@ -5,6 +5,11 @@
   border: 1px solid var(--green);
 }
 
+.unlock {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
 .mon-select {
   font-family: Courier, monospace;
   border: 1px solid var(--green);

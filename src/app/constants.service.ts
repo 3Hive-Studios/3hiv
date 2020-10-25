@@ -12,5 +12,4 @@ export class ConstantsService {
   DAI_ADDRESS = '0x6b175474e89094c44da98b954eedeac495271d0f';
   S3_URL = 'https://d3h0sbhg72k3qr.cloudfront.net/';
   API_URL = 'https://yflambda.herokuapp.com/mons/';
-  NUM_WITH_IMGS = new BigNumber(90);
 }

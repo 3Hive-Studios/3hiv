@@ -40,16 +40,13 @@ export class MonStoreComponent implements OnInit {
   async loadData() {
 
     // set token values
-    const tokenAddress = await this.contract.MONS.methods.token.call().call();
-    this.token = this.contract.ERC20(tokenAddress);
-    this.tokenBalance = new BigNumber(await this.token.methods.balanceOf(this.wallet.userAddress).call()).div(this.constants.PRECISION);
-    this.tokenSymbol = await this.token.methods.symbol.call().call();
-    this.price = new BigNumber(await this.contract.MONS.methods.tokenPrice.call().call()).div(this.constants.PRECISION);
+    this.token = this.contract.token;
+    this.tokenBalance = new BigNumber(await this.contract.token.methods.balanceOf(this.wallet.userAddress).call()).div(this.constants.PRECISION);
+    this.price = this.contract.buyPrice;
+    this.tokenSymbol = this.contract.tokenSymbol;
 
     // set max mons values
-    const maxMons = new BigNumber(await this.contract.MONS.methods.maxMons.call().call());
-    const totalMons = await this.contract.MONS.methods.getTotalMons().call();
-    this.monsLeft = maxMons.minus(totalMons);
+    this.monsLeft = this.contract.monsLeft;
 
     // set min stake values
     this.minStakeAmt = new BigNumber(await this.contract.MONS.methods.minStakeAmt.call().call()).div(this.constants.PRECISION);

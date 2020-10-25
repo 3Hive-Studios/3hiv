@@ -19,9 +19,11 @@ export class MergeComponent implements OnInit {
   monLeft: any;
   monRight: any;
   token: any;
+  unlockBlockMap: any;
   tokenBalance: BigNumber;
   mergePrice: BigNumber;
   monsRemaining: BigNumber;
+  currBlock: BigNumber;
 
   constructor(public wallet: WalletService, public contract: ContractService, public constants: ConstantsService) { 
     this.resetData();
@@ -41,16 +43,16 @@ export class MergeComponent implements OnInit {
 
   async loadData() {
     // token info
-    const tokenAddress = await this.contract.MONS.methods.token.call().call();
-    this.token = this.contract.ERC20(tokenAddress);
-    this.tokenBalance = new BigNumber(await this.token.methods.balanceOf(this.wallet.userAddress).call()).div(this.constants.PRECISION);
-    this.tokenSymbol = await this.token.methods.symbol.call().call();
-    this.mergePrice = new BigNumber(await this.contract.MONS.methods.mergePrice.call().call()).div(this.constants.PRECISION);
+    this.token = this.contract.token;
+    this.tokenBalance = new BigNumber(await this.contract.token.methods.balanceOf(this.wallet.userAddress).call()).div(this.constants.PRECISION);
+    this.tokenSymbol = this.contract.tokenSymbol;
+    this.mergePrice = this.contract.mergePrice;
 
     // total mons info
-    const totalMons = new BigNumber(await this.contract.MONS.methods.maxMons.call().call());
-    const monsMade = await this.contract.MONS.methods.getTotalMons().call();
-    this.monsRemaining = totalMons.minus(monsMade);
+    this.monsRemaining = this.contract.monsLeft;
+
+    // get curr block
+    this.currBlock = this.contract.currBlock;
 
     // each mon's info
     this.canMerge = await this.contract.MONS.methods.canMerge.call().call();
@@ -60,15 +62,21 @@ export class MergeComponent implements OnInit {
     for (let i = 0; i < numMons; i++) {
       let monId = await this.contract.MONS.methods.tokenOfOwnerByIndex(this.wallet.userAddress, i).call();
       let d = monData[monId];
+      let onChainD = await this.contract.MONS.methods.monRecords(monId).call();
       this.namesList.push(d["name"]);
       this.imgMap[d["name"]] = this.constants.S3_URL + d["img"];
       this.idMap[d["name"]] = monId;
+      this.unlockBlockMap[d["name"]] = new BigNumber(onChainD["unlockBlock"]);
     }
+    console.log(this.unlockBlockMap);
   }
 
   mergeMons(id1, id2) {
     if (id1 === id2) {
       alert("You can't merge two of the same monster!");
+    }
+    else if (this.currBlock.isLessThanOrEqualTo(this.unlockBlockMap[id1]) || this.currBlock.isLessThanOrEqualTo(this.unlockBlockMap[id2])) {
+      alert("One or more of these monsters haven't unlocked yet for merging!")
     }
     else {
       const func = this.contract.MONS.methods.mergeMonsters(this.idMap[id1], this.idMap[id2]);
@@ -85,9 +93,13 @@ export class MergeComponent implements OnInit {
       '': './assets/placeholder.png'
     };
     this.idMap = {};
+    this.unlockBlockMap = {
+      '': 0
+    };
     this.tokenBalance = new BigNumber(0);
     this.mergePrice = new BigNumber(0);
     this.monsRemaining = new BigNumber(0);
+    this.currBlock = new BigNumber(0);
     this.tokenSymbol = '';
   }
 }

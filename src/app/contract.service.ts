@@ -12,12 +12,20 @@ export class ContractService {
   tokenBalance: any;
   tokenSymbol: string;
   monsLeft: any;
+  maxMons: any;
+  totalMons: any;
+  mergePrice: any;
+  buyPrice: any;
+  currBlock: any;
 
   constructor(public wallet: WalletService, public constants: ConstantsService) { 
     this.token = undefined;
     this.tokenBalance = new BigNumber(0);
     this.tokenSymbol = '';
     this.monsLeft = new BigNumber(0);
+    this.mergePrice = new BigNumber(0);
+    this.buyPrice = new BigNumber(0);
+    this.loadData();
   }
 
   public get YFB() {
@@ -49,14 +57,17 @@ export class ContractService {
     return new this.wallet.web3.eth.Contract(abi, address); 
   }
 
-  // async loadData() {
-  //   const tokenAddress = await this.MONS.methods.token.call().call();
-  //   this.token = this.ERC20(tokenAddress);
-  //   this.tokenBalance = new BigNumber(await this.token.methods.balanceOf(this.wallet.userAddress).call()).div(this.constants.PRECISION);
-  //   this.tokenSymbol = await this.token.methods.symbol.call().call();
+  async loadData() {
+    this.maxMons = new BigNumber(await this.MONS.methods.maxMons.call().call());
+    this.totalMons = await this.MONS.methods.getTotalMons().call();
+    this.monsLeft = this.maxMons.minus(this.totalMons);
 
-  //   const maxMons = new BigNumber(await this.MONS.methods.maxMons.call().call());
-  //   const totalMons = await this.MONS.methods.getTotalMons().call();
-  //   this.monsLeft = maxMons.minus(totalMons);
-  // }
+    const tokenAddress = await this.MONS.methods.token.call().call();
+    this.token = this.ERC20(tokenAddress);
+    this.tokenSymbol = await this.token.methods.symbol.call().call();
+    this.buyPrice = new BigNumber(await this.MONS.methods.tokenPrice.call().call()).div(this.constants.PRECISION);
+    this.mergePrice = new BigNumber(await this.MONS.methods.mergePrice.call().call()).div(this.constants.PRECISION);
+
+    this.currBlock = new BigNumber(await this.wallet.web3.eth.getBlockNumber());
+  }
 }
