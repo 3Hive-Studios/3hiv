@@ -56,7 +56,6 @@ export class MonStoreComponent implements OnInit {
     this.minStakeTime = new BigNumber(await this.contract.MONS.methods.minStakeTime.call().call());
 
     let numGems = await this.contract.STAKER.methods.balanceOf(this.wallet.userAddress).call();
-    const minStake = await this.contract.MONS.methods.minStakeTime.call().call();
     const currBlock = new BigNumber(await this.wallet.web3.eth.getBlockNumber());
     for (let i = 0; i < numGems; i++) {
       let gemId = await this.contract.STAKER.methods.tokenOfOwnerByIndex(this.wallet.userAddress, i).call();
@@ -71,7 +70,7 @@ export class MonStoreComponent implements OnInit {
       gemData["duration"] = endBlock.minus(startBlock);
 
       // disable button if it's not burnable
-      if (endBlock.minus(startBlock).isGreaterThanOrEqualTo(new BigNumber(minStake))) {
+      if (endBlock.minus(startBlock).isGreaterThanOrEqualTo(new BigNumber(this.minStakeTime)) && (gemData["amount"]).isGreaterThanOrEqualTo(new BigNumber(this.minStakeAmt))) {
         gemData["isBurnable"] = true;
       }
       else {

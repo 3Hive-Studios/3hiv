@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { WalletService } from '../wallet.service';
 import { ContractService } from '../contract.service';
 import { ConstantsService } from '../constants.service';
-import BigNumber from 'bignumber.js';
+// import BigNumber from 'bignumber.js';
 
 @Component({
   selector: 'app-mons',
@@ -30,7 +30,6 @@ export class MonsComponent implements OnInit {
   }
 
   async loadData() {
-    const totalMons = new BigNumber(await this.contract.MONS.methods.getTotalMons().call());
     const response = await fetch("./assets/mons_database.json");
     const monData = await response.json();
     let numMons = await this.contract.MONS.methods.balanceOf(this.wallet.userAddress).call();
@@ -43,9 +42,9 @@ export class MonsComponent implements OnInit {
       d["img"] = this.constants.S3_URL + d["img"];
 
       // load placeholder image if no image yet
-      if ((new BigNumber(monId)).isGreaterThanOrEqualTo(totalMons)) {
-        d["img"] = "./assets/placeholder.png";
-      }
+      // if ((new BigNumber(monId)).isGreaterThanOrEqualTo(this.constants.NUM_WITH_IMGS)) {
+      //   d["img"] = "./assets/placeholder.png";
+      // }
 
       d["parent1"] = onChainD["parent1"];
       d["parent2"] = onChainD["parent2"];
