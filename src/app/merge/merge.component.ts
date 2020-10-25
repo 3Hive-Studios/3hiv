@@ -80,7 +80,7 @@ export class MergeComponent implements OnInit {
     }
     else {
       const func = this.contract.MONS.methods.mergeMonsters(this.idMap[id1], this.idMap[id2]);
-      this.wallet.sendTxWithToken(func, this.token, this.constants.MON_ADDRESS, this.mergePrice, 400000, ()=>{}, ()=>{}, ()=>{});
+      this.wallet.sendTxWithToken(func, this.token, this.constants.MON_ADDRESS, this.mergePrice, 550000, ()=>{}, ()=>{}, ()=>{});
     }
   }
 
