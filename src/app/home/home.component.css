@@ -5,8 +5,13 @@
   border: none;
 }
 
+.no-font {
+  font-family: unset;
+}
+
 .text-card {
   padding: 0.5rem 0.5rem;
+  font-size: 1.25rem;
 }
 
 .mon-card {
@@ -37,7 +42,7 @@
   text-align: center;
 }
 
-.soon, .soon > .cursed-text {
+.cursed-text {
   font-size: 1.7rem;
 }
 
