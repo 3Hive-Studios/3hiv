@@ -27,6 +27,67 @@
   <p>Q: What's next?</p>
   <p>A: Battling. More monsters.</p>
   <br>
+  <p>Q: How does spawning work?</p>
+  <p>A: You pick two available monsters and use them to create a new monster. You still get to keep your original monsters. After spawning, both the two parents and the new monster will be locked from spawning for a set amount of time. You can see this on the <a routerLink="./mons" routerLinkActive="active">Bestiary</a> page where it shows the unblock block for each monster.</p>
+  <br>
+  <p>Q: Okay, but how do 0xmons <i>actually</i> work behind the scenes?</p>
+  <div>
+    <details>
+      <summary>Open long text box</summary>
+      <br>
+      Every monster has the following attributes:
+      <ul>
+        <li>miner
+        <ul>
+        <li>This is the address that originally created the monster.</li></ul>
+        </li>
+        
+        <li>unlockBlock
+        <ul>
+        <li>This is the block where the monster can be used to spawn new ones again.</li></ul>
+        </li>
+        
+        <li>parent1
+        <ul>
+        <li>This is the ID of the first parent. It is 0 if there is no parent.</li></ul>
+        </li>
+        
+        <li>parent2
+        <ul>
+        <li>This is the ID of the second parent. It is 0 if there is no parent.</li></ul>
+        </li>
+        
+        <li>gen
+        <ul>
+        <li>This is the number of generations in this monster's family tree.</li></ul>
+        </li>
+        
+        <li>amount
+        <ul>
+        <li>This is the amount of YFB that was in the gem that was burned to create this monster. If the monster was bought, this value is 0. If the monster was spawned, it is the sum of its parents' amounts.</li></ul>
+        </li>
+        
+        <li>duration
+        <ul>
+        <li>The is the amount of time that underlying YFB was staked before the gem was burnt to create this monster. If the monster was bought, this value is 0. If the monster was spawned, it is the sum of its parents' durations.</li></ul>
+        </li>
+        
+        <li>powerBits
+        <ul>
+        <li>This is the blockhash of the previous number, then summed up with the monster's duration and amount.</li></ul>
+        </li>
+        
+        <li>series
+        <ul>
+          <li>This is the series of the monster, which goes up as new monsters are added.</li></ul>
+        </li>
+        </ul>
+      <p>
+        Non-spawned monsters are generated off-chain and then uploaded. When you receive a new monster, it gets the image from the server. This can be done ahead of time. Spawned monsters require additional computation because the model has to run with the specific inputs that created the two parent monsters. 
+      </p>
+    </details>
+  </div>
+  <br>
   <p>Q: What can the owner of the contract do?</p>
   <p>A: Transfer tokens out and change the parameters like minimum stake time, stake amount, and price to buy a monster.</p>
 </div>

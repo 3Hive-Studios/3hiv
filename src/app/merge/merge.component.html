@@ -1,7 +1,7 @@
 <div class="container">
   <div class="centered">
     <div class="header"><span class="cursed-text">create</span> new life</div>
-    <div class="can-merge">Merge available: {{canMerge}}</div>
+    <div class="can-merge">Spawn available: {{canMerge}}</div>
     <div class="unlock">Current block: {{currBlock}}</div>
   </div>
   <div class="two-cols">
@@ -36,6 +36,6 @@
     </div>
     <div>
   <div class="centered merge-holder" (click)="mergeMons(monLeft,monRight)">
-    <button class="merge-btn disabled{{!canMerge}}">Merge</button>
+    <button class="merge-btn disabled{{!canMerge}}" title="Creates a new monster">Spawn</button>
   </div>
 </div>

@@ -23,7 +23,7 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: 'merge',
+    path: 'spawn',
     component: MergeComponent,
     pathMatch: 'full'
   },
