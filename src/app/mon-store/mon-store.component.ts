@@ -95,13 +95,27 @@ export class MonStoreComponent implements OnInit {
     }
   }
 
+  canMakeMon() {
+    if (this.monsLeft.isLessThanOrEqualTo(new BigNumber(0))) {
+      alert("No monsters left!");
+      return false;
+    }
+    else {
+      return true;
+    }
+  }
+
   buyMon() {
-    const func = this.contract.MONS.methods.buyMonster();
-    this.wallet.sendTxWithToken(func, this.token, this.constants.MON_ADDRESS, this.price, 400000, ()=>{}, ()=>{}, ()=>{});
+    if (this.canMakeMon()) {
+      const func = this.contract.MONS.methods.buyMonster();
+      this.wallet.sendTxWithToken(func, this.token, this.constants.MON_ADDRESS, this.price, 400000, ()=>{}, ()=>{}, ()=>{});
+    }
   }
 
   getMon(f) {
-    this.wallet.sendTxWithNFT(f, this.contract.STAKER, this.constants.MON_ADDRESS, 400000, ()=>{}, ()=>{}, ()=> {});
+    if (this.canMakeMon()) {
+      this.wallet.sendTxWithNFT(f, this.contract.STAKER, this.constants.MON_ADDRESS, 400000, ()=>{}, ()=>{}, ()=> {});
+    }
   }
 
 }

@@ -11,9 +11,9 @@ export class ContractService {
   token: any;
   tokenBalance: any;
   tokenSymbol: string;
-  monsLeft: any;
+  monsLeft: BigNumber;
   maxMons: any;
-  totalMons: any;
+  totalMons: BigNumber;
   mergePrice: any;
   buyPrice: any;
   currBlock: any;
@@ -61,6 +61,9 @@ export class ContractService {
     this.maxMons = new BigNumber(await this.MONS.methods.maxMons.call().call());
     this.totalMons = await this.MONS.methods.getTotalMons().call();
     this.monsLeft = this.maxMons.minus(this.totalMons);
+    if (this.monsLeft.isLessThanOrEqualTo(new BigNumber(0))) {
+      this.monsLeft = new BigNumber(0);
+    }
 
     const tokenAddress = await this.MONS.methods.token.call().call();
     this.token = this.ERC20(tokenAddress);
