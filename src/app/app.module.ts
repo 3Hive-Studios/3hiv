@@ -11,6 +11,7 @@ import { MonsComponent } from './mons/mons.component';
 import { FaqComponent } from './faq/faq.component';
 import { MergeComponent } from './merge/merge.component';
 import { FooterComponent } from './footer/footer.component';
+import { ClaimComponent } from './claim/claim.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { FooterComponent } from './footer/footer.component';
     MonsComponent,
     FaqComponent,
     MergeComponent,
-    FooterComponent
+    FooterComponent,
+    ClaimComponent
   ],
   imports: [
     BrowserModule,

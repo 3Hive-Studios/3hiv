@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { ClaimComponent } from './claim/claim.component';
 import { FaqComponent } from './faq/faq.component';
 import { HomeComponent } from './home/home.component';
 import { MergeComponent } from './merge/merge.component';
@@ -30,6 +31,11 @@ const routes: Routes = [
   {
     path: 'faq',
     component: FaqComponent,
+    pathMatch: 'full'
+  },
+  {
+    path: 'claim',
+    component: ClaimComponent,
     pathMatch: 'full'
   },
   // wildcard

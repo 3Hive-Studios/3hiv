@@ -52,6 +52,12 @@ export class ContractService {
     return new this.wallet.web3.eth.Contract(abi, address); 
   }
 
+  public get ClAIMER() {
+    const abi = require('../assets/abi/Claimer.json');
+    const address = this.constants.CLAIMER_ADDRESS;
+    return new this.wallet.web3.eth.Contract(abi, address); 
+  }
+
   public ERC20(address) {
     const abi = require('../assets/abi/ERC20.json');
     return new this.wallet.web3.eth.Contract(abi, address); 
