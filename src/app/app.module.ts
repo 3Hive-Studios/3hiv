@@ -10,6 +10,7 @@ import { MonStoreComponent } from './mon-store/mon-store.component';
 import { MonsComponent } from './mons/mons.component';
 import { FaqComponent } from './faq/faq.component';
 import { MergeComponent } from './merge/merge.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { MergeComponent } from './merge/merge.component';
     MonStoreComponent,
     MonsComponent,
     FaqComponent,
-    MergeComponent
+    MergeComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
