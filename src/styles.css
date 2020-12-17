@@ -1,5 +1,5 @@
 :root {
---black: rgb(1, 4, 14);
+--black: rgb(0, 0, 0);
 --darker-gray: #1c2541ff;
 --dark-gray: #2b3b56ff;
 --gray: #6081a9ff;
@@ -7,27 +7,27 @@
 --med-green: rgb(102, 223, 205);
 --green: rgb(133, 207, 196);
 --solid-green: rgb(62, 150, 120);
---light-green: #e2f4f4ff;
+--light-green: rgb(209, 240, 240);
 --red: rgb(110, 56, 56);
 --gray-green: rgb(61, 88, 84);
+--pink: rgb(255, 77, 164);
+--dark-pink: rgb(211, 37, 121);
+
+/* new colors */
+--light-gray: rgb(194, 194, 194);
 }
 
 body {
   background-color: var(--black);
-  color: var(--light-green);
+  color: var(--light-gray);
   font-family: "Lucida Console", "Courier New", Courier, Monaco, monospace;
-}
-
-img:hover {
-  filter: hue-rotate(45deg);
-  /* cursor: url('assets/cursor.gif'), auto;	 */
 }
 
 a {
   color: var(--med-green);
 }
 a:hover {
-  color: var(--green);
+  color: var(--pink);
 }
 
 button {
@@ -35,7 +35,24 @@ button {
   border: none;
   cursor: pointer;
   padding: 0.5rem 0.5rem;
+  font-family: Courier, monospace;
+  color: var(--light-gray);
+  background-color: var(--black);
+  font-size: 1.4rem;
+  font-weight: bold;
+  border: 2px solid var(--gray);
+  text-transform: uppercase;
 }
+button:hover {
+  background-color: var(--darker-gray);
+  color: white;
+  border: 2px solid var(--light-green);
+}
+hr {
+  color: none;
+  border: 1px solid var(--light-gray);
+}
+
 .disabledtrue {
   background-color: var(--dark-gray) !important;
   cursor: unset;
@@ -45,7 +62,6 @@ button {
 }
 
 .container {
-  margin-top: 2rem;
   max-width: 60rem;
   margin-left: auto;
   margin-right: auto;
@@ -53,17 +69,17 @@ button {
 }
 
 .cursed-text {
-  color: var(--med-green);
+  color: white;
   font-size: 1.3rem;
   font-weight: bold;
   font-style: italic;
-  text-decoration: line-through;
+  /* text-decoration: line-through; */
   text-transform: uppercase;
-  animation: blinker 5s linear infinite;
+  /* animation: blinker 5s linear infinite; */
 }
 
 @keyframes blinker {
-  25% {
+  /* 25% {
     opacity: 1;
   }
   50% {
@@ -71,7 +87,7 @@ button {
   }
   75% {
     opacity: 1;
-  }
+  } */
 }
 
 .card {
@@ -79,7 +95,7 @@ button {
   margin-bottom: 0.5rem;
   text-align: center;
   background-color: var(--black);
-  border: 2px solid var(--dark-green);
+  border: 2px solid var(--light-gray);
 }
 
 .card-title {
@@ -94,12 +110,16 @@ button {
   text-align: center;
 }
 .header {
-  font-size: 1.75rem;
+  font-size: 2rem;
   margin-top: 0.5rem;
   margin-bottom: 1.5rem;
 }
 .header > .cursed-text {
-  font-size: 2rem;
+  font-size: 3rem;
+}
+
+.bn-onboard-custom {
+  text-transform: unset;
 }
 
 .two-cols {

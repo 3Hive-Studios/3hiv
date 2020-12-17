@@ -9,9 +9,11 @@ import { HeaderComponent } from './header/header.component';
 import { MonStoreComponent } from './mon-store/mon-store.component';
 import { MonsComponent } from './mons/mons.component';
 import { FaqComponent } from './faq/faq.component';
-import { MergeComponent } from './merge/merge.component';
+import { SpawnComponent } from './spawn/spawn.component';
 import { FooterComponent } from './footer/footer.component';
 import { ClaimComponent } from './claim/claim.component';
+import { MenuComponent } from './menu/menu.component';
+import { SummonComponent } from './summon/summon.component';
 
 @NgModule({
   declarations: [
@@ -21,9 +23,11 @@ import { ClaimComponent } from './claim/claim.component';
     MonStoreComponent,
     MonsComponent,
     FaqComponent,
-    MergeComponent,
+    SpawnComponent,
     FooterComponent,
-    ClaimComponent
+    ClaimComponent,
+    MenuComponent,
+    SummonComponent
   ],
   imports: [
     BrowserModule,

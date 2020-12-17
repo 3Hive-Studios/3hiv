@@ -1,5 +1,10 @@
+<app-menu>
+</app-menu>
+
 <div class="logo-wrapper">
-  <a routerLink="/" routerLinkActive="active" class="logo-anchor"><div class="cursed-text logo">0xmons</div></a>
+  <a routerLink="/" routerLinkActive="active">
+    <img src="./assets/0xmons-logo-med.png" id="logo">
+  </a>
 </div>
 
 <div class="wallet-holder">
@@ -8,14 +13,7 @@
       {{wallet.userAddress.substring(0, 14)}}
     </div>
     <div *ngIf="!wallet.connected">
-      Connect Wallet
+      🏦 CONNECT WALLET
     </div>
   </button>
 </div>
-
-<!-- <div class="navbar">
-  <a routerLink="/summon" routerLinkActive="active" title="Get a new monster"><span>SUMMON</span></a>
-  <a routerLink="/mons" routerLinkActive="active" title="View your monsters"><span>BESTIARY</span></a>
-  <a routerLink="/spawn" routerLinkActive="active" title="Spawn a new monsters"><span>SPAWN</span></a>
-  <a routerLink="/faq" routerLinkActive="active" title="What this project even is"><span>ABOUT</span></a>
-</div> -->

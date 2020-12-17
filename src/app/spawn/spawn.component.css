@@ -25,6 +25,9 @@
 .mon-name {
   color: var(--light-green);
 }
+.mon-2 {
+  color: var(--pink);
+}
 
 .stats {
   font-size: 1.2rem;

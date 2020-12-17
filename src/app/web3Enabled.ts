@@ -16,7 +16,7 @@ export class Web3Enabled {
     this.blocknativeAPIKey = 'c094a276-3a28-4a57-a468-d61efa51e73c';
     this.infuraKey = 'eb5ba991ba924ec5b80fd85423fd901f';
     this.portisKey = '046eaf6b-d838-45d0-b733-ef5ef749fb0f';
-    this.networkID = 1;
+    this.networkID = 4;
     this.state = {
       address: null
     };
@@ -25,7 +25,7 @@ export class Web3Enabled {
   async connect(onConnected, onError, isStartupMode: boolean) {
     if (!this.assistInstance) {
       const genericMobileWalletConfig = {
-        name: 'Web3 wallet',
+        name: 'Web3 wallet (e.g. MetaMask)',
         mobile: true,
         desktop: true,
         preferred: true,

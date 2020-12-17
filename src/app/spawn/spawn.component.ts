@@ -6,10 +6,10 @@ import BigNumber from 'bignumber.js';
 
 @Component({
   selector: 'app-merge',
-  templateUrl: './merge.component.html',
-  styleUrls: ['./merge.component.css']
+  templateUrl: './spawn.component.html',
+  styleUrls: ['./spawn.component.css']
 })
-export class MergeComponent implements OnInit {
+export class SpawnComponent implements OnInit {
 
   canMerge: boolean;
   namesList: Array<Object>;

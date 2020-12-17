@@ -1,5 +1,10 @@
-.logo-wrapper {
+#logo {
   margin-top: 1rem;
+  width: 10rem;
+  height: auto;
+}
+
+.logo-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -8,35 +13,14 @@
 .logo-anchor {
   text-decoration: none;
 }
-.logo {
-  font-size: 3rem;
-  color: var(--light-green);
-  text-decoration: line-through;
-  font-weight: bold;
-}
-.logo:hover {
-  color: var(--green);
-}
 
 .wallet-holder {
   position: absolute;
   right: 2rem;
-  top: 2rem;
+  top: 1.75rem;
 }
 .wallet-button {
-  font-family: Courier, monospace;
-  color: var(--med-green);
-  background-color: var(--dark-gray);
   font-size: 1.2rem;
-  font-weight: bold;
-}
-.wallet-button, .navbar a {
-  border: 1px solid var(--darker-gray);
-}
-.wallet-button:hover, .navbar a:hover {
-  background-color: var(--darker-gray);
-  color: var(--green);
-  border: 1px solid var(--light-green);
 }
 
 .navbar {

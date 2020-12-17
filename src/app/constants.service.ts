@@ -1,10 +1,10 @@
 import { Injectable } from '@angular/core';
-import BigNumber from 'bignumber.js';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ConstantsService {
+  // old stuff
   PRECISION = 1e18;
   YFB_ADDRESS = '0x89ee58af4871b474c30001982c3d7439c933c838';
   STAKER_ADDRESS = '0xC5802bCf619301Bdc6B1B9EDA4B6fd26e63339aF';
@@ -13,4 +13,12 @@ export class ConstantsService {
   CLAIMER_ADDRESS = '0xe354AC0bB78a8013617fe0efA6099769749F027C';
   S3_URL = 'https://d3h0sbhg72k3qr.cloudfront.net/';
   API_URL = 'https://yflambda.herokuapp.com/mons/';
+
+  // new stuff (rinkeby network for now) (note you have to change chainId in web3Enabled)
+  XMON_ADDRESS = '0x8dc2f7D19217245b117aEBa0f1D050c9e85c7767';
+  MON_MINTER_ADDRESS = '0x9683D905cAa55743ac63c464C34053B0b219Cc8D';
+  MON_STAKER_ADDRESS = '0xF81d6EBAE82b429Dcf0b29fddC4d17538Ac0EAD8';
+  MON_SPAWNER_ADDRESS = '0x39D327150ff6F7D59F6BB698895CbFAD2c4816C2';
+
+  MULTICALL_ADDRESS = '0x42Ad527de7d4e9d9d011aC45B31D8551f8Fe9821';
 }
