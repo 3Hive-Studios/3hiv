@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { WalletService } from '../wallet.service';
 import { ContractService } from '../contract.service';
 import { ConstantsService } from '../constants.service';
+import { UtilsService } from '../utils.service';
 import BigNumber from 'bignumber.js';
 
 @Component({
@@ -11,23 +12,19 @@ import BigNumber from 'bignumber.js';
 })
 export class SpawnComponent implements OnInit {
 
-  canMerge: boolean;
-  namesList: Array<Object>;
-  tokenSymbol: string;
-  idMap: any;
-  imgMap: any;
-  monLeft: any;
-  monRight: any;
-  token: any;
-  unlockBlockMap: any;
-  tokenBalance: BigNumber;
-  mergePrice: BigNumber;
-  monsRemaining: BigNumber;
-  currBlock: BigNumber;
-
-  constructor(public wallet: WalletService, public contract: ContractService, public constants: ConstantsService) { 
+  constructor(public wallet: WalletService, public contract: ContractService, public constants: ConstantsService, public utils: UtilsService) { 
     this.resetData();
   }
+
+  blockNumber: BigNumber;
+  monLeft: any;
+  monRight: any;
+  monList: any;
+  monLookup: any;
+  spawnFee: BigNumber;
+  xmonBalance: BigNumber;
+  numMons: BigNumber;
+  maxMons: BigNumber;
 
   ngOnInit(): void {
     if (this.wallet.connected) {
@@ -41,65 +38,110 @@ export class SpawnComponent implements OnInit {
     });
   }
 
-  async loadData() {
-    // token info
-    this.token = this.contract.token;
-    this.tokenBalance = new BigNumber(await this.contract.token.methods.balanceOf(this.wallet.userAddress).call()).div(this.constants.PRECISION);
-    this.tokenSymbol = this.contract.tokenSymbol;
-    this.mergePrice = this.contract.mergePrice;
-
-    // total mons info
-    this.monsRemaining = this.contract.monsLeft;
-
-    // get curr block
-    this.currBlock = this.contract.currBlock;
-
-    // each mon's info
-    this.canMerge = await this.contract.MONS.methods.canMerge.call().call();
-    const response = await fetch("./assets/mons_database.json");
-    const monData = await response.json();
-    let numMons = await this.contract.MONS.methods.balanceOf(this.wallet.userAddress).call();
-    for (let i = 0; i < numMons; i++) {
-      let monId = await this.contract.MONS.methods.tokenOfOwnerByIndex(this.wallet.userAddress, i).call();
-      let d = monData[monId];
-      let onChainD = await this.contract.MONS.methods.monRecords(monId).call();
-      this.namesList.push(d["name"]);
-      this.imgMap[d["name"]] = this.constants.S3_URL + d["img"];
-      this.idMap[d["name"]] = monId;
-      this.unlockBlockMap[d["name"]] = new BigNumber(onChainD["unlockBlock"]);
-    }
-    console.log(this.unlockBlockMap);
+  resetData() {
+    this.blockNumber = new BigNumber(0);
+    this.monLeft = "";
+    this.monRight = "";
+    this.monList = [];
+    this.monLookup = {};
+    this.spawnFee = new BigNumber(0);
+    this.xmonBalance = new BigNumber(0);
+    this.numMons = new BigNumber(0);
+    this.maxMons = new BigNumber(0);
   }
 
-  mergeMons(id1, id2) {
-    if (id1 === id2) {
+  async loadData() {
+
+    let multicallFns = {
+      "monIds": {
+        target: this.constants.NFT_AGGREGATOR_ADDRESS,
+        callData: this.contract.NFT_AGG.methods.getIds(this.constants.MON_MINTER_ADDRESS, this.wallet.userAddress).encodeABI()
+      },
+      "spawnFee": {
+        target: this.constants.MON_SPAWNER_ADDRESS,
+        callData: this.contract.MON_SPAWNER.methods.spawnFee.call().encodeABI()
+      },
+      "xmonBalance": {
+        target: this.constants.XMON_ADDRESS,
+        callData: this.contract.XMON.methods.balanceOf(this.wallet.userAddress).encodeABI()
+      },
+      "numMons": {
+        target: this.constants.MON_SPAWNER_ADDRESS,
+        callData: this.contract.MON_SPAWNER.methods.numMons.call().encodeABI()
+      },
+      "maxMons": {
+        target: this.constants.MON_SPAWNER_ADDRESS,
+        callData: this.contract.MON_SPAWNER.methods.maxMons.call().encodeABI()
+      }
+    };
+    let multicallKeys = Object.keys(multicallFns);
+    let multicallValues = Object.values(multicallFns);
+    let rawResult = await this.contract.MULTICALL.methods.aggregate(multicallValues).call();
+    this.blockNumber = rawResult["blockNumber"];
+    let multicallResults = this.utils.zipObject(multicallKeys, rawResult["returnData"]);
+    this.spawnFee = new BigNumber(this.wallet.web3.eth.abi.decodeParameter('uint256', multicallResults["spawnFee"])).div(this.constants.PRECISION);
+    this.xmonBalance = new BigNumber(this.wallet.web3.eth.abi.decodeParameter('uint256', multicallResults["xmonBalance"])).div(this.constants.PRECISION);
+    this.numMons = new BigNumber(this.wallet.web3.eth.abi.decodeParameter('uint256', multicallResults["numMons"]));
+    this.maxMons = new BigNumber(this.wallet.web3.eth.abi.decodeParameter('uint256', multicallResults["maxMons"]));
+
+    // Get unlock blocks in second multicall
+    let monIdList = this.wallet.web3.eth.abi.decodeParameter('uint256[]', multicallResults["monIds"]);
+    let newCall = {};
+    for (let i of monIdList) {
+      newCall[i.toString()] = {
+        target: this.constants.MON_SPAWNER_ADDRESS,
+        callData: this.contract.MON_SPAWNER.methods.monUnlock(i).encodeABI()
+      }
+    }
+    multicallKeys = Object.keys(newCall);
+    multicallValues = Object.values(newCall);
+    rawResult = await this.contract.MULTICALL.methods.aggregate(multicallValues).call();
+    multicallResults = this.utils.zipObject(multicallKeys, rawResult["returnData"]);
+
+    const response = await fetch("./assets/monData.json");
+    const responseObj = await response.json();
+    for (let i of monIdList) {
+      let obj = {};
+      obj["id"] = i;
+      obj["name"] = responseObj["1"]["name"] + i;
+      obj["img"] =  responseObj["1"]["img"];
+      obj["unlockBlock"] = new BigNumber(this.wallet.web3.eth.abi.decodeParameter('uint256', multicallResults[i]));
+      this.monList.push(obj);
+      this.monLookup[i] = obj;
+    }
+  }
+
+  spawnNewMon() {
+    if (this.monLeft === this.monRight) {
       alert("You can't merge two of the same monster!");
     }
-    else if (this.currBlock.isLessThanOrEqualTo(this.unlockBlockMap[id1]) || this.currBlock.isLessThanOrEqualTo(this.unlockBlockMap[id2])) {
-      alert("One or more of these monsters haven't unlocked yet for merging!")
-    }
+    // else if (this.blockNumber.isLessThanOrEqualTo(this.getUnlockBlock(this.monLeft)) || this.blockNumber.isLessThanOrEqualTo(this.getUnlockBlock(this.monRight))) {
+    //   alert("One or more of these monsters haven't unlocked yet for merging!")
+    // }
     else {
-      const func = this.contract.MONS.methods.mergeMonsters(this.idMap[id1], this.idMap[id2]);
-      this.wallet.sendTxWithToken(func, this.token, this.constants.MON_ADDRESS, this.mergePrice, 550000, ()=>{}, ()=>{}, ()=>{});
+      const func = this.contract.MON_SPAWNER.methods.spawnNewMon(this.monLeft, this.monRight);
+      this.wallet.sendTxWithToken(func, this.contract.XMON, this.constants.MON_SPAWNER_ADDRESS, this.spawnFee, 550000, ()=>{}, ()=>{}, ()=>{});
     }
   }
 
-  resetData() {
-    this.canMerge = false;
-    this.namesList = [];
-    this.monLeft = '';
-    this.monRight = this.monLeft;
-    this.imgMap = {
-      '': './assets/placeholder.png'
-    };
-    this.idMap = {};
-    this.unlockBlockMap = {
-      '': 0
-    };
-    this.tokenBalance = new BigNumber(0);
-    this.mergePrice = new BigNumber(0);
-    this.monsRemaining = new BigNumber(0);
-    this.currBlock = new BigNumber(0);
-    this.tokenSymbol = '';
+  getName(id) {
+    if (id === "") {
+      return "";
+    }
+    return this.monLookup[id]["name"];
+  }
+
+  getImg(id) {
+    if (id === "") {
+      return "./assets/placeholder.png";
+    }
+    return this.monLookup[id]["img"];
+  }
+
+  getUnlockBlock(id) {
+    if (id === "") {
+      return new BigNumber(0);
+    }
+    return this.monLookup[id]["unlockBlock"];
   }
 }

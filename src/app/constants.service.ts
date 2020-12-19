@@ -21,4 +21,9 @@ export class ConstantsService {
   MON_SPAWNER_ADDRESS = '0x39D327150ff6F7D59F6BB698895CbFAD2c4816C2';
 
   MULTICALL_ADDRESS = '0x42Ad527de7d4e9d9d011aC45B31D8551f8Fe9821';
+  NFT_AGGREGATOR_ADDRESS = '0x03Cb9a56c5F7Ce6796562730E3D217B1F4Dd428b';
+
+  // Mainnet address
+  LP_POOL_REWARDS_ADDRESS = '0x57Ffef72352f285a9477293d35Bacc9C6667eEBf';
+  // probably need to change this b/c I picked the wrong number for duration
 }

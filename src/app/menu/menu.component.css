@@ -4,8 +4,13 @@
   top: 1.75rem;
 }
 
+.menu-button:hover {
+  animation: colorFlash 2s linear infinite;
+}
+
 .close-button {
   border: none;
+  animation: none;
 }
 
 .menu-list {
@@ -15,6 +20,8 @@
   top: 0rem;
   width: 50%;
   max-width: 20rem;
+  display: table;
+  border-collapse: collapse;
 }
 .menu-list, .close-button {
   font-size: 1.75rem;

@@ -22,6 +22,9 @@
 .wallet-button {
   font-size: 1.2rem;
 }
+.wallet-button:hover {
+  animation: colorFlash 2s linear infinite;
+}
 
 .navbar {
   margin-top: 1rem;

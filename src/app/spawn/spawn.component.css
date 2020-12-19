@@ -1,20 +1,7 @@
-.can-merge {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  padding: 1rem 1rem;
-  border: 1px solid var(--green);
-}
-
-.unlock {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-}
-
 .mon-select {
-  font-family: Courier, monospace;
-  border: 1px solid var(--green);
+  border: 2px solid var(--gray);
   background-color: var(--black);
-  color: var(--light-green);
+  color: var(--light-gray);
   font-size: 1.3rem;
   width: 80%;
   max-width: 15rem;
@@ -22,41 +9,29 @@
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
-.mon-name {
-  color: var(--light-green);
+.mon-1 {
+  color: var(--med-green);
 }
 .mon-2 {
   color: var(--pink);
 }
-
-.stats {
-  font-size: 1.2rem;
-  margin-top: 0.75rem;
-  margin-bottom: 0.75rem;
-  line-height: 150%;
-}
-.balance {
-  color: var(--green);
-}
-
-.merge-holder {
-  margin-top: 1rem;
-}
-.merge-btn {
-  font-family: Courier, monospace;
-  width: 10rem;
-  font-size: 1.75rem;
-  background-color: var(--darker-gray);
-  color: var(--green);  
-  border: 2px solid var(--dark-green);
-  text-transform: uppercase;
-  animation: blinker 5s linear infinite;
-}
-.disabledtrue {
-  animation: none;
-}
-.merge-btn:hover {
+.mon-name {
   color: white;
-  background-color: var(--dark-gray);
-  border: 2px solid var(--green);
+}
+
+.xmon-ticker {
+  margin-left: 0.5rem;
+  font-weight: bold;
+  color: var(--med-green);
+}
+
+.spawn-button {
+  margin-bottom: 1rem;
+}
+.spawn-button:hover {
+  animation: colorFlash 2s linear infinite;
+}
+
+img {
+  margin: 1rem 1rem;
 }
