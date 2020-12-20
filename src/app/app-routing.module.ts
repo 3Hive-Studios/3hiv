@@ -4,9 +4,9 @@ import { ClaimComponent } from './claim/claim.component';
 import { FaqComponent } from './faq/faq.component';
 import { HomeComponent } from './home/home.component';
 import { SpawnComponent } from './spawn/spawn.component';
-import { MonStoreComponent } from './mon-store/mon-store.component';
-import { MonsComponent } from './mons/mons.component';
 import { SummonComponent } from './summon/summon.component';
+import { CollectionComponent } from './collection/collection.component';
+import { MonsterComponent } from './monster/monster.component';
 
 const routes: Routes = [
   {
@@ -15,9 +15,8 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: 'mons',
-    component: MonsComponent,
-    pathMatch: 'full'
+    path: 'mon/:id',
+    component: MonsterComponent
   },
   {
     path: 'summon',
@@ -37,6 +36,11 @@ const routes: Routes = [
   {
     path: 'claim',
     component: ClaimComponent,
+    pathMatch: 'full'
+  },
+  {
+    path: 'collection',
+    component: CollectionComponent,
     pathMatch: 'full'
   },
   // wildcard
