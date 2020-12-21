@@ -69,11 +69,11 @@ export class SummonComponent implements OnInit {
       },
       "maxStakeAmount": {
         target: this.constants.MON_STAKER_ADDRESS,
-        callData: this.contract.MON_STAKER.methods.maxStake.call().encodeABI()
+        callData: this.contract.MON_STAKER.methods.maxStake().encodeABI()
       },
       "doomFee": {
         target: this.constants.MON_STAKER_ADDRESS,
-        callData: this.contract.MON_STAKER.methods.doomFee.call().encodeABI()
+        callData: this.contract.MON_STAKER.methods.doomFee().encodeABI()
       },
       "doomBalance": {
         target: this.constants.MON_STAKER_ADDRESS,
@@ -89,7 +89,7 @@ export class SummonComponent implements OnInit {
       },
       "baseDelay": {
         target: this.constants.MON_STAKER_ADDRESS,
-        callData: this.contract.MON_STAKER.methods.startDelay.call().encodeABI()
+        callData: this.contract.MON_STAKER.methods.startDelay().encodeABI()
       },
       "currentDelay": {
         target: this.constants.MON_STAKER_ADDRESS,
@@ -97,7 +97,7 @@ export class SummonComponent implements OnInit {
       },
       "resetFee": {
         target: this.constants.MON_STAKER_ADDRESS,
-        callData: this.contract.MON_STAKER.methods.resetFee.call().encodeABI()
+        callData: this.contract.MON_STAKER.methods.resetFee().encodeABI()
       },
       "stakeRecords": {
         target: this.constants.MON_STAKER_ADDRESS,
@@ -105,15 +105,15 @@ export class SummonComponent implements OnInit {
       },
       "maxDelay": {
         target: this.constants.MON_STAKER_ADDRESS,
-        callData: this.contract.MON_STAKER.methods.maxDelay.call().encodeABI()
+        callData: this.contract.MON_STAKER.methods.maxDelay().encodeABI()
       },
       "numMons": {
         target: this.constants.MON_STAKER_ADDRESS,
-        callData: this.contract.MON_STAKER.methods.numMons.call().encodeABI()
+        callData: this.contract.MON_STAKER.methods.numMons().encodeABI()
       },
       "maxMons": {
         target: this.constants.MON_STAKER_ADDRESS,
-        callData: this.contract.MON_STAKER.methods.maxMons.call().encodeABI()
+        callData: this.contract.MON_STAKER.methods.maxMons().encodeABI()
       }
     };
 
