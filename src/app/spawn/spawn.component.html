@@ -16,7 +16,7 @@
       <div class="card-title mon-1">Monster 1: <span class="mon-name">{{getName(monLeft)}}</span></div>
       <hr>
       <div><img src="{{getImg(monLeft)}}"></div>
-      <div>Unlocks at block: {{getUnlockBlock(monLeft)}}</div>
+      <div>Unlocks at block: <b>{{getUnlockBlock(monLeft)}}</b></div>
       <select class="mon-select" [(ngModel)]="monLeft">
         <option value="" disabled selected>Select monster</option>
         <option *ngFor="let n of monList" value="{{n.id}}">
@@ -28,7 +28,7 @@
       <div class="card-title mon-2">Monster 2: <span class="mon-name">{{getName(monRight)}}</span></div>
       <hr>
       <div><img src="{{getImg(monRight)}}"></div>
-      <div>Unlocks at block: {{getUnlockBlock(monRight)}}</div>
+      <div>Unlocks at block: <b>{{getUnlockBlock(monRight)}}</b></div>
       <select class="mon-select" [(ngModel)]="monRight">
         <option value="" disabled selected>Select monster</option>
         <option *ngFor="let n of monList" value="{{n.id}}">

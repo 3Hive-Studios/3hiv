@@ -4,7 +4,9 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class ConstantsService {
+  
   PRECISION = 1e18;
+  DOOM_SCALING = 1e21;
 
   // Mainnet address
   CLAIMER_ADDRESS = '0xe354AC0bB78a8013617fe0efA6099769749F027C';

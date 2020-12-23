@@ -114,13 +114,21 @@ export class SpawnComponent implements OnInit {
   spawnNewMon() {
     if (this.monLeft === this.monRight) {
       alert("You can't merge two of the same monster!");
+      return;
     }
-    // else if (this.blockNumber.isLessThanOrEqualTo(this.getUnlockBlock(this.monLeft)) || this.blockNumber.isLessThanOrEqualTo(this.getUnlockBlock(this.monRight))) {
-    //   alert("One or more of these monsters haven't unlocked yet for merging!")
-    // }
+    if (this.getUnlockBlock(this.monLeft).gt(this.blockNumber)) {
+      alert(this.getName(this.monLeft) + " is not yet ready for spawning!");
+      return;
+    }
+    if (this.getUnlockBlock(this.monRight).gt(this.blockNumber)) {
+      alert(this.getName(this.monRight) + " is not yet ready for spawning!");
+      return;
+    }
     else {
       const func = this.contract.MON_SPAWNER.methods.spawnNewMon(this.monLeft, this.monRight);
-      this.wallet.sendTxWithToken(func, this.contract.XMON, this.constants.MON_SPAWNER_ADDRESS, this.spawnFee, 550000, ()=>{}, ()=>{}, ()=>{});
+      this.wallet.sendTxWithToken(func, this.contract.XMON, this.constants.MON_SPAWNER_ADDRESS, this.spawnFee, 550000, ()=>{}, ()=>{
+        this.loadData();
+      }, ()=>{});
     }
   }
 

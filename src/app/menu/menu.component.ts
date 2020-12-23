@@ -19,4 +19,8 @@ export class MenuComponent implements OnInit {
     this.showMenu = ! this.showMenu;
   }
 
+  closeMenu() {
+    this.showMenu = false;
+  }
+
 }

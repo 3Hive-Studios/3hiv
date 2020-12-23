@@ -1,3 +1,8 @@
+<div class="menu-click-handler" *ngIf="showMenu" (click)="closeMenu()">
+  Hello
+</div>
+
+
 <div class="menu-holder">
   <button class="menu-button" (click)="toggleShowMenu()"> 
     ☰ MENU
@@ -9,7 +14,7 @@
   <div class="menu-item">
     <a routerLink="/" routerLinkActive="active" title="Home page">HOME</a>
   </div>
-  <div class="menu-item">STAKE</div>
+  <div class="menu-item">LP FARMING</div>
   <div class="menu-item">
     <a routerLink="/summon" routerLinkActive="active" title="Summon a new monster">SUMMON</a>
   </div>

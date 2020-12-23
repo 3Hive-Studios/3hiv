@@ -10,7 +10,7 @@ button {
 .two-cols {
   column-gap: 0rem;
 }
-.two-cols div {
+.card div {
   margin: 0.5rem 0.2rem;
 }
 
@@ -18,7 +18,7 @@ button {
   font-size: 1.2rem;
 }
 
-.stake-header, .doom-header, .delay-header {
+.stake-header, .doom-header, .delay-header, .summon-header {
   font-size: 1.75rem;
   font-weight: bold;
 }
@@ -81,13 +81,26 @@ button {
   background-color: var(--dark-gray);
 }
 
-.delay-header {
-  padding-top: 0.5rem;
-}
-
 .card-text {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.summon-header {
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important;
+}
+
+.summontrue {
+  color: var(--med-green);
+}
+
+.summonfalse {
+  color: var(--dark-pink);
+}
+
+.summon-btn {
+  border: 2px solid white;
 }
 
 @media only screen and (max-width: 768px) {

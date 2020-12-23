@@ -161,6 +161,8 @@ export class Web3Enabled {
         if (!e.toString().contains('newBlockHeaders')) {
           _onError(e);
         }
+      }).on("receipt", () => {
+        _onReceipt();
       });
     }
   }
@@ -178,6 +180,8 @@ export class Web3Enabled {
         if (!e.toString().contains('newBlockHeaders')) {
           _onError(e);
         }
+      }).on("receipt", () => {
+        _onReceipt();
       });
     }
   }
@@ -194,6 +198,8 @@ export class Web3Enabled {
         if (!e.toString().contains('newBlockHeaders')) {
           _onError(e);
         }
+      }).on("receipt", () => {
+        _onReceipt();
       });
     }
     else {
@@ -207,6 +213,8 @@ export class Web3Enabled {
           if (!e.toString().contains('newBlockHeaders')) {
             _onError(e);
           }
+        }).on("receipt", () => {
+          _onReceipt();
         });
       }, this.doNothing, _onError);
     }
@@ -231,6 +239,8 @@ export class Web3Enabled {
             if (!e.toString().contains('newBlockHeaders')) {
               _onError(e);
             }
+          }).on("receipt", () => {
+            _onReceipt();
           });
         }, this.doNothing, _onError);
       }, this.doNothing, _onError);
@@ -245,6 +255,8 @@ export class Web3Enabled {
           if (!e.toString().contains('newBlockHeaders')) {
             _onError(e);
           }
+        }).on("receipt", () => {
+          _onReceipt();
         });
       }, this.doNothing, _onError);
     }

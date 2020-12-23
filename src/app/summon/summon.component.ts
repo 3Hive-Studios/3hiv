@@ -21,7 +21,6 @@ export class SummonComponent implements OnInit {
   maxStakeAmount: BigNumber;
   xmonBalance: BigNumber;
   doomBalance: BigNumber;
-  pendingDoomBalance: BigNumber;
   doomFee: BigNumber;
   blockNumber: any;
   unlockBlock: BigNumber;
@@ -49,7 +48,6 @@ export class SummonComponent implements OnInit {
     this.maxStakeAmount = new BigNumber(0);
     this.xmonBalance = new BigNumber(0);
     this.doomBalance = new BigNumber(0);
-    this.pendingDoomBalance = new BigNumber(0);
     this.doomFee = new BigNumber(0);
     this.unlockBlock = new BigNumber(0);
     this.baseDelay = new BigNumber(0);
@@ -125,9 +123,12 @@ export class SummonComponent implements OnInit {
     this.blockNumber = rawResult["blockNumber"];
     this.xmonBalance = new BigNumber(this.wallet.web3.eth.abi.decodeParameter('uint256', multicallResults["xmonBalance"])).div(this.constants.PRECISION);
     this.maxStakeAmount = new BigNumber(this.wallet.web3.eth.abi.decodeParameter('uint256', multicallResults["maxStakeAmount"])).div(this.constants.PRECISION);
-    this.doomFee = new BigNumber(this.wallet.web3.eth.abi.decodeParameter('uint256', multicallResults["doomFee"])).div(this.constants.PRECISION);
-    this.doomBalance = new BigNumber(this.wallet.web3.eth.abi.decodeParameter('uint256', multicallResults["doomBalance"])).div(this.constants.PRECISION);
-    this.pendingDoomBalance = new BigNumber(this.wallet.web3.eth.abi.decodeParameter('uint256', multicallResults["pendingDoomBalance"])).div(this.constants.PRECISION);
+
+    this.doomFee = new BigNumber(this.wallet.web3.eth.abi.decodeParameter('uint256', multicallResults["doomFee"])).div(this.constants.DOOM_SCALING);
+    let currDoomBalance = new BigNumber(this.wallet.web3.eth.abi.decodeParameter('uint256', multicallResults["doomBalance"]))
+    let pendingDoomBalance = new BigNumber(this.wallet.web3.eth.abi.decodeParameter('uint256', multicallResults["pendingDoomBalance"]));
+    this.doomBalance = currDoomBalance.plus(pendingDoomBalance).div(this.constants.DOOM_SCALING);
+
     this.unlockBlock = new BigNumber(this.wallet.web3.eth.abi.decodeParameter('uint256', multicallResults["unlockBlock"]));
     this.baseDelay = new BigNumber(this.wallet.web3.eth.abi.decodeParameter('uint256', multicallResults["baseDelay"]));
     this.resetFee = new BigNumber(this.wallet.web3.eth.abi.decodeParameter('uint256', multicallResults["resetFee"])).div(this.constants.PRECISION);
@@ -147,7 +148,17 @@ export class SummonComponent implements OnInit {
     if (!this.stakeAmount) {
       this.stakeAmount = '0';
     }
+    if (this.stakeAmount === '0') {
+      alert("Must have stake greater than 0!");
+      return;
+    }
     const formattedStakeAmount = new BigNumber(this.stakeAmount).times(this.constants.PRECISION).integerValue().toFixed();
+    const maxStake = this.maxStakeAmount.times(this.constants.PRECISION).integerValue().toFixed();
+
+    if (this.stakedXmon.plus(formattedStakeAmount).gt(maxStake)) {
+      alert("Staking more than max stake!");
+      return;
+    }
 
     const func = this.contract.MON_STAKER.methods.addStake(formattedStakeAmount);
     this.wallet.sendTxWithToken(func, this.contract.XMON, this.constants.MON_STAKER_ADDRESS, formattedStakeAmount,
@@ -158,21 +169,38 @@ export class SummonComponent implements OnInit {
 
   removeStake() {
     const func = this.contract.MON_STAKER.methods.removeStake();
-    this.wallet.sendTx(func, () => { }, () => {}, () => { });
+    this.wallet.sendTx(func, () => { }, () => {
+      this.loadData();
+    }, () => { });
   }
 
   claimDoom() {
     const func = this.contract.MON_STAKER.methods.awardDoom(this.wallet.userAddress);
-    this.wallet.sendTx(func, () => { }, () => {}, () => { });
+    this.wallet.sendTx(func, () => { }, () => {
+      this.loadData();
+    }, () => { });
   }
 
   claimMon() {
     const func = this.contract.MON_STAKER.methods.claimMon();
-    this.wallet.sendTx(func, () => { }, () => {}, () => { });
+    this.wallet.sendTx(func, () => { }, () => {
+      this.loadData();
+    }, () => { });
   }
 
   resetDelay() {
     const func = this.contract.MON_STAKER.methods.resetDelay();
-    this.wallet.sendTx(func, () => { }, () => {}, () => { });
+    this.wallet.sendTx(func, () => { }, () => {
+      this.loadData();
+    }, () => { });
+  }
+
+  getDoomPerHour() {
+    let doomPerHour = this.stakedXmon.times(new BigNumber(9)).div(new BigNumber(2)).times(new BigNumber(60)).times(this.constants.PRECISION).div(this.constants.DOOM_SCALING);
+    return doomPerHour;
+  }
+
+  summonAvailable() {
+    return this.unlockBlock.lt(this.blockNumber);
   }
 }
