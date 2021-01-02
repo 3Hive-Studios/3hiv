@@ -16,6 +16,10 @@ export class FarmComponent implements OnInit {
   lpBalance: BigNumber;
   stakedBalance: BigNumber;
   farmedXMON: BigNumber;
+  days: any;
+  hours: any;
+  minutes: any;
+  seconds: any;
 
   constructor(public wallet: WalletService, public contract: ContractService, public constants: ConstantsService, public utils: UtilsService) { 
     this.resetData();
@@ -31,6 +35,11 @@ export class FarmComponent implements OnInit {
     this.wallet.errorEvent.subscribe(() => {
       this.resetData();
     });
+
+    this.countDown();
+    setInterval(() => {
+      this.countDown();
+    }, 1000);
   }
 
   resetData() {
@@ -95,6 +104,24 @@ export class FarmComponent implements OnInit {
 
   fillForm(value) {
     this.stakeAmount = value.toString();
+  }
+
+  countDown() {
+    let countDownDate = new Date(1609869600*1000).getTime();
+
+    // Get today's date and time
+    let now = new Date().getTime();
+
+    // Find the distance between now and the count down date
+    let distance = countDownDate - now;
+
+    if (distance >= 0) {
+      // Time calculations for days, hours, minutes and seconds
+      this.days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      this.hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      this.minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      this.seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    }
   }
 
 }

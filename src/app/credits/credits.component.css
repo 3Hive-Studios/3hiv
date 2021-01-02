@@ -15,4 +15,5 @@
 .credit-item::before {
   content: '🦑';
   filter: sepia(1) saturate(2.5)  hue-rotate(90deg);
+  margin-right: 1rem;
 }

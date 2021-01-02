@@ -12,6 +12,10 @@ button {
   column-gap: 0rem;
 }
 
+.countdown {
+  color: var(--pink);
+}
+
 .card-header {
   font-size: 1.75rem;
   font-weight: bold;
