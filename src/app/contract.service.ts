@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import { ConstantsService } from './constants.service';
 import { WalletService } from './wallet.service';
-import BigNumber from 'bignumber.js';
 
 @Injectable({
   providedIn: 'root'
@@ -31,7 +30,7 @@ export class ContractService {
   }
 
   public get MON_STAKER() {
-    const abi = require('../assets/abi/MonStaker.json');
+    const abi = require('../assets/abi/MonStaker2.json');
     const address = this.constants.MON_STAKER_ADDRESS;
     return new this.wallet.web3.eth.Contract(abi, address); 
   }
@@ -53,7 +52,23 @@ export class ContractService {
     const address = this.constants.NFT_AGGREGATOR_ADDRESS;
     return new this.wallet.web3.eth.Contract(abi, address);
   }
+
+  public get LP_POOL_REWARDS() {
+    const abi = require('../assets/abi/Rewards.json');
+    const address = this.constants.LP_POOL_REWARDS_ADDRESS;
+    return new this.wallet.web3.eth.Contract(abi, address);
+  }
+
+  public get XMON_ETH_LP() {
+    const abi = require('../assets/abi/ERC20.json');
+    const address = this.constants.XMON_ETH_LP_TOKEN_ADDRESS;
+    return new this.wallet.web3.eth.Contract(abi, address); 
+  }
   
+  public ERC20(address) {
+    const abi = require('../assets/abi/ERC20.json');
+    return new this.wallet.web3.eth.Contract(abi, address); 
+  }
 
   async loadData() {
     // this.currBlock = new BigNumber(await this.wallet.web3.eth.getBlockNumber());

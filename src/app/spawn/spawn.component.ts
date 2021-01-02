@@ -128,7 +128,9 @@ export class SpawnComponent implements OnInit {
       const func = this.contract.MON_SPAWNER.methods.spawnNewMon(this.monLeft, this.monRight);
       this.wallet.sendTxWithToken(func, this.contract.XMON, this.constants.MON_SPAWNER_ADDRESS, this.spawnFee, 550000, ()=>{}, ()=>{
         this.loadData();
-      }, ()=>{});
+      }, ()=>{
+        alert("Error: Likely because you already spawned with " + this.getName(this.monLeft) + " and " + this.getName(this.monRight));
+      });
     }
   }
 
@@ -151,5 +153,15 @@ export class SpawnComponent implements OnInit {
       return new BigNumber(0);
     }
     return this.monLookup[id]["unlockBlock"];
+  }
+
+  spawnAvailable(id) {
+    return this.getUnlockBlock(id).lt(this.blockNumber);
+  }
+
+  spawnDelayTime(id) {
+    // Number of blocks left times 13 seconds per block
+    let numSecondsLeft = this.getUnlockBlock(id).minus(this.blockNumber).times(new BigNumber(13));
+    return this.utils.secondsToHms(numSecondsLeft);
   }
 }

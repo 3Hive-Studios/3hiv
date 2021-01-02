@@ -9,14 +9,23 @@
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
-.mon-1 {
-  color: var(--med-green);
-}
-.mon-2 {
-  color: var(--pink);
+.mon-1, .mon-2 {
+  color: var(--light-gray);
 }
 .mon-name {
   color: white;
+}
+.mon-img {
+  padding: 1rem 1rem;
+  border: solid 2px var(--light-gray);
+}
+
+.unlocktrue {
+  color: var(--med-green);
+}
+
+.unlockfalse {
+  color: var(--dark-pink);
 }
 
 .xmon-ticker {

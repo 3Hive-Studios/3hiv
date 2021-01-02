@@ -1,0 +1,42 @@
+<div class="container">
+
+  <div class="centered">
+    <div class="header"><span class="cursed-text">HARVEST</span> élan vital</div>
+  </div>
+
+  <div class="card">
+    <p>Stake your <span class="lp-ticker">XMON-ETH</span> LP tokens to earn <span class="xmon-ticker">XMON</span>.</p>
+    <p>You can get XMON-ETH LP tokens by providing liquidity on Uniswap <a href="https://info.uniswap.org/pair/0x4bacaaabe3e96959ddf3269d3092d5cea88fefe9">here</a>.</p>
+  </div>
+
+  <div class="card">
+    <div class="two-cols">
+    
+      <div>
+        <div class="card-header staking-header">💧 STAKING LP</div>
+        <div class="card-text">
+          <div (click)="fillForm(stakedBalance)" class="clickable">Staking: {{stakedBalance.toFormat(8)}} XMON-ETH LP</div>
+          <div (click)="fillForm(lpBalance)" class="clickable">Balance: {{lpBalance.toFormat(8)}} XMON-ETH LP</div>
+        </div>
+        <div class="form-holder">
+          <input placeholder="0.0000" class="form" [(ngModel)]="stakeAmount" name="stakeAmountInput">
+        </div>
+        <button id="add-btn" (click)="stake()">Add Stake</button>
+        <button id="remove-btn" (click)="exit()">Remove All Stake</button>
+      </div>
+      
+      <div>
+        <div class="card-header farming-header">
+          <span class="xmon-squid">🦑</span> FARMING <b>XMON</b>
+        </div>
+        <div class="card-text">
+          <div>Farmed: {{farmedXMON}}<span class="xmon-ticker">XMON</span></div>
+        </div>
+        <button class="claim-btn">Claim XMON</button>
+      </div>
+
+    </div>
+  </div>
+
+
+</div>

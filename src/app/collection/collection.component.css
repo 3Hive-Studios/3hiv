@@ -1,13 +1,26 @@
 .mon-item-holder {
   margin-top: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .mon-item {
   font-size: 2rem;
   text-align: center;
   margin: 1.5rem 1.5rem;
+  padding: 0.5rem 0.5rem;
+  border: 3px solid var(--gray);
+}
+.mon-item:hover {
+  border: 3px solid var(--light-green);
 }
 
 .mon-item a {
   text-decoration: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .mon-item-holder {
+    grid-template-columns: 1fr;
+  }
 }

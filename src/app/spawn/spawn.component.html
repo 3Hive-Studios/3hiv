@@ -1,23 +1,27 @@
 <div class="container">
   
   <div class="centered">
-    <div class="header"><span class="cursed-text">SPAWN</span> new life</div>
+    <div class="header"><span class="cursed-text">BEGET</span> new beings</div>
   </div>
 
   <div class="card">
-    <p>You can pair two 0xmons to spawn a new one. The new 0xmon will inherit some traits from both parents.</p>
-    <hr>
-    <p><span>Current block: <b>{{blockNumber}}</b></span></p>
-    <p><b>{{numMons}}/{{maxMons}} 0xmons spawned</b></p>
+    <div>
+      <p>You can pair two 0xmons to spawn a new 0xmon. After spawning, you will need to wait a while before the parents can spawn again. Note that a 0xmon cannot spawn with itself, and you can only spawn each combination once. Later generations have longer wait times between spawns.</p>
+      <hr>
+      <p><span>Current block: <b>{{blockNumber}}</b></span></p>
+      <p><b>{{numMons}}/{{maxMons}} 0xmons spawned</b></p>
+    </div>
   </div>
 
   <div class="two-cols">
     <div class="card">
       <div class="card-title mon-1">Monster 1: <span class="mon-name">{{getName(monLeft)}}</span></div>
-      <hr>
-      <div><img src="{{getImg(monLeft)}}"></div>
-      <div>Unlocks at block: <b>{{getUnlockBlock(monLeft)}}</b></div>
+      <div><img src="{{getImg(monLeft)}}" class="mon-img"></div>
+      <div class="unlock{{spawnAvailable(monLeft)}}">Available to spawn at block: <b>{{getUnlockBlock(monLeft)}}</b></div>
+      <div *ngIf="spawnAvailable(monLeft)">Available</div>
+      <div *ngIf="!spawnAvailable(monLeft)">Approx: {{spawnDelayTime(monLeft)}} left</div>
       <select class="mon-select" [(ngModel)]="monLeft">
+      <!-- onmousedown="if(this.options.length>5){this.size=5;}" onchange="this.size=0;" onblur="this.size=0;" -->
         <option value="" disabled selected>Select monster</option>
         <option *ngFor="let n of monList" value="{{n.id}}">
           {{n.name}}
@@ -26,9 +30,10 @@
     </div>
     <div class="card">
       <div class="card-title mon-2">Monster 2: <span class="mon-name">{{getName(monRight)}}</span></div>
-      <hr>
-      <div><img src="{{getImg(monRight)}}"></div>
-      <div>Unlocks at block: <b>{{getUnlockBlock(monRight)}}</b></div>
+      <div><img src="{{getImg(monRight)}}" class="mon-img"></div>
+      <div class="unlock{{spawnAvailable(monRight)}}">Available to spawn at block: <b>{{getUnlockBlock(monRight)}}</b></div>
+      <div *ngIf="spawnAvailable(monRight)">Available</div>
+      <div *ngIf="!spawnAvailable(monRight)">Approx: {{spawnDelayTime(monRight)}} left</div>
       <select class="mon-select" [(ngModel)]="monRight">
         <option value="" disabled selected>Select monster</option>
         <option *ngFor="let n of monList" value="{{n.id}}">
@@ -40,8 +45,8 @@
 
   <div class="card">
     <div>
-      <p><span>Spawn fee: </span> {{spawnFee}} <span class="xmon-ticker">XMON</span></p>
-      <p><span>Balance: </span> {{xmonBalance}} <span class="xmon-ticker">XMON</span></p>
+      <p><span>Spawn fee: </span> <b>{{spawnFee}}</b> <span class="xmon-ticker">XMON</span></p>
+      <p><span>Balance: </span> <b>{{xmonBalance}}</b> <span class="xmon-ticker">XMON</span></p>
     </div>
     <button class="spawn-button" (click)="spawnNewMon()">Spawn</button>
   </div>

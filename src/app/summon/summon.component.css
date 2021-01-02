@@ -3,15 +3,8 @@ button {
   margin: 0.5rem 0.5rem;
 }
 
-.card {
-  font-size: 1.2rem;
-  padding: 0.5rem 0.5rem;
-}
 .two-cols {
   column-gap: 0rem;
-}
-.card div {
-  margin: 0.5rem 0.2rem;
 }
 
 .cost-header {
@@ -21,6 +14,7 @@ button {
 .stake-header, .doom-header, .delay-header, .summon-header {
   font-size: 1.75rem;
   font-weight: bold;
+  margin-bottom: 1rem;
 }
 .stake-header {
   color: var(--med-green);
@@ -33,6 +27,10 @@ button {
   position: absolute;
   margin-left: -3.75rem;
   margin-top: -1rem;
+}
+
+.xmon-squid {
+  filter: sepia(1) saturate(2.5)  hue-rotate(90deg);
 }
 
 #add-btn, #remove-btn {
@@ -55,9 +53,10 @@ button {
   outline: none;
   border: 2px solid var(--gray);
   padding: 0.5rem 0.2rem;
+  width: 21rem;
 }
 .form-holder {
-  margin: 0.1rem 0.1rem !important;
+  margin: 0.5rem 0.5rem !important;
 }
 
 .xmon-ticker, .doom-ticker {
@@ -82,8 +81,7 @@ button {
 }
 
 .card-text {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  line-height: 2rem;
 }
 
 .summon-header {
@@ -100,11 +98,37 @@ button {
 }
 
 .summon-btn {
+  margin-top: 4rem;
+  border: 2px solid var(--light-gray);
+}
+
+.summon-btn:not([disabled]) {
+  animation: colorExpand 2s linear infinite;
+}
+
+@keyframes colorExpand {
+  25% {
+    box-shadow: 3px 3px var(--med-green), -3px 3px var(--med-green), 3px -3px var(--med-green), -3px -3px var(--med-green);
+    color: var(--med-green);
+  }
+  /* 50% {
+    box-shadow: -2px 3px var(--med-green), 1px -1px var(--pink);
+  } */
+  75% {
+    box-shadow: 3px 3px var(--pink), -3px 3px var(--pink), 3px -3px var(--pink), -3px -3px var(--pink);
+    color: var(--pink);
+  }
+}
+
+.summon-btn:not([disabled]):hover {
   border: 2px solid white;
 }
 
 @media only screen and (max-width: 768px) {
-  .stake-header, .doom-header {
+  .stake-header  {
     padding-top: 1rem;
+  }
+  .doom-header {
+    padding-top: 3rem;
   }
 }

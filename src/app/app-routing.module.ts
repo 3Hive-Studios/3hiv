@@ -1,12 +1,13 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { ClaimComponent } from './claim/claim.component';
-import { FaqComponent } from './faq/faq.component';
 import { HomeComponent } from './home/home.component';
 import { SpawnComponent } from './spawn/spawn.component';
 import { SummonComponent } from './summon/summon.component';
 import { CollectionComponent } from './collection/collection.component';
 import { MonsterComponent } from './monster/monster.component';
+import { FarmComponent } from './farm/farm.component';
+import { CreditsComponent } from './credits/credits.component';
 
 const routes: Routes = [
   {
@@ -19,6 +20,10 @@ const routes: Routes = [
     component: MonsterComponent
   },
   {
+    path: 'farm',
+    component: FarmComponent
+  },
+  {
     path: 'summon',
     component: SummonComponent,
     pathMatch: 'full'
@@ -29,11 +34,6 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: 'faq',
-    component: FaqComponent,
-    pathMatch: 'full'
-  },
-  {
     path: 'claim',
     component: ClaimComponent,
     pathMatch: 'full'
@@ -41,6 +41,11 @@ const routes: Routes = [
   {
     path: 'collection',
     component: CollectionComponent,
+    pathMatch: 'full'
+  },
+  {
+    path: 'credits',
+    component: CreditsComponent,
     pathMatch: 'full'
   },
   // wildcard

@@ -1,0 +1,18 @@
+.card {
+  border: none;
+}
+
+.credits-list {
+  color: var(--light-green);
+  text-align: left;
+}
+
+.credit-item {
+  padding: 0.5rem 0.5rem;
+  margin-left: 3rem;
+}
+
+.credit-item::before {
+  content: '🦑';
+  filter: sepia(1) saturate(2.5)  hue-rotate(90deg);
+}
