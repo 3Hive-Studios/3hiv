@@ -20,6 +20,7 @@ export class FarmComponent implements OnInit {
   hours: any;
   minutes: any;
   seconds: any;
+  rewardsLPBalance: BigNumber;
 
   constructor(public wallet: WalletService, public contract: ContractService, public constants: ConstantsService, public utils: UtilsService) { 
     this.resetData();
@@ -28,9 +29,15 @@ export class FarmComponent implements OnInit {
   ngOnInit(): void {
     if (this.wallet.connected) {
       this.loadData();
+      setInterval(() => {
+        this.loadData();
+      }, 60000);
     }
     this.wallet.connectedEvent.subscribe(() => {
       this.loadData();
+      setInterval(() => {
+        this.loadData();
+      }, 60000);
     });
     this.wallet.errorEvent.subscribe(() => {
       this.resetData();
@@ -46,6 +53,7 @@ export class FarmComponent implements OnInit {
     this.lpBalance = new BigNumber(0);
     this.stakedBalance = new BigNumber(0);
     this.farmedXMON = new BigNumber(0);
+    this.rewardsLPBalance = new BigNumber(0);
   }
 
   async loadData() {
@@ -62,6 +70,10 @@ export class FarmComponent implements OnInit {
       "farmedXMON": {
         target: this.constants.LP_POOL_REWARDS_ADDRESS,
         callData: this.contract.LP_POOL_REWARDS.methods.earned(this.wallet.userAddress).encodeABI()
+      },
+      "rewardsLPBalance": {
+        target: this.constants.XMON_ETH_LP_TOKEN_ADDRESS,
+        callData: this.contract.XMON_ETH_LP.methods.balanceOf(this.constants.LP_POOL_REWARDS_ADDRESS).encodeABI()
       }
     };
 
@@ -69,6 +81,7 @@ export class FarmComponent implements OnInit {
     this.lpBalance = new BigNumber(this.utils.decode("uint256", results["lpBalance"])).div(this.constants.PRECISION);
     this.stakedBalance = new BigNumber(this.utils.decode("uint256", results["stakedBalance"])).div(this.constants.PRECISION);
     this.farmedXMON = new BigNumber(this.utils.decode("uint256", results["farmedXMON"])).div(this.constants.PRECISION);
+    this.rewardsLPBalance = new BigNumber(this.utils.decode("uint256", results["rewardsLPBalance"])).div(this.constants.PRECISION);
   }
 
   stake() {
@@ -107,7 +120,7 @@ export class FarmComponent implements OnInit {
   }
 
   countDown() {
-    let countDownDate = new Date(1609869600*1000).getTime();
+    let countDownDate = new Date(1611079200*1000).getTime();
 
     // Get today's date and time
     let now = new Date().getTime();
