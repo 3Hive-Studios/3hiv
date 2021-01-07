@@ -3,15 +3,16 @@
 </div>
 
 <div class="mon-container">
-  <div class="mon-name">{{monData.name}}</div>
+  <div class="mon-name">#{{monId}} &ensp; {{monData.name}}</div>
   <div>
     <img class="mon-img" src="{{monData.img}}">
   </div>
-  <div>
-    <p>Name: {{monData.name}}</p>
-    <p>Epithets: {{monData.epithets}}</p>
-    <p>Parent 1: <a routerLink="/mon/{{monStruct.parent1Id}}" routerLink="active">{{monStruct.parent1Id}}</a></p>
-    <p>Parent 2: <a routerLink="/mon/{{monStruct.parent2Id}}" routerLink="active">{{monStruct.parent2Id}}</a></p>
-    <p>Lore: {{monData.lore}}</p>
+  <div class="mon-data-card">
+    <p><b>Name:</b> {{monData.name}}</p>
+    <p><b>Epithets:</b> {{monData.epithets}}</p>
+    <p><b>Generation:</b> {{monData.gen}}</p>
+    <p><b>Parent 1:</b> &nbsp; <a routerLink="/mon/{{monData.parent1Id}}" routerLink="active">{{monData.parent1Id}}</a></p>
+    <p><b>Parent 2:</b> &nbsp;  <a routerLink="/mon/{{monData.parent2Id}}" routerLink="active">{{monData.parent2Id}}</a></p>
+    <div><b>Lore:</b> <div class="lore">{{monData.lore}}</div></div>
   </div>
 </div>

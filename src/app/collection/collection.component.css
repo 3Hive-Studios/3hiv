@@ -5,7 +5,7 @@
 }
 
 .mon-item {
-  font-size: 2rem;
+  font-size: 1.75rem;
   text-align: center;
   margin: 1.5rem 1.5rem;
   padding: 0.5rem 0.5rem;
@@ -15,11 +15,32 @@
   border: 3px solid var(--light-green);
 }
 
-.mon-item a {
-  text-decoration: none;
+.mon-item > div {
+  cursor: pointer;
+  color: var(--med-green);
 }
 
+.mon-item > div:hover {
+  color: var(--pink);
+}
+
+.thumbnail {
+  width: 1rem;
+  height: auto;
+}
+
+
+@media only screen and (max-width: 1200px) {
+  .mon-item-holder {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
 @media only screen and (max-width: 768px) {
+  .mon-item-holder {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media only screen and (max-width: 468px) {
   .mon-item-holder {
     grid-template-columns: 1fr;
   }

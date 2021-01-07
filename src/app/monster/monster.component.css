@@ -1,4 +1,5 @@
 .mon-container {
+  padding-top: 2rem;
   max-width: 40rem;
   margin: auto;
 }
@@ -16,4 +17,14 @@
   height: auto;
   padding: 2rem 2rem;
   border: 2px solid white;
+}
+
+.mon-data-card {
+  font-size: 1.1rem;
+}
+
+.lore {
+  margin-top: 0.5rem;
+  color: var(--light-gray);
+  font-style: italic;
 }

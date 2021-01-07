@@ -17,11 +17,9 @@ export class MonsterComponent implements OnInit {
   }
 
   monId: string;
-  monStruct: any;
   monData: any;
 
   resetData() {
-    this.monStruct = {};
     this.monData = {};
   }
 
@@ -46,32 +44,61 @@ export class MonsterComponent implements OnInit {
   }
 
   async loadData() {
-    let multicallFns = {
-      "monData": {
-        target: this.constants.MON_MINTER_ADDRESS,
-        callData: this.contract.MON_MINTER.methods.monRecords(this.monId).encodeABI()
-      }
+    // Check if already stored
+    if (window["mon" + this.monId] !== undefined) {
+      let cachedResponse = window["mon" + this.monId];
+      this.monData = cachedResponse;
     }
-    let result = await this.utils.makeMulticall(multicallFns);
-    this.monStruct = this.utils.decode({
-      "parentStruct": {
-        "summoner": "address",
-        "parent1Id": "uint256",
-        "parent2Id": "uint256",
-        "minterContract": "address",
-        "contractOrder": "uint256",
-        "gen": "uint256",
-        "bits": "uint256",
-        "exp": "uint256",
-        "rarity": "uint256"
+    // Otherwise make the web3 request and server request
+    else {
+      let multicallFns = {
+        "monData": {
+          target: this.constants.MON_MINTER_ADDRESS,
+          callData: this.contract.MON_MINTER.methods.monRecords(this.monId).encodeABI()
+        },
+        "tokenURI": {
+          target: this.constants.MON_MINTER_ADDRESS,
+          callData: this.contract.MON_MINTER.methods.tokenURI(this.monId).encodeABI()
+        },
+        "numMons": {
+          target: this.constants.MON_MINTER_ADDRESS,
+          callData: this.contract.MON_MINTER.methods.totalSupply().encodeABI()
+        }
       }
-    }, result["monData"]);
+      let result = await this.utils.makeMulticall(multicallFns);
+      let monStruct = this.utils.decode({
+        "parentStruct": {
+          "summoner": "address",
+          "parent1Id": "uint256",
+          "parent2Id": "uint256",
+          "minterContract": "address",
+          "contractOrder": "uint256",
+          "gen": "uint256",
+          "bits": "uint256",
+          "exp": "uint256",
+          "rarity": "uint256"
+        }
+      }, result["monData"]);
+      let numMons = await this.utils.decode("uint256", result["numMons"]);
+      let tokenURI;
+      if (parseInt(this.monId) <= numMons) {
+        tokenURI = this.utils.decode("string", result["tokenURI"]);
+      }
+      else {
+        tokenURI = "./assets/monData.json";
+      }
+      const response = await fetch(tokenURI);
+      const responseObj = await response.json();
+      this.monData["name"] = responseObj["name"];
+      this.monData["img"] = responseObj["image"];
+      this.monData["epithets"] = responseObj["epithets"];
+      this.monData["lore"] = responseObj["description"];
+      this.monData["parent1Id"] = monStruct["parent1Id"];
+      this.monData["parent2Id"] = monStruct["parent2Id"];
+      this.monData["gen"] = monStruct["gen"];
 
-    const response = await fetch("./assets/monData.json");
-    const responseObj = await response.json();
-    this.monData["name"] = responseObj["1"]["name"] + this.monId;
-    this.monData["img"] =  responseObj["1"]["img"];
-    this.monData["epithets"] = "The Test Monster";
-    this.monData["lore"] = "The Test Monster is large and hideous. Very spooky." + this.monId;
+      // cache locally
+      window["mon" + this.monId] = this.monData;
+    }
   }
 }

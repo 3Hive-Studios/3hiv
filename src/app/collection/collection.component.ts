@@ -37,27 +37,38 @@ export class CollectionComponent implements OnInit {
 
   async loadData() {
     
-    let multicallFns = {
-      "monIds": {
-        target: this.constants.NFT_AGGREGATOR_ADDRESS,
-        callData: this.contract.NFT_AGG.methods.getIds(this.constants.MON_MINTER_ADDRESS, this.wallet.userAddress).encodeABI()
-      }
-    };
-    let multicallKeys = Object.keys(multicallFns);
-    let multicallValues = Object.values(multicallFns);
-    let rawResult = await this.contract.MULTICALL.methods.aggregate(multicallValues).call();
-    let multicallResults = this.utils.zipObject(multicallKeys, rawResult["returnData"]);
-    let monIdList = this.wallet.web3.eth.abi.decodeParameter('uint256[]', multicallResults["monIds"]);
+    if (window["monList"] != undefined) {
+      this.monList = window["monList"];
+    }
+    else {
+      let multicallFns = {
+        "monURIs": {
+          target: this.constants.NFT_AGGREGATOR_ADDRESS,
+          callData: this.contract.NFT_AGG.methods.getURIs(this.constants.MON_MINTER_ADDRESS, this.wallet.userAddress).encodeABI()
+        },
+        "monIds": {
+          target: this.constants.NFT_AGGREGATOR_ADDRESS,
+          callData: this.contract.NFT_AGG.methods.getIds(this.constants.MON_MINTER_ADDRESS, this.wallet.userAddress).encodeABI() 
+        }
+      };
 
-    const response = await fetch("./assets/monData.json");
-    const responseObj = await response.json();
-    for (let i of monIdList) {
-      let obj = {};
-      obj["id"] = i;
-      obj["name"] = responseObj["1"]["name"] + i;
-      obj["img"] =  responseObj["1"]["img"];
-      this.monList.push(obj);
+      let results = await this.utils.makeMulticall(multicallFns);
+      let uriList = await this.utils.decode("string[]", results["monURIs"]);
+      let monIdList = await this.utils.decode("uint256[]", results["monIds"]);
+
+      for (let i = 0; i < uriList.length; i++) {
+        const response = await fetch(uriList[i]);
+        const responseObj = await response.json();
+        let obj = {};
+        let id = monIdList[i];
+        obj["id"] = id;
+        obj["name"] = responseObj["name"];
+        obj["img"] =  responseObj["image"];
+        this.monList.push(obj);
+      }
+
+      // cache locally
+      window["monList"] = this.monList;
     }
   }
-
 }
