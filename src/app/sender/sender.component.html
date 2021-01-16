@@ -1,0 +1,93 @@
+<div class="container">
+
+  <br>
+  <div>
+    Two free ERC-20 senders for the NFT community. Only pay gas fees. 
+  </div>
+  <br>
+  <div>
+    Donations to pay for future deployments appreciated: <b>0x75d4bdBf6593ed463e9625694272a0FF9a6D346F</b>
+  </div>
+
+  <div class="sender">
+    <div class="header cursed-text">Send Rewards</div>
+    <div>Immediately send ERC-20 tokens to holders of various ERC-721 tokens in three steps.
+      <ol>
+        <li>Input ERC-20 address.</li>
+        <li>Input list of ERC-721 addresses and token IDs.</li>
+        <li>Approve the contract to spend your tokens, and then send the transaction.</li>
+      </ol>
+      <div class="sub-heading">ERC-20 Address:</div>
+      <input type="text" placeholder="0x3aada3e213abf8529606924d8d1c55cbdc70bf74" #erc20>
+      <div> Decimals: </div>
+      <input type="text" class="decimals" value="18" #decimals>
+      <div class="sub-heading">ERC-721 Address, ID, and ERC-20 amount:</div>
+      <textarea placeholder="0x0427743DF720801825a5c82e0582B1E915E0F750, 0, 1,
+0x0427743DF720801825a5c82e0582B1E915E0F750, 1, 10,
+0xf3e778f839934fc819cfa1040aabacecba01e049, 3, 0.5,
+      " #erc721></textarea>
+      <div>
+        <button (click)="sendRewards(erc20.value, decimals.value, erc721.value)">Send Tokens</button>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="setter">
+    <div class="header cursed-text">Set Rewards</div>
+    <div>Set ERC-20 tokens to holders of various ERC-721 tokens. Holders can then claim at their own leisure. Four steps:
+      <ol>
+        <li>Input ERC-20 address.</li>
+        <li>Input list of ERC-721 addresses and token IDs.</li>
+        <li>Approve the contract to spend your tokens, and then send the transaction.</li>
+        <li>Holders input the ERC-721 address and ERC-20 address below in Claim Rewards and send the transaction.</li>
+      </ol>
+      <div class="sub-heading">ERC-20 Address:</div>
+      <input type="text" placeholder="0x3aada3e213abf8529606924d8d1c55cbdc70bf74" #erc20_2>
+      <div> Decimals: </div>
+      <input type="text" class="decimals" value="18" #decimals_2>
+      <div class="sub-heading">ERC-721 Address, ID, and ERC-20 amount:</div>
+      <textarea placeholder="0x0427743DF720801825a5c82e0582B1E915E0F750, 0, 1,
+0x0427743DF720801825a5c82e0582B1E915E0F750, 1, 10,
+0xf3e778f839934fc819cfa1040aabacecba01e049, 3, 0.5,
+      " #erc721_2></textarea>
+      <div>
+        <button (click)="setRewards(erc20_2.value, decimals_2.value, erc721_2.value)">Send Tokens</button>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="taker">
+    <div class="header cursed-text">Take Rewards</div>
+    <div>Claim ERC-20 rewards set to ERC-721 NFTs that you hold:
+      <ol>
+        <li>Input ERC-721 address</li>
+        <li>Input token ID</li>
+        <li>Input ERC-20 address</li>
+        <li>Send the transaction to claim rewards</li>
+      </ol>
+      <div>
+        <div class="sub-heading">ERC-721 Address</div>
+        <input type="text" placeholder="0x0427743DF720801825a5c82e0582B1E915E0F750" #erc721_3>
+      </div>
+      <div>
+        <div class="sub-heading">ERC-721 Token ID</div>
+        <input type="text" placeholder="1" #erc721_id>
+      </div>
+      <div>
+        <div class="sub-heading">ERC-20 Address</div>
+        <input type="text" placeholder="0x3aada3e213abf8529606924d8d1c55cbdc70bf74" #erc20_3>
+      </div>
+      <div class="reward">
+        {{rewardAmount.toFormat(8)}} tokens
+      </div>
+      <div>
+        <button (click)="checkRewards(erc721_3.value, erc721_id.value, erc20_3.value)">Check Rewards</button>
+        <button class="claim-rewards" (click)="takeRewards(erc721_3.value, erc721_id.value, erc20_3.value)">Claim Rewards</button>
+      </div>
+    </div>
+  </div>
+
+</div>

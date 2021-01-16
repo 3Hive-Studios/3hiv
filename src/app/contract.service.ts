@@ -64,6 +64,12 @@ export class ContractService {
     const address = this.constants.XMON_ETH_LP_TOKEN_ADDRESS;
     return new this.wallet.web3.eth.Contract(abi, address); 
   }
+
+  public get NFT_SENDER() {
+    const abi = require('../assets/abi/NFTSender.json');
+    const address = this.constants.NFT_SENDER_ADDRESS;
+    return new this.wallet.web3.eth.Contract(abi, address);
+  }
   
   public ERC20(address) {
     const abi = require('../assets/abi/ERC20.json');

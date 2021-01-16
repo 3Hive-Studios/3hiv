@@ -1,0 +1,61 @@
+.sender, .setter, .taker {
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+}
+
+.header {
+  font-size: 3rem;
+}
+
+.sub-heading {
+  color: var(--light-green);
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.decimals {
+  width: 5rem;
+}
+
+.reward {
+  font-size: 1.25rem;
+  color: white;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.claim-rewards {
+  margin-left: 2rem;
+}
+
+input, textarea {
+  background-color : var(--black) !important; 
+  color: white !important;
+  outline: none;
+  border: 2px solid var(--gray);
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+input, textarea {
+  width: 90%;
+  max-width: 50rem;
+}
+
+textarea {
+  height: 10rem;
+}
+
+button {
+  color:var(--med-green);
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+@media only screen and (max-width: 768px) {
+  .claim-rewards {
+    display: block;
+    margin-left: unset;
+    margin-top: 2rem;
+  }
+}

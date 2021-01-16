@@ -8,6 +8,7 @@ import { CollectionComponent } from './collection/collection.component';
 import { MonsterComponent } from './monster/monster.component';
 import { FarmComponent } from './farm/farm.component';
 import { CreditsComponent } from './credits/credits.component';
+import { SenderComponent } from './sender/sender.component';
 
 const routes: Routes = [
   {
@@ -47,6 +48,10 @@ const routes: Routes = [
     path: 'credits',
     component: CreditsComponent,
     pathMatch: 'full'
+  },
+  {
+    path: 'sender',
+    component: SenderComponent
   },
   // wildcard
   {
