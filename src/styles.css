@@ -165,4 +165,7 @@ button[disabled]{
   .two-cols {
     display: block;
   }
+  .form {
+    width: unset !important;
+  }
 }
