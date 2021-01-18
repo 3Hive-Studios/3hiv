@@ -5,7 +5,11 @@
 <div class="mon-container">
   <div class="mon-name">#{{monId}} &ensp; {{monData.name}}</div>
   <div>
-    <img class="mon-img" src="{{monData.img}}">
+    <img class="mon-img" src="{{monData.img}}" [style.width.rem]="width">
+  </div>
+  <div>
+    <button class="zoom-btn" title="Decrease image size" (click)="updateWidth(-2)">-</button>
+    <button class="zoom-btn" title="Increase image size" (click)="updateWidth(2)">+</button>
   </div>
   <div class="mon-data-card">
     <p><b>Name:</b> {{monData.name}}</p>

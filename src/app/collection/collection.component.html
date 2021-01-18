@@ -1,5 +1,10 @@
 <div class="container">
   <div class="header centered"><span class="cursed-text">AMASS</span> your idols</div>
+
+  <div *ngIf="loading" class="centered">
+    Loading monsters...
+  </div>
+
   <div class="mon-item-holder">
     <div class="mon-item" *ngFor="let m of monList">
       <div routerLink="/mon/{{m.id}}" routerLinkActive="active">{{m.name}}</div>

@@ -18,6 +18,7 @@ export class CollectionComponent implements OnInit {
   }
 
   monList: any;
+  loading: boolean;
 
   ngOnInit(): void {
     if (this.wallet.connected) {
@@ -33,12 +34,14 @@ export class CollectionComponent implements OnInit {
 
   resetData() {
     this.monList = [];
+    this.loading = true;
   }
 
   async loadData() {
     
     if (window["monList"] != undefined) {
       this.monList = window["monList"];
+      this.loading = false;
     }
     else {
       let multicallFns = {
@@ -69,6 +72,8 @@ export class CollectionComponent implements OnInit {
 
       // cache locally
       window["monList"] = this.monList;
+
+      this.loading = false;
     }
   }
 }

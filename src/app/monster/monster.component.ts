@@ -18,9 +18,15 @@ export class MonsterComponent implements OnInit {
 
   monId: string;
   monData: any;
+  width: any;
+  minWidth: any;
+  maxWidth: any;
 
   resetData() {
     this.monData = {};
+    this.width = 14;
+    this.minWidth = 1;
+    this.maxWidth = 30;
   }
 
   ngOnInit(): void {
@@ -99,6 +105,12 @@ export class MonsterComponent implements OnInit {
 
       // cache locally
       window["mon" + this.monId] = this.monData;
+    }
+  }
+
+  updateWidth(num) {
+    if (this.width + num <= this.maxWidth && this.width + num >= this.minWidth) {
+      this.width = this.width + num;
     }
   }
 }
