@@ -27,6 +27,7 @@ export class MonsterComponent implements OnInit {
     this.width = 14;
     this.minWidth = 1;
     this.maxWidth = 30;
+    this.monId = "0";
   }
 
   ngOnInit(): void {

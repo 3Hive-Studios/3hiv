@@ -21,6 +21,7 @@ export class FarmComponent implements OnInit {
   minutes: any;
   seconds: any;
   rewardsLPBalance: BigNumber;
+  endTime: any;
 
   constructor(public wallet: WalletService, public contract: ContractService, public constants: ConstantsService, public utils: UtilsService) { 
     this.resetData();
@@ -54,6 +55,7 @@ export class FarmComponent implements OnInit {
     this.stakedBalance = new BigNumber(0);
     this.farmedXMON = new BigNumber(0);
     this.rewardsLPBalance = new BigNumber(0);
+    this.endTime = 1611079200;
   }
 
   async loadData() {
@@ -74,6 +76,10 @@ export class FarmComponent implements OnInit {
       "rewardsLPBalance": {
         target: this.constants.XMON_ETH_LP_TOKEN_ADDRESS,
         callData: this.contract.XMON_ETH_LP.methods.balanceOf(this.constants.LP_POOL_REWARDS_ADDRESS).encodeABI()
+      },
+      "endTime": {
+        target: this.constants.LP_POOL_REWARDS_ADDRESS,
+        callData: this.contract.LP_POOL_REWARDS.methods.periodFinish().encodeABI()
       }
     };
 
@@ -82,6 +88,7 @@ export class FarmComponent implements OnInit {
     this.stakedBalance = new BigNumber(this.utils.decode("uint256", results["stakedBalance"])).div(this.constants.PRECISION);
     this.farmedXMON = new BigNumber(this.utils.decode("uint256", results["farmedXMON"])).div(this.constants.PRECISION);
     this.rewardsLPBalance = new BigNumber(this.utils.decode("uint256", results["rewardsLPBalance"])).div(this.constants.PRECISION);
+    this.endTime = this.utils.decode("uint256", results["endTime"]);
   }
 
   stake() {
@@ -120,7 +127,7 @@ export class FarmComponent implements OnInit {
   }
 
   countDown() {
-    let countDownDate = new Date(1611079200*1000).getTime();
+    let countDownDate = new Date(this.endTime*1000).getTime();
 
     // Get today's date and time
     let now = new Date().getTime();

@@ -15,6 +15,7 @@ import { MonsterComponent } from './monster/monster.component';
 import { FarmComponent } from './farm/farm.component';
 import { CreditsComponent } from './credits/credits.component';
 import { SenderComponent } from './sender/sender.component';
+import { FounderComponent } from './founder/founder.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { SenderComponent } from './sender/sender.component';
     MonsterComponent,
     FarmComponent,
     CreditsComponent,
-    SenderComponent
+    SenderComponent,
+    FounderComponent
   ],
   imports: [
     BrowserModule,

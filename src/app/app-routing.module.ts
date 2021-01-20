@@ -9,6 +9,7 @@ import { MonsterComponent } from './monster/monster.component';
 import { FarmComponent } from './farm/farm.component';
 import { CreditsComponent } from './credits/credits.component';
 import { SenderComponent } from './sender/sender.component';
+import { FounderComponent } from './founder/founder.component';
 
 const routes: Routes = [
   {
@@ -52,6 +53,10 @@ const routes: Routes = [
   {
     path: 'sender',
     component: SenderComponent
+  },
+  {
+    path: 'founder',
+    component: FounderComponent
   },
   // wildcard
   {
