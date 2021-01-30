@@ -10,6 +10,17 @@
   border: 2px solid var(--light-gray);
 }
 
+.onchain-icon {
+  font-size: 1.3rem;
+  margin: 0.5rem 0.6rem;
+  padding: 0.35rem 0.5rem;
+  border: 2px solid var(--light-gray);
+}
+
+.onchain-icon > a {
+  text-decoration: none;
+}
+
 .mon-name {
   color: white;
   font-size: 3rem;
@@ -55,4 +66,51 @@
   width: 1rem;
   height: auto;
   margin-left: 0.5rem;
+}
+
+.register-portal {
+  margin-top: 4rem;
+}
+
+.register-header {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: var(--med-green);
+  margin-bottom: 1rem;
+}
+
+.register-fee {
+  margin-top: 1rem;
+}
+
+input {
+  margin-right: 1rem;
+  background-color : var(--black) !important; 
+  color: white !important;
+  font-size: 1.1rem;
+  outline: none;
+  border: 2px solid var(--gray);
+  padding-bottom: 0.5rem;
+  padding-top: 0.2rem;
+}
+
+select {
+  border: 2px solid var(--gray);
+  background-color: var(--black);
+  padding: 0.1rem 0.1rem;
+  color: white !important;
+  font-size: 1.1rem;
+  margin-right: 1rem;
+}
+
+.xmon-ticker {
+  margin-left: 0.5rem;
+  font-weight: bold;
+}
+.xmon-ticker {
+  color: var(--med-green);
+}
+
+.direct-upload {
+  margin-top: 2rem;
 }

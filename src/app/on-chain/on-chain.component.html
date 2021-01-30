@@ -1,0 +1,16 @@
+<div class="mon-container">
+  <div class="onchain-header">ON-CHAIN ENCODED 0XMON</div>
+  <div class="mon-name">{{monData.name}}</div>
+  <div>
+    <img class="mon-img" [src]="monData.base64Safe" [style.width.rem]="width">
+  </div>
+  <div>
+    <button class="zoom-btn" title="Decrease image size" (click)="updateWidth(-2)">-</button>
+    <button class="zoom-btn" title="Increase image size" (click)="updateWidth(2)">+</button>
+  </div>
+  <div class="mon-data-card">
+    <p><b>Name:</b> {{monData.name}}</p>
+    <p><b>Epithets:</b> {{monData.epithets}}</p>
+    <div><b>Lore:</b> <div class="lore">{{monData.lore}}</div></div>
+  </div>
+</div>

@@ -10,6 +10,7 @@ import { FarmComponent } from './farm/farm.component';
 import { CreditsComponent } from './credits/credits.component';
 import { SenderComponent } from './sender/sender.component';
 import { FounderComponent } from './founder/founder.component';
+import { OnChainComponent } from './on-chain/on-chain.component';
 
 const routes: Routes = [
   {
@@ -20,6 +21,10 @@ const routes: Routes = [
   {
     path: 'mon/:id',
     component: MonsterComponent
+  },
+  {
+    path: 'on-chain/:txHash',
+    component: OnChainComponent
   },
   {
     path: 'farm',

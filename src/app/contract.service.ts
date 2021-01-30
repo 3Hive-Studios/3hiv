@@ -70,6 +70,12 @@ export class ContractService {
     const address = this.constants.NFT_SENDER_ADDRESS;
     return new this.wallet.web3.eth.Contract(abi, address);
   }
+
+  public get MON_REGISTRY() {
+    const abi = require('../assets/abi/MonRegistry.json');
+    const address = this.constants.MON_REGISTRY_ADDRESS;
+    return new this.wallet.web3.eth.Contract(abi, address);
+  }
   
   public ERC20(address) {
     const abi = require('../assets/abi/ERC20.json');

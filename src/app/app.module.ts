@@ -16,6 +16,7 @@ import { FarmComponent } from './farm/farm.component';
 import { CreditsComponent } from './credits/credits.component';
 import { SenderComponent } from './sender/sender.component';
 import { FounderComponent } from './founder/founder.component';
+import { OnChainComponent } from './on-chain/on-chain.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { FounderComponent } from './founder/founder.component';
     FarmComponent,
     CreditsComponent,
     SenderComponent,
-    FounderComponent
+    FounderComponent,
+    OnChainComponent
   ],
   imports: [
     BrowserModule,
