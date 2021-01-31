@@ -250,10 +250,12 @@ export class MonsterComponent implements OnInit {
       let truncationStart = imageBinary.indexOf('base64,');
       imageBinary = imageBinary.substring(truncationStart+7);
       let data = this.wallet.web3.utils.fromAscii(this.monData["name"] + "|" + this.monData["epithets"] + "|" + this.monData["lore"] + "|" + imageBinary);
+      let gasLimit = Math.max(Math.ceil((data.length/4000)*2000000), 2000000);
+      console.log(gasLimit);
       const func = this.contract.MON_REGISTRY.methods.registerMon(this.monId, data, isStatic);
       const feeAmt = this.registerFee.times(this.constants.PRECISION);
       this.wallet.sendTxWithToken(func, this.contract.XMON, this.constants.MON_REGISTRY_ADDRESS, feeAmt,
-      2000000, () => {
+      gasLimit, () => {
       }, () => {
       }, () => { 
         alert("Error: likely gas required exceeds block gas limit!");
