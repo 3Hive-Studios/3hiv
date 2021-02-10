@@ -26,9 +26,8 @@
     </div>
 
     <div>
-      <button class="view-btn" routerLink="/mon/{{prevId}}" *ngIf="!hidePrev">← Prev 0xmon</button>
-      <button class="view-btn" routerLink="/mon/{{nextId}}" *ngIf="!hideNext">Next 0xmon →</button>
-      <input (keydown)="onKeydown($event)">
+      <button class="view-btn" routerLink="/mon/{{prevId}}" *ngIf="!hidePrev" title="You can also use arrow keys to browse">← Prev 0xmon</button>
+      <button class="view-btn" routerLink="/mon/{{nextId}}" *ngIf="!hideNext" title="You can also use arrow keys to browse">Next 0xmon →</button>
     </div>
     
     <div *ngIf="isOwner">

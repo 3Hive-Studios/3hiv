@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
+import { HostListener } from '@angular/core';
 import { ConstantsService } from '../constants.service';
 import { ContractService } from '../contract.service';
 import { UtilsService } from '../utils.service';
 import { WalletService } from '../wallet.service';
 import BigNumber from 'bignumber.js';
-import { parse } from 'path';
 
 @Component({
   selector: 'app-monster',
@@ -14,7 +14,7 @@ import { parse } from 'path';
 })
 export class MonsterComponent implements OnInit {
 
-  constructor(public wallet: WalletService, public contract: ContractService, public constants: ConstantsService, private utils: UtilsService, private activatedRoute: ActivatedRoute) {
+  constructor(public wallet: WalletService, public contract: ContractService, public constants: ConstantsService, private utils: UtilsService, private activatedRoute: ActivatedRoute, private router: Router) {
     this.resetData();
   }
 
@@ -294,7 +294,17 @@ export class MonsterComponent implements OnInit {
     this.width = this.width + num;
   }
 
-  onKeydown(e) {
-    
+  @HostListener('document:keydown', ['$event'])
+  handleKeyboardEvent(event: KeyboardEvent) { 
+    this.navigate(event);
+  }
+
+  navigate(e) {
+    if (e.key === "ArrowLeft") {
+      this.router.navigate(["mon", this.prevId]);
+    }
+    if (e.key === "ArrowRight") {
+      this.router.navigate(["mon", this.nextId]);
+    }
   }
 }
