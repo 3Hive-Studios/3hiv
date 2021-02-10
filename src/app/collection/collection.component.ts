@@ -3,8 +3,6 @@ import { WalletService } from '../wallet.service';
 import { ContractService } from '../contract.service';
 import { ConstantsService } from '../constants.service';
 import { UtilsService } from '../utils.service';
-import { CommonModule } from "@angular/common";
-import BigNumber from 'bignumber.js';
 
 @Component({
   selector: 'app-collection',

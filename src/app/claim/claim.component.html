@@ -1,3 +1,7 @@
-<div class="centered claim-holder">
+<div class="centered claim-holder" *ngIf="hasMon">
   <button (click)="claim()">Claim XMON</button>
+</div>
+
+<div *ngIf="!hasMon" class="centered">
+  You are not eligible for the airdrop.
 </div>

@@ -5,6 +5,7 @@ import { ContractService } from '../contract.service';
 import { UtilsService } from '../utils.service';
 import { WalletService } from '../wallet.service';
 import BigNumber from 'bignumber.js';
+import { parse } from 'path';
 
 @Component({
   selector: 'app-monster',
@@ -37,6 +38,11 @@ export class MonsterComponent implements OnInit {
 
   showRegister: boolean;
 
+  prevId: any;
+  nextId: any;
+  hidePrev: boolean;
+  hideNext: boolean;
+
   resetData() {
     this.monData = {};
     this.width = 14;
@@ -49,7 +55,11 @@ export class MonsterComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.hidePrev = true;
+    this.hideNext = true;
+
     this.monId = this.activatedRoute.snapshot.paramMap.get('id');
+
     if (this.wallet.connected) {
       this.loadData();
     }
@@ -62,6 +72,7 @@ export class MonsterComponent implements OnInit {
 
     this.activatedRoute.params.subscribe(routeParams => {
       this.monId = routeParams.id;
+      
       if (this.wallet.connected) {
         this.loadData();
       }
@@ -69,10 +80,19 @@ export class MonsterComponent implements OnInit {
   }
 
   async loadData() {
+
+    // Show prev/next buttons
+    this.hidePrev = true;
+    this.hideNext = true;
+    this.prevId = parseInt(this.monId)-1;
+    this.nextId = parseInt(this.monId)+1;
+
     // Check if already stored
     if (window["mon" + this.monId] !== undefined) {
       let cachedResponse = window["mon" + this.monId];
-      this.monData = cachedResponse;
+      this.monData = Object.assign({}, cachedResponse);
+      this.hidePrev = false;
+      this.hideNext = false;
     }
     // Otherwise make the web3 request and server request
     else {
@@ -129,9 +149,15 @@ export class MonsterComponent implements OnInit {
       if (this.monData["staticHash"] != null) {
         this.monData["isStaticUploaded"] = true;
       }
+      else {
+        this.monData["isStaticUploaded"] = false;
+      }
       this.monData["animHash"] = await this.utils.decode("bytes", result["animHash"]);
       if (this.monData["animHash"] != null) {
         this.monData["isAnimUploaded"] = true;
+      }
+      else {
+        this.monData["isAnimUploaded"] = false;
       }
       if (this.monData["isStaticUploaded"] && this.monData["isAnimUploaded"]) {
         this.showRegister = false;
@@ -164,14 +190,11 @@ export class MonsterComponent implements OnInit {
       this.monData["gen"] = monStruct["gen"];
 
       // cache locally
-      window["mon" + this.monId] = this.monData;
-    }
-  }
+      window["mon" + this.monId] = Object.assign({}, this.monData);
 
-  updateWidth(num) {
-    // if (this.width + num <= this.maxWidth && this.width + num >= this.minWidth) {
-    if (true) {
-      this.width = this.width + num;
+      // show next buttons
+      this.hidePrev = false;
+      this.hideNext = false;
     }
   }
 
@@ -265,5 +288,13 @@ export class MonsterComponent implements OnInit {
 
   toggleShowRegister() {
     this.showRegister = !this.showRegister;
+  }
+
+  updateWidth(num) {
+    this.width = this.width + num;
+  }
+
+  onKeydown(e) {
+    
   }
 }

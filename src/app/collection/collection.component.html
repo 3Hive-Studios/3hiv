@@ -7,7 +7,7 @@
 
   <div class="mon-item-holder">
     <div class="mon-item" *ngFor="let m of monList">
-      <div routerLink="/mon/{{m.id}}" routerLinkActive="active">{{m.name}}</div>
+      <div routerLink="/mon/{{m.id}}" routerLinkActive="active">#{{m.id}} {{m.name}}</div>
     </div>
   </div>
 

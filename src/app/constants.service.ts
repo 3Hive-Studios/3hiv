@@ -10,6 +10,7 @@ export class ConstantsService {
 
   // Mainnet address
   CLAIMER_ADDRESS = '0xe354AC0bB78a8013617fe0efA6099769749F027C';
+  OLD_0XMONS_ADDRESS = '0xAf488234796CA27DBa8ECF17f803Ea1f4Ab33E15'
   S3_URL = 'https://d3h0sbhg72k3qr.cloudfront.net/';
 
   // // Rinkeby addresses (note you have to change chainId in web3Enabled)

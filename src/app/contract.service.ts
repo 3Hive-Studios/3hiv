@@ -76,6 +76,12 @@ export class ContractService {
     const address = this.constants.MON_REGISTRY_ADDRESS;
     return new this.wallet.web3.eth.Contract(abi, address);
   }
+
+  public get OLD_0XMONS() {
+    const abi = require('../assets/abi/ERC721.json');
+    const address = this.constants.OLD_0XMONS_ADDRESS;
+    return new this.wallet.web3.eth.Contract(abi, address);
+  }
   
   public ERC20(address) {
     const abi = require('../assets/abi/ERC20.json');
