@@ -122,7 +122,7 @@ export class SummonComponent implements OnInit {
     this.maxMons = new BigNumber(this.wallet.web3.eth.abi.decodeParameter('uint256', multicallResults["maxMons"]));
 
     // Set variables based off onchain info
-    this.canSummon = this.doomBalance.gt(this.doomFee);
+    this.canSummon = (this.doomBalance.gt(this.doomFee)) && (this.numMons < this.maxMons);
     this.doomPerHour = this.stakedXmon.times(new BigNumber(9)).div(new BigNumber(2)).times(new BigNumber(60)).times(this.constants.PRECISION).div(this.constants.DOOM_SCALING);
   }
 
