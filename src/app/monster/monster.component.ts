@@ -188,6 +188,8 @@ export class MonsterComponent implements OnInit {
       this.monData["parent1Id"] = monStruct["parent1Id"];
       this.monData["parent2Id"] = monStruct["parent2Id"];
       this.monData["gen"] = monStruct["gen"];
+      this.monData["rarity"] = monStruct["rarity"];
+      this.monData["contractOrder"] = monStruct["contractOrder"];
 
       // cache locally
       window["mon" + this.monId] = Object.assign({}, this.monData);
