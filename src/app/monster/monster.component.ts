@@ -43,6 +43,8 @@ export class MonsterComponent implements OnInit {
   hidePrev: boolean;
   hideNext: boolean;
 
+  superStatic: string;
+
   resetData() {
     this.monData = {};
     this.width = 14;
@@ -52,6 +54,7 @@ export class MonsterComponent implements OnInit {
     this.isOwner = false;
     this.enteredInTxHash = '';
     this.showRegister = true;
+    this.superStatic = "";
   }
 
   ngOnInit(): void {
@@ -150,8 +153,9 @@ export class MonsterComponent implements OnInit {
       if (this.monData["staticHash"] != null) {
         this.monData["isStaticUploaded"] = true;
          // If it's longer than a tx hash, we set it to be the mon id so we let the on-chain component handle it
-        if (this.monData["staticHash"].length > 20) {
+        if (this.monData["staticHash"].length > 66) {
           this.monData["staticHash"] = this.monId;
+          this.superStatic = "super";
         }
       }
       else {

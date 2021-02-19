@@ -17,6 +17,19 @@
   border: 2px solid var(--light-gray);
 }
 
+.super {
+  animation: expandFlash 2s linear infinite;
+  filter: sepia(1) saturate(2.5)  hue-rotate(120deg);
+} 
+@keyframes expandFlash {
+  25% {
+    box-shadow: 1px 1px var(--med-green), -1px -1px var(--med-green), 1px -1px var(--med-green), -1px 1px var(--med-green);
+  }
+  75% {
+    box-shadow: none;
+  }
+}
+
 .onchain-icon > a {
   text-decoration: none;
 }

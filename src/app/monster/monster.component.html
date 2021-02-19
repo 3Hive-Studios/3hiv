@@ -10,7 +10,7 @@
   <div>
     <button class="zoom-btn" title="Decrease image size" (click)="updateWidth(-2)">-</button>
     <button class="zoom-btn" title="Increase image size" (click)="updateWidth(2)">+</button>
-    <span class="onchain-icon" title="This 0xmon's static image and data is encoded on-chain" *ngIf="monData.isStaticUploaded"><a routerLink="/on-chain/{{monData.staticHash}}">⚡</a></span>
+    <span class="onchain-icon {{superStatic}}" title="This 0xmon's static image and data is encoded on-chain" *ngIf="monData.isStaticUploaded"><a routerLink="/on-chain/{{monData.staticHash}}">⚡</a></span>
     <span class="onchain-icon" title="This 0xmon's animated image and data is encoded on-chain" *ngIf="monData.isAnimUploaded"><a routerLink="/on-chain/{{monData.animHash}}">🔒</a></span>
   </div>
   <div class="mon-data-card">
