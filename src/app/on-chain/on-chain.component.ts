@@ -5,6 +5,7 @@ import { ContractService } from '../contract.service';
 import { UtilsService } from '../utils.service';
 import { WalletService } from '../wallet.service';
 import { DomSanitizer } from '@angular/platform-browser';
+import { decode } from 'punycode';
 
 @Component({
   selector: 'app-on-chain',
@@ -47,9 +48,25 @@ export class OnChainComponent implements OnInit {
   }
 
   async loadData() {
-    let input = await this.getArgsByTxHash(this.txHash);
-    let decodedInput = this.wallet.web3.utils.toAscii(input);
-    let decodedArr = decodedInput.substring(68).split("|");
+    let input, decodedInput, decodedArr;
+    if (this.txHash.length < 20) {
+      let multicallFns = {
+        "staticHash": {
+          target: this.constants.MON_REGISTRY_ADDRESS,
+          // Note "txHash" is actually mon ID, and we do a call to look up the actual data on-chain
+          callData: this.contract.MON_REGISTRY.methods.monDataWithStatic(this.txHash).encodeABI()
+        }
+      }
+      let result = await this.utils.makeMulticall(multicallFns);
+      input = await this.utils.decode("bytes", result["staticHash"]);
+      decodedInput = this.wallet.web3.utils.toAscii(input);
+      decodedArr = decodedInput.split("|");
+    }
+    else {
+      input = await this.getArgsByTxHash(this.txHash);
+      decodedInput = this.wallet.web3.utils.toAscii(input);
+      decodedArr = decodedInput.substring(68).split("|");
+    }
     this.monData["name"] = decodedArr[0];
     this.monData["epithets"] = decodedArr[1];
     this.monData["lore"] = decodedArr[2];

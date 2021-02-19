@@ -146,8 +146,13 @@ export class MonsterComponent implements OnInit {
       this.registerFee = new BigNumber(await this.utils.decode("uint256", result["registerFee"])).div(this.constants.PRECISION);
 
       this.monData["staticHash"] = await this.utils.decode("bytes", result["staticHash"]);
+
       if (this.monData["staticHash"] != null) {
         this.monData["isStaticUploaded"] = true;
+         // If it's longer than a tx hash, we set it to be the mon id so we let the on-chain component handle it
+        if (this.monData["staticHash"].length > 20) {
+          this.monData["staticHash"] = this.monId;
+        }
       }
       else {
         this.monData["isStaticUploaded"] = false;
@@ -276,7 +281,6 @@ export class MonsterComponent implements OnInit {
       imageBinary = imageBinary.substring(truncationStart+7);
       let data = this.wallet.web3.utils.fromAscii(this.monData["name"] + "|" + this.monData["epithets"] + "|" + this.monData["lore"] + "|" + imageBinary);
       let gasLimit = Math.max(Math.ceil((data.length/4000)*2000000), 2000000);
-      console.log(gasLimit);
       const func = this.contract.MON_REGISTRY.methods.registerMon(this.monId, data, isStatic);
       const feeAmt = this.registerFee.times(this.constants.PRECISION);
       this.wallet.sendTxWithToken(func, this.contract.XMON, this.constants.MON_REGISTRY_ADDRESS, feeAmt,
