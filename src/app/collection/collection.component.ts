@@ -64,7 +64,7 @@ export class CollectionComponent implements OnInit {
         let id = monIdList[i];
         obj["id"] = id;
         obj["name"] = responseObj["name"];
-        obj["img"] =  responseObj["image"];
+        obj["image"] =  responseObj["static-image"];
         this.monList.push(obj);
       }
 

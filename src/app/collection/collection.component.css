@@ -25,7 +25,8 @@
 }
 
 .thumbnail {
-  width: 1rem;
+  margin-top: 0.5rem;
+  width: 8rem;
   height: auto;
 }
 
