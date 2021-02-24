@@ -6,6 +6,7 @@ import { ContractService } from '../contract.service';
 import { UtilsService } from '../utils.service';
 import { WalletService } from '../wallet.service';
 import BigNumber from 'bignumber.js';
+import { timeStamp } from 'console';
 
 @Component({
   selector: 'app-monster',
@@ -60,8 +61,10 @@ export class MonsterComponent implements OnInit {
   ngOnInit(): void {
     this.hidePrev = true;
     this.hideNext = true;
+    this.loadLocalData();
 
     this.monId = this.activatedRoute.snapshot.paramMap.get('id');
+    this.updatePrevNextIds();
 
     if (this.wallet.connected) {
       this.loadData();
@@ -75,27 +78,28 @@ export class MonsterComponent implements OnInit {
 
     this.activatedRoute.params.subscribe(routeParams => {
       this.monId = routeParams.id;
-      
+      this.updatePrevNextIds();
+      this.loadLocalData();
       if (this.wallet.connected) {
         this.loadData();
       }
     });
   }
 
-  async loadData() {
-
-    // Show prev/next buttons
-    this.hidePrev = true;
-    this.hideNext = true;
+  updatePrevNextIds() {
     this.prevId = parseInt(this.monId)-1;
     this.nextId = parseInt(this.monId)+1;
+  }
+
+  async loadData() {
+
+    this.updatePrevNextIds();
 
     // Check if already stored
-    if (window["mon" + this.monId] !== undefined) {
+    if (window["mon" + this.monId] !== undefined && window["mon" + this.monId]["staticHash"] !== undefined) {
       let cachedResponse = window["mon" + this.monId];
       this.monData = Object.assign({}, cachedResponse);
-      this.hidePrev = false;
-      this.hideNext = false;
+      this.isOwner = this.monData["isOwner"];
     }
     // Otherwise make the web3 request and server request
     else {
@@ -146,16 +150,16 @@ export class MonsterComponent implements OnInit {
       let numMons = await this.utils.decode("uint256", result["numMons"]);
       let owner = await this.utils.decode("address", result["owner"]);
       this.isOwner = owner.toLowerCase() == this.wallet.userAddress;
+      this.monData["isOwner"] = owner.toLowerCase() == this.wallet.userAddress;
       this.registerFee = new BigNumber(await this.utils.decode("uint256", result["registerFee"])).div(this.constants.PRECISION);
 
       this.monData["staticHash"] = await this.utils.decode("bytes", result["staticHash"]);
-
       if (this.monData["staticHash"] != null) {
         this.monData["isStaticUploaded"] = true;
          // If it's longer than a tx hash, we set it to be the mon id so we let the on-chain component handle it
         if (this.monData["staticHash"].length > 66) {
           this.monData["staticHash"] = this.monId;
-          this.superStatic = "super";
+          this.monData["superStatic"] = "super";
         }
       }
       else {
@@ -172,27 +176,6 @@ export class MonsterComponent implements OnInit {
         this.showRegister = false;
       }
 
-      let tokenURI;
-      if (parseInt(this.monId) <= numMons) {
-        tokenURI = this.utils.decode("string", result["tokenURI"]);
-      }
-      else {
-        tokenURI = "./assets/monData.json";
-      }
-      this.monData["tokenURI"] = tokenURI;
-
-      const response = await fetch(tokenURI);
-      const responseObj = await response.json();
-
-      // These are from server
-      this.monData["name"] = responseObj["name"];
-      this.monData["img"] = responseObj["image"];
-      this.monData["epithets"] = responseObj["epithets"];
-      this.monData["lore"] = responseObj["description"];
-      
-      this.staticURL = responseObj["static-image"];
-      this.animURL = responseObj["image"];
-
       // These are from on-chain
       this.monData["parent1Id"] = monStruct["parent1Id"];
       this.monData["parent2Id"] = monStruct["parent2Id"];
@@ -202,11 +185,25 @@ export class MonsterComponent implements OnInit {
 
       // cache locally
       window["mon" + this.monId] = Object.assign({}, this.monData);
-
-      // show next buttons
-      this.hidePrev = false;
-      this.hideNext = false;
     }
+  }
+
+  async loadLocalData() {
+    const response = await fetch(this.constants.LOCAL_MON_DATA);
+    const fullResponseObj = await response.json();
+    const responseObj = fullResponseObj[parseInt(this.monId)];
+
+    this.monData["name"] = responseObj["Name"];
+
+    this.monData["img"] = this.constants.IPFS_GATEWAY + responseObj["ImageHash"];
+
+    this.monData["epithets"] = responseObj["Epithets"];
+    this.monData["lore"] = responseObj["Description"];
+
+    this.staticURL = this.constants.IPFS_GATEWAY + responseObj["StaticHash"];
+    this.animURL = this.constants.IPFS_GATEWAY + responseObj["ImageHash"];
+
+    this.monData["rarity"] = responseObj["Series"];
   }
 
   async uploadData() {
@@ -319,5 +316,6 @@ export class MonsterComponent implements OnInit {
     if (e.key === "ArrowRight") {
       this.router.navigate(["mon", this.nextId]);
     }
+    this.loadLocalData();
   }
 }

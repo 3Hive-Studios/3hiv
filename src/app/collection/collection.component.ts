@@ -43,10 +43,6 @@ export class CollectionComponent implements OnInit {
     }
     else {
       let multicallFns = {
-        "monURIs": {
-          target: this.constants.NFT_AGGREGATOR_ADDRESS,
-          callData: this.contract.NFT_AGG.methods.getURIs(this.constants.MON_MINTER_ADDRESS, this.wallet.userAddress).encodeABI()
-        },
         "monIds": {
           target: this.constants.NFT_AGGREGATOR_ADDRESS,
           callData: this.contract.NFT_AGG.methods.getIds(this.constants.MON_MINTER_ADDRESS, this.wallet.userAddress).encodeABI() 
@@ -54,17 +50,15 @@ export class CollectionComponent implements OnInit {
       };
 
       let results = await this.utils.makeMulticall(multicallFns);
-      let uriList = await this.utils.decode("string[]", results["monURIs"]);
       let monIdList = await this.utils.decode("uint256[]", results["monIds"]);
 
-      for (let i = 0; i < uriList.length; i++) {
-        const response = await fetch(uriList[i]);
-        const responseObj = await response.json();
-        let obj = {};
+      for (let i = 0; i < monIdList.length; i++) {
         let id = monIdList[i];
+        let responseObj = await this.loadLocalData(id);
+        let obj = {};
         obj["id"] = id;
         obj["name"] = responseObj["name"];
-        obj["image"] =  responseObj["static-image"];
+        obj["image"] =  responseObj["image"];
         this.monList.push(obj);
       }
 
@@ -73,5 +67,15 @@ export class CollectionComponent implements OnInit {
 
       this.loading = false;
     }
+  }
+
+  async loadLocalData(id) {
+    const response = await fetch(this.constants.LOCAL_MON_DATA);
+    const fullResponseObj = await response.json();
+    const responseObj = fullResponseObj[parseInt(id)];
+    let monData = {};
+    monData["name"] = responseObj["Name"];
+    monData["image"] = this.constants.IPFS_GATEWAY + responseObj["StaticHash"];
+    return monData;
   }
 }

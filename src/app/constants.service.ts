@@ -13,6 +13,9 @@ export class ConstantsService {
   OLD_0XMONS_ADDRESS = '0xAf488234796CA27DBa8ECF17f803Ea1f4Ab33E15'
   S3_URL = 'https://d3h0sbhg72k3qr.cloudfront.net/';
 
+  LOCAL_MON_DATA = "./assets/monData.json";
+  IPFS_GATEWAY = "https://ipfs.io/ipfs/";
+
   // // Rinkeby addresses (note you have to change chainId in web3Enabled)
   // XMON_ADDRESS = '0x8dc2f7D19217245b117aEBa0f1D050c9e85c7767';
   // MON_MINTER_ADDRESS = '0x9683D905cAa55743ac63c464C34053B0b219Cc8D';
