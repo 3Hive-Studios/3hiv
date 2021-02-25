@@ -23,6 +23,13 @@ export class FarmComponent implements OnInit {
   rewardsLPBalance: BigNumber;
   endTime: any;
 
+  // APY stats
+  poolProportion: any;
+  dailyXMONYield: BigNumber;
+  dailyXMONYieldDAI: BigNumber;
+  stakedBalanceDAI: BigNumber;
+  floatingYield: any;
+
   constructor(public wallet: WalletService, public contract: ContractService, public constants: ConstantsService, public utils: UtilsService) { 
     this.resetData();
   }
@@ -56,6 +63,12 @@ export class FarmComponent implements OnInit {
     this.farmedXMON = new BigNumber(0);
     this.rewardsLPBalance = new BigNumber(0);
     this.endTime = 1611079200;
+
+    this.poolProportion = new BigNumber(0);
+    this.dailyXMONYield = new BigNumber(0);
+    this.dailyXMONYieldDAI = new BigNumber(0);
+    this.stakedBalanceDAI = new BigNumber(0);
+    this.floatingYield = new BigNumber(0);
   }
 
   async loadData() {
@@ -80,6 +93,26 @@ export class FarmComponent implements OnInit {
       "endTime": {
         target: this.constants.LP_POOL_REWARDS_ADDRESS,
         callData: this.contract.LP_POOL_REWARDS.methods.periodFinish().encodeABI()
+      },
+      "ethInXMONLP": {
+        target: this.constants.WETH_ADDRESS,
+        callData: this.contract.WETH.methods.balanceOf(this.constants.XMON_ETH_LP_TOKEN_ADDRESS).encodeABI()
+      },
+      "XMONInXMONLP": {
+        target: this.constants.XMON_ADDRESS,
+        callData: this.contract.XMON.methods.balanceOf(this.constants.XMON_ETH_LP_TOKEN_ADDRESS).encodeABI()
+      },
+      "ethInETHDAILP": {
+        target: this.constants.WETH_ADDRESS,
+        callData: this.contract.WETH.methods.balanceOf(this.constants.WETH_DAI_LP_ADDRESS).encodeABI()
+      },
+      "daiInETHDAILP": {
+        target: this.constants.DAI_ADDRESS,
+        callData: this.contract.DAI.methods.balanceOf(this.constants.WETH_DAI_LP_ADDRESS).encodeABI()
+      },
+      "totalXMONLPBalance": {
+        target: this.constants.XMON_ETH_LP_TOKEN_ADDRESS,
+        callData: this.contract.XMON_ETH_LP.methods.totalSupply().encodeABI()
       }
     };
 
@@ -89,6 +122,24 @@ export class FarmComponent implements OnInit {
     this.farmedXMON = new BigNumber(this.utils.decode("uint256", results["farmedXMON"])).div(this.constants.PRECISION);
     this.rewardsLPBalance = new BigNumber(this.utils.decode("uint256", results["rewardsLPBalance"])).div(this.constants.PRECISION);
     this.endTime = this.utils.decode("uint256", results["endTime"]);
+
+    // APY calculations
+    let ethInXMONLP = new BigNumber(this.utils.decode("uint256", results["ethInXMONLP"]));
+    let xmonPriceInEth = ethInXMONLP.div(
+      new BigNumber(this.utils.decode("uint256", results["XMONInXMONLP"]))
+    );
+    let ethPriceDAI = new BigNumber(this.utils.decode("uint256", results["daiInETHDAILP"])).div(
+      new BigNumber(this.utils.decode("uint256", results["ethInETHDAILP"]))
+    );
+    let xmonPriceDAI = xmonPriceInEth.times(ethPriceDAI);
+    let totalLPBalance =  new BigNumber(this.utils.decode("uint256", results["totalXMONLPBalance"]));
+    let lpTokenPrice = ethInXMONLP.div(totalLPBalance).times(ethPriceDAI).times(new BigNumber(2));
+
+    this.poolProportion = this.stakedBalance.div(this.rewardsLPBalance);
+    this.dailyXMONYield = this.poolProportion.times(this.constants.XMON_PER_DAY);
+    this.dailyXMONYieldDAI = this.dailyXMONYield.times(xmonPriceDAI);
+    this.stakedBalanceDAI = lpTokenPrice.times(this.stakedBalance);
+    this.floatingYield = this.dailyXMONYieldDAI.div(this.stakedBalanceDAI).times(new BigNumber(100));
   }
 
   stake() {

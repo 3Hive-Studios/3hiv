@@ -87,3 +87,15 @@ button {
 .claim-btn {
   margin-top: 2.25rem;
 }
+
+.stats-header {
+  font-size: 4rem;
+}
+
+.apy-stats {
+  color: white;
+}
+
+.apy-stats > div {
+  padding: 0.5rem 0.5rem;
+}

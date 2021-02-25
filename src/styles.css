@@ -119,12 +119,12 @@ button[disabled]{
   text-align: center;
 }
 .header {
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
 }
 .header > .cursed-text {
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
 .bn-onboard-custom {
