@@ -94,9 +94,25 @@ export class ContractService {
     const address = this.constants.DAI_ADDRESS;
     return new this.wallet.web3.eth.Contract(abi, address); 
   }
+
+  public get MULTISENDER() {
+    const abi = require('../assets/abi/Multisender.json');
+    const address = this.constants.MULTISENDER_ADDRESS;
+    return new this.wallet.web3.eth.Contract(abi, address); 
+  }
   
   public ERC20(address) {
     const abi = require('../assets/abi/ERC20.json');
+    return new this.wallet.web3.eth.Contract(abi, address); 
+  }
+
+  public ERC721(address) {
+    const abi = require('../assets/abi/ERC721.json');
+    return new this.wallet.web3.eth.Contract(abi, address); 
+  }
+
+  public ERC1155(address) {
+    const abi = require('../assets/abi/ERC1155.json');
     return new this.wallet.web3.eth.Contract(abi, address); 
   }
 

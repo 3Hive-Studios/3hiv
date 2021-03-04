@@ -1,0 +1,45 @@
+<div class="container">
+
+  <div class="header cursed-text">Multisender</div>
+
+  <div class="text-item"><b>Send ERC20, ERC721, or ERC1155 to a list of addresses, or a list of ERC721 IDs.</b></div>
+  <div class="text-item">Current fee is: <b>{{ethFee.toFormat(4)}} ETH</b></div>
+  <div class="text-item">XMON balance: {{xmonBalance.toFormat(8)}} <span class="xmon-ticker">XMON</span></div>
+  <div class="text-item">0xmons balance: {{monBalance}} NFTs</div>
+  <div class="text-item">Fee waived: <b>{{feeWaived}}</b></div>
+  <div class="text-item">Contract on <a href="https://etherscan.io/address/0xc653e1b3a971078812a72d11c45ad71e00f3ad1f">Etherscan</a>.</div>
+  <div class="text-item">v1 of the sender/locker is <a routerLink="sender/">here</a>.</div>
+
+  <div class="send-title">Send</div>
+  <div class="erc-picker"><select [(ngModel)]="tokenType">
+    <option value="20">ERC20</option>
+    <option value="721">ERC721</option>
+    <option value="1155">ERC1155</option>
+  </select></div>
+
+  <div class="to-title">To</div>
+  <div class="erc-picker"><select [(ngModel)]="senderType">
+    <option value="address">List of addresses</option>
+    <option value="721">List of ERC721 IDs</option>
+  </select></div>
+
+  <div class="input-form">
+    <div class="to-title">Token Address</div>
+    <div>(Decimals are assumed to be 18 for ERC20.)</div>
+    <input type="text" placeholder="0x3aada3e213abf8529606924d8d1c55cbdc70bf74" [(ngModel)]="tokenAddress">
+    <div class="token">
+      <img src="{{tokenLogo}}" class="token-logo">
+      <span>{{tokenSymbol}} </span>
+    </div>
+    <button (click)="getToken()" class="check-btn">Check Symbol</button>
+  </div>
+
+  <div class="input-form">
+    <div class="to-title">Recipient Details</div>
+    <textarea placeholder="{{getPlaceholder()}}" #senderData></textarea>
+  </div>
+
+  <div>
+    <button class="multisend-btn" (click)="multisend(senderData.value)">{{multisendLabel}}</button>
+  </div>
+</div>

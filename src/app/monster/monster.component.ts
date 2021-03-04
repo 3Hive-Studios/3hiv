@@ -6,7 +6,6 @@ import { ContractService } from '../contract.service';
 import { UtilsService } from '../utils.service';
 import { WalletService } from '../wallet.service';
 import BigNumber from 'bignumber.js';
-import { timeStamp } from 'console';
 
 @Component({
   selector: 'app-monster',

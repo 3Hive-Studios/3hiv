@@ -1,0 +1,65 @@
+<div class="container">
+
+  <div class="header cursed-text">Bundler</div>
+
+  <div class="text-item"><b>Lock ERC20, ERC721, or ERC1155 tokens into ERC721 tokens.</b></div>
+  <div class="text-item">Read the blog post <a href="https://blog.0xmons.xyz/79122166310">here</a> to learn more about how to bundle your assets.</div>
+  <div class="text-item">Contract on <a href="https://etherscan.io/address/0xc653e1b3a971078812a72d11c45ad71e00f3ad1f">Etherscan</a>.</div>
+
+  <div class="send-title">Bundle Tokens</div>
+  <div class="erc-picker"><select [(ngModel)]="tokenType">
+    <option value="20">ERC20</option>
+    <option value="721">ERC721</option>
+    <option value="1155">ERC1155</option>
+  </select></div>
+
+  <div class="input-form">
+    <div class="to-title">Token Address</div>
+    <div>(Decimals are assumed to be 18 for ERC20.)</div>
+    <input type="text" placeholder="0x3aada3e213abf8529606924d8d1c55cbdc70bf74" [(ngModel)]="tokenAddress">
+    <div class="token">
+      <img src="{{tokenLogo}}" class="token-logo">
+      <span>{{tokenSymbol}} </span>
+    </div>
+    <button (click)="getToken()" class="check-btn">Check Symbol</button>
+  </div>
+
+  <div class="input-form">
+    <div class="to-title">Locking Details</div>
+    <textarea placeholder="{{getPlaceholder()}}" #senderData></textarea>
+  </div>
+
+  <div>
+    <button class="lock-btn" (click)="lock(senderData.value)">{{lockLabel}}</button>
+  </div>
+
+  <div class="send-title unlock-header">Unlock Tokens</div>
+  <div>
+    <div class="text-item to-title">ERC721 Address</div>
+    <div class="text-item">(This is the address of the NFT that holds the locked tokens.)</div>
+    <input type="text" placeholder="0x3aada3e213abf8529606924d8d1c55cbdc70bf74" [(ngModel)]="erc721Address">
+    <div class="text-item">ID</div>
+    <input type="text" placeholder="12" [(ngModel)]="erc721Id">
+  </div>
+  <div>
+    <div class="to-title">Reward Token</div>
+    <div class="erc-picker"><select [(ngModel)]="rewardTokenType">
+      <option value="20">ERC20</option>
+      <option value="721">ERC721</option>
+      <option value="1155">ERC1155</option>
+    </select></div>
+    <input type="text" placeholder="0x3aada3e213abf8529606924d8d1c55cbdc70bf74" [(ngModel)]="rewardTokenAddress">
+    <div *ngIf="rewardTokenType === '1155'">
+      <div>ERC1155 ID</div>
+      <input type="text" placeholder="15" [(ngModel)]="rewardToken1155Id">
+    </div>
+  </div>
+  <div>
+    <div class="reward">{{rewardValues}}</div>
+    <button class="check-btn" (click)="getRewards()">Check Rewards</button>
+  </div>
+  <br>
+  <div>
+    <button class="check-btn" (click)="unlockRewards()">Unlock Rewards</button>
+  </div>
+</div>

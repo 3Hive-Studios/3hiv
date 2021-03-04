@@ -137,6 +137,14 @@ button[disabled]{
   column-gap: 1rem;
 }
 
+.xmon-ticker {
+  margin-left: 0.5rem;
+  font-weight: bold;
+}
+.xmon-ticker {
+  color: var(--med-green);
+}
+
 @keyframes blinker {
   25% {
     opacity: 1;

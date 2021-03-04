@@ -11,6 +11,8 @@ import { CreditsComponent } from './credits/credits.component';
 import { SenderComponent } from './sender/sender.component';
 import { FounderComponent } from './founder/founder.component';
 import { OnChainComponent } from './on-chain/on-chain.component';
+import { MultisenderComponent } from './multisender/multisender.component';
+import { BundlerComponent } from './bundler/bundler.component';
 
 const routes: Routes = [
   {
@@ -56,8 +58,16 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
+    path: 'multisender',
+    component: MultisenderComponent
+  },
+  {
     path: 'sender',
     component: SenderComponent
+  },
+  {
+    path: 'bundler',
+    component: BundlerComponent
   },
   {
     path: 'founder',

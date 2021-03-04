@@ -1,0 +1,81 @@
+.header {
+  font-size: 4rem;
+}
+
+.text-item {
+  line-height: 2rem;
+}
+
+.send-title {
+  margin-top: 2rem;
+}
+
+.send-title, .to-title {
+  font-size: 2rem;
+  color: white;
+  font-weight: bold;
+}
+
+.unlock-header {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+select {
+  border: 2px solid var(--gray);
+  background-color: var(--black);
+  color: var(--light-gray);
+  font-size: 1.3rem;
+  width: 80%;
+  max-width: 15rem;
+  padding: 0.1rem 0.1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+input, textarea {
+  background-color : var(--black) !important; 
+  color: white !important;
+  outline: none;
+  border: 2px solid var(--gray);
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+input {
+  width: 90%;
+  max-width: 50rem;
+}
+
+textarea {
+  height: 10rem;
+  width: 100%;
+}
+
+.input-form {
+  margin-top: 1rem;
+}
+
+.token {
+  margin-bottom: 1rem;
+}
+
+.token-logo {
+  width: 3rem;
+  height: auto;
+}
+
+.lock-btn, .check-btn {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.lock-btn {
+  color: var(--med-green);
+}
+
+.reward {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: white;
+  margin: 0.5rem 0.5rem;
+}

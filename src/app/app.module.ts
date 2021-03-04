@@ -17,6 +17,8 @@ import { CreditsComponent } from './credits/credits.component';
 import { SenderComponent } from './sender/sender.component';
 import { FounderComponent } from './founder/founder.component';
 import { OnChainComponent } from './on-chain/on-chain.component';
+import { MultisenderComponent } from './multisender/multisender.component';
+import { BundlerComponent } from './bundler/bundler.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,9 @@ import { OnChainComponent } from './on-chain/on-chain.component';
     CreditsComponent,
     SenderComponent,
     FounderComponent,
-    OnChainComponent
+    OnChainComponent,
+    MultisenderComponent,
+    BundlerComponent,
   ],
   imports: [
     BrowserModule,
