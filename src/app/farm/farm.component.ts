@@ -147,7 +147,10 @@ export class FarmComponent implements OnInit {
     this.dailyXMONYield = this.poolProportion.times(this.constants.XMON_PER_DAY);
     this.dailyXMONYieldDAI = this.dailyXMONYield.times(xmonPriceDAI);
     this.stakedBalanceDAI = lpTokenPrice.times(this.stakedBalance);
-    this.floatingYield = this.dailyXMONYieldDAI.div(this.stakedBalanceDAI).times(new BigNumber(100));
+
+    let floatingYield = this.dailyXMONYieldDAI.div(this.stakedBalanceDAI).times(new BigNumber(100));
+    this.floatingYield = floatingYield;
+    this.stakedBalance = new BigNumber(0);
   }
 
   stake() {
