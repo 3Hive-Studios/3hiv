@@ -29,6 +29,7 @@ export class FarmComponent implements OnInit {
   dailyXMONYieldDAI: BigNumber;
   stakedBalanceDAI: BigNumber;
   floatingYield: any;
+  notStaking: boolean;
 
   constructor(public wallet: WalletService, public contract: ContractService, public constants: ConstantsService, public utils: UtilsService) { 
     this.resetData();
@@ -69,6 +70,7 @@ export class FarmComponent implements OnInit {
     this.dailyXMONYieldDAI = new BigNumber(0);
     this.stakedBalanceDAI = new BigNumber(0);
     this.floatingYield = new BigNumber(0);
+    this.notStaking = false;
   }
 
   async loadData() {
@@ -119,6 +121,12 @@ export class FarmComponent implements OnInit {
     let results = await this.utils.makeMulticall(multicallFns);
     this.lpBalance = new BigNumber(this.utils.decode("uint256", results["lpBalance"])).div(this.constants.PRECISION);
     this.stakedBalance = new BigNumber(this.utils.decode("uint256", results["stakedBalance"])).div(this.constants.PRECISION);
+
+    if (this.stakedBalance.eq(new BigNumber(0))) {
+      this.notStaking = true;
+      this.stakedBalance = new BigNumber(1);
+    }
+
     this.farmedXMON = new BigNumber(this.utils.decode("uint256", results["farmedXMON"])).div(this.constants.PRECISION);
     this.rewardsLPBalance = new BigNumber(this.utils.decode("uint256", results["rewardsLPBalance"])).div(this.constants.PRECISION);
     this.endTime = this.utils.decode("uint256", results["endTime"]);
