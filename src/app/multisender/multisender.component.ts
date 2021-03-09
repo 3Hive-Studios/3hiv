@@ -153,11 +153,11 @@ export class MultisenderComponent implements OnInit {
           amountsOrIds.push(tokenAmt);
           continue;
         case 721:
-          amountsOrIds.push(new BigNumber(parseInt(parsedArgs[1])));
+          amountsOrIds.push(parsedArgs[1]);
           continue;
         case 1155:
           // First is ID, then amount
-          idsFor1155.push(new BigNumber(parsedArgs[2]));
+          idsFor1155.push(parsedArgs[1]);
           tokenAmt = new BigNumber(parsedArgs[3]);
           amountsOrIds.push(tokenAmt);
           continue;
