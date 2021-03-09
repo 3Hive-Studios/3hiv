@@ -150,7 +150,10 @@ export class FarmComponent implements OnInit {
 
     let floatingYield = this.dailyXMONYieldDAI.div(this.stakedBalanceDAI).times(new BigNumber(100));
     this.floatingYield = floatingYield;
-    this.stakedBalance = new BigNumber(0);
+
+    if (this.notStaking) {
+      this.stakedBalance = new BigNumber(0);
+    }
   }
 
   stake() {

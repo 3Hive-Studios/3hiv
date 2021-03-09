@@ -102,7 +102,7 @@ export class MultisenderComponent implements OnInit {
     let tokenAmt;
     for (let args of splitData) {
       if (args !== "") {
-        let parsedArgs = args.trim().split(",");
+        let parsedArgs = args.split(",").map((s) => s.trim());
         addresses.push(parsedArgs[0]);
         switch(parseInt(this.tokenType)) {
           case 20:
@@ -110,7 +110,7 @@ export class MultisenderComponent implements OnInit {
             amountsOrIds.push(tokenAmt);
             continue;
           case 721:
-            amountsOrIds.push(new BigNumber(parsedArgs[1]));
+            amountsOrIds.push(parsedArgs[1]);
             continue;
           case 1155:
             // First is ID, then amount
@@ -153,7 +153,7 @@ export class MultisenderComponent implements OnInit {
           amountsOrIds.push(tokenAmt);
           continue;
         case 721:
-          amountsOrIds.push(parsedArgs[2]);
+          amountsOrIds.push(new BigNumber(parseInt(parsedArgs[1])));
           continue;
         case 1155:
           // First is ID, then amount
@@ -235,7 +235,6 @@ export class MultisenderComponent implements OnInit {
     else if (this.senderType === "721") {
       args = this.parseWith721Ids(18, data);
     }
-
     if (parseInt(this.tokenType) === 20) {
       let numTokensToSend = new BigNumber(0);
       for (let a of args[1]) {
