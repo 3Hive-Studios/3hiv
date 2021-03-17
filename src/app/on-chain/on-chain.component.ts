@@ -17,6 +17,7 @@ export class OnChainComponent implements OnInit {
   txHash: any;
   monData: any;
   width: any;
+  noWeb3: boolean;
 
   constructor(public wallet: WalletService, public contract: ContractService, public constants: ConstantsService, private utils: UtilsService, private activatedRoute: ActivatedRoute, private sanitizer:DomSanitizer) {
     this.resetData();
@@ -25,6 +26,7 @@ export class OnChainComponent implements OnInit {
   resetData() {
     this.monData = {};
     this.width = 14;
+    this.noWeb3 = true;
   }
 
   ngOnInit(): void {
@@ -71,6 +73,7 @@ export class OnChainComponent implements OnInit {
     this.monData["epithets"] = decodedArr[1];
     this.monData["lore"] = decodedArr[2];
     await this.loadImg(decodedArr[3]);
+    this.noWeb3 = false;
   }
 
   async getArgsByTxHash(hash) {

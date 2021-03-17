@@ -106,6 +106,13 @@ button {
   animation: colorExpand 2s linear infinite;
 }
 
+.clickable {
+  cursor: pointer;
+}
+.clickable:hover {
+  color: var(--light-green);
+}
+
 @keyframes colorExpand {
   25% {
     box-shadow: 3px 3px var(--med-green), -3px 3px var(--med-green), 3px -3px var(--med-green), -3px -3px var(--med-green);

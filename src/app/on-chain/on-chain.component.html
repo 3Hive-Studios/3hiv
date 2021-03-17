@@ -1,10 +1,14 @@
+<div *ngIf="noWeb3" class="mon-container">You need a web3 connection to view this 0xmon! (It's trying to read data directly from the blockchain!)</div>
+
+<div class="mon-name centered">{{monData.name}}</div>
+<div class="mon-epithets centered">{{monData.epithets}}</div>
+
 <div class="mon-container">
-  <div class="onchain-header">ON-CHAIN ENCODED 0XMON</div>
-  <div class="mon-name">{{monData.name}}</div>
-  <div>
+
+  <div class="centered">
     <img class="mon-img" [src]="monData.base64Safe" [style.width.rem]="width">
   </div>
-  <div>
+  <div class="centered">
     <button class="zoom-btn" title="Decrease image size" (click)="updateWidth(-2)">-</button>
     <button class="zoom-btn" title="Increase image size" (click)="updateWidth(2)">+</button>
   </div>
@@ -13,4 +17,7 @@
     <p><b>Epithets:</b> {{monData.epithets}}</p>
     <div><b>Lore:</b> <div class="lore">{{monData.lore}}</div></div>
   </div>
+
+  <div class="blog-footer">Curious about how this works? Read the blog post on on-chain encoding <a href="https://blog.0xmons.xyz/79081566310">here</a>.</div>
+
 </div>

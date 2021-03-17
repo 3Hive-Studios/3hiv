@@ -22,8 +22,8 @@
         </div>
         <div class="card-text">
         <div><span>Max stake:</span> <b> {{maxStakeAmount.toFormat()}}</b> <span class="xmon-ticker">XMON</span></div>
-        <div><span>Staking:</span> <b> {{stakedXmon.toFormat()}}</b> <span class="xmon-ticker">XMON</span></div>
-        <div><span>Available:</span> <b> {{xmonBalance.toFormat()}}</b> <span class="xmon-ticker">XMON</span></div>
+        <div><span >Staking:</span> <b> {{stakedXmon.toFormat()}}</b> <span class="xmon-ticker">XMON</span></div>
+        <div span (click)="fillForm(xmonBalance)" class="clickable"><span>Available:</span> <b> {{xmonBalance.toFormat()}}</b> <span class="xmon-ticker">XMON</span></div>
         </div>
         <div class="form-holder">
           <input placeholder="0.0000" class="form" [(ngModel)]="stakeAmount" name="stakeAmountInput">
