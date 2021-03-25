@@ -1,0 +1,24 @@
+<div class="mon-name centered">#{{monId}} &ensp; {{monData.name}}</div>
+
+<div class="mon-container">
+  <div class="centered">
+    <img class="mon-img" src="{{monData.img}}" [style.width.rem]="width">
+  </div>
+  <div class="centered">
+    <button class="zoom-btn" title="Decrease image size" (click)="updateWidth(-2)">-</button>
+    <button class="zoom-btn" title="Increase image size" (click)="updateWidth(2)">+</button>
+  </div>
+  <div class="mon-data-card">
+    <p><b>Name:</b> {{monData.name}}</p>
+    <p><b>Parent 1:</b> &nbsp; <a routerLink="/old-mon/{{monData.parent1Id}}" routerLink="active">{{monData.parent1Id}}</a></p>
+    <p><b>Parent 2:</b> &nbsp;  <a routerLink="/old-mon/{{monData.parent2Id}}" routerLink="active">{{monData.parent2Id}}</a></p>
+    <div>
+      <button class="view-btn"><a href="https://etherscan.io/token/0x0427743df720801825a5c82e0582b1e915e0f750?a={{monId}}">Etherscan<svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 -256 1850 1850"><path d="M1438 819v320q0 119-84 203-85 85-204 85H318q-119 0-203-85-85-84-85-203V307q0-119 85-204 84-84 203-84h704q14 0 23 9t9 23v64q0 14-9 23t-23 9H318q-66 0-113 47t-47 113v832q0 66 47 113t113 47h832q66 0 113-47t47-113V819q0-14 9-23t23-9h64q14 0 23 9t9 23zm384-864v512q0 26-19 45t-45 19q-26 0-45-19l-176-176-652 652q-10 10-23 10t-23-10L725 874q-10-10-10-23t10-23l652-652L1201 0q-19-19-19-45t19-45q19-19 45-19h512q26 0 45 19t19 45z" fill="currentColor"/></svg></a></button>
+      <button class="view-btn open-sea"><a href="https://opensea.io/assets/0x0427743df720801825a5c82e0582b1e915e0f750/{{monId}}">OpenSea<svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 -256 1850 1850"><path d="M1438 819v320q0 119-84 203-85 85-204 85H318q-119 0-203-85-85-84-85-203V307q0-119 85-204 84-84 203-84h704q14 0 23 9t9 23v64q0 14-9 23t-23 9H318q-66 0-113 47t-47 113v832q0 66 47 113t113 47h832q66 0 113-47t47-113V819q0-14 9-23t23-9h64q14 0 23 9t9 23zm384-864v512q0 26-19 45t-45 19q-26 0-45-19l-176-176-652 652q-10 10-23 10t-23-10L725 874q-10-10-10-23t10-23l652-652L1201 0q-19-19-19-45t19-45q19-19 45-19h512q26 0 45 19t19 45z" fill="currentColor"/></svg></a></button>
+    </div>
+    <div>
+      <button class="view-btn" routerLink="/old-mon/{{prevId}}" title="You can also use arrow keys to browse">← Prev 0xmon</button>
+      <button class="view-btn" routerLink="/old-mon/{{nextId}}" title="You can also use arrow keys to browse">Next 0xmon →</button>
+    </div>
+  </div>
+</div>

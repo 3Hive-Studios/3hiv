@@ -13,6 +13,8 @@ import { FounderComponent } from './founder/founder.component';
 import { OnChainComponent } from './on-chain/on-chain.component';
 import { MultisenderComponent } from './multisender/multisender.component';
 import { BundlerComponent } from './bundler/bundler.component';
+import { OldMonsComponent } from './old-mons/old-mons.component';
+import { OldCollectionComponent } from './old-collection/old-collection.component';
 
 const routes: Routes = [
   {
@@ -72,6 +74,14 @@ const routes: Routes = [
   {
     path: 'founder',
     component: FounderComponent
+  },
+  {
+    path: 'old-mon/:id',
+    component: OldMonsComponent
+  },
+  {
+    path: 'old-collection',
+    component: OldCollectionComponent
   },
   // wildcard
   {

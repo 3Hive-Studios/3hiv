@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="header centered">Legacy 0xmons</div>
+
+  <div *ngIf="loading" class="centered">
+    Loading monsters...
+  </div>
+
+  <div class="mon-item-holder">
+    <div class="mon-item" *ngFor="let m of monList">
+      <div routerLink="/old-mon/{{m.id}}" routerLinkActive="active">
+        <div>#{{m.id}} {{m.name}}</div>
+        <img class="thumbnail" src="{{m.image}}">
+      </div>
+    </div>
+  </div>
+
+</div>

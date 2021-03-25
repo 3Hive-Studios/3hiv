@@ -19,6 +19,9 @@ import { FounderComponent } from './founder/founder.component';
 import { OnChainComponent } from './on-chain/on-chain.component';
 import { MultisenderComponent } from './multisender/multisender.component';
 import { BundlerComponent } from './bundler/bundler.component';
+import { Summon2Component } from './summon2/summon2.component';
+import { OldMonsComponent } from './old-mons/old-mons.component';
+import { OldCollectionComponent } from './old-collection/old-collection.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +42,9 @@ import { BundlerComponent } from './bundler/bundler.component';
     OnChainComponent,
     MultisenderComponent,
     BundlerComponent,
+    Summon2Component,
+    OldMonsComponent,
+    OldCollectionComponent,
   ],
   imports: [
     BrowserModule,

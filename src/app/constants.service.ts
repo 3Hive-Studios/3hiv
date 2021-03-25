@@ -15,6 +15,7 @@ export class ConstantsService {
   S3_URL = 'https://d3h0sbhg72k3qr.cloudfront.net/';
 
   LOCAL_MON_DATA = "./assets/monData.json";
+  OLD_MON_DATA = "./assets/oldMons.json";
   IPFS_GATEWAY = "https://ipfs.io/ipfs/";
 
   // // Rinkeby addresses (note you have to change chainId in web3Enabled)
