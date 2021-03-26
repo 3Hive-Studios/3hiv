@@ -16,6 +16,7 @@ export class CollectionComponent implements OnInit {
   }
 
   monList: any;
+  uriList: any;
   loading: boolean;
 
   ngOnInit(): void {
@@ -46,15 +47,20 @@ export class CollectionComponent implements OnInit {
         "monIds": {
           target: this.constants.NFT_AGGREGATOR_ADDRESS,
           callData: this.contract.NFT_AGG.methods.getIds(this.constants.MON_MINTER_ADDRESS, this.wallet.userAddress).encodeABI() 
+        },
+        "monURIs": {
+          target: this.constants.NFT_AGGREGATOR_ADDRESS,
+          callData: this.contract.NFT_AGG.methods.getURIs(this.constants.MON_MINTER_ADDRESS, this.wallet.userAddress).encodeABI()
         }
       };
 
       let results = await this.utils.makeMulticall(multicallFns);
       let monIdList = await this.utils.decode("uint256[]", results["monIds"]);
+      this.uriList = await this.utils.decode("string[]", results["monURIs"]);
 
       for (let i = 0; i < monIdList.length; i++) {
         let id = monIdList[i];
-        let responseObj = await this.loadLocalData(id);
+        let responseObj = await this.getMonData(id);
         let obj = {};
         obj["id"] = id;
         obj["name"] = responseObj["name"];
@@ -69,13 +75,21 @@ export class CollectionComponent implements OnInit {
     }
   }
 
-  async loadLocalData(id) {
+  async getMonData(id) {
     const response = await fetch(this.constants.LOCAL_MON_DATA);
     const fullResponseObj = await response.json();
     const responseObj = fullResponseObj[parseInt(id)];
     let monData = {};
-    monData["name"] = responseObj["Name"];
-    monData["image"] = this.constants.IPFS_GATEWAY + responseObj["StaticHash"];
+    try {
+      monData["name"] = responseObj["Name"];
+      monData["image"] = this.constants.IPFS_GATEWAY + responseObj["StaticHash"];
+    }
+    catch(error) {
+      const response = await fetch(this.uriList[id]);
+      const responseObj = await response.json();
+      monData["name"] = responseObj["name"];
+      monData["image"] =  responseObj["static-image"];
+    }
     return monData;
   }
 }

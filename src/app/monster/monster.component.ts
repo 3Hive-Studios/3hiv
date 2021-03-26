@@ -175,6 +175,27 @@ export class MonsterComponent implements OnInit {
         this.showRegister = false;
       }
 
+      if (parseInt(this.monId) > 128) {
+        let tokenURI;
+        if (parseInt(this.monId) <= numMons) {
+          tokenURI = this.utils.decode("string", result["tokenURI"]);
+        }
+        else {
+          tokenURI = "./assets/monData.json";
+        }
+        this.monData["tokenURI"] = tokenURI;
+        const response = await fetch(tokenURI);
+        const responseObj = await response.json();
+
+        // These are from server
+        this.monData["name"] = responseObj["name"];
+        this.monData["img"] = responseObj["image"];
+        this.monData["epithets"] = responseObj["epithets"];
+        this.monData["lore"] = responseObj["description"];
+        this.staticURL = responseObj["static-image"];
+        this.animURL = responseObj["image"];
+      }
+
       // These are from on-chain
       this.monData["parent1Id"] = monStruct["parent1Id"];
       this.monData["parent2Id"] = monStruct["parent2Id"];
