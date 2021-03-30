@@ -1,1 +1,49 @@
-<p>summon2 works!</p>
+<div class="container">
+
+  <div class="centered">
+    <div class="header"><span class="cursed-text">EVOKE</span> the ineffable</div>
+  </div>
+
+  <div class="card">
+    <p>Stake your <span class="xmon-ticker">XMON</span> tokens to earn <span class="doom-ticker">DOOM</span> points to redeem for a series 2 0̶̻̹̖ͩ̅͌ͦx̰̺̲̭̋̏́ͅm͔̫̠̍ͫͧ͛͝oͯ̏̋͏̫̝̼͍n̩̝̥̱̬̘ͯͪ̾̀͟.</p>
+    <p>Then, head over to your <a routerLink="/collection">Collection</a> to see all your 0xmons.</p>
+    <p>Contract on Etherscan <a href="https://etherscan.io/address/{{contractAddress}}">here</a></p>
+    <hr>
+    <div>Summoning starts on {{claimMonStart}}</div>
+    <div><b>{{numMons}}/{{maxMons}} 0xmons summoned</b></div>
+  </div>
+
+  <div class="centered card">
+    <div>Migrate your DOOM by {{lastMigrationDate}}</div>
+    <button (click)="migrateDoom()">Migrate DOOM</button>
+  </div>
+
+  <div class="card">
+    <div class="two-cols">
+      <div>
+        <div class="stake-header">
+          <span class="xmon-squid">🦑</span> STAKING <b>XMON</b>
+        </div>
+        <div class="card-text">
+        <div><span >Staking:</span> <b> {{stakedXmon.toFormat()}}</b> <span class="xmon-ticker">XMON</span></div>
+        <div span (click)="fillForm(xmonBalance)" class="clickable"><span>Available:</span> <b> {{xmonBalance.toFormat()}}</b> <span class="xmon-ticker">XMON</span></div>
+        </div>
+        <div class="form-holder">
+          <input placeholder="0.0000" class="form" [(ngModel)]="stakeAmount" name="stakeAmountInput">
+        </div>
+        <button id="add-btn" (click)="stake()">Add Stake</button>
+        <button id="remove-btn" (click)="removeStake()" title="Removes all of your staked XMON">Remove All Stake</button>
+      </div>
+      <div>
+        <div class="doom-header">💀 GENERATING <b>DOOM</b></div>
+        <div class="card-text">
+        <div><span>Summon Cost:</span> <b> {{doomFee}}</b>  <span class="doom-ticker">DOOM</span></div>
+        <div><span>Balance:</span> <b> {{doomBalance.toFormat(5)}} </b> <span class="doom-ticker">DOOM</span></div>
+        <div><span>Rate:</span> <b> {{doomPerDay.toFormat(5)}}</b> <span class="doom-ticker">DOOM</span> / day</div>
+        </div>
+        <button class="summon-btn" (click)="claimMon()" [disabled]="!canSummon ? 'disabled': null">SUMMON 0xmon</button>
+      </div>
+    </div>
+  </div>
+
+</div>

@@ -1,0 +1,141 @@
+button {
+  font-size: 1.2rem;
+  margin: 0.5rem 0.5rem;
+}
+
+.two-cols {
+  column-gap: 0rem;
+}
+
+.cost-header {
+  font-size: 1.2rem;
+}
+
+.stake-header, .doom-header, .delay-header, .summon-header {
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.stake-header {
+  color: var(--med-green);
+}
+.doom-header {
+  color: var(--pink);
+}
+
+.xmon-logo {
+  position: absolute;
+  margin-left: -3.75rem;
+  margin-top: -1rem;
+}
+
+.xmon-squid {
+  filter: sepia(1) saturate(2.5)  hue-rotate(90deg);
+}
+
+#add-btn, #remove-btn {
+  color: var(--med-green);
+  background-color: var(--black);
+}
+#add-btn:hover{
+  color: white;
+  background-color: var(--dark-green);
+}
+#remove-btn:hover {
+  color: white;
+  background-color: var(--red);
+}
+
+.form {
+  background-color : var(--black) !important; 
+  color: white !important;
+  font-size: 1.2rem;
+  outline: none;
+  border: 2px solid var(--gray);
+  padding: 0.5rem 0.2rem;
+  width: 21rem;
+}
+.form-holder {
+  margin: 0.5rem 0.5rem !important;
+}
+
+.xmon-ticker, .doom-ticker {
+  margin-left: 0.5rem;
+  font-weight: bold;
+}
+.xmon-ticker {
+  color: var(--med-green);
+}
+.doom-ticker {
+  color: var(--pink);
+}
+
+.doom-btn {
+  margin-top: 3.2rem;
+  color: var(--pink);
+  background-color: var(--black);
+}
+.doom-btn:hover {
+  color: var(--dark-pink);
+  background-color: var(--dark-gray);
+}
+
+.card-text {
+  line-height: 2rem;
+}
+
+.summon-header {
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important;
+}
+
+.summontrue {
+  color: var(--med-green);
+}
+
+.summonfalse {
+  color: var(--dark-pink);
+}
+
+.summon-btn {
+  margin-top: 2rem;
+  border: 2px solid var(--light-gray);
+}
+
+.summon-btn:not([disabled]) {
+  animation: colorExpand 2s linear infinite;
+}
+
+.clickable {
+  cursor: pointer;
+}
+.clickable:hover {
+  color: var(--light-green);
+}
+
+@keyframes colorExpand {
+  25% {
+    box-shadow: 3px 3px var(--med-green), -3px 3px var(--med-green), 3px -3px var(--med-green), -3px -3px var(--med-green);
+    color: var(--med-green);
+  }
+  /* 50% {
+    box-shadow: -2px 3px var(--med-green), 1px -1px var(--pink);
+  } */
+  75% {
+    box-shadow: 3px 3px var(--pink), -3px 3px var(--pink), 3px -3px var(--pink), -3px -3px var(--pink);
+    color: var(--pink);
+  }
+}
+
+.summon-btn:not([disabled]):hover {
+  border: 2px solid white;
+}
+
+@media only screen and (max-width: 768px) {
+  .stake-header  {
+    padding-top: 1rem;
+  }
+  .doom-header {
+    padding-top: 3rem;
+  }
+}

@@ -208,5 +208,4 @@ export class FarmComponent implements OnInit {
       this.seconds = Math.floor((distance % (1000 * 60)) / 1000);
     }
   }
-
 }

@@ -45,16 +45,19 @@ export class MonsterComponent implements OnInit {
 
   superStatic: string;
 
+  indexToReadOnchain: any;
+
   resetData() {
     this.monData = {};
     this.width = 14;
     this.minWidth = 1;
     this.maxWidth = 30;
-    this.monId = "0";
+    this.monId = "999";
     this.isOwner = false;
     this.enteredInTxHash = '';
     this.showRegister = true;
     this.superStatic = "";
+    this.indexToReadOnchain = 149;
   }
 
   ngOnInit(): void {
@@ -146,12 +149,12 @@ export class MonsterComponent implements OnInit {
           "rarity": "uint256"
         }
       }, result["monData"]);
+
       let numMons = await this.utils.decode("uint256", result["numMons"]);
       let owner = await this.utils.decode("address", result["owner"]);
       this.isOwner = owner.toLowerCase() == this.wallet.userAddress;
       this.monData["isOwner"] = owner.toLowerCase() == this.wallet.userAddress;
       this.registerFee = new BigNumber(await this.utils.decode("uint256", result["registerFee"])).div(this.constants.PRECISION);
-
       this.monData["staticHash"] = await this.utils.decode("bytes", result["staticHash"]);
       if (this.monData["staticHash"] != null) {
         this.monData["isStaticUploaded"] = true;
@@ -175,7 +178,7 @@ export class MonsterComponent implements OnInit {
         this.showRegister = false;
       }
 
-      if (parseInt(this.monId) > 128) {
+      if (parseInt(this.monId) >= this.indexToReadOnchain) {
         let tokenURI;
         if (parseInt(this.monId) <= numMons) {
           tokenURI = this.utils.decode("string", result["tokenURI"]);
@@ -209,21 +212,19 @@ export class MonsterComponent implements OnInit {
   }
 
   async loadLocalData() {
+    if (parseInt(this.monId) > this.indexToReadOnchain) {
+      return;
+    }
     const response = await fetch(this.constants.LOCAL_MON_DATA);
     const fullResponseObj = await response.json();
     const responseObj = fullResponseObj[parseInt(this.monId)];
-
     this.monData["name"] = responseObj["Name"];
-
     this.monData["img"] = this.constants.IPFS_GATEWAY + responseObj["ImageHash"];
-
     this.monData["epithets"] = responseObj["Epithets"];
     this.monData["lore"] = responseObj["Description"];
-
+    this.monData["rarity"] = responseObj["Series"];
     this.staticURL = this.constants.IPFS_GATEWAY + responseObj["StaticHash"];
     this.animURL = this.constants.IPFS_GATEWAY + responseObj["ImageHash"];
-
-    this.monData["rarity"] = responseObj["Series"];
   }
 
   async uploadData() {
@@ -302,9 +303,6 @@ export class MonsterComponent implements OnInit {
       imageBinary = imageBinary.substring(truncationStart+7);
       let data = this.wallet.web3.utils.fromAscii(this.monData["name"] + "|" + this.monData["epithets"] + "|" + this.monData["lore"] + "|" + imageBinary);
       let gasLimit = Math.min(Math.ceil((data.length/4000)*2000000), 2000000);
-
-      console.log(gasLimit, data.length, imageURL, this.staticURL);
-
       const func = this.contract.MON_REGISTRY.methods.registerMon(this.monId, data, isStatic);
       const feeAmt = this.registerFee.times(this.constants.PRECISION);
       this.wallet.sendTxWithToken(func, this.contract.XMON, this.constants.MON_REGISTRY_ADDRESS, feeAmt,

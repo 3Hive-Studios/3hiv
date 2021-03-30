@@ -15,6 +15,7 @@ import { MultisenderComponent } from './multisender/multisender.component';
 import { BundlerComponent } from './bundler/bundler.component';
 import { OldMonsComponent } from './old-mons/old-mons.component';
 import { OldCollectionComponent } from './old-collection/old-collection.component';
+import { Summon2Component } from './summon2/summon2.component';
 
 const routes: Routes = [
   {
@@ -38,6 +39,10 @@ const routes: Routes = [
     path: 'summon',
     component: SummonComponent,
     pathMatch: 'full'
+  },
+  {
+    path: 'summon2',
+    component: Summon2Component
   },
   {
     path: 'spawn',

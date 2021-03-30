@@ -100,6 +100,12 @@ export class ContractService {
     const address = this.constants.MULTISENDER_ADDRESS;
     return new this.wallet.web3.eth.Contract(abi, address); 
   }
+
+  public get MON_STAKER_2() {
+    const abi = require('../assets/abi/MonStaker3.json');
+    const address = this.constants.MON_STAKER_2_ADDRESS;
+    return new this.wallet.web3.eth.Contract(abi, address); 
+  }
   
   public ERC20(address) {
     const abi = require('../assets/abi/ERC20.json');

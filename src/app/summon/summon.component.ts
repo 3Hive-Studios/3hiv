@@ -127,6 +127,7 @@ export class SummonComponent implements OnInit {
   }
 
   stake() {
+    alert("Note: This is the old staker that is no longer minting 0xmons. This may not be what you wanted.");
     if (!this.stakeAmount) {
       this.stakeAmount = '0';
     }

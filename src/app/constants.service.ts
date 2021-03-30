@@ -7,6 +7,7 @@ export class ConstantsService {
   
   PRECISION = 1e18;
   DOOM_SCALING = 1e21;
+  DOOM_SCALING_2 = 1e12;
   XMON_PER_DAY = 3.57142857143;
 
   // Mainnet address
@@ -18,13 +19,14 @@ export class ConstantsService {
   OLD_MON_DATA = "./assets/oldMons.json";
   IPFS_GATEWAY = "https://ipfs.io/ipfs/";
 
-  // // Rinkeby addresses (note you have to change chainId in web3Enabled)
+  // Rinkeby addresses (note you have to change chainId in web3Enabled)
   // XMON_ADDRESS = '0x8dc2f7D19217245b117aEBa0f1D050c9e85c7767';
   // MON_MINTER_ADDRESS = '0x9683D905cAa55743ac63c464C34053B0b219Cc8D';
   // MON_SPAWNER_ADDRESS = '0x39D327150ff6F7D59F6BB698895CbFAD2c4816C2';
   // MON_STAKER_ADDRESS = '0xFcd2Eafe7d92d11599EE4C01Ec8AE2017bb4d2ef';
   // MULTICALL_ADDRESS = '0x42Ad527de7d4e9d9d011aC45B31D8551f8Fe9821';
   // NFT_AGGREGATOR_ADDRESS = '0x03Cb9a56c5F7Ce6796562730E3D217B1F4Dd428b';
+  // MON_STAKER_2_ADDRESS = '0xc464340B647335571B5e64B158941DB4919cd503';
 
   // Mainnet addresses
   XMON_ADDRESS = '0x3aaDA3e213aBf8529606924d8D1c55CbDc70Bf74'
@@ -38,6 +40,7 @@ export class ConstantsService {
   XMON_ETH_LP_TOKEN_ADDRESS = '0x4bacaaabe3e96959ddf3269d3092d5cea88fefe9';
   MON_REGISTRY_ADDRESS = '0x2d824D66E1b7Ba0f73b5cAf75886abf812a13E67';
   MULTISENDER_ADDRESS = '0xC653e1b3a971078812a72D11c45AD71E00f3aD1f';
+  MON_STAKER_2_ADDRESS = '0xA3300bfc13556Fa5146fFdE34e92a0230A1C3197';
 
   // Non-0xmons addresses
   WETH_ADDRESS = '0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2';
