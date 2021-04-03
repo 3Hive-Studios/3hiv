@@ -123,8 +123,7 @@ export class Summon2Component implements OnInit {
     this.lastMigrationDate = new Date(this.lastMigrationDate*1000);
 
     // Set variables based off on-chain info
-    let pastSummonTime = Math.floor(Date.now() / 1000) - parseInt(claimMonStartNum) >= 0;
-    this.canSummon = (this.doomBalance.gte(this.doomFee)) && (this.numMons < this.maxMons) && pastSummonTime;
+    this.canSummon = true;
     this.doomPerDay = (this.stakedXmon.times(this.constants.PRECISION)).sqrt().times(new BigNumber(9*24)).div(new BigNumber(2)).times(new BigNumber(60)).div(this.constants.DOOM_SCALING_2);
   }
 

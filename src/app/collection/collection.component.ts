@@ -60,7 +60,7 @@ export class CollectionComponent implements OnInit {
 
       for (let i = 0; i < monIdList.length; i++) {
         let id = monIdList[i];
-        let responseObj = await this.getMonData(id);
+        let responseObj = await this.getMonData(id, i);
         let obj = {};
         obj["id"] = id;
         obj["name"] = responseObj["name"];
@@ -75,17 +75,17 @@ export class CollectionComponent implements OnInit {
     }
   }
 
-  async getMonData(id) {
+  async getMonData(id, i) {
     const response = await fetch(this.constants.LOCAL_MON_DATA);
     const fullResponseObj = await response.json();
-    const responseObj = fullResponseObj[parseInt(id)];
     let monData = {};
     try {
+      const responseObj = fullResponseObj[parseInt(id)];
       monData["name"] = responseObj["Name"];
       monData["image"] = this.constants.IPFS_GATEWAY + responseObj["StaticHash"];
     }
     catch(error) {
-      const response = await fetch(this.uriList[id]);
+      const response = await fetch(this.uriList[i]);
       const responseObj = await response.json();
       monData["name"] = responseObj["name"];
       monData["image"] =  responseObj["static-image"];

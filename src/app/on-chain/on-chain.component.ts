@@ -5,7 +5,6 @@ import { ContractService } from '../contract.service';
 import { UtilsService } from '../utils.service';
 import { WalletService } from '../wallet.service';
 import { DomSanitizer } from '@angular/platform-browser';
-import { decode } from 'punycode';
 
 @Component({
   selector: 'app-on-chain',

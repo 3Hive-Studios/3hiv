@@ -45,8 +45,6 @@ export class MonsterComponent implements OnInit {
 
   superStatic: string;
 
-  indexToReadOnchain: any;
-
   resetData() {
     this.monData = {};
     this.width = 14;
@@ -57,7 +55,6 @@ export class MonsterComponent implements OnInit {
     this.enteredInTxHash = '';
     this.showRegister = true;
     this.superStatic = "";
-    this.indexToReadOnchain = 149;
   }
 
   ngOnInit(): void {
@@ -178,7 +175,7 @@ export class MonsterComponent implements OnInit {
         this.showRegister = false;
       }
 
-      if (parseInt(this.monId) >= this.indexToReadOnchain) {
+      if (parseInt(this.monId) >= this.constants.INDEX_TO_READ_ONCHAIN) {
         let tokenURI;
         if (parseInt(this.monId) <= numMons) {
           tokenURI = this.utils.decode("string", result["tokenURI"]);
@@ -212,7 +209,7 @@ export class MonsterComponent implements OnInit {
   }
 
   async loadLocalData() {
-    if (parseInt(this.monId) > this.indexToReadOnchain) {
+    if (parseInt(this.monId) > this.constants.INDEX_TO_READ_ONCHAIN) {
       return;
     }
     const response = await fetch(this.constants.LOCAL_MON_DATA);
@@ -302,7 +299,7 @@ export class MonsterComponent implements OnInit {
       let truncationStart = imageBinary.indexOf('base64,');
       imageBinary = imageBinary.substring(truncationStart+7);
       let data = this.wallet.web3.utils.fromAscii(this.monData["name"] + "|" + this.monData["epithets"] + "|" + this.monData["lore"] + "|" + imageBinary);
-      let gasLimit = Math.min(Math.ceil((data.length/4000)*2000000), 2000000);
+      let gasLimit = Math.min(Math.ceil((data.length/4000)*2000000), 2500000);
       const func = this.contract.MON_REGISTRY.methods.registerMon(this.monId, data, isStatic);
       const feeAmt = this.registerFee.times(this.constants.PRECISION);
       this.wallet.sendTxWithToken(func, this.contract.XMON, this.constants.MON_REGISTRY_ADDRESS, feeAmt,
