@@ -141,7 +141,6 @@ export class Web3Enabled {
       this.state = this.assistInstance.getState();
       onError();
     }
-
   }
 
   async estimateGas(func, val, _onError) {

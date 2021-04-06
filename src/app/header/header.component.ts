@@ -10,7 +10,9 @@ export class HeaderComponent implements OnInit {
 
   constructor(public wallet:WalletService) { }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.wallet.connect(() => {}, () => {}, true);
+  }
 
   connectWallet() {
     this.wallet.connect(() => {}, () => {}, false);

@@ -76,6 +76,27 @@ button[disabled]{
   border: 2px solid var(--dark-gray) !important;
 }
 
+select {
+  border: 2px solid var(--gray);
+  background-color: var(--black);
+  color: var(--light-gray);
+  font-size: 1.3rem;
+  width: 80%;
+  max-width: 15rem;
+  padding: 0.1rem 0.1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+input, textarea {
+  background-color : var(--black) !important; 
+  color: white !important;
+  outline: none;
+  border: 2px solid var(--gray);
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
 .container {
   max-width: 60rem;
   margin-left: auto;

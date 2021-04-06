@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="header cursed-text">ERC20 Factory</div>
+  <div>
+    <div class="token">Contract found <a href="https://etherscan.io/address/0xA76cee17463Bd34Df43418E9B1AcdF508e929881">here</a>.</div>
+  </div>
+  <div>
+    <div>Name</div>
+    <input type="text" [(ngModel)]="name">
+  </div>
+  <div>
+    <div>Symbol</div>
+    <input type="text" [(ngModel)]="symbol">
+  </div>
+  <div>
+    <div class="token">Token will be created at address: {{createdAddress}}</div>
+  </div>
+  <div><button (click)="createToken()">Create Token</button></div>
+</div>

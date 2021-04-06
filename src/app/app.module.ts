@@ -22,6 +22,8 @@ import { BundlerComponent } from './bundler/bundler.component';
 import { Summon2Component } from './summon2/summon2.component';
 import { OldMonsComponent } from './old-mons/old-mons.component';
 import { OldCollectionComponent } from './old-collection/old-collection.component';
+import { MinterComponent } from './minter/minter.component';
+import { TokenComponent } from './token/token.component';
 
 @NgModule({
   declarations: [
@@ -45,6 +47,8 @@ import { OldCollectionComponent } from './old-collection/old-collection.componen
     Summon2Component,
     OldMonsComponent,
     OldCollectionComponent,
+    MinterComponent,
+    TokenComponent,
   ],
   imports: [
     BrowserModule,
