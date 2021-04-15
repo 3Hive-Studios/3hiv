@@ -30,7 +30,7 @@ export class OnChainComponent implements OnInit {
 
   ngOnInit(): void {
     this.txHash = this.activatedRoute.snapshot.paramMap.get('txHash');
-    if (this.wallet.connected) {
+    if (this.wallet.web3) {
       this.loadData();
     }
     this.wallet.connectedEvent.subscribe(() => {
