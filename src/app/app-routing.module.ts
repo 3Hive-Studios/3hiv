@@ -18,6 +18,7 @@ import { OldCollectionComponent } from './old-collection/old-collection.componen
 import { Summon2Component } from './summon2/summon2.component';
 import { MinterComponent } from './minter/minter.component';
 import { TokenComponent } from './token/token.component';
+import { XxmonComponent } from './xxmon/xxmon.component';
 
 const routes: Routes = [
   {
@@ -97,6 +98,10 @@ const routes: Routes = [
   {
     path: 'token/:address',
     component: TokenComponent
+  },
+  {
+    path: 'xxmon',
+    component: XxmonComponent
   },
   // wildcard
   {

@@ -1,0 +1,26 @@
+<div class="container">
+
+  <div class="centered">
+    <div class="header"><span class="cursed-text">X</span> your XMON</div>
+  </div>
+
+  <div class="centered">Stake your XMON to earn fees from various 0xmons projects.
+    <p>Contract is <a href="https://etherscan.io/address/0x0b5c9081e818e3b2cf677e7f42391de34d6ab2f3" target="_blank">here</a>.
+  </div>
+
+  <div class="card">
+    <div class="card-text">
+      <div>Total staked: <b>{{totalStaked.toFormat(8)}}</b><span class="xxmon-ticker">XXMON</span></div>
+      <hr>
+      <div (click)="fillForm(stakedXmon)" class="clickable"><span >Staking:</span> <b> {{stakedXmon.toFormat(8)}}</b> <span class="xxmon-ticker">XXMON</span></div>
+      <div>Redeemable for: <b>{{exchangeRate.toFormat(8)}}</b><span class="xmon-ticker">XMON</span></div>
+      <div (click)="fillForm(xmonBalance)" class="clickable"><span>Balance:</span> <b> {{xmonBalance.toFormat(8)}}</b> <span class="xmon-ticker">XMON</span></div>
+    </div>
+    <div class="form-holder">
+      <input placeholder="0.0000" class="form" [(ngModel)]="stakeAmount" name="stakeAmountInput">
+    </div>
+    <button id="add-btn" (click)="enter()" title="Stake your XMON">Add Stake</button>
+    <button id="remove-btn" (click)="leave()" title="Removes staked XMON">Remove Stake</button>
+  </div>
+
+</div>

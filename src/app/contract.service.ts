@@ -112,6 +112,12 @@ export class ContractService {
     const address = this.constants.TOKEN_FACTORY_ADDRESS;
     return new this.wallet.web3.eth.Contract(abi, address); 
   }
+
+  public get XXMON() {
+    const abi = require('../assets/abi/XXMON.json');
+    const address = this.constants.XXMON_ADDRESS;
+    return new this.wallet.web3.eth.Contract(abi, address); 
+  }
   
   public ERC20(address) {
     const abi = require('../assets/abi/ERC20.json');

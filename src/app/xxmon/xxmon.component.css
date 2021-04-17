@@ -1,0 +1,74 @@
+button {
+  font-size: 1.2rem;
+  margin: 0.5rem 0.5rem;
+}
+
+.stake-header, .doom-header, .delay-header, .summon-header {
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.stake-header {
+  color: var(--med-green);
+}
+.doom-header {
+  color: var(--pink);
+}
+
+.xmon-logo {
+  position: absolute;
+  margin-left: -3.75rem;
+  margin-top: -1rem;
+}
+
+.xmon-squid {
+  filter: sepia(1) saturate(2.5)  hue-rotate(90deg);
+}
+
+#add-btn, #remove-btn {
+  color: var(--med-green);
+  background-color: var(--black);
+}
+#add-btn:hover{
+  color: white;
+  background-color: var(--dark-green);
+}
+#remove-btn:hover {
+  color: white;
+  background-color: var(--red);
+}
+
+.form {
+  background-color : var(--black) !important; 
+  color: white !important;
+  font-size: 1.2rem;
+  outline: none;
+  border: 2px solid var(--gray);
+  padding: 0.5rem 0.2rem;
+  width: 21rem;
+}
+.form-holder {
+  margin: 0.5rem 0.5rem !important;
+}
+
+.xmon-ticker, .xxmon-ticker {
+  margin-left: 0.5rem;
+  font-weight: bold;
+}
+.xmon-ticker {
+  color: var(--med-green);
+}
+.xxmon-ticker {
+  color: var(--green);
+}
+
+.card-text {
+  line-height: 2rem;
+}
+
+.clickable {
+  cursor: pointer;
+}
+.clickable:hover {
+  color: var(--light-green);
+}

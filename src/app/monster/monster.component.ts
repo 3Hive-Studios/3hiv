@@ -47,7 +47,7 @@ export class MonsterComponent implements OnInit {
 
   resetData() {
     this.monData = {};
-    this.width = 14;
+    this.width = 10;
     this.minWidth = 1;
     this.maxWidth = 30;
     this.isOwner = false;
@@ -208,9 +208,6 @@ export class MonsterComponent implements OnInit {
   }
 
   async loadLocalData() {
-    if (parseInt(this.monId) > this.constants.INDEX_TO_READ_ONCHAIN) {
-      return;
-    }
     const response = await fetch(this.constants.LOCAL_MON_DATA);
     const fullResponseObj = await response.json();
     const responseObj = fullResponseObj[parseInt(this.monId)];
