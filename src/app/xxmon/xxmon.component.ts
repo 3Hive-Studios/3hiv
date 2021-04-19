@@ -52,10 +52,6 @@ export class XxmonComponent implements OnInit {
         target: this.constants.XXMON_ADDRESS,
         callData: this.contract.XXMON.methods.balanceOf(this.wallet.userAddress).encodeABI()
       },
-      "exchangeRate": {
-        target: this.constants.XXMON_ADDRESS,
-        callData: this.contract.XXMON.methods.exchangeRate(new BigNumber(this.constants.PRECISION)).encodeABI()
-      },
       "totalStaked": {
         target: this.constants.XXMON_ADDRESS,
         callData: this.contract.XXMON.methods.totalSupply().encodeABI()
@@ -64,7 +60,7 @@ export class XxmonComponent implements OnInit {
     let results = await this.utils.makeMulticall(multicallFns);
     this.xmonBalance = new BigNumber(await this.utils.decode("uint256", results["xmonBalance"])).div(this.constants.PRECISION);
     this.stakedXmon = new BigNumber(await this.utils.decode("uint256", results["stakedXmon"])).div(this.constants.PRECISION);
-    let exchangeRateMultiplier = new BigNumber(await this.utils.decode("uint256", results["exchangeRate"])).div(this.constants.PRECISION);
+    let exchangeRateMultiplier = new BigNumber(await this.contract.XXMON.methods.exchangeRate(this.constants.PRECISION.toString()).call()).div(this.constants.PRECISION);
     this.exchangeRate = exchangeRateMultiplier.multipliedBy(this.stakedXmon);
     this.totalStaked = new BigNumber(await this.utils.decode("uint256", results["totalStaked"])).div(this.constants.PRECISION);
   }

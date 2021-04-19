@@ -36,6 +36,28 @@
   border-top: var(--darker-gray) 2px solid;
 }
 
+.view-btn {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1rem;
+  text-transform: none;
+  margin-top: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.view-btn > a {
+  text-decoration: none;
+}
+
+.open-sea {
+  color: rgb(0, 183, 255);
+}
+
+.external-link-icon {
+  width: 1rem;
+  height: auto;
+  margin-left: 0.5rem;
+}
+
 @media only screen and (max-width: 1200px) {
   .mon-item-holder {
     grid-template-columns: 1fr 1fr 1fr;

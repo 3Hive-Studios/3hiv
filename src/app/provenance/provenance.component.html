@@ -1,0 +1,15 @@
+<div class="container">
+
+  <div class="header centered"><span class="cursed-text">BEHOLD</span> the pantheon</div>
+
+  <div class="mon-item-holder">
+    <div class="mon-item" *ngFor="let m of monList">
+      <div routerLink="/mon/{{m.Index}}" routerLinkActive="active">
+        <div class="name"><b>#{{m.Index}} {{m.Name}}</b></div>
+        <div>{{m.Epithets}}</div>
+        <img class="thumbnail centered-image" src="{{m.StaticURL}}" loading="lazy">
+      </div>
+    </div>
+  </div>
+
+</div>

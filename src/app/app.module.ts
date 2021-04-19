@@ -25,6 +25,7 @@ import { OldCollectionComponent } from './old-collection/old-collection.componen
 import { MinterComponent } from './minter/minter.component';
 import { TokenComponent } from './token/token.component';
 import { XxmonComponent } from './xxmon/xxmon.component';
+import { ProvenanceComponent } from './provenance/provenance.component';
 
 @NgModule({
   declarations: [
@@ -51,6 +52,7 @@ import { XxmonComponent } from './xxmon/xxmon.component';
     MinterComponent,
     TokenComponent,
     XxmonComponent,
+    ProvenanceComponent,
   ],
   imports: [
     BrowserModule,
