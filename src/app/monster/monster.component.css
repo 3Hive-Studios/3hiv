@@ -23,14 +23,16 @@
 .zoom-btn {
   padding: 0.25rem 0.5rem;
   margin: 0.5rem 0.5rem;
-  border: 2px solid var(--light-gray);
+  border: 3px solid var(--dark-gray);
+  border-radius: 2px;
 }
 
 .onchain-icon {
   font-size: 1.3rem;
   margin: 0.5rem 0.6rem;
   padding: 0.35rem 0.5rem;
-  border: 2px solid var(--light-gray);
+  border: 3px solid var(--dark-gray);
+  border-radius: 2px;
 }
 
 .super {
@@ -54,7 +56,8 @@
   width: 20rem;
   height: auto;
   padding: 1.5rem 1.5rem;
-  border: 2px solid white;
+  /* border: 4px solid var(--dark-gray); */
+  /* border-radius: 4px; */
 }
 
 .mon-data-card {

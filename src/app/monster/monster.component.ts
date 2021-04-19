@@ -93,6 +93,11 @@ export class MonsterComponent implements OnInit {
 
     this.updatePrevNextIds();
 
+    // Check if width is already set
+    if (window["width"] !== undefined) {
+      this.width = parseInt(window["width"]);
+    }
+
     // Check if already stored
     if (window["mon" + this.monId] !== undefined && window["mon" + this.monId]["staticHash"] !== undefined) {
       let cachedResponse = window["mon" + this.monId];
@@ -191,8 +196,8 @@ export class MonsterComponent implements OnInit {
         this.monData["img"] = responseObj["image"];
         this.monData["epithets"] = responseObj["epithets"];
         this.monData["lore"] = responseObj["description"];
-        this.staticURL = responseObj["static-image"];
-        this.animURL = responseObj["image"];
+        // this.staticURL = responseObj["static-image"];
+        // this.animURL = responseObj["image"];
       }
 
       // These are from on-chain
@@ -212,12 +217,14 @@ export class MonsterComponent implements OnInit {
     const fullResponseObj = await response.json();
     const responseObj = fullResponseObj[parseInt(this.monId)];
     this.monData["name"] = responseObj["Name"];
-    this.monData["img"] = this.constants.IPFS_GATEWAY + responseObj["ImageHash"];
     this.monData["epithets"] = responseObj["Epithets"];
     this.monData["lore"] = responseObj["Description"];
     this.monData["rarity"] = responseObj["Series"];
-    this.staticURL = this.constants.IPFS_GATEWAY + responseObj["StaticHash"];
-    this.animURL = this.constants.IPFS_GATEWAY + responseObj["ImageHash"];
+    let staticPath = responseObj["Image"].replace("OPT", "STATIC");
+    let animPath = responseObj["Image"];
+    this.staticURL = this.constants.IMAGE_PATH + staticPath;
+    this.animURL = this.constants.IMAGE_PATH + animPath;
+    this.monData["img"] = this.constants.IMAGE_PATH + animPath;
   }
 
   async uploadData() {
@@ -313,6 +320,7 @@ export class MonsterComponent implements OnInit {
 
   updateWidth(num) {
     this.width = this.width + num;
+    window["width"] = this.width;
   }
 
   @HostListener('document:keydown', ['$event'])

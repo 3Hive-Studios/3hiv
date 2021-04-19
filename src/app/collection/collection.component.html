@@ -8,8 +8,9 @@
   <div class="mon-item-holder">
     <div class="mon-item" *ngFor="let m of monList">
       <div routerLink="/mon/{{m.id}}" routerLinkActive="active">
-        <div>#{{m.id}} {{m.name}}</div>
-        <img class="thumbnail" src="{{m.image}}">
+        <div class="name"><b>#{{m.id}} {{m.name}}</b></div>
+        <div>{{m.epithets}}</div>
+        <img class="thumbnail centered-image" src="{{m.image}}" loading="lazy">
       </div>
     </div>
   </div>

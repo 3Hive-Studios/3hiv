@@ -20,10 +20,10 @@ export class ProvenanceComponent implements OnInit {
     const response = await fetch(this.constants.LOCAL_MON_DATA);
     const fullResponseObj = await response.json();
     for (let response of fullResponseObj) {
-      response["StaticURL"] = this.constants.IPFS_GATEWAY + response["StaticHash"];
+      let path = response["Image"].replace("OPT", "STATIC")
+      response["StaticURL"] = this.constants.IMAGE_PATH + path;
     }
     this.monList = fullResponseObj;
-    console.log(this.monList[0]);
   }
 
 }

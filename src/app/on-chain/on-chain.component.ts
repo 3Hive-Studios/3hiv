@@ -24,7 +24,7 @@ export class OnChainComponent implements OnInit {
 
   resetData() {
     this.monData = {};
-    this.width = 14;
+    this.width = 10;
     this.noWeb3 = true;
   }
 
@@ -49,6 +49,12 @@ export class OnChainComponent implements OnInit {
   }
 
   async loadData() {
+
+    // Check if width is already set
+    if (window["width"] !== undefined) {
+      this.width = parseInt(window["width"]);
+    }
+
     let input, decodedInput, decodedArr;
     if (this.txHash.length < 20) {
       let multicallFns = {
@@ -87,6 +93,7 @@ export class OnChainComponent implements OnInit {
 
   updateWidth(num) {
     this.width = this.width + num;
+    window["width"] = this.width;
   }
 
 }

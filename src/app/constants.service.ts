@@ -20,6 +20,7 @@ export class ConstantsService {
   LOCAL_MON_DATA = "./assets/monData.json";
   OLD_MON_DATA = "./assets/oldMons.json";
   IPFS_GATEWAY = "https://ipfs.io/ipfs/";
+  IMAGE_PATH = "./assets/final-sprites/";
 
   // Rinkeby addresses (note you have to change chainId in web3Enabled)
   // XMON_ADDRESS = '0x8dc2f7D19217245b117aEBa0f1D050c9e85c7767';
