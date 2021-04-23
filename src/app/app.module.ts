@@ -26,6 +26,7 @@ import { MinterComponent } from './minter/minter.component';
 import { TokenComponent } from './token/token.component';
 import { XxmonComponent } from './xxmon/xxmon.component';
 import { ProvenanceComponent } from './provenance/provenance.component';
+import { Story1Component } from './story1/story1.component';
 
 @NgModule({
   declarations: [
@@ -53,6 +54,7 @@ import { ProvenanceComponent } from './provenance/provenance.component';
     TokenComponent,
     XxmonComponent,
     ProvenanceComponent,
+    Story1Component,
   ],
   imports: [
     BrowserModule,

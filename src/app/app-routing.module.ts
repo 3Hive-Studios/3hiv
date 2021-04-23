@@ -20,6 +20,7 @@ import { MinterComponent } from './minter/minter.component';
 import { TokenComponent } from './token/token.component';
 import { XxmonComponent } from './xxmon/xxmon.component';
 import { ProvenanceComponent } from './provenance/provenance.component';
+import { Story1Component } from './story1/story1.component';
 
 const routes: Routes = [
   {
@@ -107,6 +108,10 @@ const routes: Routes = [
   {
     path: 'all',
     component: ProvenanceComponent
+  },
+  {
+    path: 'story1',
+    component: Story1Component
   },
   // wildcard
   {
