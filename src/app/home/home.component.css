@@ -126,4 +126,9 @@ button > a {
   .mon-item {
     margin: auto;
   }
+  .encode-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
