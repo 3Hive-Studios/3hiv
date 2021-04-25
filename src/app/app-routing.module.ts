@@ -21,6 +21,7 @@ import { TokenComponent } from './token/token.component';
 import { XxmonComponent } from './xxmon/xxmon.component';
 import { ProvenanceComponent } from './provenance/provenance.component';
 import { Story1Component } from './story1/story1.component';
+import { SignComponent } from './sign/sign.component';
 
 const routes: Routes = [
   {
@@ -112,6 +113,10 @@ const routes: Routes = [
   {
     path: 'story1',
     component: Story1Component
+  },
+  {
+    path: 'sign',
+    component: SignComponent
   },
   // wildcard
   {

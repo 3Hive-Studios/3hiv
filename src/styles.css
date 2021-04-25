@@ -166,6 +166,16 @@ input, textarea {
   color: var(--med-green);
 }
 
+.nice-button {
+  margin: 0.5rem 0.5rem;
+  text-transform: none;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1rem;
+  color: white;
+  border: 3px solid var(--dark-gray);
+  border-radius: 4px;
+}
+
 @keyframes blinker {
   25% {
     opacity: 1;
