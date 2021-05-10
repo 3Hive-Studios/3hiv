@@ -8,6 +8,7 @@
     <p>Note this is the v1 staker. You are encouraged to migrate your DOOM and restake into the v2 staker found <a routerLink="/summon2">here</a>.</p>
     <p>Contract on Etherscan <a href="https://etherscan.io/address/0xD06337A401B468657dE2f9d3E390cE5b21C3c1C0">here</a></p>
     <hr>
+    <div>All 0xmons have been summoned.</div>
     <div><b>{{numMons}}/{{maxMons}} 0xmons summoned</b></div>
   </div>
 
@@ -35,7 +36,7 @@
         <div><span>Balance:</span> <b> {{doomBalance.toFormat()}} </b> <span class="doom-ticker">DOOM</span></div>
         <div><span>Rate:</span> <b> {{doomPerHour}}</b> <span class="doom-ticker">DOOM</span> / hour</div>
         </div>
-        <button class="summon-btn" (click)="claimMon()" [disabled]="!canSummon ? 'disabled': null">SUMMON 0xmon</button>
+        <!-- <button class="summon-btn" (click)="claimMon()" [disabled]="!canSummon ? 'disabled': null">SUMMON 0xmon</button> -->
       </div>
     </div>
   </div>

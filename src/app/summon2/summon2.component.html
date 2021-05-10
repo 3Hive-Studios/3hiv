@@ -9,14 +9,15 @@
     <p>Then, head over to your <a routerLink="/collection">Collection</a> to see all your 0xmons.</p>
     <p>Contract on Etherscan <a href="https://etherscan.io/address/{{contractAddress}}">here</a></p>
     <hr>
-    <div>Summoning starts on {{claimMonStart}}</div>
+    <div><b>All 0xmons are claimed for series 2. They are available on <a href="https://opensea.io/assets/0xmons-xyz" target="_blank">OpenSea</a> and <a href="https://gallery.nftx.org/funds/0xmons/" target="_blank" rel="noopener noreferrer">NFTX</a>.</b></div>
+    <!-- <div>Summoning starts on {{claimMonStart}}</div> -->
     <div><b>{{numMons}}/{{maxMons}} 0xmons summoned</b></div>
   </div>
 
-  <div class="centered card">
+  <!-- <div class="centered card">
     <div>Migrate your DOOM by {{lastMigrationDate}}</div>
     <button (click)="migrateDoom()">Migrate DOOM</button>
-  </div>
+  </div> -->
 
   <div class="card">
     <div class="two-cols">
@@ -41,7 +42,7 @@
         <div><span>Balance:</span> <b> {{doomBalance.toFormat(5)}} </b> <span class="doom-ticker">DOOM</span></div>
         <div><span>Rate:</span> <b> {{doomPerDay.toFormat(5)}}</b> <span class="doom-ticker">DOOM</span> / day</div>
         </div>
-        <button class="summon-btn" (click)="claimMon()" [disabled]="!canSummon ? 'disabled': null">SUMMON 0xmon</button>
+        <!-- <button class="summon-btn" (click)="claimMon()" [disabled]="!canSummon ? 'disabled': null">SUMMON 0xmon</button> -->
       </div>
     </div>
   </div>
