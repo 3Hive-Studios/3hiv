@@ -119,6 +119,12 @@ export class ContractService {
     return new this.wallet.web3.eth.Contract(abi, address); 
   }
   
+  public get PROTOCARDS() {
+    const abi = require('../assets/abi/Protocards.json');
+    const address = this.constants.PROTOCARDS_ADDRESS;
+    return new this.wallet.web3.eth.Contract(abi, address); 
+  }
+
   public ERC20(address) {
     const abi = require('../assets/abi/ERC20.json');
     return new this.wallet.web3.eth.Contract(abi, address); 

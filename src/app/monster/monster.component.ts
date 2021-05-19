@@ -45,15 +45,18 @@ export class MonsterComponent implements OnInit {
 
   superStatic: string;
 
+  canMintCard: boolean;
+
   resetData() {
     this.monData = {};
-    this.width = 10;
+    this.width = 12;
     this.minWidth = 1;
-    this.maxWidth = 30;
+    this.maxWidth = 100;
     this.isOwner = false;
     this.enteredInTxHash = '';
     this.showRegister = true;
     this.superStatic = "";
+    this.canMintCard = false;
   }
 
   ngOnInit(): void {
@@ -92,6 +95,15 @@ export class MonsterComponent implements OnInit {
   async loadData() {
 
     this.updatePrevNextIds();
+
+    if (parseInt(this.monId) >= 5 && parseInt(this.monId) <= 132) {
+      try {
+        await this.contract.PROTOCARDS.methods.ownerOf(this.monId).call();
+      }
+      catch(e) {
+        this.canMintCard = true;
+      }
+    }
 
     // Check if width is already set
     if (window["width"] !== undefined) {
@@ -321,6 +333,11 @@ export class MonsterComponent implements OnInit {
   updateWidth(num) {
     this.width = this.width + num;
     window["width"] = this.width;
+  }
+
+  async claimCard() {
+    const func = this.contract.PROTOCARDS.methods.mintCard(this.monId);
+    await this.wallet.sendTxWithToken(func, this.contract.XMON, this.constants.PROTOCARDS_ADDRESS, this.constants.PROTOCARDS_ADDRESS, 350000, ()=>{}, ()=>{}, (e)=>{alert(e)});
   }
 
   @HostListener('document:keydown', ['$event'])

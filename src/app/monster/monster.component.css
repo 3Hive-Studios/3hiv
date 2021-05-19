@@ -62,6 +62,7 @@
 
 .mon-data-card {
   font-size: 1.1rem;
+  color: white;
 }
 
 .lore {
@@ -76,14 +77,24 @@
   text-transform: none;
   margin-top: 1.5rem;
   margin-right: 1.5rem;
+  border-radius: 2px;
+  color: white;
 }
 
 .view-btn > a {
   text-decoration: none;
 }
 
+.external-links {
+  margin-bottom: 2rem;
+}
+
 .open-sea {
   color: rgb(0, 183, 255);
+}
+
+.nav-bar {
+  margin-top: 1rem;
 }
 
 .external-link-icon {
@@ -137,6 +148,24 @@ select {
 
 .direct-upload {
   margin-top: 2rem;
+}
+
+.claim-title {
+  font-size: 1.5rem;
+  color: var(--green);
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.protocard {
+  margin-top: 2rem;
+  padding: 1rem 1rem;
+  border: 2px solid var(--med-green);
+  border-radius: 3px;
+}
+
+.protocard-btn {
+  color: var(--green);
 }
 
 @media only screen and (max-width: 768px) {
