@@ -1,5 +1,6 @@
 :root {
 --black: rgb(0, 0, 0);
+--darkest-gray: rgb(7, 15, 37);
 --darker-gray: #1c2541ff;
 --dark-gray: #2b3b56ff;
 --gray: #6081a9ff;
@@ -43,6 +44,7 @@ button {
   font-weight: bold;
   border: 2px solid var(--gray);
   text-transform: uppercase;
+  border-radius: 2px;
 }
 
 button:hover {

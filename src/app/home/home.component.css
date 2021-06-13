@@ -91,22 +91,28 @@ button > a {
 }
 
 .opensea-bar {
-  padding-top: 3rem;
+  margin-top: 3rem;
+  background-color: var(--darkest-gray);
+  padding: 1rem;
 }
 
 .view-button {
   color: var(--med-green) !important;
 }
 
+.opensea-button, .view-button {
+  font-size: 1.5rem !important;
+  padding: 1rem;
+}
+
 .opensea-logo {
-  width: 1rem;
+  width: 1.5rem;
   height: auto;
   vertical-align: middle;
 }
 
 .on-chain-section {
   margin-top: 4rem;
-  background-color: var(--darker-gray);
 }
 
 .encode-image-wrapper {
