@@ -8,7 +8,8 @@
     "Image": "accessory-inscription-cabana-smell-rostrum-down_clip_m1_OPT.gif",
     "ImageHash": "QmcdqxBskA13QApsi6yDMwVjCtBg9ZpU4v8tfZdoZZyq7x",
     "InputHash": "QmTWXhdXKcw6RXhKPcBhWVmj12wRLvYcgrSpT1nikmBtGv",
-    "StaticHash": "QmYeZbJASvLiNGEQQytVNeDdB7u8hNcT2cVmFwRNeBy7nj"
+    "StaticHash": "QmYeZbJASvLiNGEQQytVNeDdB7u8hNcT2cVmFwRNeBy7nj",
+    "Color": "rainbow"
   },
   {
     "Index": 1,
@@ -19,7 +20,8 @@
     "Image": "0x_founder_0_clip_m1_OPT.gif",
     "ImageHash": "QmY1E7rpjHBocXMreswmxNGiN7ZjeZGfZrWF4tZ6NU6ffy",
     "InputHash": "QmfJsL7Lh2jrRqaTMxorT7qRuMuDSW7jLMb2vQuyMhHokk",
-    "StaticHash": "QmQQEUtfeNxD7tkWAkd8grzCLDpXTjNhS9syg3hGF5ntfg"
+    "StaticHash": "QmQQEUtfeNxD7tkWAkd8grzCLDpXTjNhS9syg3hGF5ntfg",
+    "Color": "red"
   },
   {
     "Index": 2,
@@ -30,7 +32,8 @@
     "Image": "0x_founder_1_clip_m1_OPT.gif",
     "ImageHash": "QmXKcSLMD4S65QUxrJbfikk9uhXTBqr4JMMDjMtUywCro3",
     "InputHash": "QmdcDCzGVTo2VPwj1haCuPoop5SkC9BFroXU4aw9Hza67e",
-    "StaticHash": "QmZJDDA6GbhbBCP8Bo1cWrxSVQnMAJAPuUhAD7UFk7Dk8j"
+    "StaticHash": "QmZJDDA6GbhbBCP8Bo1cWrxSVQnMAJAPuUhAD7UFk7Dk8j",
+    "Color": "yellow"
   },
   {
     "Index": 3,
@@ -41,7 +44,8 @@
     "Image": "0x_founder_2_clip_m1_OPT.gif",
     "ImageHash": "QmcG4UW3N9mV4G8aJgWxwLC9DneFuH3KkdFAAHQ6em7rPW",
     "InputHash": "QmenTr74f5Hn5SkJT1NTEFWSaT49F8fi2onT146UwgdshR",
-    "StaticHash": "QmVs2MidPEYtkGudXXBna43owrjkdVTGrPVhQYWEWJ8ATy"
+    "StaticHash": "QmVs2MidPEYtkGudXXBna43owrjkdVTGrPVhQYWEWJ8ATy",
+    "Color": "green"
   },
   {
     "Index": 4,
@@ -52,7 +56,8 @@
     "Image": "0x_founder_3_clip_m1_OPT.gif",
     "ImageHash": "QmY9Kgs4STxZHasnUeopUZD2cNrweLEEMfm9R7wbGDo6HT",
     "InputHash": "QmfVgziuVbPovhQqKgW8J3DQYRieQx9PmHNSe4yUbZYT4W",
-    "StaticHash": "Qma2cqnuu5EL4QU61otkHVXpVbD3xGVjmYAWFCbAdYZnnQ"
+    "StaticHash": "Qma2cqnuu5EL4QU61otkHVXpVbD3xGVjmYAWFCbAdYZnnQ",
+    "Color": "green"
   },
   {
     "Index": 5,
@@ -63,7 +68,8 @@
     "Image": "shakedown-foot-licence-spruce-mutation-repeat_clip_m5_OPT.gif",
     "ImageHash": "QmYdWtgYyzhdwtaa3DduiviHyfcnhEnRkYDk3utVfGrhei",
     "InputHash": "QmSXxRgxn2hevEDXDw1KPMNpBrTxGAZXAbfCsXRbKQ7FNR",
-    "StaticHash": "QmTyj93ELrcVLqG5HTXm8a4dWd4PGcapaQN8rwr1zsSsaU"
+    "StaticHash": "QmTyj93ELrcVLqG5HTXm8a4dWd4PGcapaQN8rwr1zsSsaU",
+    "Color": "brown"
   },
   {
     "Index": 6,
@@ -74,7 +80,8 @@
     "Image": "thirst-hesitation-point-tonic-hint-visit_norm_m1_OPT.gif",
     "ImageHash": "QmUU4RBgvPtAuMmye2EknzZuGPfBVLispvna4GEnogkKYX",
     "InputHash": "QmYD8wuKLojhuR7VyJTBxEwFjpTFQciLU5QmKfD1k4SeVF",
-    "StaticHash": "QmUhpBbK2Y27swxEpVNBtiqxLnEnZT6T3ESipMpnFtNUeT"
+    "StaticHash": "QmUhpBbK2Y27swxEpVNBtiqxLnEnZT6T3ESipMpnFtNUeT",
+    "Color": "green"
   },
   {
     "Index": 7,
@@ -85,7 +92,8 @@
     "Image": "bull-endorsement-doctorate-roller-decongestant-dealing_clip_m7_OPT.gif",
     "ImageHash": "Qmf7myaCTtsPaQjc7YgXefpSSYsPPz7Wd9dnyr7jT62HQS",
     "InputHash": "QmPEgBRK6wGhCkKPwAw9j2Na86cp77fmjtMVfT5V4VYWpQ",
-    "StaticHash": "QmeFmh8GyNAvys6Db5VM8Ygj9Q6ANSMGxCCpp3VTZtckjU"
+    "StaticHash": "QmeFmh8GyNAvys6Db5VM8Ygj9Q6ANSMGxCCpp3VTZtckjU",
+    "Color": "yellow"
   },
   {
     "Index": 8,
@@ -96,7 +104,8 @@
     "Image": "angiosperm-presentation-alb-innovation-association-return_clip_m1_OPT.gif",
     "ImageHash": "QmeaKLwvWP8ncQEwsSC5Sijnpmx1RG84crqS46yyyoC3Rv",
     "InputHash": "QmWuHooTjwnDZw4CS58bUWwoSUP9PMjp3vxN3Rmkc3JDU2",
-    "StaticHash": "QmWrQ8zREcdTEhxEkVuEGMcFFTdQWEFb9p7XGXaTPL99B4"
+    "StaticHash": "QmWrQ8zREcdTEhxEkVuEGMcFFTdQWEFb9p7XGXaTPL99B4",
+    "Color": "rainbow"
   },
   {
     "Index": 9,
@@ -107,7 +116,8 @@
     "Image": "sideboard-vegetarianism-parameter-academics-manacle-analyst_clip_m1_OPT.gif",
     "ImageHash": "QmevAycLhTEVaxP3gTW8umgcqkChokf4bjGaUaTsqNJvXv",
     "InputHash": "QmWhZ9rYPU7S5hkGv4gXQuqMu85Z87oWK1f3hCFK2T9fbD",
-    "StaticHash": "QmNRYaQDKyxUKvHrGTSwYE48WgnrGfbbmjnbd31uaDz2Y1"
+    "StaticHash": "QmNRYaQDKyxUKvHrGTSwYE48WgnrGfbbmjnbd31uaDz2Y1",
+    "Color": "rainbow"
   },
   {
     "Index": 10,
@@ -118,7 +128,8 @@
     "Image": "hope-sunset-familiar-nightclub-jeans-exhaust_clip_m6_OPT.gif",
     "ImageHash": "QmQR2NzNKkLzmUBr3GnEYZhUK72gBz3XfFzEMnBZuUdWG3",
     "InputHash": "QmSmxeYAQsHeV5cY75ijruASZ4HpG64SskdTLVYUzBmJUm",
-    "StaticHash": "Qmf59dJEn8ZiPKkcMsrkQgWsrxnUpFK8UqRG4UfgsVB5er"
+    "StaticHash": "Qmf59dJEn8ZiPKkcMsrkQgWsrxnUpFK8UqRG4UfgsVB5er",
+    "Color": "blue"
   },
   {
     "Index": 11,
@@ -129,7 +140,8 @@
     "Image": "transport-phenomenon-cyclooxygenase-net-serum-clarinet_clip_m1_OPT.gif",
     "ImageHash": "QmZBQsLZRfHkEgQ3baCNwMU3iv7WZJ4U1AawiLvYZz1wxZ",
     "InputHash": "Qmbje3tHZNXnCYz3mfzFxQ2ZzpXNYtwWRCoviLC29euWud",
-    "StaticHash": "QmPdRcuqZVq8RP5RDcCmbVZMPm65Bc5QUnhSwrMBs9sS6x"
+    "StaticHash": "QmPdRcuqZVq8RP5RDcCmbVZMPm65Bc5QUnhSwrMBs9sS6x",
+    "Color": "white"
   },
   {
     "Index": 12,
@@ -140,7 +152,8 @@
     "Image": "coffee-minister-vaulting-reservoir-disadvantage-spree_clip_m1_OPT.gif",
     "ImageHash": "QmQYREMubL5Mjjuq5i3HNfwKUnHy5rPiL9wEtt6FASEE26",
     "InputHash": "QmR7VG4etp7ueP1yoFw7uaZGCLckcf4qhkbTaTK5C8Wd2E",
-    "StaticHash": "QmWZoquKPkzsu6rM8VqmLK9cXQApNFHWKW75469NctpGfr"
+    "StaticHash": "QmWZoquKPkzsu6rM8VqmLK9cXQApNFHWKW75469NctpGfr",
+    "Color": "rainbow"
   },
   {
     "Index": 13,
@@ -151,7 +164,8 @@
     "Image": "literate-receipt-weasel-frequency-caution-glove_clip_m1_OPT.gif",
     "ImageHash": "QmVTZNtzumHtCZ9jVVnKkFyqq4GKaoN82PEspFCxvv5fgu",
     "InputHash": "QmPRDQX7GekyKsispCZKJ4cRLxwhVBN3TbWEAqMLPZvqec",
-    "StaticHash": "QmeioACRYNypUPwkUkRbRbVVJHJgUAuPNLYH41rcqAnscc"
+    "StaticHash": "QmeioACRYNypUPwkUkRbRbVVJHJgUAuPNLYH41rcqAnscc",
+    "Color": "combo"
   },
   {
     "Index": 14,
@@ -162,7 +176,8 @@
     "Image": "pass-bratwurst-advancement-exterior-TV-salmon_clip_m1_OPT.gif",
     "ImageHash": "QmZ3QDSP1Csj3zfsKwhbBjmiMENcGnzcfDEfYD9BP5aUP9",
     "InputHash": "QmRwUvuDja6Ss2NNKUnBqsJhHaDMNyW6FdzzSVG77ACcaz",
-    "StaticHash": "QmUvfuYFNeimNDJZsJZ2JQFwPauMod6E5QmDnWGwSy69Vy"
+    "StaticHash": "QmUvfuYFNeimNDJZsJZ2JQFwPauMod6E5QmDnWGwSy69Vy",
+    "Color": "white"
   },
   {
     "Index": 15,
@@ -173,7 +188,8 @@
     "Image": "a_mon_9_clip_m1_OPT.gif",
     "ImageHash": "QmTWBCEj8Wurc2WGfgZwBYFPfr2FEBkCA9KwTcJV9UEpSB",
     "InputHash": "QmcTZRpjWd9b4FkPSR5bGwx3r5cko9jqks5H5b81rjCjLp",
-    "StaticHash": "QmNV5vCRac6wHod2bkRvwwtMEiLxFyWenBPYjaDR3MzsfD"
+    "StaticHash": "QmNV5vCRac6wHod2bkRvwwtMEiLxFyWenBPYjaDR3MzsfD",
+    "Color": "rainbow"
   },
   {
     "Index": 16,
@@ -184,7 +200,8 @@
     "Image": "b_mon_6_clip_m1_OPT.gif",
     "ImageHash": "QmPaDaVvNCpVakcvrp5L4iMU2RiTUm3GHkzCZTdAfJ5Zgh",
     "InputHash": "QmV3Pbskd7D4DPmseyojXo4E8uzm6rbiPASh6b2TpU38n4",
-    "StaticHash": "QmUjt5FoeqtM3sq8cYf12m5oSBnjmkd5FJtP2ndJDmiYPm"
+    "StaticHash": "QmUjt5FoeqtM3sq8cYf12m5oSBnjmkd5FJtP2ndJDmiYPm",
+    "Color": "purple"
   },
   {
     "Index": 17,
@@ -195,7 +212,8 @@
     "Image": "b_mon_11_clip_m1_OPT.gif",
     "ImageHash": "QmerrxMeZjLUcDcxdRWCg1pJxmjg8uByAKBsPwczyVEZhX",
     "InputHash": "QmWYFJDqDuDrKikgAJj45Mr5gQ37dPywK6D5giFerT3oVG",
-    "StaticHash": "QmbKLsZqQD3pgL7G6g34fYjRiioEhVPMwUpM3jU8wKi5kr"
+    "StaticHash": "QmbKLsZqQD3pgL7G6g34fYjRiioEhVPMwUpM3jU8wKi5kr",
+    "Color": "blue"
   },
   {
     "Index": 18,
@@ -206,7 +224,8 @@
     "Image": "b_mon_21_clip_m1_OPT.gif",
     "ImageHash": "QmfKTiMKAoDRv3Ljcz5KkaBYzagtcyTUCEVLvanF6VZNi3",
     "InputHash": "QmavyWUXwnpvgMHad2pXkALe1WHq9pJatFkqW67p7Nv5Jm",
-    "StaticHash": "QmYTJmRN8pPuM6Nnpc7SzMmwc941GKWYjFSqLCmq1ic4e2"
+    "StaticHash": "QmYTJmRN8pPuM6Nnpc7SzMmwc941GKWYjFSqLCmq1ic4e2",
+    "Color": "red"
   },
   {
     "Index": 19,
@@ -217,7 +236,8 @@
     "Image": "claw-turban-TV-pheromone-palace-tandem_clip_m1_OPT.gif",
     "ImageHash": "QmPSxtyz6dZn4uvs77v2NJLALUBSaTDpCps5R8AZHXohCs",
     "InputHash": "QmSwu6wHHHu8DYXZB9HXRpc2mnrAUYFQbbLHmzMgxxEKZq",
-    "StaticHash": "QmeYZvxudT7nmVjDTnusn3ea8bLvqQ9quFWJ1qSDRN6dp3"
+    "StaticHash": "QmeYZvxudT7nmVjDTnusn3ea8bLvqQ9quFWJ1qSDRN6dp3",
+    "Color": "red"
   },
   {
     "Index": 20,
@@ -228,7 +248,8 @@
     "Image": "porcupine-gold-administrator-diffuse-preparation-reluctance_norm_m1_OPT.gif",
     "ImageHash": "Qmd3GjPy8hzrrD87AakRRgJnTEsSmkPaUotRYJPYneUW7q",
     "InputHash": "QmQJitWq2HjuBsrfm5W4zzsAowe5agM2pbeDg5a43Fh2cv",
-    "StaticHash": "QmdUzxcW9aczH4P2urk4Vz5jitP46teBqVPTXTjWUCZ34V"
+    "StaticHash": "QmdUzxcW9aczH4P2urk4Vz5jitP46teBqVPTXTjWUCZ34V",
+    "Color": "rainbow"
   },
   {
     "Index": 21,
@@ -239,7 +260,8 @@
     "Image": "rhubarb-gallon-maracas-scow-speaking-proportion_norm_m5_OPT.gif",
     "ImageHash": "QmfEd2aLYrLRtTbg5omCJqh4fhsBwHpSpMvg3YgSR5WV38",
     "InputHash": "QmPCGrxrJ77VRzCMpmgFszFx9Ky2FXhHrNKtv8kfBA276Y",
-    "StaticHash": "QmTtCSv1gtSUK9MAq2UG5y3iepDmJuYFHAKVYuhX5QeC4r"
+    "StaticHash": "QmTtCSv1gtSUK9MAq2UG5y3iepDmJuYFHAKVYuhX5QeC4r",
+    "Color": "green"
   },
   {
     "Index": 22,
@@ -250,7 +272,8 @@
     "Image": "major-league-warren-mailing-fourths-dill-trailpatrol_norm_m5_OPT.gif",
     "ImageHash": "QmVbW25cSjo2GREuRynvfujdYKqjZZhmSpjrNRctfveDev",
     "InputHash": "QmeenofHLBmbPDvh6bf9pDwXXtuerGunDLYRjpurmV3qt2",
-    "StaticHash": "QmRkYueKzSsnaggs31brcurxMnHYWEp1BjzSXKEUm2y4qU"
+    "StaticHash": "QmRkYueKzSsnaggs31brcurxMnHYWEp1BjzSXKEUm2y4qU",
+    "Color": "gray"
   },
   {
     "Index": 23,
@@ -261,7 +284,8 @@
     "Image": "genetics-arithmetic-mall-subsidiary-variability-mess_clip_m1_OPT.gif",
     "ImageHash": "QmYgCbLhDCS2d9sER1A38PN5ReAhfEdDGq8UJbquhimBZW",
     "InputHash": "QmSR9pWx9wHaD4tTyJrjGYrYkYwvBcBYieGqnhzwEJfHo1",
-    "StaticHash": "QmZB7kHDcthBy4SszDmT2r3jvdkbcG9t4TfgShfn39t62x"
+    "StaticHash": "QmZB7kHDcthBy4SszDmT2r3jvdkbcG9t4TfgShfn39t62x",
+    "Color": "gray"
   },
   {
     "Index": 24,
@@ -272,7 +296,8 @@
     "Image": "hazel-reveal-marten-hybridization-jealousy-mechanism_norm_m1_OPT.gif",
     "ImageHash": "QmUPnrxhPuBunudK5dubckhEocPpbfXvVcEiVvzMHPjiqP",
     "InputHash": "QmXpXZWi7PQdZuYg1aBr8oDbgaVmSXY2D1rRDnjQ8Ax5zK",
-    "StaticHash": "QmRWnQfhkUG7HwWBcpawjkXQ6D4szgj716ghErh4Lta8HN"
+    "StaticHash": "QmRWnQfhkUG7HwWBcpawjkXQ6D4szgj716ghErh4Lta8HN",
+    "Color": "purple"
   },
   {
     "Index": 25,
@@ -283,7 +308,8 @@
     "Image": "prairie-quiver-cub-banyan-technology-storm_norm_m1_OPT.gif",
     "ImageHash": "QmWDDHe6GFYGscpUiryMxNWs49SksQWibK2b4sxXYoHpRx",
     "InputHash": "Qmc3DYKkQX9tXfy4c5qzc6KKKSUYu1iEwZRNkZpgXRNTsR",
-    "StaticHash": "Qmby5AM6vGvXcRBRN6Hn6bgtdQ97JBszNkGZ5A4hQEwwGg"
+    "StaticHash": "Qmby5AM6vGvXcRBRN6Hn6bgtdQ97JBszNkGZ5A4hQEwwGg",
+    "Color": "green"
   },
   {
     "Index": 26,
@@ -294,7 +320,8 @@
     "Image": "bookmark-tackle-deformation-tornado-conception-fibrosis_clip_m6_OPT.gif",
     "ImageHash": "QmYyJbVi9XTfmqPbSqGVeRQFJNQg7cDbZXZu5FieZKQdBh",
     "InputHash": "QmVQ1VjppWsuspouBKNB73Wk1K1U273zVAwJPuW8aEKK9N",
-    "StaticHash": "QmPxegvoUWowcy2DqFGCMvWau2t7QhAbSBjs96ugjqoigH"
+    "StaticHash": "QmPxegvoUWowcy2DqFGCMvWau2t7QhAbSBjs96ugjqoigH",
+    "Color": "yellow"
   },
   {
     "Index": 27,
@@ -305,7 +332,8 @@
     "Image": "baritone-member-historian-causal-stimulation-mouser_norm_m1_OPT.gif",
     "ImageHash": "QmXF6vaFA3VcMK6E9RFpzhGfcDiMPqk12piJAYLuZjjUbG",
     "InputHash": "QmSR9pWx9wHaD4tTyJrjGYrYkYwvBcBYieGqnhzwEJfHo1",
-    "StaticHash": "QmQbZ6NWCCuZEYPFKszdQ3KUQdiKBkXUBpAmnMtpt1AfNK"
+    "StaticHash": "QmQbZ6NWCCuZEYPFKszdQ3KUQdiKBkXUBpAmnMtpt1AfNK",
+    "Color": "white"
   },
   {
     "Index": 28,
@@ -316,7 +344,8 @@
     "Image": "cathedral-breath-residue-possible-forebear-diaphragm_clip_m1_OPT.gif",
     "ImageHash": "QmQtsrDiZLz5tiCUmuQPjPqf6PeQANeABkoFC7MVL89eFU",
     "InputHash": "Qmb3ZVTSX4bHR7WaRVeupnnnZ9wvov9HHA4zdpZVL8hcyi",
-    "StaticHash": "QmXm5Nx1D1tya6xdLrkLCLGDBNh7vTmtUnY7NEScnCSQMj"
+    "StaticHash": "QmXm5Nx1D1tya6xdLrkLCLGDBNh7vTmtUnY7NEScnCSQMj",
+    "Color": "rainbow"
   },
   {
     "Index": 29,
@@ -327,7 +356,8 @@
     "Image": "gate-fiery-lantern-deficit-cushion-craw_clip_m1_OPT.gif",
     "ImageHash": "QmQrcN3nwbJdV1kbXrKsCS7YbUvNaWtfnwJNg5jPd1xsn7",
     "InputHash": "QmUm6BeTkSu8brGG1ZwXENBuUihPGLX79whA9t1ZrKhjkQ",
-    "StaticHash": "Qmf6DTDFArirH4ZY3DS7GS293gwZy6BnD3g15ZDTS56nWD"
+    "StaticHash": "Qmf6DTDFArirH4ZY3DS7GS293gwZy6BnD3g15ZDTS56nWD",
+    "Color": "blue"
   },
   {
     "Index": 30,
@@ -338,7 +368,8 @@
     "Image": "target-olive-destroyer-crash-hacienda-revenant_clip_m1_OPT.gif",
     "ImageHash": "QmWyijiFSgPPyi779Rk2NWFNpmYp16kF3Ln99x9x8pggzu",
     "InputHash": "QmPcfHotn4MCtuMk5HnPSTEr2jjaonoGUZBNM9zs8Y9X9S",
-    "StaticHash": "QmaKLnJy4SUNPqAA7HNMxef6SgRiycqJdEe2zMpME5CVDx"
+    "StaticHash": "QmaKLnJy4SUNPqAA7HNMxef6SgRiycqJdEe2zMpME5CVDx",
+    "Color": "brown"
   },
   {
     "Index": 31,
@@ -349,7 +380,8 @@
     "Image": "cartridge-coverall-tank-top-organizing-flax-origin_norm_m0_OPT.gif",
     "ImageHash": "Qma4aP1ht3YsY3N6H7fH6vNw3NRQj9oP6M4JY33sXSMg1g",
     "InputHash": "QmPCTkdEAsALUYQcdbmpbZrgCSMfgX9x7UsVFqtGCEn7JN",
-    "StaticHash": "QmfViTrNPKp1RUiRLE2hosiDXUsw2JThyufN2tSYZzvSmd"
+    "StaticHash": "QmfViTrNPKp1RUiRLE2hosiDXUsw2JThyufN2tSYZzvSmd",
+    "Color": "purple"
   },
   {
     "Index": 32,
@@ -360,7 +392,8 @@
     "Image": "league-compliance-conifer-unibody-gearshift-apple_clip_m5_OPT.gif",
     "ImageHash": "QmUoFwvrLGCmCNnmFaqu5XoxGo87vxzY9c8HX1JhqPr5pz",
     "InputHash": "QmdUwtdf3UwZhPcWi1Qw1DPoANdPcdPZQSz95tpc8sSX5w",
-    "StaticHash": "QmZ7rpCjtAJ73tR3w1cR1XfLAGLkpykZTAZH4cNTWkyBDS"
+    "StaticHash": "QmZ7rpCjtAJ73tR3w1cR1XfLAGLkpykZTAZH4cNTWkyBDS",
+    "Color": "red"
   },
   {
     "Index": 33,
@@ -371,7 +404,8 @@
     "Image": "mime-vintage-macaroon-signup-beet-spouse_clip_m1_OPT.gif",
     "ImageHash": "QmeUKPYdrLtX6HT9KYa2es43KG5fzKz2uPBTZL4oAAKcM9",
     "InputHash": "QmNdbWBnddCG6iiSQY9Vn32jE97qczBDvSaYGDBRTakTGV",
-    "StaticHash": "QmcgiSqvJRVTjr8CENjxvFrEWRA4p6Y94CSpjJw4rh72V9"
+    "StaticHash": "QmcgiSqvJRVTjr8CENjxvFrEWRA4p6Y94CSpjJw4rh72V9",
+    "Color": "combo"
   },
   {
     "Index": 34,
@@ -382,7 +416,8 @@
     "Image": "waterfall-teller-accommodation-fibroblast-depressive-resume_clip_m7_OPT.gif",
     "ImageHash": "QmfXL4oCY9EPDpnoHhoVjXivWuy3E3CFy6gh1burfhS82f",
     "InputHash": "QmfMC6KFWut7MNYgAPcVAUe4Dk2MRzPzQ6pCHA7Nyno8jb",
-    "StaticHash": "QmY3E4aMF81JwKdmZH6Gvy549A94hz3dCcRZtxb3vvCyEz"
+    "StaticHash": "QmY3E4aMF81JwKdmZH6Gvy549A94hz3dCcRZtxb3vvCyEz",
+    "Color": "brown"
   },
   {
     "Index": 35,
@@ -393,7 +428,8 @@
     "Image": "evening-wear-upward-choice-lining-thongs-nutrient_norm_m7_OPT.gif",
     "ImageHash": "QmPJWaSZ14hU829JqojQvm3owRceUsG83LsbbxkNQ75GgB",
     "InputHash": "QmT3W39UNrwp74PVRGJBdmjCJffd3itNqy8fz968Wsh5J4",
-    "StaticHash": "QmbLhJDudauAedz3TCb41opMeE5k4UDiWXdH2AtQqcmuc5"
+    "StaticHash": "QmbLhJDudauAedz3TCb41opMeE5k4UDiWXdH2AtQqcmuc5",
+    "Color": "white"
   },
   {
     "Index": 36,
@@ -404,7 +440,8 @@
     "Image": "cub-expertise-detection-emanate-councilman-billing_clip_m1_OPT.gif",
     "ImageHash": "QmZoBdFGQQxpmX43mEBzgMZ5XtRFn6VgjiqQNVaRRtcS7f",
     "InputHash": "QmRqp2YNb6RwosRUQESfKbrhUquf1wBJyELMSjGek9SYrQ",
-    "StaticHash": "QmWhRvJAoytSzVUD9CGBh6NnJ53ReNZFwzUasts9P5GVWV"
+    "StaticHash": "QmWhRvJAoytSzVUD9CGBh6NnJ53ReNZFwzUasts9P5GVWV",
+    "Color": "yellow"
   },
   {
     "Index": 37,
@@ -415,7 +452,8 @@
     "Image": "host-development-ark-concentration-employ-laughter_clip_m1_OPT.gif",
     "ImageHash": "QmTa3GJpZycELVMckfH7hRFYen55zirxMt3YDqWFac62ws",
     "InputHash": "QmdYyDrXGpFQdekhatQUQi2wtZ8FXciWjdXAfbXoPiGrin",
-    "StaticHash": "QmQq5H71zAFjUQdtXpsT4S6EnXNhDt3qXJDY89mNEaemHs"
+    "StaticHash": "QmQq5H71zAFjUQdtXpsT4S6EnXNhDt3qXJDY89mNEaemHs",
+    "Color": "green"
   },
   {
     "Index": 38,
@@ -426,7 +464,8 @@
     "Image": "gondola-core-locket-octagon-iron-spaghetti_clip_m0_OPT.gif",
     "ImageHash": "QmRkYXUKi1xHAyQbJYU36DhJNqdJGEGFnqau1cLXSovaiA",
     "InputHash": "QmSR5ay2tBFfLR7BBAF9GxnQFsqXaCboqPNuaqi1mtenZd",
-    "StaticHash": "QmfGBKbHDm9SX5UsTRxi9BNzp5AFJJXgPQ4cK8N9jx46CJ"
+    "StaticHash": "QmfGBKbHDm9SX5UsTRxi9BNzp5AFJJXgPQ4cK8N9jx46CJ",
+    "Color": "blue"
   },
   {
     "Index": 39,
@@ -437,7 +476,8 @@
     "Image": "fingernail-pumpkinseed-ear-insurance-freon-taro_clip_m5_OPT.gif",
     "ImageHash": "QmVRgKwQJKgpo9hDb6qyvnj55CLZhZYc8XQifbDKwwU2ZM",
     "InputHash": "QmQAsxgteNXt3FtwKyYQxfdCcMFjZtz7YKe1yENFWn27C5",
-    "StaticHash": "QmSv7dyHfdgjtSrj3exhbaANv4RuLJ6FLEpGgadiMueLvZ"
+    "StaticHash": "QmSv7dyHfdgjtSrj3exhbaANv4RuLJ6FLEpGgadiMueLvZ",
+    "Color": "red"
   },
   {
     "Index": 40,
@@ -448,7 +488,8 @@
     "Image": "halt-violence-emergence-pattypan-whirlwind-shanty_clip_m5_OPT.gif",
     "ImageHash": "QmZNvs4cRcrrVHAZnJLhFPieTWsMsUzG5xmcA45fTvAtg6",
     "InputHash": "QmaxosVKicZ3MpkRmouW9edFsV3txdib3K8CQqK98P2unv",
-    "StaticHash": "QmT6fLFPqPwjHDSdeJLdbUddamK2XbrYBfGn22RYbdVa71"
+    "StaticHash": "QmT6fLFPqPwjHDSdeJLdbUddamK2XbrYBfGn22RYbdVa71",
+    "Color": "brown"
   },
   {
     "Index": 41,
@@ -459,7 +500,8 @@
     "Image": "hike-right-bass-mom-macrofauna-initialise_clip_m1_OPT.gif",
     "ImageHash": "QmPctrP7pbKHuPqux6bCkyyfFTxza7L7w1erREz57qiNGc",
     "InputHash": "QmRjoXfPaeCJUeWjMsLfLUFkicQvXkJVWHgjnHWMFB8T5N",
-    "StaticHash": "QmWkxh8vH5LSMXhv3HBqp9ybieB7onrsvbuZEtey57ft24"
+    "StaticHash": "QmWkxh8vH5LSMXhv3HBqp9ybieB7onrsvbuZEtey57ft24",
+    "Color": "red"
   },
   {
     "Index": 42,
@@ -470,7 +512,8 @@
     "Image": "aftershave-celsius-flytrap-fall-short-cofactor_clip_m1_OPT.gif",
     "ImageHash": "QmWaq7uZHNsAH9rYcrG1uy7BejvCodCbu6hH9PHbRQURBB",
     "InputHash": "QmcHLk9nGi56MYjvaiiREtV68ZapZghi2QThjPgtRHE8iK",
-    "StaticHash": "QmQJYz2uwuaLAGfdcLJ71QoXmWgBQcpPQuKz4ufkFfP4SJ"
+    "StaticHash": "QmQJYz2uwuaLAGfdcLJ71QoXmWgBQcpPQuKz4ufkFfP4SJ",
+    "Color": "blue"
   },
   {
     "Index": 43,
@@ -481,7 +524,8 @@
     "Image": "calculus-subexpression-digestive-armadillo-brother-silicon_clip_m0_OPT.gif",
     "ImageHash": "QmU52yn2Sx6AdorKztbz5dhiEu61LL4J2Xqkj5h5fwU5z4",
     "InputHash": "QmdBKnEPV9Gqi9zcHSHnvzzv5MqBmR77k3kZHP43QkGyhX",
-    "StaticHash": "QmbtjHhniZ2MpnSqWZMAZbX18nJcnF2Va1c6mU8U7sVFLo"
+    "StaticHash": "QmbtjHhniZ2MpnSqWZMAZbX18nJcnF2Va1c6mU8U7sVFLo",
+    "Color": "blue"
   },
   {
     "Index": 44,
@@ -492,7 +536,8 @@
     "Image": "chess-goddess-fact-comestible-downgrade-precedence_clip_m1_OPT.gif",
     "ImageHash": "QmWPVcrL1iaRkEXMSXEGkqCd7V7A54HqnRcnQWKaRBsAy2",
     "InputHash": "QmcP58MQAwEYAYfYiDi93J3F4ERemSLuGt3vhPeThfeBqc",
-    "StaticHash": "QmUceosXtqSs1zhjtpXT9HzN8pSnSzSDosG2G1iDvmL1GY"
+    "StaticHash": "QmUceosXtqSs1zhjtpXT9HzN8pSnSzSDosG2G1iDvmL1GY",
+    "Color": "blue"
   },
   {
     "Index": 45,
@@ -503,7 +548,8 @@
     "Image": "chowder-glacier-salad-process-mean-propane_clip_m5_OPT.gif",
     "ImageHash": "QmdxfRsF4Hb82btop6AjHCED4BdKzNKpHL4Jh86CUWvpk2",
     "InputHash": "QmX61bkzJmq73MQd4YyoKLkigD8JJUsH8VWAm4vTMU1Mj5",
-    "StaticHash": "QmbuZBZCi2mnAt97f7mEaWUB4BMd2foyiobnKCLYc8ub5j"
+    "StaticHash": "QmbuZBZCi2mnAt97f7mEaWUB4BMd2foyiobnKCLYc8ub5j",
+    "Color": "brown"
   },
   {
     "Index": 46,
@@ -514,7 +560,8 @@
     "Image": "simplicity-cholesterol-title-cemetery-styling-stot_norm_m1_OPT.gif",
     "ImageHash": "Qmf4Wj3ymcZoYJxzPmVJkmTMKhKemuB9vqKmLYhG2BtaqX",
     "InputHash": "QmdkmTxp3RYUEJ2djy66XTYv7mFeqRCUEvMC4wBLdGVZ2F",
-    "StaticHash": "QmSQ2XXEUH1QjvUFUzHzT5iWPQZwXwfU4hBanCd9zNGFD2"
+    "StaticHash": "QmSQ2XXEUH1QjvUFUzHzT5iWPQZwXwfU4hBanCd9zNGFD2",
+    "Color": "purple"
   },
   {
     "Index": 47,
@@ -525,7 +572,8 @@
     "Image": "duckling-daffodil-visual-pomegranate-boatload-lynx_norm_m1_OPT.gif",
     "ImageHash": "QmQRh3B95dvSR97TeysvvkHAhLPsQX7UCPdgnbLa7wxRLB",
     "InputHash": "QmeuRGbZcGtn2LG6RXbFsCweQnY1yKzW4PGhHaak3yNsmb",
-    "StaticHash": "Qmby1cBw3iwCZJuMrDDgnNFQQZCeDGaLUJX3oPduLXJKkq"
+    "StaticHash": "Qmby1cBw3iwCZJuMrDDgnNFQQZCeDGaLUJX3oPduLXJKkq",
+    "Color": "purple"
   },
   {
     "Index": 48,
@@ -536,7 +584,8 @@
     "Image": "economics-wine-organisation-well-death-cleat_norm_m7_OPT.gif",
     "ImageHash": "QmNib5u4JRnozVvh3EUUJLMwoXQF1J2McwbEoqq3VLgtgf",
     "InputHash": "QmRWeseoMygWyaF6ZBHqwiKDTPfDj1f9q95gQeX9swmCWV",
-    "StaticHash": "QmRSw1odnDBcXwPKfKSMQBQVJMTopQthvARinK6woreyXL"
+    "StaticHash": "QmRSw1odnDBcXwPKfKSMQBQVJMTopQthvARinK6woreyXL",
+    "Color": "brown"
   },
   {
     "Index": 49,
@@ -547,7 +596,8 @@
     "Image": "cream-honeydew-slipper-storage-government-apology_clip_m1_OPT.gif",
     "ImageHash": "QmQ71zjSAMB5A9A9ytrQT7kyVuHiGANv4TPvz2KT6mJmuu",
     "InputHash": "QmXRCArhfsNe76TZU69HgsY1FiyDUXZgiFEseDS8LHBZfm",
-    "StaticHash": "QmeyCaXn4m5BRELTJ9nbRcyRZCVy7qZfFcsbR4qh49Q8pd"
+    "StaticHash": "QmeyCaXn4m5BRELTJ9nbRcyRZCVy7qZfFcsbR4qh49Q8pd",
+    "Color": "brown"
   },
   {
     "Index": 50,
@@ -558,7 +608,8 @@
     "Image": "printer-atrium-main-doughnut-disparity-stepdaughter_clip_m1_OPT.gif",
     "ImageHash": "QmP842eyDuhkQcQYNSCPpavkzAP2roNyAX45xBB27UXowN",
     "InputHash": "QmV4YYz988zCR2bcajGi4Y1uzQcuLJCvW3P4vpZ8icWU77",
-    "StaticHash": "QmeHX5FmtHTn8LMfHKYmCeHpqU1UYRKXJd3Qq1h8E5JAKv"
+    "StaticHash": "QmeHX5FmtHTn8LMfHKYmCeHpqU1UYRKXJd3Qq1h8E5JAKv",
+    "Color": "purple"
   },
   {
     "Index": 51,
@@ -569,7 +620,8 @@
     "Image": "muscle-calorie-lollipop-throat-fat-topic_norm_m1_OPT.gif",
     "ImageHash": "QmYSgDXhAWUCCDdKqtTbM32pnMx1VK9VEexjCxs67tLa4q",
     "InputHash": "QmdzFKVVd4ywMwF2of3rJyZrm8RhTa2rj5BCgQmDJ3u1tS",
-    "StaticHash": "QmeEeB1VJXG5QNAFjnBULzphQ78pDzfq6zetZ4QakR51vT"
+    "StaticHash": "QmeEeB1VJXG5QNAFjnBULzphQ78pDzfq6zetZ4QakR51vT",
+    "Color": "white"
   },
   {
     "Index": 52,
@@ -580,7 +632,8 @@
     "Image": "overflight-raisin-confectionery-pantsuit-hype-employee_norm_m1_OPT.gif",
     "ImageHash": "QmPruQdeQRzWyTSPQGbh8QaaNELudjfWstgvazTqHwc7vb",
     "InputHash": "QmazfhhS8PrFCRxAoP5urjss2XSntBQVJKVXRnifM2FcbB",
-    "StaticHash": "QmeR6w4n5SGBaFeokAwo6HPw3W1cB2unfmMvwrt2BQnFjc"
+    "StaticHash": "QmeR6w4n5SGBaFeokAwo6HPw3W1cB2unfmMvwrt2BQnFjc",
+    "Color": "yellow"
   },
   {
     "Index": 53,
@@ -591,7 +644,8 @@
     "Image": "appetiser-worry-jaguar-dew-connection-minnow_norm_m6_OPT.gif",
     "ImageHash": "Qmc67nLurJotN97ZJDznLWMjWXDtcj1KcBXzEbGR3SHaS1",
     "InputHash": "QmWZyrbkgPDHaPrUjZ5jPdkRwe513NM96Y5Z5pcaYKBLGz",
-    "StaticHash": "QmcD9FGu6KaNzbFi1pGRru6cjCdDSDi1f1MjV9fzKL6KLc"
+    "StaticHash": "QmcD9FGu6KaNzbFi1pGRru6cjCdDSDi1f1MjV9fzKL6KLc",
+    "Color": "gray"
   },
   {
     "Index": 54,
@@ -602,7 +656,8 @@
     "Image": "forum-elm-stylus-cannibal-pillow-sugar_norm_m1_OPT.gif",
     "ImageHash": "QmVtbiy1rV2K7D3MBCN11RpERLbXcx9oYupi8CsdVPGmkE",
     "InputHash": "QmRSCKGWjapAsK5kpcvMgXzdn6WvjhrFHXMwvkvrjoMG7b",
-    "StaticHash": "QmUXB7Vv8n96aQD2W6rPCBc3LDbCc3ViBK8LEQmrQPAYw4"
+    "StaticHash": "QmUXB7Vv8n96aQD2W6rPCBc3LDbCc3ViBK8LEQmrQPAYw4",
+    "Color": "blue"
   },
   {
     "Index": 55,
@@ -613,7 +668,8 @@
     "Image": "bellows-cradle-carnation-hake-definition-singer_norm_m5_OPT.gif",
     "ImageHash": "QmfTyZiVEDyeX7LQoEPkAyK3C8ag1Dq3ghtjaYtM2jhBot",
     "InputHash": "QmQCbfUUsFLbJP2VMwEMbgP2NmJztCqc9NQwjamZXWR9P7",
-    "StaticHash": "QmXRqnmrB5fdcVz3MCqe46r3yA9sQngvbG3PrzM7G7uofV"
+    "StaticHash": "QmXRqnmrB5fdcVz3MCqe46r3yA9sQngvbG3PrzM7G7uofV",
+    "Color": "white"
   },
   {
     "Index": 56,
@@ -624,7 +680,8 @@
     "Image": "baggie-lottery-buckle-cat-species-bench_norm_m7_OPT.gif",
     "ImageHash": "QmYeFfGuaBvZHwVFjgTTh6w7LAFnv2xRCJAdgKckdpWPnB",
     "InputHash": "QmapxWPyFfNBWB8bNyvZahubiMBDAJdqdh1AukBAmuj8XH",
-    "StaticHash": "QmRXqJ8y93RfMXo856iVu6HRJUJAHmz7adYdVkbM553CzD"
+    "StaticHash": "QmRXqJ8y93RfMXo856iVu6HRJUJAHmz7adYdVkbM553CzD",
+    "Color": "brown"
   },
   {
     "Index": 57,
@@ -635,7 +692,8 @@
     "Image": "fatigue-livestock-rehospitalization-tulip-snap-sailing_norm_m1_OPT.gif",
     "ImageHash": "QmRVKQokK5qRDS4Xz8XS5w36tiDeoe7yfxGKvejG2oiUC4",
     "InputHash": "QmVgc7Em5wK7p3j4e1YKjE8HdkPFmoDB2WgQeRoqGcvP62",
-    "StaticHash": "QmcijdKGHp9trQKjTQhmm83uZiPx7AW4hx6nwXa9unh3ac"
+    "StaticHash": "QmcijdKGHp9trQKjTQhmm83uZiPx7AW4hx6nwXa9unh3ac",
+    "Color": "brown"
   },
   {
     "Index": 58,
@@ -646,7 +704,8 @@
     "Image": "report-buying-crush-sportsman-reorganisation-carload_norm_m7_OPT.gif",
     "ImageHash": "QmWV7oFKJ7DZJ8GGY918YNqzoWMg9eAp49kTFns9gVdsJe",
     "InputHash": "QmWyPyhzqxULjyBvqTm8GXbpqLpnXUuobKy2GHjFrU7UjY",
-    "StaticHash": "QmSi9ArBKoYjmgLffDcbaAsxrdToJeoeeSFETmcMiT7RKh"
+    "StaticHash": "QmSi9ArBKoYjmgLffDcbaAsxrdToJeoeeSFETmcMiT7RKh",
+    "Color": "blue"
   },
   {
     "Index": 59,
@@ -657,7 +716,8 @@
     "Image": "surplus-emitter-sediment-cenotaph-spectrum-legging_norm_m1_OPT.gif",
     "ImageHash": "QmQqQ8eUfiFqZj9g6HUSNRCDyz7XJm1TpPzzAyQPM9ZTxS",
     "InputHash": "Qmez4Ge9XdJPWiKhxWQJ95TuXJEafQMru97g5oGUVXEF7y",
-    "StaticHash": "QmPEYqNweBrr57yzgUhRe958DMLqxj1JqVeFBpKzm7fPxs"
+    "StaticHash": "QmPEYqNweBrr57yzgUhRe958DMLqxj1JqVeFBpKzm7fPxs",
+    "Color": "yellow"
   },
   {
     "Index": 60,
@@ -668,7 +728,8 @@
     "Image": "way-misreading-fender-prestige-artificer-behalf_clip_m1_OPT.gif",
     "ImageHash": "QmcLMvHTWhAKBMJgAJPH5wm9QoUxxSiQSFTg3o87Q1HHVd",
     "InputHash": "QmVeYkEgjWs47zefSEzVUiqaBAYs6S9rRxECEn28iD6vwq",
-    "StaticHash": "QmQ1b2RFw58o9F4QaNHscW55oREFfwYBkmXP7wSwricuUM"
+    "StaticHash": "QmQ1b2RFw58o9F4QaNHscW55oREFfwYBkmXP7wSwricuUM",
+    "Color": "brown"
   },
   {
     "Index": 61,
@@ -679,7 +740,8 @@
     "Image": "paperback-relative-robin-manner-cursor-routine_clip_m0_OPT.gif",
     "ImageHash": "QmZAyku1x9Ror4YRQ3VShM65Xa1KzSnD8GVpvQZ2zukRZG",
     "InputHash": "QmehBg1o7xipZiYaBZYwKbkbk75SNua1V8Y9wTi77xGW9A",
-    "StaticHash": "QmQBF41QyasRTQnDqov2a6yM1Sfjy7BuPra8VnjSpdE3q1"
+    "StaticHash": "QmQBF41QyasRTQnDqov2a6yM1Sfjy7BuPra8VnjSpdE3q1",
+    "Color": "blue"
   },
   {
     "Index": 62,
@@ -690,7 +752,8 @@
     "Image": "nutmeg-folklore-skating-antecedent-land-chemotaxis_norm_m1_OPT.gif",
     "ImageHash": "QmYsSAi8nXUcaDzZy9PXrbeXhUHuD6sS5FbuHj2QfxbJDj",
     "InputHash": "QmbnmrDooTGAAmuDCyn4RttZEHexFHdK7rsGMUTmeNNNyH",
-    "StaticHash": "QmYg6zChCPmSfLn33ff7TLJwq8PViJR93Pe9CpRCPGniyZ"
+    "StaticHash": "QmYg6zChCPmSfLn33ff7TLJwq8PViJR93Pe9CpRCPGniyZ",
+    "Color": "white"
   },
   {
     "Index": 63,
@@ -701,7 +764,8 @@
     "Image": "pheasant-minimalism-internet-fur-temper-anarchy_clip_m1_OPT.gif",
     "ImageHash": "QmSUkfreG5eCx4ZkTE1oREZPeMpFYEz56R51aAaQXuwxx7",
     "InputHash": "QmWRf4nrxaAQPL2uJjG2mVLq7WxQvkLdTwSUvpD5UVgmmt",
-    "StaticHash": "QmXB3zctcxJN4mnDmdi7ktCY1GE2Mmd7vKmd7uYeidWpnL"
+    "StaticHash": "QmXB3zctcxJN4mnDmdi7ktCY1GE2Mmd7vKmd7uYeidWpnL",
+    "Color": "purple"
   },
   {
     "Index": 64,
@@ -712,7 +776,8 @@
     "Image": "effort-monitoring-arm-rest-storm-scholar-opossum_clip_m7_OPT.gif",
     "ImageHash": "QmcsxNWsiv7BQwzJaNNxUKHuRReQXPSqe7S77SgQ9XFjX3",
     "InputHash": "QmVKVfGgFDMPmaTm6rL6eH8GvG7bkUCWjM9dLAnKKmRZVR",
-    "StaticHash": "QmUYKHmfroY7bE4FvoN5a59dweLV7vu5cLeopRgSQPhngC"
+    "StaticHash": "QmUYKHmfroY7bE4FvoN5a59dweLV7vu5cLeopRgSQPhngC",
+    "Color": "yellow"
   },
   {
     "Index": 65,
@@ -723,7 +788,8 @@
     "Image": "taste-hut-publicity-gem-gallery-hedge_norm_m5_OPT.gif",
     "ImageHash": "Qmdie6cc9st4vxCZn6Uc2M7QEcUnbh8nyqwX3xRP4GPadQ",
     "InputHash": "QmXnRfXtBM3ooMnKMdo1fgzYsvdNjnX5R7hJzfGQyDxPXk",
-    "StaticHash": "QmUGaxDSCiHKMesDJrWw5tzoeGtbwbUBaR3HvG69YoZhG6"
+    "StaticHash": "QmUGaxDSCiHKMesDJrWw5tzoeGtbwbUBaR3HvG69YoZhG6",
+    "Color": "white"
   },
   {
     "Index": 66,
@@ -734,7 +800,8 @@
     "Image": "grief-chow-karate-couch-knight-banjo_clip_m1_OPT.gif",
     "ImageHash": "QmR1mQjiZqnTrFPPu4LccuvQjR2Nkcpnqnob4qJ1KAn2HJ",
     "InputHash": "QmX9SpU59ssNpdsq5xu2BWpmFV8Es6PBtmtAxeYGmyuwWn",
-    "StaticHash": "QmcqDw6DatpKXBzgL9FG8fKxGBmoamiz2mN3kF1zBaRBKv"
+    "StaticHash": "QmcqDw6DatpKXBzgL9FG8fKxGBmoamiz2mN3kF1zBaRBKv",
+    "Color": "combo"
   },
   {
     "Index": 67,
@@ -745,7 +812,8 @@
     "Image": "fountain-bull-baker-embellishment-understatement-tattler_norm_m7_OPT.gif",
     "ImageHash": "QmUEt1LectLpKvgNnSycASpbzVdLxi5Na3dtWkHAuoAdPx",
     "InputHash": "QmZ8UYjcN7e4ocZCW2xgBEwqpoQHYs6btAr7B96MHEBms8",
-    "StaticHash": "QmZWSP5ZuMYc6zyU13JNqpCGWtgCzLFSfdCC3qib4eFCtd"
+    "StaticHash": "QmZWSP5ZuMYc6zyU13JNqpCGWtgCzLFSfdCC3qib4eFCtd",
+    "Color": "gray"
   },
   {
     "Index": 68,
@@ -756,7 +824,8 @@
     "Image": "thickness-resale-builder-hatbox-doe-fondue_clip_m5_OPT.gif",
     "ImageHash": "QmeF1YKCtYb29oN3zULteWYMAAuK3gLfRSDi4qbUfMfZPj",
     "InputHash": "QmU2QfpHiy8wZ1hX6Pc7QN5Y2gny5Bu1ZzXazYUN8SytNw",
-    "StaticHash": "QmSzSLcnEZ9wv8MyBoLTz8YRdBnn5ZqZCW68PoDD54Bbea"
+    "StaticHash": "QmSzSLcnEZ9wv8MyBoLTz8YRdBnn5ZqZCW68PoDD54Bbea",
+    "Color": "rainbow"
   },
   {
     "Index": 69,
@@ -767,7 +836,8 @@
     "Image": "lack-comfortable-lieu-concrete-registry-tissue_clip_m1_OPT.gif",
     "ImageHash": "QmY6VpVpEg5iCkyL4LarDaYttxe6kp6oErSaFPv7CBopfJ",
     "InputHash": "QmX4MR45LB5DasmBRA9v3hqdZ1b1hfTvdwg9SnLTEFe5fQ",
-    "StaticHash": "QmVwnryXQ6A6MubVeMUBrj7BAoqfQmb75cx5vDtiJRRCxP"
+    "StaticHash": "QmVwnryXQ6A6MubVeMUBrj7BAoqfQmb75cx5vDtiJRRCxP",
+    "Color": "green"
   },
   {
     "Index": 70,
@@ -778,7 +848,8 @@
     "Image": "airforce-bark-proposition-beauty-final-sash_norm_m1_OPT.gif",
     "ImageHash": "QmeGW8dZRGxxWodx8bK2rrUVCEGoTta2gHfeLXt8rvL6Xx",
     "InputHash": "QmXzUyS5zqSWEGt7Ytp5EBRva5x3rJxfnMeJM8rFpQf3nY",
-    "StaticHash": "QmTrUZTMqKmjnBG8Rqn6NLH6MyLHHZvMjnMn4jSjW9hL3s"
+    "StaticHash": "QmTrUZTMqKmjnBG8Rqn6NLH6MyLHHZvMjnMn4jSjW9hL3s",
+    "Color": "brown"
   },
   {
     "Index": 71,
@@ -789,7 +860,8 @@
     "Image": "amount-consensus-gambling-pyramid-priority-chandelier_norm_m1_OPT.gif",
     "ImageHash": "QmWiyVBoJevZt4VrbGwjSP5GJ8KknfrGBYdZ6oyHBhrhvf",
     "InputHash": "QmZKVirFwgWQnVer99Mses5f9BmXK54wSdkuPbK1xZeGNx",
-    "StaticHash": "QmX8YJUNdXA2vzHgHPmjvqvK672c7c7Wu9b5mE2YPijrtz"
+    "StaticHash": "QmX8YJUNdXA2vzHgHPmjvqvK672c7c7Wu9b5mE2YPijrtz",
+    "Color": "brown"
   },
   {
     "Index": 72,
@@ -800,7 +872,8 @@
     "Image": "formicarium-adult-standard-proportion-presence-sombrero_clip_m1_OPT.gif",
     "ImageHash": "QmPYEfAdNQffg2S7v91kkVFn7gRD21hgt8SP9L7PnD9utS",
     "InputHash": "QmZX5TtR2K6cBNbmspM4HZzbbxXpF28sMvr1jZHw25FQwf",
-    "StaticHash": "QmSEY3GAsMWuA3mGqPktUs7EUtBFrtuFmMVXhoPDAS5Z1t"
+    "StaticHash": "QmSEY3GAsMWuA3mGqPktUs7EUtBFrtuFmMVXhoPDAS5Z1t",
+    "Color": "red"
   },
   {
     "Index": 73,
@@ -811,7 +884,8 @@
     "Image": "anchovy-gnat-wok-doctor-disdain-grub_clip_m1_OPT.gif",
     "ImageHash": "QmPyJTB3xrbf5iKdshuJWBubK1mBV4tgfDMnW4YjPbNY3s",
     "InputHash": "QmT3uCQkUouYcvWq8dvzgumHeBgaX2uw2RzfYSv27f3LHE",
-    "StaticHash": "QmT26v239X7hEVDvLdFe5Yz88dB1itjYMDZKXUQkPXLn8G"
+    "StaticHash": "QmT26v239X7hEVDvLdFe5Yz88dB1itjYMDZKXUQkPXLn8G",
+    "Color": "rainbow"
   },
   {
     "Index": 74,
@@ -822,7 +896,8 @@
     "Image": "antler-sound-parcel-amazement-skyline-aftershock_norm_m1_OPT.gif",
     "ImageHash": "QmYE8cYdsQkkJgGEmxHJDXDorUGdTPktHRGuy5r3oiDT9x",
     "InputHash": "QmW9px6X6FevF9YhxN1Ld7L5PoWTmkETUGXo9DTz8MU53n",
-    "StaticHash": "QmegUcVRc1dDM5zkhLzVF7UpLWF4Aae3vTP2NvjeJ8xbnF"
+    "StaticHash": "QmegUcVRc1dDM5zkhLzVF7UpLWF4Aae3vTP2NvjeJ8xbnF",
+    "Color": "rainbow"
   },
   {
     "Index": 75,
@@ -833,7 +908,8 @@
     "Image": "dragon-stripe-dungarees-listening-tonic-morning_clip_m1_OPT.gif",
     "ImageHash": "QmdqCZnpbzEBumVbV6wWnR2tuFNJSJCgrScHrmjoG5ncih",
     "InputHash": "QmbNFreuizDidVfPz7c8DgGVE4JUhL58AqvHt133egPiZ2",
-    "StaticHash": "QmPRX7iCBmeRZuyuUcSbzcT5fXEmcH33UaDMG5GCc4NBrG"
+    "StaticHash": "QmPRX7iCBmeRZuyuUcSbzcT5fXEmcH33UaDMG5GCc4NBrG",
+    "Color": "yellow"
   },
   {
     "Index": 76,
@@ -844,7 +920,8 @@
     "Image": "bin-prejudice-pard-camper-pantologist-uniformity_norm_m1_OPT.gif",
     "ImageHash": "QmYwZGwrQFNAxRHKWowCC2SCwJhAxoQtZF73wzUS2KA6fZ",
     "InputHash": "QmYZrQnwTiULQF751zeurVeDQDP5kvYjGsCPBCYX5jNcxS",
-    "StaticHash": "QmeUTLhH3BZooHmySX1byv7AhG6BrQpid63PuEUL2uEqUs"
+    "StaticHash": "QmeUTLhH3BZooHmySX1byv7AhG6BrQpid63PuEUL2uEqUs",
+    "Color": "brown"
   },
   {
     "Index": 77,
@@ -855,7 +932,8 @@
     "Image": "bird-watcher-safari-explanation-panic-wave-misreading_clip_m1_OPT.gif",
     "ImageHash": "QmVkxG8XV6A2qafoy6w7NpbNp3tuWBRrrpvneviMA4P9qd",
     "InputHash": "QmbMLVBzdrZJKL92NydvrXTz8th8UvKpxb5mTTKofxW8LR",
-    "StaticHash": "QmbCmJrFRWSHbKWEw7U3EFaw1nK1zFxPCu79oKqxAzv8y7"
+    "StaticHash": "QmbCmJrFRWSHbKWEw7U3EFaw1nK1zFxPCu79oKqxAzv8y7",
+    "Color": "brown"
   },
   {
     "Index": 78,
@@ -866,7 +944,8 @@
     "Image": "blue-deformation-fantasy-confidentiality-vase-cross_clip_m0_OPT.gif",
     "ImageHash": "QmSJ65hgFYoFJkUuP7XqXzdwybXXDjNMhTKYwT2ZD1h4WG",
     "InputHash": "QmeKfk3fosNm5uuqKcazbb44fAjsgsuUurEhTZXtW6mpc8",
-    "StaticHash": "QmaEXTpr9gP3SrPpQcuGrXyiu7FFKMrNMKCCFV24XskjGt"
+    "StaticHash": "QmaEXTpr9gP3SrPpQcuGrXyiu7FFKMrNMKCCFV24XskjGt",
+    "Color": "brown"
   },
   {
     "Index": 79,
@@ -877,7 +956,8 @@
     "Image": "permission-afternoon-hound-viability-law-parade_clip_m1_OPT.gif",
     "ImageHash": "QmUiyZRqZBgnjz78JpMGqAVqK9A67K3kERXmdoALBnGBYx",
     "InputHash": "QmUNARhyFkazeF3Yq47KfFJSs1gN4tDMwQsqSYeyPekaF4",
-    "StaticHash": "QmXJjaKjgC2DeaauMdMKEwsgqpF9usxVCw3Ld27BKsFzK3"
+    "StaticHash": "QmXJjaKjgC2DeaauMdMKEwsgqpF9usxVCw3Ld27BKsFzK3",
+    "Color": "combo"
   },
   {
     "Index": 80,
@@ -888,7 +968,8 @@
     "Image": "caffeine-solvency-ignorant-signet-cyclone-sculpture_clip_m1_OPT.gif",
     "ImageHash": "QmQAJWiWfrDAAjNRT1WHCD4BFa3AcCVenfDDMk3bzzHnED",
     "InputHash": "QmX5wnc4HGtLuuBMRk1ywgFY9YWNWZGMnpsSt5q4SeASEz",
-    "StaticHash": "QmYenWjSR3935gJEdgMYF36q8KWQGigDmnY6v1cA8FohCw"
+    "StaticHash": "QmYenWjSR3935gJEdgMYF36q8KWQGigDmnY6v1cA8FohCw",
+    "Color": "rainbow"
   },
   {
     "Index": 81,
@@ -899,7 +980,8 @@
     "Image": "arch-trolley-factory-surge-suet-possession_norm_m1_OPT.gif",
     "ImageHash": "QmSQM42Fui1jZYwgujfAru5mbVGaLR8WLvSWGMfnn9eo1h",
     "InputHash": "Qmcw9Ys83oBP6CUgh28VKHVB2jNDrAoLqq6pEnySdaD4BR",
-    "StaticHash": "QmaiEneVy753o7yAJmZeUHUigqvvCaJPFq5NrVYrRC2zNK"
+    "StaticHash": "QmaiEneVy753o7yAJmZeUHUigqvvCaJPFq5NrVYrRC2zNK",
+    "Color": "yellow"
   },
   {
     "Index": 82,
@@ -910,7 +992,8 @@
     "Image": "challenge-acrylic-wrap-viewer-guitar-colonisation_norm_m7_OPT.gif",
     "ImageHash": "QmVkZyrMTuJY7Bnri1pyAEcSbekXvVr5UKDhy8UmDwyUZU",
     "InputHash": "QmWicxbDDKQ4uV9ovY7Q9ui8TX7LGHjQXjVPqnN5AGSxcn",
-    "StaticHash": "QmcwHwayCciKA7CMCAVg2YDFdfhfjV9q6G49Z1w18QwVVw"
+    "StaticHash": "QmcwHwayCciKA7CMCAVg2YDFdfhfjV9q6G49Z1w18QwVVw",
+    "Color": "brown"
   },
   {
     "Index": 83,
@@ -921,7 +1004,8 @@
     "Image": "cock-taxpayer-ale-space-porcupine-armadillo_norm_m7_OPT.gif",
     "ImageHash": "QmS8TPVbvEa5PgbW4wCVntYN4id39vKCZcq9zsVkf6j6tj",
     "InputHash": "Qme3xomUsHbeBdp7n3XFuQRTcvFvMYi4zaTFaRWeVVxxfE",
-    "StaticHash": "QmZTgc3w8oYWfZfdMvkPpB6vmwQnAMsXJB4Lk4toAeBfdf"
+    "StaticHash": "QmZTgc3w8oYWfZfdMvkPpB6vmwQnAMsXJB4Lk4toAeBfdf",
+    "Color": "gray"
   },
   {
     "Index": 84,
@@ -932,7 +1016,8 @@
     "Image": "shed-syndrome-endive-barometer-competence-circadian_clip_m1_OPT.gif",
     "ImageHash": "QmXuXkXyRP3kKaZA62htzbMc8ZXwqbBTLWwJGPE8DAQBat",
     "InputHash": "QmXopmUCA5ehPqk8vFAZumJeRNQJUwE49dsRzLmKivW8Z2",
-    "StaticHash": "QmYspKJwYaxbaMGMuR1ipaSsbbmJNsFzonc9iMo1siKkfi"
+    "StaticHash": "QmYspKJwYaxbaMGMuR1ipaSsbbmJNsFzonc9iMo1siKkfi",
+    "Color": "brown"
   },
   {
     "Index": 85,
@@ -943,7 +1028,8 @@
     "Image": "composer-supper-pupa-neonate-torso-assault_clip_m1_OPT.gif",
     "ImageHash": "QmVjpCp2Aiao9TEWRMP2wwMgPjru1A644Rtk931iGKgtUw",
     "InputHash": "QmX7hEj4DiRKqLbrhJ55N5zunEpNEhJaPYda4yYxZWoTnD",
-    "StaticHash": "QmVoVvXnTdfhCUwJ4Lvanq7ANuqVTdNW1hc9YvJaTXNRDb"
+    "StaticHash": "QmVoVvXnTdfhCUwJ4Lvanq7ANuqVTdNW1hc9YvJaTXNRDb",
+    "Color": "brown"
   },
   {
     "Index": 86,
@@ -954,7 +1040,8 @@
     "Image": "consonant-lifestyle-plagiarism-song-testimony-customer_clip_m0_OPT.gif",
     "ImageHash": "QmbTPtP8hjjSYgZgygZfc2H6Uwd6SBoknLktcs2aHz1a8L",
     "InputHash": "Qme8QVSzUYUBJn7wnbmCakDjy2kTqg8YnGx1mNfCUt1EzV",
-    "StaticHash": "QmNTAe8UZqRLsxGhCjGyDHtSY6YceJf4uAnnQJ5HsgoBya"
+    "StaticHash": "QmNTAe8UZqRLsxGhCjGyDHtSY6YceJf4uAnnQJ5HsgoBya",
+    "Color": "rainbow"
   },
   {
     "Index": 87,
@@ -965,7 +1052,8 @@
     "Image": "creche-hydrolysis-pat-marines-cone-curio_norm_m1_OPT.gif",
     "ImageHash": "QmWekdXpiLHqgR99yRstwmdBe14MAR4r8d7BLkZAvWMEpV",
     "InputHash": "QmUF8CFQ21XtsXoJSJN5foepB7AcEsWAQtPrvsbGXgY3qR",
-    "StaticHash": "QmVArWY9j2Y5oXAYpV9PDmKkGe88dXy3X3m3Qeanh9fbvK"
+    "StaticHash": "QmVArWY9j2Y5oXAYpV9PDmKkGe88dXy3X3m3Qeanh9fbvK",
+    "Color": "blue"
   },
   {
     "Index": 88,
@@ -976,7 +1064,8 @@
     "Image": "crocus-plume-home-junk-counselor-desire_clip_m1_OPT.gif",
     "ImageHash": "QmaMhJzN7v3D9kvvs3zPHFbeCDBqjTxPzDMkzZoLF7RqRt",
     "InputHash": "QmWa5qJQ352wbhRrtNYcFWAUApBpAovnjLk8Bi4rYWjwGM",
-    "StaticHash": "QmUNBy7tU9gXdZ8dVvfGJVJJvv4c2SKiJiKcDQHove49pN"
+    "StaticHash": "QmUNBy7tU9gXdZ8dVvfGJVJJvv4c2SKiJiKcDQHove49pN",
+    "Color": "red"
   },
   {
     "Index": 89,
@@ -987,7 +1076,8 @@
     "Image": "cymbal-pounding-thong-beating-daybed-stand_norm_m1_OPT.gif",
     "ImageHash": "QmNzsQ6pUMgGcXuVo8BSHhovVquMFvi4iSWqsrFSbyQXQb",
     "InputHash": "QmcAtW1E8iWjfnNZyYGHE6HeqE99j5i78Jq6B8jDFgonLg",
-    "StaticHash": "QmfDKu11wmF6gEmAicze8inL4DMkEfThcvm2UUtc3cAzkX"
+    "StaticHash": "QmfDKu11wmF6gEmAicze8inL4DMkEfThcvm2UUtc3cAzkX",
+    "Color": "brown"
   },
   {
     "Index": 90,
@@ -998,7 +1088,8 @@
     "Image": "deliberation-phenotype-enactment-election-inspector-almond_clip_m1_OPT.gif",
     "ImageHash": "QmR5nGp8Ph9iiUJoL587njq8gKqExgDwF5SWyWXQG9vUBV",
     "InputHash": "QmYg6swAxt6psQX5SmAgaVemfvETsb9Wu8VXt5XWCf26Ui",
-    "StaticHash": "Qmdhkf78xNhcCi9AarHgwnnF3rKjXk8zHSfaJPnmgQ11gV"
+    "StaticHash": "Qmdhkf78xNhcCi9AarHgwnnF3rKjXk8zHSfaJPnmgQ11gV",
+    "Color": "yellow"
   },
   {
     "Index": 91,
@@ -1009,7 +1100,8 @@
     "Image": "disruption-hardening-appetiser-load-gazebo-saloon_norm_m1_OPT.gif",
     "ImageHash": "QmcnEfJH6dqAa5GbSuvtzD7uxxwpikj2qUPicQuAFCiewX",
     "InputHash": "QmNdP8KNrXVRdtP5Jdm3fwVVQFtm7wH9aYY36CFx3qsJje",
-    "StaticHash": "QmUDT7MqQAUcVV68Gte9zKm3a85hVjgt2ZagY5CDW6kgYC"
+    "StaticHash": "QmUDT7MqQAUcVV68Gte9zKm3a85hVjgt2ZagY5CDW6kgYC",
+    "Color": "rainbow"
   },
   {
     "Index": 92,
@@ -1020,7 +1112,8 @@
     "Image": "down-advent-overcharge-salute-organisation-millet_norm_m6_OPT.gif",
     "ImageHash": "QmNNn1kKdENxx4pJ6Xu26rn19ETvLpunguwvkwzuvHd6tn",
     "InputHash": "Qme1mtEiAypt4vRKno6Dp12EtPVkFUXnc2schkfAX3e84E",
-    "StaticHash": "QmUicCBSDQDwCJd2R299DB3wAnE3X7FMzkgsxHQAEm2MU1"
+    "StaticHash": "QmUicCBSDQDwCJd2R299DB3wAnE3X7FMzkgsxHQAEm2MU1",
+    "Color": "yellow"
   },
   {
     "Index": 93,
@@ -1031,7 +1124,8 @@
     "Image": "dragon-panties-dragonfruit-farming-evaporation-underweight_norm_m1_OPT.gif",
     "ImageHash": "QmbsJ5wG5tjcSTTFNFqhC2dpMN2tkoRD72HdwqHZNRhhrn",
     "InputHash": "QmZc58nfjXipufYhZtkNNMyWCmLvhQ5kQmKXJZt8PYgXAd",
-    "StaticHash": "QmUT675DGFWXSmHarCq5mjvQRUGyoW8C6GM3DXJ7JHjFZF"
+    "StaticHash": "QmUT675DGFWXSmHarCq5mjvQRUGyoW8C6GM3DXJ7JHjFZF",
+    "Color": "white"
   },
   {
     "Index": 94,
@@ -1042,7 +1136,8 @@
     "Image": "cave-object-human-badge-wire-bench_clip_m1_OPT.gif",
     "ImageHash": "QmNvAo6QiZ9nd1KHPZkyygQkdZEAzhA31EUuCQE7qjJAXJ",
     "InputHash": "QmXwX1D4m1AxzJwqeiprWuAyaE2HZSqp6mo3vApqsZ7thR",
-    "StaticHash": "QmcjUXpf1GTXrXMNGsorBSEipemS5wcPqTnN54knrySBtU"
+    "StaticHash": "QmcjUXpf1GTXrXMNGsorBSEipemS5wcPqTnN54knrySBtU",
+    "Color": "purple"
   },
   {
     "Index": 95,
@@ -1053,7 +1148,8 @@
     "Image": "drag-shaker-feng-inflammation-sari-opposition_norm_m1_OPT.gif",
     "ImageHash": "QmZznkiMgb6m399NCveRQEgmQrjKaTJPHMRoq1bNuGrwpE",
     "InputHash": "QmWA8nwR9SAAAuB8cQRL4JRjAtYHXsbabFtEe14G5FyRK2",
-    "StaticHash": "QmZEYryqwjvJaoGNJnQ7xuuEtQqRDkCt3TuLTEpdguVLbv"
+    "StaticHash": "QmZEYryqwjvJaoGNJnQ7xuuEtQqRDkCt3TuLTEpdguVLbv",
+    "Color": "rainbow"
   },
   {
     "Index": 96,
@@ -1064,7 +1160,8 @@
     "Image": "earmuffs-physical-tradition-conspirator-ornament-father-in-law_clip_m0_OPT.gif",
     "ImageHash": "QmW4jrxx7gmRGHyCXmB7z3SnMV7ZLpGj136zTwF7LhtxrU",
     "InputHash": "QmdF6zDCSoqgUMCca8SEm3iwos1URb2MgRhvRMuNwgwmKd",
-    "StaticHash": "QmdX69iFC1Zdm8vS2zVKWMoH3LDX39mcWfk1aciftFgWRS"
+    "StaticHash": "QmdX69iFC1Zdm8vS2zVKWMoH3LDX39mcWfk1aciftFgWRS",
+    "Color": "brown"
   },
   {
     "Index": 97,
@@ -1075,7 +1172,8 @@
     "Image": "experience-funding-brochure-foxglove-eraser-hunter_clip_m1_OPT.gif",
     "ImageHash": "QmQQzt19XSFRsUuKnGUVCHGYudSuVUuTNBH4mJXhCgg7oj",
     "InputHash": "QmQKyZiUPBcHBYeQZE2f5cn7vgNrRSyPYyZ4vWT6DJJbkN",
-    "StaticHash": "Qme84qjhq5YZpmB9wpopzdRbmEhnRETZLddpuZGNuNtgRH"
+    "StaticHash": "Qme84qjhq5YZpmB9wpopzdRbmEhnRETZLddpuZGNuNtgRH",
+    "Color": "purple"
   },
   {
     "Index": 98,
@@ -1086,7 +1184,8 @@
     "Image": "exposition-cofactor-resort-procurement-minority-fragrance_clip_m1_OPT.gif",
     "ImageHash": "QmSGEGA6NkSkeU9d865ZUvBtJGaic9NdyWDnPwqv254vtg",
     "InputHash": "QmaAhrLXjaevBjLNQZhqzze7gwgEz8nHz6gw9sCT7Foyhh",
-    "StaticHash": "QmeoqAn1pEwJ92UUDanfEdiSzerRDh4XtNx4WY6iUqU4od"
+    "StaticHash": "QmeoqAn1pEwJ92UUDanfEdiSzerRDh4XtNx4WY6iUqU4od",
+    "Color": "blue"
   },
   {
     "Index": 99,
@@ -1097,7 +1196,8 @@
     "Image": "leaker-user-advertisement-deputy-climate-communist_clip_m1_OPT.gif",
     "ImageHash": "QmRicVJVuaFixVJWbdKNG1ZQWoqtxi3gcWoJfw3GkBD1QV",
     "InputHash": "QmeFcFDsU9z5N97NTU5tVvKEA9kdRRY7Yn8rnP94WKf3Q9",
-    "StaticHash": "QmZ8pBmRFdpgEzDapVD178TFkMVmKRfD3L8T5vNtm3amas"
+    "StaticHash": "QmZ8pBmRFdpgEzDapVD178TFkMVmKRfD3L8T5vNtm3amas",
+    "Color": "brown"
   },
   {
     "Index": 100,
@@ -1108,7 +1208,8 @@
     "Image": "gaiters-beating-ambition-tempo-job-repeat_clip_m1_OPT.gif",
     "ImageHash": "QmUKj5gF4EQ3if2jGMdC46hVe16dBdFJifFdfyjR4N7ghA",
     "InputHash": "QmT2p5ErUauEerwLw3NQgD9NdwsWMpQN1jx5JpMWmgPVty",
-    "StaticHash": "QmT54C4ZqUU7xQavvs7d8qA5Z6PtR9w5SUiZVzd93kJCrF"
+    "StaticHash": "QmT54C4ZqUU7xQavvs7d8qA5Z6PtR9w5SUiZVzd93kJCrF",
+    "Color": "rainbow"
   },
   {
     "Index": 101,
@@ -1119,7 +1220,8 @@
     "Image": "gopher-processing-zinc-displacement-feel-rhythm_clip_m0_OPT.gif",
     "ImageHash": "QmZao4VU3JGVwvaNJ8NTWybYjM7qQrZyMBoyKKB9wyoXJ1",
     "InputHash": "QmRhtZ9y3ZvDSKfkFEx58PWMX1fX6VjhQhfZdwS7hWntvi",
-    "StaticHash": "QmSqxTsBsaQCiTxc8iNTb6bekUwaGwxWYT3FLqc73ZcyGV"
+    "StaticHash": "QmSqxTsBsaQCiTxc8iNTb6bekUwaGwxWYT3FLqc73ZcyGV",
+    "Color": "blue"
   },
   {
     "Index": 102,
@@ -1130,7 +1232,8 @@
     "Image": "guitar-bag-recess-bribery-breakpoint-milestone_clip_m1_OPT.gif",
     "ImageHash": "QmbkrBiybfHP2dyVBYmiaUjJawRDR6RveyK82zVYSH7eKm",
     "InputHash": "QmY6SpnjtPGw6DaZ8qExUwZMe3U43ZKVjPs9QMLSXrNyyT",
-    "StaticHash": "QmZoyPhZK7JkidsiHKEFvoWqzqVSYHGdrvPCjzDtAS7KGF"
+    "StaticHash": "QmZoyPhZK7JkidsiHKEFvoWqzqVSYHGdrvPCjzDtAS7KGF",
+    "Color": "yellow"
   },
   {
     "Index": 103,
@@ -1141,7 +1244,8 @@
     "Image": "heavy-referendum-submitter-olive-doggie-slip_clip_m1_OPT.gif",
     "ImageHash": "QmS9Zq51sEiSFWTBGVzqs3fBGeeiJqLAHtjeN9KmwBEKgG",
     "InputHash": "QmNyoAZNsJTJ2qpRfTBHbnTHDEFkM3SSWe5Me6fyLeeWf7",
-    "StaticHash": "QmX2yP4QQVymJh8QL4odXZMTxLRTgNgw1RqNHH6n7mCCGq"
+    "StaticHash": "QmX2yP4QQVymJh8QL4odXZMTxLRTgNgw1RqNHH6n7mCCGq",
+    "Color": "purple"
   },
   {
     "Index": 104,
@@ -1152,7 +1256,8 @@
     "Image": "hemp-peony-glider-threshold-methane-sonata_clip_m1_OPT.gif",
     "ImageHash": "QmYzYZnTvkcg3VxAc9u3SGgMcCK7Xu1DBQB22D2qxGb3yE",
     "InputHash": "QmQik4DCdfJBNhGvVheoGfrRUxyQVeqgLXY6Sn3jRtovhd",
-    "StaticHash": "QmVHcrbcf8C2kviZoVH6p4nvKXAuAQXDJp6GpsC2XNaDqH"
+    "StaticHash": "QmVHcrbcf8C2kviZoVH6p4nvKXAuAQXDJp6GpsC2XNaDqH",
+    "Color": "brown"
   },
   {
     "Index": 105,
@@ -1163,7 +1268,8 @@
     "Image": "homogenate-passing-stepdaughter-cart-compliment-resume_clip_m1_OPT.gif",
     "ImageHash": "QmWU4EDejADZZL7L3iMFP8nKBzPTqpEN9eHPcJ9AnbV2oy",
     "InputHash": "QmZx5yPt5qi7P7vDaDYpV948k3qnDDFTWKvST7QyCbFJhh",
-    "StaticHash": "QmYbu7Kon9bQejkLjZVt5sMWEbUstzXKFyQP9kRpmWQUjq"
+    "StaticHash": "QmYbu7Kon9bQejkLjZVt5sMWEbUstzXKFyQP9kRpmWQUjq",
+    "Color": "rainbow"
   },
   {
     "Index": 106,
@@ -1174,7 +1280,8 @@
     "Image": "honeybee-night-sheep-mozzarella-sender-pot_norm_m1_OPT.gif",
     "ImageHash": "QmUwHQeWusvDLb8PLeYwkJ8LsdTEAfFtdVFRZXXiCDTTwV",
     "InputHash": "QmNVgwRWKR9oRVJvoiTs5YgoazWcGKiPMRJULQnjuV5J37",
-    "StaticHash": "QmUvgsjnim2KMugGha4R9KZ4EzJM4etfUK6jYmrLnqP8F4"
+    "StaticHash": "QmUvgsjnim2KMugGha4R9KZ4EzJM4etfUK6jYmrLnqP8F4",
+    "Color": "combo"
   },
   {
     "Index": 107,
@@ -1185,7 +1292,8 @@
     "Image": "horse-archives-dip-luxury-fanlight-mind_norm_m1_OPT.gif",
     "ImageHash": "QmWPV5CqcDEqT8j1MLjixP9JgnC6qKCmSqWubuW7es9xy9",
     "InputHash": "QmVR5qTqhLQUryRCVFyy8VxPrXTKjWFZf5sPKAX4jjmsE3",
-    "StaticHash": "Qmeu82m1gyh7SQbJJtptVj938vJbCYs3eieTX82A8KcsHm"
+    "StaticHash": "Qmeu82m1gyh7SQbJJtptVj938vJbCYs3eieTX82A8KcsHm",
+    "Color": "combo"
   },
   {
     "Index": 108,
@@ -1196,7 +1304,8 @@
     "Image": "hurricane-pitcher-valentine-experiment-larder-sake_norm_m1_OPT.gif",
     "ImageHash": "QmUCgF2y8tpFip8VJ4X4Rs7FMKig6bTThxeffCLT74iAP3",
     "InputHash": "QmcS8CYrsTDkedMmVQYKcFpkgmUaqSbCMQnUMCvSN14DLr",
-    "StaticHash": "QmfPBAZDZ6SomoR2SUCWQSW5NBoMjUBM3fzqWeUbeXdqsL"
+    "StaticHash": "QmfPBAZDZ6SomoR2SUCWQSW5NBoMjUBM3fzqWeUbeXdqsL",
+    "Color": "yellow"
   },
   {
     "Index": 109,
@@ -1207,7 +1316,8 @@
     "Image": "hyacinth-hydrocarb-plant-rivulet-transcript-urgency_norm_m1_OPT.gif",
     "ImageHash": "QmdvKeSb8NfuUab6FCbErrQT1rpYeYAoEVzF66frjS1FvT",
     "InputHash": "Qmf6YSLF8SfN8Ak3MZByvGnduVCMW21MNikCu5U6GndbJL",
-    "StaticHash": "QmbB5rGWztuo8L8dEjPepRsy3XoYTLeqCPtx4CRBbD9Uij"
+    "StaticHash": "QmbB5rGWztuo8L8dEjPepRsy3XoYTLeqCPtx4CRBbD9Uij",
+    "Color": "gray"
   },
   {
     "Index": 110,
@@ -1218,7 +1328,8 @@
     "Image": "hydroxyl-tradition-tomb-treatment-boudoir-savory_norm_m1_OPT.gif",
     "ImageHash": "QmSYhy9WPwyCzAgqRteCkJMiBA2TMhA5fUsmDezNR5uv4e",
     "InputHash": "Qmb6AufZMY8qxHBxzTN5Aj21yyEkoR6UGXkdKRkF43SoiL",
-    "StaticHash": "QmRNmrRPAr7x2RnF7dgTVR2FtqonmEjQczqQJV3gyBNE66"
+    "StaticHash": "QmRNmrRPAr7x2RnF7dgTVR2FtqonmEjQczqQJV3gyBNE66",
+    "Color": "gray"
   },
   {
     "Index": 111,
@@ -1229,7 +1340,8 @@
     "Image": "illiteracy-leaker-nucleotide-depression-ecclesia-eyelashes_norm_m1_OPT.gif",
     "ImageHash": "QmdXnoRMSM8x2Rfjqthk6z5c8rTS4goY68aEAzfAGPrxwN",
     "InputHash": "QmX47qC7tvzT99oMqNizEfcDVHqKDxb4aKPuqmMA2uw3bS",
-    "StaticHash": "QmWFf3atwrjf4Vxe3HQWcZUrdJjDBK42re9nHsuAEFjxur"
+    "StaticHash": "QmWFf3atwrjf4Vxe3HQWcZUrdJjDBK42re9nHsuAEFjxur",
+    "Color": "yellow"
   },
   {
     "Index": 112,
@@ -1240,7 +1352,8 @@
     "Image": "judo-monk-corporal-line-coke-mist_norm_m1_OPT.gif",
     "ImageHash": "QmPii8SopVg8qyMR7NnNGM5EAKucbg121iuX9codfp1NuF",
     "InputHash": "QmPnGVqvTX5Kw1M6wfeKEE4MNsUNPJt9NNoPgPbN2XrNGh",
-    "StaticHash": "QmUs6dpcdycKaGyLrVw94VA6uy971exzeDhPGzSohLhhEW"
+    "StaticHash": "QmUs6dpcdycKaGyLrVw94VA6uy971exzeDhPGzSohLhhEW",
+    "Color": "gray"
   },
   {
     "Index": 113,
@@ -1251,7 +1364,8 @@
     "Image": "jumpsuit-screwdriver-reach-consensus-speakerphone-knuckle_clip_m1_OPT.gif",
     "ImageHash": "QmcA42gpwbWzzz4AKvS1SG8GTTkaVdiQE2tCUGXHQpyBfW",
     "InputHash": "QmYKoeF3HogNxkzcFQKKwTEs2iyzk4roDZFckMNpvDYKCu",
-    "StaticHash": "QmdTPZ63hY6t5jZ8nR8w36nfk3cwkGJHkP9WEHEJBWM7nr"
+    "StaticHash": "QmdTPZ63hY6t5jZ8nR8w36nfk3cwkGJHkP9WEHEJBWM7nr",
+    "Color": "yellow"
   },
   {
     "Index": 114,
@@ -1262,7 +1376,8 @@
     "Image": "keyboard-pate-habit-colt-tear-kayak_clip_m1_OPT.gif",
     "ImageHash": "QmdsxLjrfEtTLgCDQJLg8CqDUkB9ivE4z3GGkoXb62GcuV",
     "InputHash": "QmXKSVk35SMYcxjPJwfAihgSqDbvjYZACM8sxfoNGckYVi",
-    "StaticHash": "QmP9rcc58rEDXq1XmFSAbujgvEcpbpQAC4xcCAfvQyDBZL"
+    "StaticHash": "QmP9rcc58rEDXq1XmFSAbujgvEcpbpQAC4xcCAfvQyDBZL",
+    "Color": "combo"
   },
   {
     "Index": 115,
@@ -1273,7 +1388,8 @@
     "Image": "kilt-winter-actress-time-mineshaft-clay_clip_m1_OPT.gif",
     "ImageHash": "QmezcpHisvnLbSGhxffmriF6MEvGoboLofetj4qqNMyVQw",
     "InputHash": "QmNwsMky2n5vhTS31mwHRGU1pyZGm29UwvTVK3FnNeWQqF",
-    "StaticHash": "QmUEg5vfRNEpshuB8B3ntzprkoMfC7irDyYY6PCzWPycRk"
+    "StaticHash": "QmUEg5vfRNEpshuB8B3ntzprkoMfC7irDyYY6PCzWPycRk",
+    "Color": "green"
   },
   {
     "Index": 116,
@@ -1284,7 +1400,8 @@
     "Image": "lanai-submarine-claw-center-degree-dining_clip_m1_OPT.gif",
     "ImageHash": "QmcbXfx2efmt6RKVQu9QwtFymGzjLs1sDR7Qvtqugy8QrQ",
     "InputHash": "QmUJrEvu1Lq3fJtqtWvUmBLWNG4iqZW49JJyA4EX8LUUUX",
-    "StaticHash": "QmRxWdv4Rv1DEE6iXqzMyzPWyJcqFk3QV5JvxHmWtuZfyt"
+    "StaticHash": "QmRxWdv4Rv1DEE6iXqzMyzPWyJcqFk3QV5JvxHmWtuZfyt",
+    "Color": "red"
   },
   {
     "Index": 117,
@@ -1295,7 +1412,8 @@
     "Image": "layer-short-intellect-community-pew-yam_clip_m1_OPT.gif",
     "ImageHash": "QmW1aDHT6r2ANexZdhCZMCrMpxNSQfjRsRuQMKcHvZaBf5",
     "InputHash": "QmZpe5EqeqCGn1E8ezd7eSCeLZsjzbSs72oWS4TKwKrapf",
-    "StaticHash": "QmVF3PeyZid8Nd2ikc9avfKiKHfDwAY9VKfc4MLoh4omVc"
+    "StaticHash": "QmVF3PeyZid8Nd2ikc9avfKiKHfDwAY9VKfc4MLoh4omVc",
+    "Color": "purple"
   },
   {
     "Index": 118,
@@ -1306,7 +1424,8 @@
     "Image": "security-shallot-botany-cyst-counselor-exposition_norm_m7_OPT.gif",
     "ImageHash": "QmXsKqA1199em8YZfPFQEruEkuyAAyqSdFSzqgCJLbQW9p",
     "InputHash": "QmPMHZCQi8m5zXQxa9md49oKUfbQJxhXQENUZpYUBbqPp6",
-    "StaticHash": "Qmd1Hsmvzqq2QmZpsxegMdpo9BqBHxU45KHA5VRKp8gVxR"
+    "StaticHash": "Qmd1Hsmvzqq2QmZpsxegMdpo9BqBHxU45KHA5VRKp8gVxR",
+    "Color": "gray"
   },
   {
     "Index": 119,
@@ -1317,7 +1436,8 @@
     "Image": "lesson-scarecrow-psychoanalyst-crime-sidestream-pleat_clip_m0_OPT.gif",
     "ImageHash": "QmevVXa3LUwxdTXgURonPterQhNq39EP1dyFXnkcxDgoT8",
     "InputHash": "QmfNQqXsxMuxFmhYJFTA5VnJ4RA7uuUxGb29Du34jv3rak",
-    "StaticHash": "QmdYBT73afBVfo5mk9RbKLnhB5DUxP5hGRT9y3853TMmiB"
+    "StaticHash": "QmdYBT73afBVfo5mk9RbKLnhB5DUxP5hGRT9y3853TMmiB",
+    "Color": "purple"
   },
   {
     "Index": 120,
@@ -1328,7 +1448,8 @@
     "Image": "luggage-function-happiness-shawl-application-toe_norm_m1_OPT.gif",
     "ImageHash": "QmYBMeKBTU5u1Ao3RtNVhMWc6wB5rspWFxLtPa44GigKfP",
     "InputHash": "QmNojJWshViuhFj1j3fYoEDhdFQ6ue784htgF1N8m1e6LT",
-    "StaticHash": "QmRGPKSxxjhsYch8nEgvPuRWdVdk4psdRfFT8uzqHFZirc"
+    "StaticHash": "QmRGPKSxxjhsYch8nEgvPuRWdVdk4psdRfFT8uzqHFZirc",
+    "Color": "yellow"
   },
   {
     "Index": 121,
@@ -1339,7 +1460,8 @@
     "Image": "makeup-rim-peasant-aglet-blackbird-prostrate_clip_m1_OPT.gif",
     "ImageHash": "QmenRQfrt6XLDJENGQRsir1KtbiSQX7Anc2UPt3kLAeFr1",
     "InputHash": "QmVfQx1ZtYoXVhoDEtAaxGcUvAfjNvPHmzUuj2b8CT64DH",
-    "StaticHash": "QmNuBiQ9QtY8YjapFDx65umQWzqrAacGq63fV3pY49Gw1F"
+    "StaticHash": "QmNuBiQ9QtY8YjapFDx65umQWzqrAacGq63fV3pY49Gw1F",
+    "Color": "gray"
   },
   {
     "Index": 122,
@@ -1350,7 +1472,8 @@
     "Image": "mapping-sector-peer-rheumatism-schema-leveret_clip_m1_OPT.gif",
     "ImageHash": "QmQdcVTP5r3Cr6QNWFScQUhoRhmuvrcmPCk8r7d9aBsuD3",
     "InputHash": "QmNsSeBbivjvh8kMywecjSSkctFrpwxDmotxfhVmhDS4Qx",
-    "StaticHash": "QmVWhKRo4wTGgtSstK8iJM29NeZswrj5zbhDfk1ETQKvTp"
+    "StaticHash": "QmVWhKRo4wTGgtSstK8iJM29NeZswrj5zbhDfk1ETQKvTp",
+    "Color": "combo"
   },
   {
     "Index": 123,
@@ -1361,7 +1484,8 @@
     "Image": "mask-eraser-arch-shampoo-lap-deal_clip_m1_OPT.gif",
     "ImageHash": "QmSwTt9gXfrgQPqLYxcfPw4SZY1BV8WJSjh1eG9rbCvAjd",
     "InputHash": "Qmd8gPPkcEizr3R8TH5zJsoBB3bZZWqQWpeRUDyQHwA5e4",
-    "StaticHash": "QmPXveMMfqcqVn5KQUjqW4iVFy2Q7nn2tDyaaUDjFX5o4Z"
+    "StaticHash": "QmPXveMMfqcqVn5KQUjqW4iVFy2Q7nn2tDyaaUDjFX5o4Z",
+    "Color": "white"
   },
   {
     "Index": 124,
@@ -1372,7 +1496,8 @@
     "Image": "anime-guitar-stranger-peasant-shadow-duty_norm_m1_OPT.gif",
     "ImageHash": "QmQ5dQTkwVTbm39Jmz4DpPthnAXYjsaLPr35tFX9vgXT8A",
     "InputHash": "QmZfkJyCdXeZcRc1QHSwN8thCcu9BjxoYyGoAdFg5pbxds",
-    "StaticHash": "QmfPryhn1bGoGrBtFSeV4Nwtc7J12aW3ek6jhcPqrFK7yL"
+    "StaticHash": "QmfPryhn1bGoGrBtFSeV4Nwtc7J12aW3ek6jhcPqrFK7yL",
+    "Color": "blue"
   },
   {
     "Index": 125,
@@ -1383,7 +1508,8 @@
     "Image": "nucleotidase-acknowledgment-cranky-delay-spatula-neck_clip_m0_OPT.gif",
     "ImageHash": "QmWHp4TDJADhJEggb8DNYvf72TJgcgcmfDAXHnrx1joi2a",
     "InputHash": "QmfMjdovBJUSf4wSuHRgwkfa1gbtDfxseZerzmjGLVtqhi",
-    "StaticHash": "QmbgnhXWDMzqMuGWKzHsavTBZQsZ4HX43tgaXYRkct8Bza"
+    "StaticHash": "QmbgnhXWDMzqMuGWKzHsavTBZQsZ4HX43tgaXYRkct8Bza",
+    "Color": "rainbow"
   },
   {
     "Index": 126,
@@ -1394,7 +1520,8 @@
     "Image": "a_mon_3_clip_m1_OPT.gif",
     "ImageHash": "QmdGqpuyydMbifSRfCKyVQqrdSF1BtbxkfZWa8Zxz5HFzB",
     "InputHash": "QmUjYY9JXDY4c4Et4TUKVMoRQ6YTA6jEpcCGLyLVLZjCgg",
-    "StaticHash": "Qmb8SzB6XyfWteupypzuT6mdBNEDJonkGCPqtMCoecmg4s"
+    "StaticHash": "Qmb8SzB6XyfWteupypzuT6mdBNEDJonkGCPqtMCoecmg4s",
+    "Color": "green"
   },
   {
     "Index": 127,
@@ -1405,7 +1532,8 @@
     "Image": "a_mon_4_clip_m1_OPT.gif",
     "ImageHash": "QmYXEXCtG2R61fG5nCpY7Z8Zw69EtHEoSvLy7ksfgdSVTz",
     "InputHash": "QmPRASm5U5Tt77DHcdwQft6PgH3NRebsDHNwk1dAFstMzY",
-    "StaticHash": "QmZKvTZeizat6pEMTmRVU8em6eNLRVwd2TUE7XsN21qcSZ"
+    "StaticHash": "QmZKvTZeizat6pEMTmRVU8em6eNLRVwd2TUE7XsN21qcSZ",
+    "Color": "yellow"
   },
   {
     "Index": 128,
@@ -1416,7 +1544,8 @@
     "Image": "a_mon_5_clip_m1_OPT.gif",
     "ImageHash": "QmPB82P3J1KJrLnkq4hsnyRTTCNafGuRmyr3sMq5vjE2Xu",
     "InputHash": "QmNfLjggwDitXQhsiX9jgR8kruD6b6gmF8waFiNCDKz4Cq",
-    "StaticHash": "QmPoo2iHHUS4ThJ2zTsp3Kh4pWkYHoz5SSskAwLeeAZjG7"
+    "StaticHash": "QmPoo2iHHUS4ThJ2zTsp3Kh4pWkYHoz5SSskAwLeeAZjG7",
+    "Color": "red"
   },
   {
     "Index": 129,
@@ -1427,7 +1556,8 @@
     "Image": "a_mon_6_clip_m1_OPT.gif",
     "ImageHash": "QmTNQAuaQN7VZHTyToEnnx64SE8AQkPMuLgYtrkqbZQBeG",
     "InputHash": "Qmdr6BsVvMsj7y2wtXGsjJY9dBiDUaYkXeH6rqCD931ZCk",
-    "StaticHash": "QmSFbyHh4woYQo1u8WNitunN6LJDWRVkKcDLntwNRauHtR"
+    "StaticHash": "QmSFbyHh4woYQo1u8WNitunN6LJDWRVkKcDLntwNRauHtR",
+    "Color": "red"
   },
   {
     "Index": 130,
@@ -1438,7 +1568,8 @@
     "Image": "a_mon_7_clip_m1_OPT.gif",
     "ImageHash": "QmS63LPqUpaEvfAf55qhzfSnZTVGKaW5gW5TLXjGEFcEm4",
     "InputHash": "QmTSZkPtYXzvWtCb5RBaByPV1y4jdZ11kS8q32zQxfS6FV",
-    "StaticHash": "QmPUBSvZ7L1SeTeMv4CbXwBA7Rdxw9ZDZbQi1jnbmv1VDB"
+    "StaticHash": "QmPUBSvZ7L1SeTeMv4CbXwBA7Rdxw9ZDZbQi1jnbmv1VDB",
+    "Color": "blue"
   },
   {
     "Index": 131,
@@ -1449,7 +1580,8 @@
     "Image": "a_mon_8_clip_m1_OPT.gif",
     "ImageHash": "QmPxNReJ8QTFGdUs5Hg98m8rUxf3qzBUpBZJhkDCkGLVT7",
     "InputHash": "QmQq9hEUUzKDuWbtmESWTYTFi5LHSfBBmu2zsEVpjPAR64",
-    "StaticHash": "QmbqLHyeTJcfb1rFQ6CqYrhjMdL7Qq6n1eJFj1P8nzUukZ"
+    "StaticHash": "QmbqLHyeTJcfb1rFQ6CqYrhjMdL7Qq6n1eJFj1P8nzUukZ",
+    "Color": "yellow"
   },
   {
     "Index": 132,
@@ -1460,7 +1592,8 @@
     "Image": "b_mon_0_clip_m1_OPT.gif",
     "ImageHash": "QmXv79Tz1Kwt4knByTcsFLpLJQNGuXsrJAn5RMgUszT7wx",
     "InputHash": "QmbXCqNkxUjYmrFNJ4xP3rjc74ciogc2cgzZPdu1FQQ9oC",
-    "StaticHash": "QmauxiqwFBv1Jizeio3uYWUmubVdShNmGPuuHXkEKMBosF"
+    "StaticHash": "QmauxiqwFBv1Jizeio3uYWUmubVdShNmGPuuHXkEKMBosF",
+    "Color": "rainbow"
   },
   {
     "Index": 133,
@@ -1471,7 +1604,8 @@
     "Image": "b_mon_1_clip_m1_OPT.gif",
     "ImageHash": "QmZnFs62ZfnLmkh7PJgZ43UtD4z58iNgvhxg4afRqBy2Lk",
     "InputHash": "QmP21UhLaW4wWsGACtHxKFoXC5GduimXaWAQs8SDtCUDfk",
-    "StaticHash": "QmU3ZaVcX4XKMbT7AW77nSS1ezHsZP9RKQKWM4mvA5aYiB"
+    "StaticHash": "QmU3ZaVcX4XKMbT7AW77nSS1ezHsZP9RKQKWM4mvA5aYiB",
+    "Color": "white"
   },
   {
     "Index": 134,
@@ -1482,7 +1616,8 @@
     "Image": "b_mon_2_clip_m1_OPT.gif",
     "ImageHash": "QmU3mfKPfosRTNLsEK4qy6jyAaP1PHptij8BpSNwMudzhe",
     "InputHash": "QmcxfWqqGW2dKi1KqqSnTKq2KAL7t2S5nwGMYft1pTNCwU",
-    "StaticHash": "QmZPwsffRsMMybbZymybrMSMja9RKvSc4WGBK5ZX9gQCfR"
+    "StaticHash": "QmZPwsffRsMMybbZymybrMSMja9RKvSc4WGBK5ZX9gQCfR",
+    "Color": "purple"
   },
   {
     "Index": 135,
@@ -1493,7 +1628,8 @@
     "Image": "b_mon_5_clip_m1_OPT.gif",
     "ImageHash": "QmNYFWnwLDHcSgJTAvLV8LLsafwEz9sWSC6rJxkKx6RuYd",
     "InputHash": "QmaD1rNe1uusAaHi5ptqSsnrYewHkgGigxmgRTcXhpPkiD",
-    "StaticHash": "Qmeb4gtJYc9oyVLrexPpsFZAgHi6qxjHXrSSdMWy83Jrci"
+    "StaticHash": "Qmeb4gtJYc9oyVLrexPpsFZAgHi6qxjHXrSSdMWy83Jrci",
+    "Color": "purple"
   },
   {
     "Index": 136,
@@ -1504,7 +1640,8 @@
     "Image": "b_mon_9_clip_m1_OPT.gif",
     "ImageHash": "QmekzijKL3gKg7A1kDBgQFVoZXXx39Hg9pnHmfkCGMxr2Q",
     "InputHash": "QmZ3tNnLoubHWP5u5TPrAtvh5viv28i4FZeFxz2qYT1z71",
-    "StaticHash": "QmYxJCBQXhbLmMjAgN6aMGdCpC1b6qFMKGYrFqpK3Ykf5G"
+    "StaticHash": "QmYxJCBQXhbLmMjAgN6aMGdCpC1b6qFMKGYrFqpK3Ykf5G",
+    "Color": "yellow"
   },
   {
     "Index": 137,
@@ -1515,7 +1652,8 @@
     "Image": "b_mon_13_clip_m1_OPT.gif",
     "ImageHash": "QmXZj1m5Dr1VA4h92xaS9Mzsx5BzJ7GgbSvjTrQxfEbrv9",
     "InputHash": "QmaUYupee8io9KyFkj1WybU288KERGgdtAcFNhc7oarGVe",
-    "StaticHash": "QmWesteb4THutRehqgLWFff3wZ5twjEPqpQSRwPD3FqhgB"
+    "StaticHash": "QmWesteb4THutRehqgLWFff3wZ5twjEPqpQSRwPD3FqhgB",
+    "Color": "yellow"
   },
   {
     "Index": 138,
@@ -1526,7 +1664,8 @@
     "Image": "b_mon_14_clip_m1_OPT.gif",
     "ImageHash": "QmQ9ePayxkqmxYjBz9WhgPMJuGHC79qL6dn9SWhgc9FFhP",
     "InputHash": "QmaeD5SGcepS5nVAXnswkVfSc5dD4wsUqsSw4TGTPVAY28",
-    "StaticHash": "QmTRoTek6g5StpeWk1ZKMVu3CC4Gxe9feUbUbGDzxfVcHf"
+    "StaticHash": "QmTRoTek6g5StpeWk1ZKMVu3CC4Gxe9feUbUbGDzxfVcHf",
+    "Color": "rainbow"
   },
   {
     "Index": 139,
@@ -1537,7 +1676,8 @@
     "Image": "b_mon_15_clip_m1_OPT.gif",
     "ImageHash": "Qmf3wouwLpqtoVn6M2EcTKHgFLwgS43gico6bMPWwh9cmP",
     "InputHash": "Qmc6QPs3te6Gcxguob7HmRgS1RB2HTgxRr5nBBJFoh25mb",
-    "StaticHash": "QmS14DvGhiHAcARMKVZxrWVyTK7wEDxPQNYURmszEBNFba"
+    "StaticHash": "QmS14DvGhiHAcARMKVZxrWVyTK7wEDxPQNYURmszEBNFba",
+    "Color": "green"
   },
   {
     "Index": 140,
@@ -1548,7 +1688,8 @@
     "Image": "b_mon_18_clip_m1_OPT.gif",
     "ImageHash": "QmYCbmKwJqUEM9QxECuKGWqdheepKUFtKbRA2zfy3HF8At",
     "InputHash": "QmSAcaexxRpeKEkPJ2QSUyPChdkMRGvhyFjnrqPY7Sbvzv",
-    "StaticHash": "QmaXy28r36nNDrSa84UQ5tgUfD6Kk4YAj5DA2pGNcEUXgw"
+    "StaticHash": "QmaXy28r36nNDrSa84UQ5tgUfD6Kk4YAj5DA2pGNcEUXgw",
+    "Color": "white"
   },
   {
     "Index": 141,
@@ -1559,7 +1700,8 @@
     "Image": "b_mon_20_clip_m1_OPT.gif",
     "ImageHash": "QmQMH71RUWM6PuaVxz94Dz7gaxsTTLbckXTfcEV4Jq22xf",
     "InputHash": "QmTw8cno6VqirPtpBzsVc3L3HwmnVMt1FmRv8TtiMSLrbW",
-    "StaticHash": "QmRnKxwdF5BXpL5tDsouTYU76i1mEujNaA5qHHRzHzSF9G"
+    "StaticHash": "QmRnKxwdF5BXpL5tDsouTYU76i1mEujNaA5qHHRzHzSF9G",
+    "Color": "rainbow"
   },
   {
     "Index": 142,
@@ -1570,7 +1712,8 @@
     "Image": "b_mon_24_clip_m1_OPT.gif",
     "ImageHash": "QmRdSLdAwb85HWVzHoUm4VsugUmmzxGDSKb7CBh4cLRwRH",
     "InputHash": "Qmerrsy1frc7YSH9WmJbjqmz8iWDuJJ4gs8nfH6eg3cFtq",
-    "StaticHash": "QmdLExmoY8hvinmBMiHCbXh25yM3dXdiSc5ks4uC6a5bFQ"
+    "StaticHash": "QmdLExmoY8hvinmBMiHCbXh25yM3dXdiSc5ks4uC6a5bFQ",
+    "Color": "green"
   },
   {
     "Index": 143,
@@ -1581,7 +1724,8 @@
     "Image": "b_mon_27_clip_m1_OPT.gif",
     "ImageHash": "QmWBuF78WSBw39EwSoMCghiafphBNhGFJu3iNM87BwvDNV",
     "InputHash": "Qmb3kypnwY1rHzpGaqU56BqrzYzSuLoYKKfypBVdpSY6vd",
-    "StaticHash": "QmUHSqfPWsSRE344ns7FYZuXByq6N4Q52GP8HavzNwaam2"
+    "StaticHash": "QmUHSqfPWsSRE344ns7FYZuXByq6N4Q52GP8HavzNwaam2",
+    "Color": "purple"
   },
   {
     "Index": 144,
@@ -1592,7 +1736,8 @@
     "Image": "b_mon_28_clip_m1_OPT.gif",
     "ImageHash": "QmeUJ3QdqixYUr5YRBXi1hMK9HYxBZeFa1aou4DeTWSbxG",
     "InputHash": "QmPkpHPtVCUaU5dycTtDm3MoR4geKLQCkWVo3v73Wyhjbg",
-    "StaticHash": "QmRRoGvSUj463uefyAzZiPaoXTAAs45JqFLumnXV8G4JZe"
+    "StaticHash": "QmRRoGvSUj463uefyAzZiPaoXTAAs45JqFLumnXV8G4JZe",
+    "Color": "rainbow"
   },
   {
     "Index": 145,
@@ -1603,7 +1748,8 @@
     "Image": "rhl_mon_5_OPT.gif",
     "ImageHash": "QmTK7xuvRbntTSUGJKpb4nP9kAxd4bpVYFqCgsQ6kqQE9x",
     "InputHash": "QmTZb3p9oUaraWZ7XdxJPWZPvE7asVS64Y2RZ7mnpz5Nhu",
-    "StaticHash": "QmTWpnmb7pJQfdP9t1WMUBchGjFKeSUdF7Fu923G5g8FjH"
+    "StaticHash": "QmTWpnmb7pJQfdP9t1WMUBchGjFKeSUdF7Fu923G5g8FjH",
+    "Color": "green"
   },
   {
     "Index": 146,
@@ -1614,7 +1760,8 @@
     "Image": "rhl_mon_6_OPT.gif",
     "ImageHash": "QmT6AkZiBs1BPWspfYTiXdSkHXeSrGRM9B4pK29YL218NR",
     "InputHash": "QmSbTrppWXgm23Q74moNzm37C96wRDQPFeTLd1igf8azPH",
-    "StaticHash": "QmUppy9ba7DATFdFszgoMDwFQdXJ4qbxEgAvsi3reA1iAq"
+    "StaticHash": "QmUppy9ba7DATFdFszgoMDwFQdXJ4qbxEgAvsi3reA1iAq",
+    "Color": "yellow"
   },
   {
     "Index": 147,
@@ -1625,7 +1772,8 @@
     "Image": "rhl_mon_1_OPT.gif",
     "ImageHash": "QmQNLdvLMfA4fkc8kXtwVtJZDYrUaCcNWHSMxoxzYzRAW8",
     "InputHash": "QmeugkM1sYFz3qiEkfiydVGYb2shuH43tHGGR1K8WZDe4t",
-    "StaticHash": "QmWoewhE1kWrC1nmG7AxqcZyfCJitJL9YJBmzPhwdLuTkV"
+    "StaticHash": "QmWoewhE1kWrC1nmG7AxqcZyfCJitJL9YJBmzPhwdLuTkV",
+    "Color": "yellow"
   },
   {
     "Index": 148,
@@ -1636,7 +1784,8 @@
     "Image": "rhl_mon_3_OPT.gif",
     "ImageHash": "QmRYBMzG7L35iAAxdP67NqBy47JJmSHt7o9StxMVzgV8nP",
     "InputHash": "QmSEeF9h8PQPPihsmKtmScKvkfRx96urp8QurdqiTCx2bo",
-    "StaticHash": "Qmaj1cEuZVHMGT6XsXGuWNFSkdPhTbuTU5QvXHZ5YrbS4g"
+    "StaticHash": "Qmaj1cEuZVHMGT6XsXGuWNFSkdPhTbuTU5QvXHZ5YrbS4g",
+    "Color": "blue"
   },
   {
     "Index": 149,
@@ -1647,7 +1796,8 @@
     "Image": "highway-disappointment-prevention_norm_m7_OPT.gif",
     "ImageHash": "QmYLwXRdhLqqJALHCtT6VcWMspiHaNKcxbDJHNuYtarxeJ",
     "InputHash": "QmWH444gTHQKnjxMVq8JhFhWTinJafvzXdDYfLenv3LSFw",
-    "StaticHash": "QmUJs2exbFwvqVhqD5N7AMwZU5WQimYwt2ifoWAu3ZSBaL"
+    "StaticHash": "QmUJs2exbFwvqVhqD5N7AMwZU5WQimYwt2ifoWAu3ZSBaL",
+    "Color": "combo"
   },
   {
     "Index": 150,
@@ -1658,7 +1808,8 @@
     "Image": "whorl-academy-access_clip_m1_OPT.gif",
     "ImageHash": "QmZqjLxfB2dt98RSwTPqSSJ8cFiAT72R48CrWBGUqLKbGV",
     "InputHash": "QmQCV5wqK1uUzQk179ceBddKmVEUYTo2pELodzRaZaV9Hg",
-    "StaticHash": "QmTZrcDkWD28M9Npm48m4p5Ew7RrFFF1psZfSUnVVy3XJU"
+    "StaticHash": "QmTZrcDkWD28M9Npm48m4p5Ew7RrFFF1psZfSUnVVy3XJU",
+    "Color": "green"
   },
   {
     "Index": 151,
@@ -1669,7 +1820,8 @@
     "Image": "modem-chard-purple_clip_m7_OPT.gif",
     "ImageHash": "QmbrREDui6RSz1qPXPvw4YX8hKsnzTRwy92ttZpHfkqJVW",
     "InputHash": "QmZtMNWZkJ97pgvqxN6UiPgMuuoWoqbyos6hfkhsvVDRej",
-    "StaticHash": "QmP3HkQZ6pjMMgNsHX1EhwHkfk2hL8CMPypMSFCEozdPop"
+    "StaticHash": "QmP3HkQZ6pjMMgNsHX1EhwHkfk2hL8CMPypMSFCEozdPop",
+    "Color": "rainbow"
   },
   {
     "Index": 152,
@@ -1680,7 +1832,8 @@
     "Image": "odometer-climate-shingle_clip_m1_OPT.gif",
     "ImageHash": "QmZgg5vayXgiZBAfAvyBNFAocUbg8WZALQLqxEMWCHQctz",
     "InputHash": "QmPo1eobvzLGY7Wf3sjEFMJp4KyR5xEMbiyZQGUuKa1q7n",
-    "StaticHash": "QmYm3GGSVmSuPzyujF76Ub6YshYoKJuzvNUBikiNu1HnVL"
+    "StaticHash": "QmYm3GGSVmSuPzyujF76Ub6YshYoKJuzvNUBikiNu1HnVL",
+    "Color": "red"
   },
   {
     "Index": 153,
@@ -1691,7 +1844,8 @@
     "Image": "globe-note-duck_clip_m6_OPT.gif",
     "ImageHash": "QmTQKtyQUQ9pjkxKRoMLEXtQ28Ht267nK9ASecfyUeCJwt",
     "InputHash": "QmfNZcRCL3DWSzpjLtbgaeYCygBjHS4uVjKgw1PYSpeN6N",
-    "StaticHash": "QmcMEdjjZQ8BXD46ho8XdKHnonMT3ohtp8De6rvKPQnnvx"
+    "StaticHash": "QmcMEdjjZQ8BXD46ho8XdKHnonMT3ohtp8De6rvKPQnnvx",
+    "Color": "rainbow"
   },
   {
     "Index": 154,
@@ -1702,7 +1856,8 @@
     "Image": "awe-birdbath-bidet_clip_m1_OPT.gif",
     "ImageHash": "QmQ4PS7nVnAJYdZ6wZC595ZFhDEKEST8YP5h53dHbsgyAH",
     "InputHash": "QmWGR1F9fRkYBP93WnPBEoh9yRLFLeSBppFzRF5FbHWZFL",
-    "StaticHash": "QmZHD9CcHesUFmKcbwdndVNshYzRg2VfBXykbjBnfdCFQJ"
+    "StaticHash": "QmZHD9CcHesUFmKcbwdndVNshYzRg2VfBXykbjBnfdCFQJ",
+    "Color": "red"
   },
   {
     "Index": 155,
@@ -1713,7 +1868,8 @@
     "Image": "daily-polish-fluke_clip_m7_OPT.gif",
     "ImageHash": "QmZh8Tfp6vrs9PejYYv7ERBe6ZCuA7CjUiXWyA4CsTd71t",
     "InputHash": "QmQBfFMtjcEWaaemENrarBV4qFEfimXf37TuK29JWy8zDT",
-    "StaticHash": "QmQ8GPG6ruTnQ5DmNQKzFc3wKwKBmiLRN8PbR7emKCSFvg"
+    "StaticHash": "QmQ8GPG6ruTnQ5DmNQKzFc3wKwKBmiLRN8PbR7emKCSFvg",
+    "Color": "red"
   },
   {
     "Index": 156,
@@ -1724,7 +1880,8 @@
     "Image": "painting-sneaker-veneer_norm_m0_OPT.gif",
     "ImageHash": "QmVnvz1x1FhpTSGupZTFkiwmLFE6JmDEmAAHuB2RkuyLCo",
     "InputHash": "QmZRQENJNfS517XgvuDkhCb95YicHq6LHyczwT4yxsD1wS",
-    "StaticHash": "QmZDjGWqzmck9rf2rP1V12jwWJRjaM4CVGjevLJ2s29iFD"
+    "StaticHash": "QmZDjGWqzmck9rf2rP1V12jwWJRjaM4CVGjevLJ2s29iFD",
+    "Color": "blue"
   },
   {
     "Index": 157,
@@ -1735,7 +1892,8 @@
     "Image": "button-vogue-operation_norm_m1_OPT.gif",
     "ImageHash": "Qma1xgU6SeoGpnrG6YnHbzNFtDbWL36porGRRY3rK9Spe4",
     "InputHash": "QmWwQVYe2zHY7LMCUTzQxcpF99BfuCw17z4jvSidfpPJw4",
-    "StaticHash": "QmVGng6C3UZ9nAsZue3eF1vsDYsRvgXHgP1kZhjqyahz1t"
+    "StaticHash": "QmVGng6C3UZ9nAsZue3eF1vsDYsRvgXHgP1kZhjqyahz1t",
+    "Color": "blue"
   },
   {
     "Index": 158,
@@ -1746,7 +1904,8 @@
     "Image": "vane-lemur-screenwriting_norm_m6_OPT.gif",
     "ImageHash": "QmT4xZ5FVwLiN12A1mrHvRbZymTm6GJbg8Cc8AhWmx4TXN",
     "InputHash": "QmawGu7GYXCDU2cBstcxK1zKWtXdQx8VbNvbEbXD4hRzdn",
-    "StaticHash": "QmS82CmMUV8HPSigs19dPbhh8t11URQhGnqma1HW39MJ36"
+    "StaticHash": "QmS82CmMUV8HPSigs19dPbhh8t11URQhGnqma1HW39MJ36",
+    "Color": "gray"
   },
   {
     "Index": 159,
@@ -1757,7 +1916,8 @@
     "Image": "gossip-outlaw-timer_norm_m1_OPT.gif",
     "ImageHash": "Qmb1qoUYwQeUdXEKX7SF7ZG1dHpKzzsPySifVFz7YqJRcK",
     "InputHash": "QmTg7jRe1H5XuTpq9W7cWrNnhp8gJminK6Wvr5DeLcSnJP",
-    "StaticHash": "QmPkCLegmfJSyR1qnYqXBuEiwvoZMxyEwNLS9pudbnD4BD"
+    "StaticHash": "QmPkCLegmfJSyR1qnYqXBuEiwvoZMxyEwNLS9pudbnD4BD",
+    "Color": "combo"
   },
   {
     "Index": 160,
@@ -1768,7 +1928,8 @@
     "Image": "sushi-stereo-truth_clip_m1_OPT.gif",
     "ImageHash": "Qmd4d1uufCPxTkpQ28uq8TdedGVwEKotGKRUEsh1cvvrDc",
     "InputHash": "QmUvQZWQWGUviuGCRBU9pc2sXNSgvVXLSHpqKWjoAnjSju",
-    "StaticHash": "QmSUncomqr3Hw2as5NRMRD86PCVk57pYrWp9BveZWF4PbV"
+    "StaticHash": "QmSUncomqr3Hw2as5NRMRD86PCVk57pYrWp9BveZWF4PbV",
+    "Color": "combo"
   },
   {
     "Index": 161,
@@ -1779,7 +1940,8 @@
     "Image": "doorbell-street-cymbal_clip_m1_OPT.gif",
     "ImageHash": "QmafwmDWjDjdmAuchhjHxopHxhhoZUnDYgD4Pstwf6prGB",
     "InputHash": "QmdsAwYs7yHdCHx2eQ71Ewa21Wk9wxt5sG9PphSWcByWzA",
-    "StaticHash": "QmUYvAVznBwt5skWgSY5HToWetivkweskF4BirzSPiC7M6"
+    "StaticHash": "QmUYvAVznBwt5skWgSY5HToWetivkweskF4BirzSPiC7M6",
+    "Color": "blue"
   },
   {
     "Index": 162,
@@ -1790,7 +1952,8 @@
     "Image": "subscription-border-sneaker_clip_m7_OPT.gif",
     "ImageHash": "QmXs1cEAwvC74ULx1zBGw8GRqqn815zAsLPUQj4qw1asgB",
     "InputHash": "Qmb1mMFL8xXPsbKvtpeKxshxVGhgBiPP6X8fCrycgRyHA8",
-    "StaticHash": "QmZaivGDZ82xupM91GzCkXLyoT4d7wZn4FzR6C19uKxpyZ"
+    "StaticHash": "QmZaivGDZ82xupM91GzCkXLyoT4d7wZn4FzR6C19uKxpyZ",
+    "Color": "white"
   },
   {
     "Index": 163,
@@ -1801,7 +1964,8 @@
     "Image": "makeover-gauge-spank_clip_m1_OPT.gif",
     "ImageHash": "QmUSCjsesXtT95V7Fgk6HWVcE7SHsfnnvqQeWvRc2L876g",
     "InputHash": "QmS6c6gNmJuqdtBh7ziVJNr8Qjv5TuqhjnSgJcdAghwkUr",
-    "StaticHash": "QmY9cCQM3vkbmdEmMLPxU12jxmDkg1mM3RT7tEgKH1ZRVQ"
+    "StaticHash": "QmY9cCQM3vkbmdEmMLPxU12jxmDkg1mM3RT7tEgKH1ZRVQ",
+    "Color": "combo"
   },
   {
     "Index": 164,
@@ -1812,7 +1976,8 @@
     "Image": "gap-primate-mortise_norm_m1_OPT.gif",
     "ImageHash": "QmXBp3kStSZt6ASPoq2EcxSAAyiLLYWtGr3nL2DZzrm2Qf",
     "InputHash": "QmeRMGcdjxnR5eRaUSQ9xiMKaEvmEHjttXdWoe92mTHUGp",
-    "StaticHash": "QmWvAYXDXGUjU8suMMBxTxq6Cbu1yFb3jXM2axnsvETEar"
+    "StaticHash": "QmWvAYXDXGUjU8suMMBxTxq6Cbu1yFb3jXM2axnsvETEar",
+    "Color": "purple"
   },
   {
     "Index": 165,
@@ -1823,7 +1988,8 @@
     "Image": "cart-cauliflower-gearshift_clip_m1_OPT.gif",
     "ImageHash": "Qmb6z9opKRSVFcDpGM3gFPGGoRweGKZbiR5zsUVH1K5ZvQ",
     "InputHash": "QmRWpJWBs3Js96sdq7RWaJzWTY5VYdqheHkTmFfJC8tEtm",
-    "StaticHash": "QmeFu8onvu4QS5rJ2hUiMvsqFXYJYA8qw3mCJYBurBpiaz"
+    "StaticHash": "QmeFu8onvu4QS5rJ2hUiMvsqFXYJYA8qw3mCJYBurBpiaz",
+    "Color": "brown"
   },
   {
     "Index": 166,
@@ -1834,7 +2000,8 @@
     "Image": "foreigner-pill-downforce_norm_m6_OPT.gif",
     "ImageHash": "Qmc5K672TyVSu6AK2ddJEDCqPWU47tfBSFvZpnc71nT1fC",
     "InputHash": "QmUcgHhv6L53kKgRw5YP4n832655Mim2cRfxQ2VfcQLBXU",
-    "StaticHash": "QmQTe4t6vAMiSYVduvRVRrHQc5WrSg29ATiNSgjjNrQt2Y"
+    "StaticHash": "QmQTe4t6vAMiSYVduvRVRrHQc5WrSg29ATiNSgjjNrQt2Y",
+    "Color": "green"
   },
   {
     "Index": 167,
@@ -1845,7 +2012,8 @@
     "Image": "bathtub-slope-handicap_clip_m1_OPT.gif",
     "ImageHash": "QmdB7Ww8R5yizQmMYL7CeBdba7T4c2aPU7crBjvVPHSdV9",
     "InputHash": "QmbwJ49WJMGPacVMMT2tZex8RGzGAVQKA6UQJPdrE199HQ",
-    "StaticHash": "QmRA6bbTZ7yafUL7K7kQBbwXAo6pG9JsWAEJrGqnTv5L9A"
+    "StaticHash": "QmRA6bbTZ7yafUL7K7kQBbwXAo6pG9JsWAEJrGqnTv5L9A",
+    "Color": "purple"
   },
   {
     "Index": 168,
@@ -1856,7 +2024,8 @@
     "Image": "blackberry-countryside-temptress_clip_m1_OPT.gif",
     "ImageHash": "QmfVPu3qmpTWJR2VcWNggrve8d3qRy72dEWrkrTtbhxN8d",
     "InputHash": "QmZh16TLn91w4GUJ88RPMFW8dZjy6m4dmdHnWs4sVdqtx8",
-    "StaticHash": "QmdnzYHqSeRMkABshnhpUMPTpr6vuM8VzNcvxZp54gnc54"
+    "StaticHash": "QmdnzYHqSeRMkABshnhpUMPTpr6vuM8VzNcvxZp54gnc54",
+    "Color": "brown"
   },
   {
     "Index": 169,
@@ -1867,7 +2036,8 @@
     "Image": "barbecue-sheet-hug_norm_m6_OPT.gif",
     "ImageHash": "QmdsJcbjxRh9o4U6zuwGojcGhnGxi7ps2WkQHuw7LcK2T5",
     "InputHash": "QmfDn11JgKfnVuvZaqQZnA48K3zeyJwyHwQsj72xj9FUrZ",
-    "StaticHash": "QmcwFTKUTSWu3Qnn5RotYJn8eXJHmegN1Mrd1dVCPryZod"
+    "StaticHash": "QmcwFTKUTSWu3Qnn5RotYJn8eXJHmegN1Mrd1dVCPryZod",
+    "Color": "gray"
   },
   {
     "Index": 170,
@@ -1878,7 +2048,8 @@
     "Image": "tom-tom-modeling-irrigation_clip_m0_OPT.gif",
     "ImageHash": "Qmf9fu2SLBPFyv7ayadwLAiqgGgd3pRtktUgJC6QnW65wd",
     "InputHash": "QmYK6hoEso4LhGVgCTrt3TipCFVXihJLtLurPhHKrX4DXL",
-    "StaticHash": "QmbhzrsfhNpQoKjEe3ysA7kS8eZZj1B3t3cVW589GD2eu9"
+    "StaticHash": "QmbhzrsfhNpQoKjEe3ysA7kS8eZZj1B3t3cVW589GD2eu9",
+    "Color": "rainbow"
   },
   {
     "Index": 171,
@@ -1889,7 +2060,8 @@
     "Image": "vogue-stepmother-notepad_clip_m0_OPT.gif",
     "ImageHash": "QmbBDk3D2o1AJoNiZpyk1FCne5yqNNDWEr1LTPrJRFzbH4",
     "InputHash": "QmVSRPS8Fiecgj1Wf4zzkvxB2t9owesASAB1ddyh2cyH5i",
-    "StaticHash": "QmbbgmnD6LNAtqnfiLVhmzKNmym8XdBxdZRF9J4m5vGbxu"
+    "StaticHash": "QmbbgmnD6LNAtqnfiLVhmzKNmym8XdBxdZRF9J4m5vGbxu",
+    "Color": "blue"
   },
   {
     "Index": 172,
@@ -1900,7 +2072,8 @@
     "Image": "washbasin-sneaker-theism_norm_m1_OPT.gif",
     "ImageHash": "QmbNXSCjC7E1xNd2qgV1FfuLtgzqDJBNcqP4XSWawCD9aP",
     "InputHash": "QmWtc29xmUNhhvGH9yLpZ7jq2gLkdhrazkxYxL6GJYduvs",
-    "StaticHash": "QmbL7mp6JHb2xsDHu4dvjDzSRUHhHhSB4jbUBcwhCpfu7L"
+    "StaticHash": "QmbL7mp6JHb2xsDHu4dvjDzSRUHhHhSB4jbUBcwhCpfu7L",
+    "Color": "blue"
   },
   {
     "Index": 173,
@@ -1911,7 +2084,8 @@
     "Image": "buckle-sponsor-offset_norm_m6_OPT.gif",
     "ImageHash": "QmZWe8xeCFZiokJmmQJfgQ7fEiaSPQ3DLRdcwpQZAn5Pbw",
     "InputHash": "QmemkecJEW38TXZV4sUQTnz6G2z1c95Vr6VbucqUJZU9jH",
-    "StaticHash": "QmZ7SiDRVd82ErD9hvzkxrGd2zi8krsoKfPpKbZeqk7PU8"
+    "StaticHash": "QmZ7SiDRVd82ErD9hvzkxrGd2zi8krsoKfPpKbZeqk7PU8",
+    "Color": "blue"
   },
   {
     "Index": 174,
@@ -1922,7 +2096,8 @@
     "Image": "comprehension-school-quail_clip_m6_OPT.gif",
     "ImageHash": "QmTJ9oXtoutLj9puF3fDDsCE7TK1ZbyNPZ4CZomnGTP5Cq",
     "InputHash": "Qmf4AcBdZA7NkcHCs5M6HPKEUSgdLDdN3enfnqTBei2va9",
-    "StaticHash": "Qmazao97zCDB1ouoGpVbJbvd7L8KiEn43HsZHKQmiDDMNc"
+    "StaticHash": "Qmazao97zCDB1ouoGpVbJbvd7L8KiEn43HsZHKQmiDDMNc",
+    "Color": "purple"
   },
   {
     "Index": 175,
@@ -1933,7 +2108,8 @@
     "Image": "nightmare-shirt-release_norm_m7_OPT.gif",
     "ImageHash": "QmUuo7q8cYWCStrZM5vSUj3gLtgU2w1MSGwBdbAAktD6g6",
     "InputHash": "QmPrnhpGLJmccwRh2nrxFXjMN1atJKAwcs6bZQnLu6XTcH",
-    "StaticHash": "QmaPbdafmqdP25g9RKLAioPk1UXsCkoxyNCgSRSKi8QX9F"
+    "StaticHash": "QmaPbdafmqdP25g9RKLAioPk1UXsCkoxyNCgSRSKi8QX9F",
+    "Color": "blue"
   },
   {
     "Index": 176,
@@ -1944,7 +2120,8 @@
     "Image": "snuck-pun-comradeship_clip_m6_OPT.gif",
     "ImageHash": "QmehGz3eypmC3mKi4zDpNiKxrFq3e1Arzb1Tf4qjzBqWaV",
     "InputHash": "QmTJqUJG343Dz44vguPqeUNW4tyxyFfjpWBe4h6zBZMF8x",
-    "StaticHash": "QmSQxnjMuyooDKo7utboaeH6dpUkunVfUUuCBiShN1v91e"
+    "StaticHash": "QmSQxnjMuyooDKo7utboaeH6dpUkunVfUUuCBiShN1v91e",
+    "Color": "yellow"
   },
   {
     "Index": 177,
@@ -1955,7 +2132,8 @@
     "Image": "hanger-wholesale-medal_norm_m7_OPT.gif",
     "ImageHash": "QmVBYCM6UziunbJY1PavUHT7QQA4QwshudNoCwVisBcqZf",
     "InputHash": "QmendAjyY8e82JCM6xUPQ2Xk8FvmwhqrLi5ZHRx1mcUMyG",
-    "StaticHash": "QmcBe4PjyZgUrPFvBCPSEbyKdbF2DQCrFtfKkFGLrPYWWR"
+    "StaticHash": "QmcBe4PjyZgUrPFvBCPSEbyKdbF2DQCrFtfKkFGLrPYWWR",
+    "Color": "gray"
   },
   {
     "Index": 178,
@@ -1966,7 +2144,8 @@
     "Image": "stream-eel-assurance_clip_m1_OPT.gif",
     "ImageHash": "QmTYMLex2m1N2JvnQETtibyxZtsXS2amd2PZvmpoUcA86v",
     "InputHash": "QmcQWXfQPkCQkCjTSUxEdreytqN6hbfPMP6drYeXxKpw8s",
-    "StaticHash": "QmZCkSZzMYwhvTsEWCCU2U3bLsBkjToRRFuphrfm7BBKsR"
+    "StaticHash": "QmZCkSZzMYwhvTsEWCCU2U3bLsBkjToRRFuphrfm7BBKsR",
+    "Color": "white"
   },
   {
     "Index": 179,
@@ -1977,7 +2156,8 @@
     "Image": "barge-tramp-basis_norm_m1_OPT.gif",
     "ImageHash": "QmPBXyBy64yGhXrKE7Zjex7xs3ytnZsF4YucKhJxyKDLEM",
     "InputHash": "QmVLQ9ArbzyXuyrPytmeVPxajwddtgYyQywoP7bCgiFdyq",
-    "StaticHash": "Qmf7jEbC4bLRzNrKNbqVbHjbkKJUTf79EA1fmDTJAriycC"
+    "StaticHash": "Qmf7jEbC4bLRzNrKNbqVbHjbkKJUTf79EA1fmDTJAriycC",
+    "Color": "green"
   },
   {
     "Index": 180,
@@ -1988,7 +2168,8 @@
     "Image": "elephant-evaluator-obstacle_clip_m7_OPT.gif",
     "ImageHash": "QmPunCrhQggkfgPGuxSLC8iaaKpxrhB6qge9Hfvdw8LHu2",
     "InputHash": "QmQAPdn2N9LsjEhYRZx3WKjWp2xqNi4biwctZCwTvicnpF",
-    "StaticHash": "QmP7zcNpaUVVYryqYomcVZ7TTwTtgos3aQNhHVpYsM3rGr"
+    "StaticHash": "QmP7zcNpaUVVYryqYomcVZ7TTwTtgos3aQNhHVpYsM3rGr",
+    "Color": "rainbow"
   },
   {
     "Index": 181,
@@ -1999,7 +2180,8 @@
     "Image": "towel-candidacy-afterthought_norm_m7_OPT.gif",
     "ImageHash": "QmRkZYmHLjBmddDUnZzkcXk8MV1WeuonPXMJ5KmoLPFDiU",
     "InputHash": "Qmd3tRqmcHBy2DSkQLwuCcjsYR2gb7dJJwmQzvo4yGHddZ",
-    "StaticHash": "QmPZ5xHtj2NVEfkCWeAtcn7gpYTHvzN29DFetb3tBDCzb6"
+    "StaticHash": "QmPZ5xHtj2NVEfkCWeAtcn7gpYTHvzN29DFetb3tBDCzb6",
+    "Color": "rainbow"
   },
   {
     "Index": 182,
@@ -2010,7 +2192,8 @@
     "Image": "mover-clarinet-spell_norm_m7_OPT.gif",
     "ImageHash": "QmPojTGzovd3o7fm8TmJrbEZboxbyDgNyJWqEzypsY7PZv",
     "InputHash": "QmPDC8hWUXyy9mPyN2rgKX6tVeziqGeS9cW1ex85iSKvAP",
-    "StaticHash": "QmSsiAR7XnXRTiDJQQPevV3A3yQ4iFE6V9up6vRsmx3n3k"
+    "StaticHash": "QmSsiAR7XnXRTiDJQQPevV3A3yQ4iFE6V9up6vRsmx3n3k",
+    "Color": "purple"
   },
   {
     "Index": 183,
@@ -2021,7 +2204,8 @@
     "Image": "pinstripe-driveway-poisoning_clip_m6_OPT.gif",
     "ImageHash": "QmNts3WWzhJSUdefSoCpWsb3SvztPdVd2NLK12sjAioAS5",
     "InputHash": "QmarRg8CCKC2b1k1frGsrHS7p2eM847EWST9Y8VvVd1kmw",
-    "StaticHash": "QmT7144sZp9xuY8Yt1RhVkXT7FwaiSH9xgDeYb2T9wcPWD"
+    "StaticHash": "QmT7144sZp9xuY8Yt1RhVkXT7FwaiSH9xgDeYb2T9wcPWD",
+    "Color": "rainbow"
   },
   {
     "Index": 184,
@@ -2032,7 +2216,8 @@
     "Image": "licorice-maternity-perspective_clip_m0_OPT.gif",
     "ImageHash": "QmPRshtHSG6SYrVQrRfrpS3fFbVhjF6tgQnachjAsADX89",
     "InputHash": "QmdGMuhizbBUhfqmopayorMxwCRfhxR3xCASHRY5rwBtxu",
-    "StaticHash": "QmeqAkuAc2Uo6FLc7CSCBD4dy8QJh177eUrrG8s82ate2N"
+    "StaticHash": "QmeqAkuAc2Uo6FLc7CSCBD4dy8QJh177eUrrG8s82ate2N",
+    "Color": "purple"
   },
   {
     "Index": 185,
@@ -2043,7 +2228,8 @@
     "Image": "order-estate-popcorn_clip_m7_OPT.gif",
     "ImageHash": "QmezX8TSrcQ8E5mR9wmyUmBtPQBaPUCRsL8twVBRxBEFGb",
     "InputHash": "QmfEAN3LUdeH8bssRXFdW3GJwZWUuVjWAb7mRmYvY8PJX8",
-    "StaticHash": "QmYejG6akRHBL5Sq6v5V8L88g2FZmEjCm22TVspe6fumdk"
+    "StaticHash": "QmYejG6akRHBL5Sq6v5V8L88g2FZmEjCm22TVspe6fumdk",
+    "Color": "purple"
   },
   {
     "Index": 186,
@@ -2054,7 +2240,8 @@
     "Image": "corridor-worry-crate_clip_m1_OPT.gif",
     "ImageHash": "QmW9BqYzeTKZj2DSaq6pLS4Y6jCb4Fqk172zvr3FPofP2C",
     "InputHash": "QmZq5FcB2j5ep5d3z4oaYKBpp2kA9EeFPddbVY5JkStNxw",
-    "StaticHash": "QmYwtfdWaZcLawjJsNgdr7L8D5idygAfXAxJNpzyb6twRQ"
+    "StaticHash": "QmYwtfdWaZcLawjJsNgdr7L8D5idygAfXAxJNpzyb6twRQ",
+    "Color": "purple"
   },
   {
     "Index": 187,
@@ -2065,7 +2252,8 @@
     "Image": "institute-mall-boot_clip_m1_OPT.gif",
     "ImageHash": "QmcRJieFRAQvBnJpEScJ4ZSNGhDDpc5ZkhiDvYBzfueJoC",
     "InputHash": "QmcpM5AKMtpsJW2NHhjnFQHGmysrYYup4EvGfvmuxV2cWU",
-    "StaticHash": "QmNzZGPEPgWbr2QrGBZYtbc8jbwmRS29RVWF53a6gtCQLW"
+    "StaticHash": "QmNzZGPEPgWbr2QrGBZYtbc8jbwmRS29RVWF53a6gtCQLW",
+    "Color": "green"
   },
   {
     "Index": 188,
@@ -2076,7 +2264,8 @@
     "Image": "barracks-men-hike_norm_m7_OPT.gif",
     "ImageHash": "QmWTmEBycvVdUptRk8MLktw3pKUSieDXYmWTGSHutur9wq",
     "InputHash": "QmcgVhLHaJiAgu88XFFj7kjdJ7u3r7h82mR2h1PyTvSUu8",
-    "StaticHash": "Qmc3riTwByaegZ7xycVShPQh77ZSFikeUYiSEaVV6hg2uR"
+    "StaticHash": "Qmc3riTwByaegZ7xycVShPQh77ZSFikeUYiSEaVV6hg2uR",
+    "Color": "gray"
   },
   {
     "Index": 189,
@@ -2087,7 +2276,8 @@
     "Image": "optimal-majority-race_clip_m7_OPT.gif",
     "ImageHash": "Qmdrz14Pr1RkyDABSf6oWbzE5MZaKioZn2WZ2zKbypjH5E",
     "InputHash": "QmUDHqEf1MbRJBp3YcDC2xaDT9duExBb2nU22ksJtbVSQr",
-    "StaticHash": "QmNtqL939kTwPVyYebVWE8PRXUP1CoG79NLHGFTJr97VSA"
+    "StaticHash": "QmNtqL939kTwPVyYebVWE8PRXUP1CoG79NLHGFTJr97VSA",
+    "Color": "red"
   },
   {
     "Index": 190,
@@ -2098,7 +2288,8 @@
     "Image": "trapdoor-anybody-winner_norm_m1_OPT.gif",
     "ImageHash": "QmPa3VgrjaHsJaie75HvroV4piKJp8xA9PsD7EhmqNVpgH",
     "InputHash": "QmYnBpUDmRJqge48KZR2hqAaBtD9sknE8cbgdLbueSo59b",
-    "StaticHash": "QmcNvKbusMkeNQfNtcfpxmFbjhjt2KsQoygauehYJXYkG2"
+    "StaticHash": "QmcNvKbusMkeNQfNtcfpxmFbjhjt2KsQoygauehYJXYkG2",
+    "Color": "white"
   },
   {
     "Index": 191,
@@ -2109,7 +2300,8 @@
     "Image": "incision-gyro-rebel_norm_m1_OPT.gif",
     "ImageHash": "QmYPxy1BguZuKNCzKVbs6CYbQDyFvsBp7GbY5H3LztjfDr",
     "InputHash": "QmQeS8HqzEWWL26tNyuNWPLEETYtDANDRd1ijtkaXuXjdB",
-    "StaticHash": "QmezgDmFdsj2iBk4uzaxndNaqkoNWpiK2dWDhHsihFjjUv"
+    "StaticHash": "QmezgDmFdsj2iBk4uzaxndNaqkoNWpiK2dWDhHsihFjjUv",
+    "Color": "gray"
   },
   {
     "Index": 192,
@@ -2120,7 +2312,8 @@
     "Image": "grab-bag-flow-randomisation_norm_m1_OPT.gif",
     "ImageHash": "QmVNvZqU7UrkJ2yZjXYn6geq7Fpww1fWQdLgBMC4gfDY1n",
     "InputHash": "QmeXRt2f99RSgHx47VR5aVm67PKWYFHJTw7APYBfks5Pds",
-    "StaticHash": "QmTGLJqKhes5FQuhW2o6iUhztGboUtNr62eLxfFaskGpfP"
+    "StaticHash": "QmTGLJqKhes5FQuhW2o6iUhztGboUtNr62eLxfFaskGpfP",
+    "Color": "rainbow"
   },
   {
     "Index": 193,
@@ -2131,7 +2324,8 @@
     "Image": "takeover-step-uncle-ischemia_norm_m1_OPT.gif",
     "ImageHash": "QmcEAuLisPhgmXjiybN9HG6CKFAHm3oboS4D7TyQx1RPaK",
     "InputHash": "QmVc2zoobbULr1keovQq9mR7of3G4C4TCVS6hTRWUR1QqG",
-    "StaticHash": "QmcsGeFQkxzFFAozdpNW7rQn73e6DNa8N24vqDpY237ckF"
+    "StaticHash": "QmcsGeFQkxzFFAozdpNW7rQn73e6DNa8N24vqDpY237ckF",
+    "Color": "white"
   },
   {
     "Index": 194,
@@ -2142,7 +2336,8 @@
     "Image": "animal-coffin-irony_norm_m1_OPT.gif",
     "ImageHash": "QmXU92vv5f9aXVcyvieizwiuNn6sHZkmiMUJDgmRBFqMA7",
     "InputHash": "QmfMtTi5d3YneHGBwiZuCDXzfcYvnhAcXF2kqGLqTxFNfM",
-    "StaticHash": "QmdeEsvuxnAtp9MP5fecuqN4ntJuCAbdGbgRN6cHdAzrqa"
+    "StaticHash": "QmdeEsvuxnAtp9MP5fecuqN4ntJuCAbdGbgRN6cHdAzrqa",
+    "Color": "gray"
   },
   {
     "Index": 195,
@@ -2153,7 +2348,8 @@
     "Image": "cosset-reform-synthesis_clip_m1_OPT.gif",
     "ImageHash": "QmfCTj5PnqVS2caKKJKFBMvwRA7TEzYze1yPgKpZLKvKho",
     "InputHash": "QmSqAvhT8eJ1U8WNZ4WDreCcgnLfW2qmGrysD54AWwMs3J",
-    "StaticHash": "QmWaoEqYBgYxQqrG25uDhJQhW1EVqT5LBtjok8McExrmzw"
+    "StaticHash": "QmWaoEqYBgYxQqrG25uDhJQhW1EVqT5LBtjok8McExrmzw",
+    "Color": "rainbow"
   },
   {
     "Index": 196,
@@ -2164,7 +2360,8 @@
     "Image": "dwelling-sandpaper-twitter_clip_m1_OPT.gif",
     "ImageHash": "QmbtYoFR3J74vw7LH7k51KTmiy4esDWDRawyPYicTDpVdq",
     "InputHash": "QmZbDCNRnNzc1gzvTctU9E6McXtAMm9xbaoep283cBEYhg",
-    "StaticHash": "QmajeGXYUQkGsSDyD72rtf1ScAnAZgZ6YRio6TJhUh3wgv"
+    "StaticHash": "QmajeGXYUQkGsSDyD72rtf1ScAnAZgZ6YRio6TJhUh3wgv",
+    "Color": "yellow"
   },
   {
     "Index": 197,
@@ -2175,7 +2372,8 @@
     "Image": "sociology-whiskey-strawman_clip_m0_OPT.gif",
     "ImageHash": "QmWjD9LHRwmC5T3cxueMgLdYurCacUetmMo7yKQAUy8hfA",
     "InputHash": "QmNVCc9esWrGnuagyBU1hvrxy5qSXmd7pYxUyso2bBRNZ1",
-    "StaticHash": "QmPSTH9AVapDdmCXw8C3SsBX2UbAeVeKBszHp6vKCjqmta"
+    "StaticHash": "QmPSTH9AVapDdmCXw8C3SsBX2UbAeVeKBszHp6vKCjqmta",
+    "Color": "rainbow"
   },
   {
     "Index": 198,
@@ -2186,7 +2384,8 @@
     "Image": "disregard-leading-individual_norm_m1_OPT.gif",
     "ImageHash": "QmTLy8xfL59byWJMhw6c9y9sY92uKQUj8pgrQ6w17HpsHZ",
     "InputHash": "QmYKtxtQfdjdNejieEvsPc8d5Z6JNqZtaQMvBK3zvkdtm7",
-    "StaticHash": "QmfSJ96cbToyWSuudq8VZCPDJhhSKAWVu91azas6Mia3fF"
+    "StaticHash": "QmfSJ96cbToyWSuudq8VZCPDJhhSKAWVu91azas6Mia3fF",
+    "Color": "gray"
   },
   {
     "Index": 199,
@@ -2197,7 +2396,8 @@
     "Image": "step-grandfather-hand-cannibal_norm_m7_OPT.gif",
     "ImageHash": "QmR2NE1HGW6f7R21VDEWPP2U78D6G3GxBMW3gAeLG1pUd9",
     "InputHash": "QmPnvEqnd4nNGuKJwbtgtgdMzpL5DDqzTCrYCHeHtmvY2h",
-    "StaticHash": "QmZimtsGdwuQrgHuWhYqonvDVtK5SNhKtw6Z6C1B1kAUK5"
+    "StaticHash": "QmZimtsGdwuQrgHuWhYqonvDVtK5SNhKtw6Z6C1B1kAUK5",
+    "Color": "brown"
   },
   {
     "Index": 200,
@@ -2208,7 +2408,8 @@
     "Image": "jump-iridescence-hazel_norm_m1_OPT.gif",
     "ImageHash": "QmYqTZcuhcYoHNp2P9jrUN3gJ8mho515VzVjToVzKSM1WR",
     "InputHash": "QmQtispyNwyTBKquog6LBgyPFp8kbR5xdFyBNv18R7bVcv",
-    "StaticHash": "Qmde1tYKvGRjUZsz4teW88QBJoKC6oCbbhFxxrayCVUxJA"
+    "StaticHash": "Qmde1tYKvGRjUZsz4teW88QBJoKC6oCbbhFxxrayCVUxJA",
+    "Color": "green"
   },
   {
     "Index": 201,
@@ -2219,7 +2420,8 @@
     "Image": "cast-artery-destroyer_norm_m6_OPT.gif",
     "ImageHash": "QmPkVL6k9xBYNsVgS2373bF6DcadsbyjccBEFLrsfGY7Pk",
     "InputHash": "QmWHd5tYtyzNADAXi2pt43JRdQs2T9MfnwLF8un5XHUx2a",
-    "StaticHash": "QmaEKmAJ5FLabbd7pb12bXDnF7R4L4VzFEj4BexdvwyuTh"
+    "StaticHash": "QmaEKmAJ5FLabbd7pb12bXDnF7R4L4VzFEj4BexdvwyuTh",
+    "Color": "white"
   },
   {
     "Index": 202,
@@ -2230,7 +2432,8 @@
     "Image": "square-champion-music-box_norm_m7_OPT.gif",
     "ImageHash": "QmQdu6vSC2m5Pp9gW8kdbUZ8LcgoZycLx5JKb9WKrrQMrG",
     "InputHash": "QmVBNhf6kMM5yob12PKv6c3U7hV5X1BpgTnr2QBVn8NZSa",
-    "StaticHash": "QmdT1KBEY5buCpCGZsyqNa6PCiuXoe76SEqMFnS1xHFuu2"
+    "StaticHash": "QmdT1KBEY5buCpCGZsyqNa6PCiuXoe76SEqMFnS1xHFuu2",
+    "Color": "rainbow"
   },
   {
     "Index": 203,
@@ -2241,7 +2444,8 @@
     "Image": "rubber-mule-compliance_clip_m1_OPT.gif",
     "ImageHash": "QmQC7f1tCbKukzQpb48hZwV6s6okmDE1TKkFmVknVc3P2a",
     "InputHash": "QmcakWsCf79JpSCaAfRKnw4MxvBfNXoFCE3sMfPeFuX8Vi",
-    "StaticHash": "QmaRtRCHssBWk7aYca6TwibRqurFvGoEnG9XaSugr4EDtP"
+    "StaticHash": "QmaRtRCHssBWk7aYca6TwibRqurFvGoEnG9XaSugr4EDtP",
+    "Color": "purple"
   },
   {
     "Index": 204,
@@ -2252,7 +2456,8 @@
     "Image": "status-scale-frock_clip_m0_OPT.gif",
     "ImageHash": "QmUL38G2DKtTrRWjjWS9MxVbDPsLtQFxkQNKGTLi7JyHF2",
     "InputHash": "QmVqyzqmK9L5hiRy8rAGhoPakXwEj1pzniYcjkBHdfhW4q",
-    "StaticHash": "QmNedvcS8y1BbQmPNzMNo4H6V4FhZhNnjYoTjLadt92YM7"
+    "StaticHash": "QmNedvcS8y1BbQmPNzMNo4H6V4FhZhNnjYoTjLadt92YM7",
+    "Color": "rainbow"
   },
   {
     "Index": 205,
@@ -2263,7 +2468,8 @@
     "Image": "tensor-yurt-rowboat_norm_m7_OPT.gif",
     "ImageHash": "QmcALADW8HHmAD56G63TpczYXSS76ou7i48t3LzUWJSS4F",
     "InputHash": "QmZhQ4f3szZthCJsUq5SkYyKCcaTWfJFAkYVMkcjBjgQSF",
-    "StaticHash": "QmXdAfiPTvWwigTn3zw7wp81BZJ3pszgnpj1y68E6gkgiv"
+    "StaticHash": "QmXdAfiPTvWwigTn3zw7wp81BZJ3pszgnpj1y68E6gkgiv",
+    "Color": "gray"
   },
   {
     "Index": 206,
@@ -2274,7 +2480,8 @@
     "Image": "telescreen-bratwurst-switchboard_clip_m1_OPT.gif",
     "ImageHash": "Qme1e5vagoyDyKcjDk7qBNRc3oKxWfGNKxuTZG5hwqiYet",
     "InputHash": "QmTnkCvGGkC1Lx5meFdJGow13bf5spdVNcVwcaG19xR9h4",
-    "StaticHash": "Qmad9fS81Tz87CRzFZ6B8wS1dsygFdLk9CJANTSNrKJVqk"
+    "StaticHash": "Qmad9fS81Tz87CRzFZ6B8wS1dsygFdLk9CJANTSNrKJVqk",
+    "Color": "brown"
   },
   {
     "Index": 207,
@@ -2285,7 +2492,8 @@
     "Image": "cloth-enzyme-sleuth_clip_m7_OPT.gif",
     "ImageHash": "QmQb74vkRYf6Nib9Bx1Ce6U1TDt1estT514knGZdwvY39s",
     "InputHash": "QmRhyRG5xSSZ52KGy1nQUxdDVoqmxcCMMsBrPQA1kZ9eEX",
-    "StaticHash": "QmTRo9coNw1k6zpG8QwGQDoAkQVbgTvyNJXM8UJ3j61hyw"
+    "StaticHash": "QmTRo9coNw1k6zpG8QwGQDoAkQVbgTvyNJXM8UJ3j61hyw",
+    "Color": "white"
   },
   {
     "Index": 208,
@@ -2296,7 +2504,8 @@
     "Image": "comprehension-brass-hacksaw_clip_m0_OPT.gif",
     "ImageHash": "QmaSYcdMmrqkBQo4SEkh53fwLfFxuXEmGDNyZiiEfxGLHb",
     "InputHash": "QmPtffYZFdeGU46nct74daEiW9J3jnKSJvrJeirxoTuFVn",
-    "StaticHash": "QmUWNyx4upUbV7NNG6GTiTxP7a1xX4MUYGr9wm23jWQe7s"
+    "StaticHash": "QmUWNyx4upUbV7NNG6GTiTxP7a1xX4MUYGr9wm23jWQe7s",
+    "Color": "red"
   },
   {
     "Index": 209,
@@ -2307,7 +2516,8 @@
     "Image": "bath-decoder-marathon_norm_m0_OPT.gif",
     "ImageHash": "QmaSppXmGPzkkTDYeU4oFZnP5wuaWdBdMsEzZR3ijV9FAw",
     "InputHash": "QmU9hPprwARDHA5JupX3rUuxJJRuii94S28FvKHG3eGbHL",
-    "StaticHash": "QmT1XRHcetaEbeNxVUCv4UiiFAgCS86YcsU8V2YqucxkZM"
+    "StaticHash": "QmT1XRHcetaEbeNxVUCv4UiiFAgCS86YcsU8V2YqucxkZM",
+    "Color": "blue"
   },
   {
     "Index": 210,
@@ -2318,7 +2528,8 @@
     "Image": "pajamas-headquarters-e-mail_norm_m7_OPT.gif",
     "ImageHash": "QmQqu8w57YnLqTHQUFRhBa9ZMUfVFhaStmmu7zUNsbYCmf",
     "InputHash": "QmbCgFbX2KXK2Pnc9B3MUbPUrVdtfK1jjirDfsXPPfRop2",
-    "StaticHash": "QmS4kZuk2yDxaNKA2ZKdcFEuE81kCx4r4Eb1nrRN44uH4k"
+    "StaticHash": "QmS4kZuk2yDxaNKA2ZKdcFEuE81kCx4r4Eb1nrRN44uH4k",
+    "Color": "blue"
   },
   {
     "Index": 211,
@@ -2329,7 +2540,8 @@
     "Image": "sanctuary-stucco-problem_clip_m7_OPT.gif",
     "ImageHash": "QmSF8H6VoXvPjCtrYe7HNjkwarm7236pYw9jjNFf3aPWQx",
     "InputHash": "QmeuQAmN4H6hsKw4Mwrxhtck9fGr62UPyvSD1ErgoPvSTt",
-    "StaticHash": "QmWQCpwpc45kNMRvNG3Biw9Uq8Engvf9g7eVHce9w9nzuC"
+    "StaticHash": "QmWQCpwpc45kNMRvNG3Biw9Uq8Engvf9g7eVHce9w9nzuC",
+    "Color": "yellow"
   },
   {
     "Index": 212,
@@ -2340,7 +2552,8 @@
     "Image": "degradation-fertilizer-treasury_clip_m1_OPT.gif",
     "ImageHash": "QmT5WvS5LjatsjRpuMRudXtcQ8GJKCDaAf4HTNpQp4ESTa",
     "InputHash": "QmQKBeRd3Ki9t7wAKxwPZmVHyUSrpj1znskd7oE5bJ34co",
-    "StaticHash": "QmaEk8crLyq7jtXute5QzNdhcfjbcadZsYxzMaZTshgNZH"
+    "StaticHash": "QmaEk8crLyq7jtXute5QzNdhcfjbcadZsYxzMaZTshgNZH",
+    "Color": "rainbow"
   },
   {
     "Index": 213,
@@ -2351,7 +2564,8 @@
     "Image": "consequence-answer-optimisation_norm_m0_OPT.gif",
     "ImageHash": "QmaZys9XmPfS3BCU2vJMUQEp82QCY6U3oKPJRzieLwu7id",
     "InputHash": "QmYSDYWgwegoZmf181zML2vaynintHTVmV8VwPFg3vPPxp",
-    "StaticHash": "QmQbdYek5k1TT2h7kk6bYzQcqnT286kw7afU7nvQi3r8ju"
+    "StaticHash": "QmQbdYek5k1TT2h7kk6bYzQcqnT286kw7afU7nvQi3r8ju",
+    "Color": "green"
   },
   {
     "Index": 214,
@@ -2362,7 +2576,8 @@
     "Image": "foal-oven-vaccine_clip_m1_OPT.gif",
     "ImageHash": "QmesL7vJpHG9GduMoA45ywQUJTHxCFC9sJKpHHiJcDSnm6",
     "InputHash": "QmbDvPxHqw3vYw7Gu4jXsL26jVQMj7kdobbD9sd8kzefQW",
-    "StaticHash": "QmRgYkfNcEA4YfMCfBc26PyA4yet6uDmwMMVMWdaNaRMGu"
+    "StaticHash": "QmRgYkfNcEA4YfMCfBc26PyA4yet6uDmwMMVMWdaNaRMGu",
+    "Color": "red"
   },
   {
     "Index": 215,
@@ -2373,7 +2588,8 @@
     "Image": "sunlamp-pounding-antennae_clip_m1_OPT.gif",
     "ImageHash": "QmZgQNJypFGP2NktBGyVBvJ1uspykF4o2aoNjyxmj4ZqQp",
     "InputHash": "QmTMG4jY7bq2hCp1RcMjEMZvYscSUUecjwysYMNNjKyT92",
-    "StaticHash": "QmTKs4ba5RC4ECPPKqe2YDLybL15HjcAqjNoRqgJzyJGUm"
+    "StaticHash": "QmTKs4ba5RC4ECPPKqe2YDLybL15HjcAqjNoRqgJzyJGUm",
+    "Color": "rainbow"
   },
   {
     "Index": 216,
@@ -2384,7 +2600,8 @@
     "Image": "tank-documentation-union-waist-special-causal_norm_m6_OPT.gif",
     "ImageHash": "QmSRcxPZcbT6yVU12EXF9yvZksi2no7GdiLGKiVUMocysh",
     "InputHash": "QmbNwNrjC49TbjP9DHrBDd464FPTkgXiMcwQeFdTJf8rhi",
-    "StaticHash": "QmVYPdYneDJG1NwQ9JKZTP72SZyFxFjjKKNpZRxgh6e3Xw"
+    "StaticHash": "QmVYPdYneDJG1NwQ9JKZTP72SZyFxFjjKKNpZRxgh6e3Xw",
+    "Color": "white"
   },
   {
     "Index": 217,
@@ -2395,7 +2612,8 @@
     "Image": "chasm-enterprise-notoriety_norm_m1_OPT.gif",
     "ImageHash": "QmP3jT3gwgFuxH3h3mzESRWiJEW9x27pbMDGrqn2UaAMce",
     "InputHash": "QmSGVZkhNnwsnt7H2eoeQm3n67mP8moi8bJMQwPmiTyVkv",
-    "StaticHash": "QmUViD9GFn9Mm4GcE3DWrViVX16M9baGrjTvtGkXAHF9co"
+    "StaticHash": "QmUViD9GFn9Mm4GcE3DWrViVX16M9baGrjTvtGkXAHF9co",
+    "Color": "rainbow"
   },
   {
     "Index": 218,
@@ -2406,7 +2624,8 @@
     "Image": "molasses-glider-sale_clip_m7_OPT.gif",
     "ImageHash": "QmW4rYpRJ38daE8mrkvZ1Uqa4DbJQRc9gXmDPDmJnWqZqQ",
     "InputHash": "QmYQK2D5fD9isEt4kheEzh4ZRqQyqmfsijS6nknBeAzKNk",
-    "StaticHash": "QmNbHqtvSLj2gLbByAuPUCdAKWSRCNJBqHTMgNs4uJoh69"
+    "StaticHash": "QmNbHqtvSLj2gLbByAuPUCdAKWSRCNJBqHTMgNs4uJoh69",
+    "Color": "white"
   },
   {
     "Index": 219,
@@ -2417,7 +2636,8 @@
     "Image": "ophthalmologist-nymph-permafrost_norm_m7_OPT.gif",
     "ImageHash": "QmZ8AapRNjW7S23jmveRyyWLgdKgjojxohzFvyqasQpLeQ",
     "InputHash": "QmSs24xmfb3cAU4XcPpaD8rjQ4txkAqpzLdMeaXXQckR8h",
-    "StaticHash": "QmQdgg9FDZgw3fr5KAoo45TimircR84EbUtz7hy7L2SaWD"
+    "StaticHash": "QmQdgg9FDZgw3fr5KAoo45TimircR84EbUtz7hy7L2SaWD",
+    "Color": "purple"
   },
   {
     "Index": 220,
@@ -2428,7 +2648,8 @@
     "Image": "tenement-snorer-mother-in-law_clip_m1_OPT.gif",
     "ImageHash": "QmZFy9XkGY3N19GVZJUySKSy86eDK25upAYauTZmH6XZ2S",
     "InputHash": "QmfHw1mRuEH5DWckHM7oJ1suMiepy2hw2HnB4a2GGxZXcG",
-    "StaticHash": "QmRUL1B1bLqMcteaW3GrMycqg4VpiSvE7MnfHwxrYDAbWN"
+    "StaticHash": "QmRUL1B1bLqMcteaW3GrMycqg4VpiSvE7MnfHwxrYDAbWN",
+    "Color": "white"
   },
   {
     "Index": 221,
@@ -2439,7 +2660,8 @@
     "Image": "outlay-ton-trowel_norm_m1_OPT.gif",
     "ImageHash": "QmWPn1JUKiT1QevR8QCVnirumxk6VeA94YUzmb536cRTKa",
     "InputHash": "QmW6o1MfcuXNcM3XBxAajq1dCBXni49GKMtexcjxgsiEit",
-    "StaticHash": "QmUWUqYsyYY7xmFh6CPUr42Pi6PUa4469faRfhtsZjBb8H"
+    "StaticHash": "QmUWUqYsyYY7xmFh6CPUr42Pi6PUa4469faRfhtsZjBb8H",
+    "Color": "green"
   },
   {
     "Index": 222,
@@ -2450,7 +2672,8 @@
     "Image": "formula-resident-most_norm_m7_OPT.gif",
     "ImageHash": "QmWZEupWGPk9X9ATS5einjMya9HGgXDMaVZ8wzeN33k6rT",
     "InputHash": "QmVcgr5VDYd4R2y8zE4PhrqrMCNrB4dUvAqShsYBbbnono",
-    "StaticHash": "QmUJKhUn3tvFSEfiVF9L8ibESTYtfSSqme2DkxSC2ytL97"
+    "StaticHash": "QmUJKhUn3tvFSEfiVF9L8ibESTYtfSSqme2DkxSC2ytL97",
+    "Color": "brown"
   },
   {
     "Index": 223,
@@ -2461,7 +2684,8 @@
     "Image": "feeling-embassy-sexuality_norm_m0_OPT.gif",
     "ImageHash": "QmVJJKeNB2vjRT8tXLqqFUrDuD4J9Ui5r75wk5WEws9DKm",
     "InputHash": "QmcWT15mqgK1hsa1k1PFZrB1GbsHiBp2GouZkmRxmvaMQb",
-    "StaticHash": "QmeEUYjsMB2FaukG1UHywVa4vXU3VUzs1Ghagv9R3Yso7p"
+    "StaticHash": "QmeEUYjsMB2FaukG1UHywVa4vXU3VUzs1Ghagv9R3Yso7p",
+    "Color": "purple"
   },
   {
     "Index": 224,
@@ -2472,7 +2696,8 @@
     "Image": "consumer-assurance-yang_norm_m1_OPT.gif",
     "ImageHash": "QmeNZuE3JJhiDr4YeqAhg9F5ppt3W4jQS9jSg1d7f8nsmn",
     "InputHash": "QmXNK3GSnpHef1JnGqbzi4mP7XhoKi8NLx8VwkKJzwYtcY",
-    "StaticHash": "QmeDWGLRLYHgVZLUJEGLaGW7E5w2K3pL5pdZFXQoNJDWrn"
+    "StaticHash": "QmeDWGLRLYHgVZLUJEGLaGW7E5w2K3pL5pdZFXQoNJDWrn",
+    "Color": "gray"
   },
   {
     "Index": 225,
@@ -2483,7 +2708,8 @@
     "Image": "stick-sushi-septicaemia_clip_m1_OPT.gif",
     "ImageHash": "QmSoN9Xhdjga3Ukqz2WgUPW5EQ7MitgrjifiZajZtZk3YY",
     "InputHash": "QmRhzvKzLd2Y3KMy6dNhSSv2R2VAgi7d7rt6GdMQnof3RT",
-    "StaticHash": "QmWwXQmLdJkGiqztSmB4mN7r6LqBMGi3domsMQCPfAnFEA"
+    "StaticHash": "QmWwXQmLdJkGiqztSmB4mN7r6LqBMGi3domsMQCPfAnFEA",
+    "Color": "red"
   },
   {
     "Index": 226,
@@ -2494,7 +2720,8 @@
     "Image": "housing-scale-cannon_clip_m1_OPT.gif",
     "ImageHash": "QmWST2MGPydZs1TqHufncA6wUJ52HbhGJWxUF7rjRZJK1G",
     "InputHash": "QmdQTMnb6psrf9c5b7oqmLYRe4JY49FSowA3i5Qe4DckTp",
-    "StaticHash": "QmSwN87Y4jksxuzPVhaFiLyWuzYfY7VhHa5PZo4u69gApQ"
+    "StaticHash": "QmSwN87Y4jksxuzPVhaFiLyWuzYfY7VhHa5PZo4u69gApQ",
+    "Color": "combo"
   },
   {
     "Index": 227,
@@ -2505,7 +2732,8 @@
     "Image": "forgery-perfume-extremist_norm_m7_OPT.gif",
     "ImageHash": "QmXTd6UVNpLGUgw4ba9a6Y8eSXhdQFRvPPCJR4YQKZNY94",
     "InputHash": "QmcAR7pE9gjG9Cu7PuhnnFMK7mpYEoXqowq6nR3XqAM1cF",
-    "StaticHash": "QmakaKVdARda7ntTNMXD2KtrxBaMzkHPA5sXkM1fegPDTm"
+    "StaticHash": "QmakaKVdARda7ntTNMXD2KtrxBaMzkHPA5sXkM1fegPDTm",
+    "Color": "blue"
   },
   {
     "Index": 228,
@@ -2516,7 +2744,8 @@
     "Image": "pasta-SUV-broom_clip_m1_OPT.gif",
     "ImageHash": "QmTwnXy3VhZej7RpcCKnkwkhYgL2b7nsb2xKxJQPm3DKYJ",
     "InputHash": "QmX7U2Zgnr6gYi3dq3c84Zri7UvaZdTFhv3aQPZYRXsfx8",
-    "StaticHash": "QmeCSUMjmvBSA19xyBSxtBiJE3T167W6pma1qRiiBemY2H"
+    "StaticHash": "QmeCSUMjmvBSA19xyBSxtBiJE3T167W6pma1qRiiBemY2H",
+    "Color": "blue"
   },
   {
     "Index": 229,
@@ -2527,7 +2756,8 @@
     "Image": "conformation-fill-prophet_clip_m7_OPT.gif",
     "ImageHash": "QmRvdj3PzCFwgNkkHZWLfoboLopK5UeD23MDv277y43DGn",
     "InputHash": "QmVRt5EVSsPbUCrUuhfvrbevJcpgHWjYqbx3wCvdfWQ8X4",
-    "StaticHash": "QmUnMge8afZmXMRnCoy4SCRawDxFn9TcxTMeFzuddKwXw7"
+    "StaticHash": "QmUnMge8afZmXMRnCoy4SCRawDxFn9TcxTMeFzuddKwXw7",
+    "Color": "purple"
   },
   {
     "Index": 230,
@@ -2538,7 +2768,8 @@
     "Image": "pavilion-achiever-monasticism_clip_m6_OPT.gif",
     "ImageHash": "Qmf7dcFpcTTAZKp2pqoCZrQ1fmsHo6De9K5D56Zxx5xECK",
     "InputHash": "QmVCqDgoZrXByHqnZT4s3q9HZ94tNbD9vgjvCTDDz7irJJ",
-    "StaticHash": "QmbrVtfNzsQdiB4EtZbA2uuH8VfyKkr8Ujk2LPTq6jyyi6"
+    "StaticHash": "QmbrVtfNzsQdiB4EtZbA2uuH8VfyKkr8Ujk2LPTq6jyyi6",
+    "Color": "combo"
   },
   {
     "Index": 231,
@@ -2549,7 +2780,8 @@
     "Image": "hug-uniformity-tenant_norm_m7_OPT.gif",
     "ImageHash": "QmPMy18HFjLKL8u6mmYN294dTXDMb7BSHrcXZy2hYmD8Gu",
     "InputHash": "Qmbxd61egXfqsD3kAUnafxis3bhQemMRJ6ho81xnEYLRur",
-    "StaticHash": "QmYZ9un2DLTTYz7UnsCkcP32oQcrZUFcStCHVBRDwgrA8s"
+    "StaticHash": "QmYZ9un2DLTTYz7UnsCkcP32oQcrZUFcStCHVBRDwgrA8s",
+    "Color": "gray"
   },
   {
     "Index": 232,
@@ -2560,7 +2792,8 @@
     "Image": "disgust-appendix-spawn_clip_m7_OPT.gif",
     "ImageHash": "QmUjfV3P5JoTpfXGVgvxmwgAsSYDygt17BpoTuC81SkwZo",
     "InputHash": "QmWoDjxdmaXjgGZF1fdLwBDEuyvhdZsFm4YUqT2zyZhXok",
-    "StaticHash": "QmWuNEGhPn4C9vuFqHY7i8kKprP6MRGUS7Q66WLeeXmMiJ"
+    "StaticHash": "QmWuNEGhPn4C9vuFqHY7i8kKprP6MRGUS7Q66WLeeXmMiJ",
+    "Color": "white"
   },
   {
     "Index": 233,
@@ -2571,7 +2804,8 @@
     "Image": "group-dilapidation-methane_clip_m7_OPT.gif",
     "ImageHash": "QmYbGKqM2kzWsGZq4FE2tSJ3E628753tkRGoi4TXUoET5N",
     "InputHash": "QmRNu1iKCYrbx7XowHdfxRkJDJTtCqtvJdEVzhS2HmcBEf",
-    "StaticHash": "Qmevg32k9XF3BN2X2bT7shJY7fjjmXSPDocE7L65bSUUsS"
+    "StaticHash": "Qmevg32k9XF3BN2X2bT7shJY7fjjmXSPDocE7L65bSUUsS",
+    "Color": "rainbow"
   },
   {
     "Index": 234,
@@ -2582,7 +2816,8 @@
     "Image": "cribbage-rehospitalisation-shit_clip_m1_OPT.gif",
     "ImageHash": "QmThuziNBjxJPWZzmZDgemJZdX2JyZGfTyvPq8wyqigokR",
     "InputHash": "QmT3aubzxDCbcmofZg3UWLiK16KWDd4SxtXPSegsSroAGJ",
-    "StaticHash": "Qmf55r6SJFZE4HmyZZhAq7EHf464HRUZGE1CW9nz2fuHfx"
+    "StaticHash": "Qmf55r6SJFZE4HmyZZhAq7EHf464HRUZGE1CW9nz2fuHfx",
+    "Color": "purple"
   },
   {
     "Index": 235,
@@ -2593,7 +2828,8 @@
     "Image": "authenticity-yard-angle_clip_m1_OPT.gif",
     "ImageHash": "QmNaQ5JYfao2Rrc8sysFKFz9qYxHNUpEbTuMCTfVSHA3js",
     "InputHash": "QmfA7gwpNe3efnWUXATLji96ZkkDWdsLg6qFT7ye9d66DL",
-    "StaticHash": "QmPotcswETY7YZBVzkz1pXPEwaAeUEipnFaKBLKfCs1aSz"
+    "StaticHash": "QmPotcswETY7YZBVzkz1pXPEwaAeUEipnFaKBLKfCs1aSz",
+    "Color": "white"
   },
   {
     "Index": 236,
@@ -2604,7 +2840,8 @@
     "Image": "demand-surge-fairy_clip_m7_OPT.gif",
     "ImageHash": "Qma6nTC8shRgaizjqctcXBT5FU1iJHUmXSkQCBbrdERUN1",
     "InputHash": "QmdLpENaFWi37BMPz7CfSjw3p8fH8JQrZSUaUr9LkM6CUW",
-    "StaticHash": "QmPmE3fATfZBj5mknkYdwKBQENLNbaYUPKGav5coaPS9HP"
+    "StaticHash": "QmPmE3fATfZBj5mknkYdwKBQENLNbaYUPKGav5coaPS9HP",
+    "Color": "white"
   },
   {
     "Index": 237,
@@ -2615,7 +2852,8 @@
     "Image": "access-platinum-arrogance_clip_m7_OPT.gif",
     "ImageHash": "QmNwYMC5ErqhV6qm4x7DZfwjXWgUpZfn8bYxNbDzeWc3DG",
     "InputHash": "QmfAKszEuheVy4MWjh3xx3AGWye1ptCA913PaZFWh7gNA2",
-    "StaticHash": "QmVRt26vzCHFeEBjJBiPsncVFozkXk5SoXysagRVh972QQ"
+    "StaticHash": "QmVRt26vzCHFeEBjJBiPsncVFozkXk5SoXysagRVh972QQ",
+    "Color": "yellow"
   },
   {
     "Index": 238,
@@ -2626,7 +2864,8 @@
     "Image": "committee-spleen-baboon_clip_m6_OPT.gif",
     "ImageHash": "QmeSAjPws2EjtxQDRm4RVCWv2wa1JcBjL8gRn6BwTYqnnu",
     "InputHash": "QmNeYExC5qxahJ4hVxnzbsuK7Evy1RrQCd13TAwWD6f4DZ",
-    "StaticHash": "QmPkYqZotgb2K1hSYCT2QqLybPm44J2L9NZkGi9Aw7MM9W"
+    "StaticHash": "QmPkYqZotgb2K1hSYCT2QqLybPm44J2L9NZkGi9Aw7MM9W",
+    "Color": "purple"
   },
   {
     "Index": 239,
@@ -2637,7 +2876,8 @@
     "Image": "pita-appellation-laughter_clip_m1_OPT.gif",
     "ImageHash": "Qmf483gEoMK5JeRLgfy2axy2SHtH7H34fiB4BMrwdAynwv",
     "InputHash": "QmbRKFyWDgLMrWEKWCbEiYRvdfXbusHb5bJixi4C1cEnff",
-    "StaticHash": "QmdjxZSb2ZbZsQ6XG2U56VwRigZk9WanG5yx3CvacDqzkc"
+    "StaticHash": "QmdjxZSb2ZbZsQ6XG2U56VwRigZk9WanG5yx3CvacDqzkc",
+    "Color": "green"
   },
   {
     "Index": 240,
@@ -2648,7 +2888,8 @@
     "Image": "essential-rubbish-brassiere_norm_m7_OPT.gif",
     "ImageHash": "QmPnKZTNj2FT2zj4UuXMCUnLAcvzaKEFkJK4pjJXUJPYWE",
     "InputHash": "QmV7X14Uyv5EbXyPq8SAB5kYxH5vbp4Rvzi61tsUCPxiUq",
-    "StaticHash": "QmWHPhDqfxyWCp5qMMWeCoV65To3n8r62tV3DdW5N2JzYg"
+    "StaticHash": "QmWHPhDqfxyWCp5qMMWeCoV65To3n8r62tV3DdW5N2JzYg",
+    "Color": "brown"
   },
   {
     "Index": 241,
@@ -2659,7 +2900,8 @@
     "Image": "rap-analogy-chops_clip_m6_OPT.gif",
     "ImageHash": "Qmc7DS2Jye2xJJc5rpnuHfeyo8pon2SEm1KXXfWyCCW45c",
     "InputHash": "QmatVdpJ5EPLsNcDPB61dqDg4hBafK9TXAnSkz4z8571qK",
-    "StaticHash": "Qmc6XfxTgoCmGU5MwN6cw3TfsBpuwaKeXdynzJF5wHH4F2"
+    "StaticHash": "Qmc6XfxTgoCmGU5MwN6cw3TfsBpuwaKeXdynzJF5wHH4F2",
+    "Color": "combo"
   },
   {
     "Index": 242,
@@ -2670,7 +2912,8 @@
     "Image": "questioner-gobbler-mailman_norm_m7_OPT.gif",
     "ImageHash": "QmbGnTZnohMvpCzrfMo3gXyMt3PrWPeoP3p9r8d4MPNd9E",
     "InputHash": "QmNyBEXRyz3Misp8r3Ei5UzxzDrS1mF2gZSRxZsoaCwTTb",
-    "StaticHash": "QmW27oZaXGkDMA5cVSkQscBq6AsG2k7Kd6kCJWGXi1Lk7H"
+    "StaticHash": "QmW27oZaXGkDMA5cVSkQscBq6AsG2k7Kd6kCJWGXi1Lk7H",
+    "Color": "purple"
   },
   {
     "Index": 243,
@@ -2681,7 +2924,8 @@
     "Image": "disease-tavern-insomnia_clip_m6_OPT.gif",
     "ImageHash": "QmWjHtcv1V5MJhffS95TNxAJ7zQZk5n7nr7CSNz2dPy8Vg",
     "InputHash": "QmNm8yAPQwoEHP2diqNHfNXXFsWd56NAybyhYezavEG2TX",
-    "StaticHash": "QmYpPW6mmfKuNNY8q67AEoLTLiL5xV4K1rqf7G2VkBoZgk"
+    "StaticHash": "QmYpPW6mmfKuNNY8q67AEoLTLiL5xV4K1rqf7G2VkBoZgk",
+    "Color": "yellow"
   },
   {
     "Index": 244,
@@ -2692,7 +2936,8 @@
     "Image": "monk-blast-inflation_norm_m1_OPT.gif",
     "ImageHash": "QmTpEDcAyaA6rekgVNGv3YWu1wPjVipqAKZy5BFepdmdmg",
     "InputHash": "QmYiyWCfB1Fb7hT3Tv8wPQ1iKQgMpB38uhXezAKu8fUMyN",
-    "StaticHash": "Qma1NPFSpw8K9nLCZ5PRfZm2PhvxLwgRVeiqyAieUMsH3K"
+    "StaticHash": "Qma1NPFSpw8K9nLCZ5PRfZm2PhvxLwgRVeiqyAieUMsH3K",
+    "Color": "combo"
   },
   {
     "Index": 245,
@@ -2703,7 +2948,8 @@
     "Image": "webinar-west-analogy_clip_m7_OPT.gif",
     "ImageHash": "QmWRERT8VvEPF8cy6ZgUkikWmGjEZtvZ3tojj2XEGJNzbL",
     "InputHash": "QmYsHcMGHUXwMmxtrJWG2rKsna3NRrWZ9oKXuxrrg2PpSD",
-    "StaticHash": "QmYLxZzjqydo955so6NQDebK78kgN67gDxM7vJpfYc51NG"
+    "StaticHash": "QmYLxZzjqydo955so6NQDebK78kgN67gDxM7vJpfYc51NG",
+    "Color": "red"
   },
   {
     "Index": 246,
@@ -2714,7 +2960,8 @@
     "Image": "bulk-nun-drunk_clip_m7_OPT.gif",
     "ImageHash": "QmXjU2XaDuBpL8tY2z9DrANyzn9orJxdXbKuQG1XBfNj7N",
     "InputHash": "QmUBXmAkQMaVxmUqRXMApizXnxor4KvvxwCbaM3S8P61oo",
-    "StaticHash": "QmZZqPsC4GNTaVMitsWhEF1L2JVHwbv7JjeXhaVXpnBpDb"
+    "StaticHash": "QmZZqPsC4GNTaVMitsWhEF1L2JVHwbv7JjeXhaVXpnBpDb",
+    "Color": "yellow"
   },
   {
     "Index": 247,
@@ -2725,7 +2972,8 @@
     "Image": "civilian-pigsty-comb_norm_m1_OPT.gif",
     "ImageHash": "QmYVf6g1jP6JWbGrZ2YcXn1VFvTamW2iehB7cTg7NAs8Wt",
     "InputHash": "QmV32czTDLtB9i9GSmKkPqsSqsDefcNaRs1fNCt7Tywicp",
-    "StaticHash": "QmYQe2gtScd1Qu5zAGro3pVky7vCd9tax39uuvwAvMcQ8B"
+    "StaticHash": "QmYQe2gtScd1Qu5zAGro3pVky7vCd9tax39uuvwAvMcQ8B",
+    "Color": "white"
   },
   {
     "Index": 248,
@@ -2736,7 +2984,8 @@
     "Image": "hostel-silly-dogwood_clip_m1_OPT.gif",
     "ImageHash": "Qmf7zKGtKNKJAPW8TKsW1GCZFuzUPgpS39Q761Z4jA1XuE",
     "InputHash": "QmY9Y2edSjmMBeJDtcNBhhTiAjVM2EMZwH87SbJwsSd5bM",
-    "StaticHash": "QmRycBxX4BfAySJwdnbLKhioDcEBaX2oVmBXZrahzqnu7u"
+    "StaticHash": "QmRycBxX4BfAySJwdnbLKhioDcEBaX2oVmBXZrahzqnu7u",
+    "Color": "rainbow"
   },
   {
     "Index": 249,
@@ -2747,7 +2996,8 @@
     "Image": "front-suede-infix_clip_m1_OPT.gif",
     "ImageHash": "QmXX8DAc15fzXCEeZVAtVPWs4YmFVChVPy6UfhLKvjfYDN",
     "InputHash": "QmRaba1Xw6JCBvSMwirB51KaXG4mCGA2bWAZbfXsJUx4Sb",
-    "StaticHash": "Qmen9fwPVWuQVum8B37KAvDpecPqcNNocmuzzeFggsC14z"
+    "StaticHash": "Qmen9fwPVWuQVum8B37KAvDpecPqcNNocmuzzeFggsC14z",
+    "Color": "rainbow"
   },
   {
     "Index": 250,
@@ -2758,7 +3008,8 @@
     "Image": "architecture-winery-topsail_norm_m7_OPT.gif",
     "ImageHash": "QmV2qiLZyiuVjEpx7w3s7MSDE9bmePVAghwoLpv8rvYtku",
     "InputHash": "QmbjJfo1DoszAZjzDT8cFUgkfhZQutqGdaoaa6BN6SrgUx",
-    "StaticHash": "QmNZmYC1y3vWjqe4FTi8Wz89xLXKq946iH7fcd5dvDz6Gx"
+    "StaticHash": "QmNZmYC1y3vWjqe4FTi8Wz89xLXKq946iH7fcd5dvDz6Gx",
+    "Color": "yellow"
   },
   {
     "Index": 251,
@@ -2769,7 +3020,8 @@
     "Image": "latex-centurion-parole_clip_m7_OPT.gif",
     "ImageHash": "QmZbLQBC7xadMd4XSXAFgnA6WSY7W4q2gfqzXeonXYtr5f",
     "InputHash": "Qmetmks4u6ksQ3tbNUkdGKMt1TrikedyBLmMczGGhTiVBs",
-    "StaticHash": "QmTc7k1pZ4ZhKWVDSPSEHjUvGKm3Y9nP3j576duqTisgDP"
+    "StaticHash": "QmTc7k1pZ4ZhKWVDSPSEHjUvGKm3Y9nP3j576duqTisgDP",
+    "Color": "purple"
   },
   {
     "Index": 252,
@@ -2780,7 +3032,8 @@
     "Image": "outfit-surface-turn_clip_m1_OPT.gif",
     "ImageHash": "QmYYLQ8oxzuEbPioameV8aJs7H3dB2yvZRXrrQD7QfDie1",
     "InputHash": "Qmdyx5TwoLD1LRmokViFSURMspaaJ3h55VTgncHUm4WnbZ",
-    "StaticHash": "QmPjWH6R2GwXZwEocKnAYvAygNYZ49gk6r5thViM2aq9az"
+    "StaticHash": "QmPjWH6R2GwXZwEocKnAYvAygNYZ49gk6r5thViM2aq9az",
+    "Color": "yellow"
   },
   {
     "Index": 253,
@@ -2791,7 +3044,8 @@
     "Image": "emery-conference-processing_clip_m7_OPT.gif",
     "ImageHash": "Qmc7gT3buonbhsAyAzv8uFXG7nn8FtZpRfnkqCiLdkbE1k",
     "InputHash": "QmZqgP5xWCySgt9k8HjSwnKMwF4DtmX9aqvRrL7G11RR7w",
-    "StaticHash": "QmWmMZ7PNt5TkMGwBcUC4JMHaua6JncVv4ZFjMAcw7SugJ"
+    "StaticHash": "QmWmMZ7PNt5TkMGwBcUC4JMHaua6JncVv4ZFjMAcw7SugJ",
+    "Color": "white"
   },
   {
     "Index": 254,
@@ -2802,7 +3056,8 @@
     "Image": "eyrie-carry-fellow_clip_m1_OPT.gif",
     "ImageHash": "QmYma6TcqayH6ocECtmgAL6uixkmaGNk8FXbrb8yLAxwyV",
     "InputHash": "Qma9JnTeZ6uVWwnWaESJ2GtXDcKazdaRGY3dbsgCncS3pU",
-    "StaticHash": "QmU112f2TNvj7fDQQENmXHNx71n59CtrD1HQzoWkvxxsD5"
+    "StaticHash": "QmU112f2TNvj7fDQQENmXHNx71n59CtrD1HQzoWkvxxsD5",
+    "Color": "red"
   },
   {
     "Index": 255,
@@ -2813,7 +3068,8 @@
     "Image": "filth-liberty-accent_clip_m7_OPT.gif",
     "ImageHash": "Qmdf4j96ccxmuhoV5vGF6HpLioFFoadqWMtoxX51ZgFjne",
     "InputHash": "QmW7mC6FET67Se54KH6LoWmt81mFLKtVY3FXtNJqzuaaM6",
-    "StaticHash": "QmZY5Qe72FareqHPByCfiksHmfj5kdZD23bArkisFGEo8P"
+    "StaticHash": "QmZY5Qe72FareqHPByCfiksHmfj5kdZD23bArkisFGEo8P",
+    "Color": "purple"
   },
   {
     "Index": 256,
@@ -2824,7 +3080,8 @@
     "Image": "director-automation-menorah_clip_m7_OPT.gif",
     "ImageHash": "QmcbkdYj4YZpKL7nYS8xvA2jTdRHhXPueu9ym4kPP2KzCX",
     "InputHash": "QmW2o9yhkvPeR8ztMAG4U9fFRuwdgaxr9N9eQueg7yhkuM",
-    "StaticHash": "QmSJsbH4f7iz9cBtPT3ZNCSmo3juA8HZ1LiHh8d9bkhFzS"
+    "StaticHash": "QmSJsbH4f7iz9cBtPT3ZNCSmo3juA8HZ1LiHh8d9bkhFzS",
+    "Color": "red"
   },
   {
     "Index": 257,
@@ -2835,7 +3092,8 @@
     "Image": "pentagon-hepatitis-dew_norm_m6_OPT.gif",
     "ImageHash": "QmToewc3r6UbuKnjpvozMENP9RjwH8NHFXTM39JbJ1E8oc",
     "InputHash": "QmSe9Wi5yjteux8WSDy2yeZzFnKWM9UsgXy7RuaCkjVQbd",
-    "StaticHash": "Qmbg3zaFWTQpQuDNPY1CJAzSDsfuE7xrZXmUDsBgoN7sfq"
+    "StaticHash": "Qmbg3zaFWTQpQuDNPY1CJAzSDsfuE7xrZXmUDsBgoN7sfq",
+    "Color": "yellow"
   },
   {
     "Index": 258,
@@ -2846,7 +3104,8 @@
     "Image": "bottom-line-contractor-convenience_norm_m7_OPT.gif",
     "ImageHash": "QmQoPukXAYnbdf5x68X9HKM5CcsTPXZMsoHVWwdpEVdEi4",
     "InputHash": "QmbenDLwri3equcdDpbAKYMAoZ5rYrnvdVLaxvrkRNtpAN",
-    "StaticHash": "QmZjKYAFyGFXyccgwFi6CnWwnYdKzHDY1rvuxKmdgcT4rY"
+    "StaticHash": "QmZjKYAFyGFXyccgwFi6CnWwnYdKzHDY1rvuxKmdgcT4rY",
+    "Color": "rainbow"
   },
   {
     "Index": 259,
@@ -2857,7 +3116,8 @@
     "Image": "jute-discount-hypothermia_norm_m6_OPT.gif",
     "ImageHash": "QmTCbbBszJ1A3ePNyQCefESB8i2fugSnLghMBZMBKLpgHN",
     "InputHash": "QmTzNSHtgYs5vM3BJ78rXkCyD9QiN9moo2aGCLJAWb1yoC",
-    "StaticHash": "QmXds8rscnbuczrsfCpByYDS6n16z4Txow3frXNihBTMVy"
+    "StaticHash": "QmXds8rscnbuczrsfCpByYDS6n16z4Txow3frXNihBTMVy",
+    "Color": "brown"
   },
   {
     "Index": 260,
@@ -2868,7 +3128,8 @@
     "Image": "panda-chalet-bail_norm_m1_OPT.gif",
     "ImageHash": "Qmf7RuNqxW3MUd1yr9J1pEnxF6bmgE2ZocrGZpQGKXwB5F",
     "InputHash": "QmaDrw5ca4oRkjaQC42GKhLYTo3Z1DCBXyk5MUMb8j18GW",
-    "StaticHash": "QmWCFDyjxkJRVcy64kqEvCbLUTefrS1i7kAiA3yEoug5Dj"
+    "StaticHash": "QmWCFDyjxkJRVcy64kqEvCbLUTefrS1i7kAiA3yEoug5Dj",
+    "Color": "purple"
   },
   {
     "Index": 261,
@@ -2879,7 +3140,8 @@
     "Image": "pepper-accusation-character_clip_m6_OPT.gif",
     "ImageHash": "QmRHYhgtFQwWBfALUmvz5QPJzFJHvbMZiyFDszdTe8NV8Y",
     "InputHash": "Qma9emsw7gVmSZYz5c5YzknkAouVDD2bKpFGZXBF5ZtkGs",
-    "StaticHash": "QmPjnSMvWwA371oAEnqkfpUP8rMKtqN1QcBcyumrLH2zzx"
+    "StaticHash": "QmPjnSMvWwA371oAEnqkfpUP8rMKtqN1QcBcyumrLH2zzx",
+    "Color": "blue"
   },
   {
     "Index": 262,
@@ -2890,7 +3152,8 @@
     "Image": "start-court-misrepresentation_clip_m1_OPT.gif",
     "ImageHash": "QmTqvRKZcvUY68nMW2d1ZAzQuU5nUU8aqsc25nibGs1ZFN",
     "InputHash": "Qmc7bafuWLw7W1Mpns3xg3q33pgGR2ujChXSwWFTJVqD8i",
-    "StaticHash": "Qmex5bnbWH57gCx9SAL5qXNbVmt8kNnp7HW4EBUaZCP2pZ"
+    "StaticHash": "Qmex5bnbWH57gCx9SAL5qXNbVmt8kNnp7HW4EBUaZCP2pZ",
+    "Color": "rainbow"
   },
   {
     "Index": 263,
@@ -2901,7 +3164,8 @@
     "Image": "fries-hydrolyse-ketch_norm_m1_OPT.gif",
     "ImageHash": "QmeEn9fVaYUosk1hYgVGviBvsvYvwTxVmGYFDi5Kwhcrvf",
     "InputHash": "QmWehWZjfGo68NKdCNsXqB8RDAKad2Ci7uDxvHLcZrvZwp",
-    "StaticHash": "QmfTYUvLGs3o7SVauQgqnZKbD7PmFCSDjZzyXweUwMeHXX"
+    "StaticHash": "QmfTYUvLGs3o7SVauQgqnZKbD7PmFCSDjZzyXweUwMeHXX",
+    "Color": "rainbow"
   },
   {
     "Index": 264,
@@ -2912,7 +3176,8 @@
     "Image": "cameo-bat-leveret_norm_m1_OPT.gif",
     "ImageHash": "Qmc7FvhmfMHxqu4aXETwGCC4saHxhr96fWAtPKC3ecBFCS",
     "InputHash": "Qmazb5UcdaGoS6ru54jbGd979z9fRBrCfvNW8EaFa9Xg1U",
-    "StaticHash": "QmYTH2uHARAduF14jZ7z5HbMYYcwfvRrYbFvA4o2gnD97c"
+    "StaticHash": "QmYTH2uHARAduF14jZ7z5HbMYYcwfvRrYbFvA4o2gnD97c",
+    "Color": "gray"
   },
   {
     "Index": 265,
@@ -2923,7 +3188,8 @@
     "Image": "asphalt-cookie-mirror_norm_m6_OPT.gif",
     "ImageHash": "QmcEXmo9EHCdCjufKAtMRjeUhczy1PoXS3RTez9ZQx7JDE",
     "InputHash": "QmRCCwywytqvnBraJw2tDVzJop1dGcsw2bwuLm7SNoaUMK",
-    "StaticHash": "QmP29oSBwGcUNUF9wQZok4C9Rog38TUtCcaJwHd77Uknne"
+    "StaticHash": "QmP29oSBwGcUNUF9wQZok4C9Rog38TUtCcaJwHd77Uknne",
+    "Color": "gray"
   },
   {
     "Index": 266,
@@ -2934,7 +3200,8 @@
     "Image": "order-cultivar-monkey_clip_m7_OPT.gif",
     "ImageHash": "QmbBWLaD1CzSHwiUFJng6ugT7GxoFyJh4Uj9hCAonY1nQe",
     "InputHash": "QmVgNTHJQMpQMpPT7d9YuQgVsV7cyue5HVMtkx2fjnWDHX",
-    "StaticHash": "QmdZmQFUQZKLvnHs7YuSk9e7VzWv3nPKR54ibWSUqnJ6bU"
+    "StaticHash": "QmdZmQFUQZKLvnHs7YuSk9e7VzWv3nPKR54ibWSUqnJ6bU",
+    "Color": "yellow"
   },
   {
     "Index": 267,
@@ -2945,7 +3212,8 @@
     "Image": "sanctity-fail-banquette_clip_m7_OPT.gif",
     "ImageHash": "QmNgaYcf2LQLTrK5T8eVc7L3fqn1WzsmJscJVjDDJwpj5h",
     "InputHash": "Qma4sFNY4SnMeq8hPDDTEwwkUp1mksy6msRZZoZC54MnAc",
-    "StaticHash": "QmbmJjsvTjR9iKFTp6UAvFePKDJL9gvd324eofM2LDL5d2"
+    "StaticHash": "QmbmJjsvTjR9iKFTp6UAvFePKDJL9gvd324eofM2LDL5d2",
+    "Color": "white"
   },
   {
     "Index": 268,
@@ -2956,7 +3224,8 @@
     "Image": "jicama-ferret-dentist_clip_m1_OPT.gif",
     "ImageHash": "QmexC7Dovv3jSiX7yGZzaPwDMyDJknPQufreNUbcQLfN2V",
     "InputHash": "QmYfuz9RbwHKVryoTny9FTA5LHCfXgCFoYAHeht5ZLeSBY",
-    "StaticHash": "Qmar5YEm5PaFcfBxRHv9wf9gPtF4jq3pcd2hgshZxFuoFJ"
+    "StaticHash": "Qmar5YEm5PaFcfBxRHv9wf9gPtF4jq3pcd2hgshZxFuoFJ",
+    "Color": "combo"
   },
   {
     "Index": 269,
@@ -2967,7 +3236,8 @@
     "Image": "hacksaw-semicircle-wild_clip_m1_OPT.gif",
     "ImageHash": "QmTw1KHiW9AvoHzPt1uKHrLd6cucZZLXzV5zbTfC6F9axi",
     "InputHash": "QmRERRyCLjofjpGPkFUxmCsEmLvJVrUr7dQPLtLHvywMk9",
-    "StaticHash": "QmaFc6Td5x5pQgwET6b8E7TxePGXJ2wqk89RDrLaiEQ5nk"
+    "StaticHash": "QmaFc6Td5x5pQgwET6b8E7TxePGXJ2wqk89RDrLaiEQ5nk",
+    "Color": "blue"
   },
   {
     "Index": 270,
@@ -2978,7 +3248,8 @@
     "Image": "delivery-identity-cry_norm_m6_OPT.gif",
     "ImageHash": "QmUvLCrFNPgkLWg1vCRFj2e3Yzz75cyPMwPTu8eoaN3mRp",
     "InputHash": "QmdAzkLRQZRfcifEaDeCFJsAyUpbh4xGdAzcsdUQVVfpLU",
-    "StaticHash": "QmSDghn5kxoEKPuGBLqLgTHbDzJ24NeEjLiuZgDqMBYTM8"
+    "StaticHash": "QmSDghn5kxoEKPuGBLqLgTHbDzJ24NeEjLiuZgDqMBYTM8",
+    "Color": "white"
   },
   {
     "Index": 271,
@@ -2989,7 +3260,8 @@
     "Image": "zipper-pumpkin-obedience_norm_m7_OPT.gif",
     "ImageHash": "QmenDnamfqxFHqjPRnTT58bBy47xg7NBjFP85znVwZ8eJN",
     "InputHash": "QmaF8rvi4W2uBDvnPFTSz2c7KjE9x5gLFqVu5BdLJgSE8K",
-    "StaticHash": "QmYVagogJLgc9YTFZikfruxW7XtsWbEb21kSamqgerERj1"
+    "StaticHash": "QmYVagogJLgc9YTFZikfruxW7XtsWbEb21kSamqgerERj1",
+    "Color": "yellow"
   },
   {
     "Index": 272,
@@ -3000,7 +3272,8 @@
     "Image": "arm-rest-sexuality-iris_clip_m1_OPT.gif",
     "ImageHash": "QmdiNAmHBzTJBnB1L2dygWWevPVdZhiciGSSL6izqqHkTE",
     "InputHash": "QmVoDWpPemYqrqvrgoZE4F193Lzw4Z8ihbBwQrEw6rURoz",
-    "StaticHash": "QmczyuGYGvn9x2sSnjGnK9NfywAsF5Pxq1TtmF98SgKgMw"
+    "StaticHash": "QmczyuGYGvn9x2sSnjGnK9NfywAsF5Pxq1TtmF98SgKgMw",
+    "Color": "red"
   },
   {
     "Index": 273,
@@ -3011,7 +3284,8 @@
     "Image": "meal-slider-animal_norm_m6_OPT.gif",
     "ImageHash": "QmRet5ZpKTd72HrY79HgqAm7fuEthk3f6z568dZnv17Dfb",
     "InputHash": "QmT3Ur7tQgT1JTVe1aKWdHzvzKZHTtn14VVhuFmddGZnAw",
-    "StaticHash": "QmajFfvZbC7F9v7jurN6wht3Sf8H8VdgXZLvVVk9c7a8SE"
+    "StaticHash": "QmajFfvZbC7F9v7jurN6wht3Sf8H8VdgXZLvVVk9c7a8SE",
+    "Color": "combo"
   },
   {
     "Index": 274,
@@ -3022,7 +3296,8 @@
     "Image": "constant-perp-parchment_clip_m1_OPT.gif",
     "ImageHash": "QmSicf9QHke2QiNtckdvjXfXFDrXs1GjE3mJMQpnt5AF3L",
     "InputHash": "QmQ7noGRDMKKFo8d19hPhKHyYMGCVyFuCBQ1rkHeSik5Pp",
-    "StaticHash": "QmPbhit7aV2Tdk319C51VCNakR7ZsfYDeiojzErx1invq1"
+    "StaticHash": "QmPbhit7aV2Tdk319C51VCNakR7ZsfYDeiojzErx1invq1",
+    "Color": "rainbow"
   },
   {
     "Index": 275,
@@ -3033,7 +3308,8 @@
     "Image": "intervention-chafe-rugby_norm_m7_OPT.gif",
     "ImageHash": "QmTfjVJ1ZMXFmScWpM71bban6yeKJU81vyeHUNrEgPv1vM",
     "InputHash": "QmNm7WmWMrpfXfroYFhiU857SUommB8QGLBf5voTr3Snzm",
-    "StaticHash": "QmSLox9va3rx8bHKCLL44rxBFYQPSiX3BFohDCyYi5pWfV"
+    "StaticHash": "QmSLox9va3rx8bHKCLL44rxBFYQPSiX3BFohDCyYi5pWfV",
+    "Color": "white"
   },
   {
     "Index": 276,
@@ -3044,7 +3320,8 @@
     "Image": "afterlife-giant-owner_clip_m0_OPT.gif",
     "ImageHash": "QmcxmVW1H1dJZthLRmrytFKXqYpjnrAuQJvhoznv5D39D6",
     "InputHash": "QmR6AT7vTs8dLJjaj5FM849aMnz33SB4kaYkzRUznpPjDj",
-    "StaticHash": "QmZ1ohJbqp6nUG6MDwYXfDhW7ViD6nrKuk5rrXcYJfa1Zv"
+    "StaticHash": "QmZ1ohJbqp6nUG6MDwYXfDhW7ViD6nrKuk5rrXcYJfa1Zv",
+    "Color": "red"
   },
   {
     "Index": 277,
@@ -3055,7 +3332,8 @@
     "Image": "brocolli-longboat-rabbit_norm_m6_OPT.gif",
     "ImageHash": "QmZXBPqXHkkSxU4yE6jvf23qTEsFBiMeSnAdpnFHF3Zu48",
     "InputHash": "QmUKvmc4DFFKFJXbiePdGmFgGWxRbAYRoHsqCCYS7wZZci",
-    "StaticHash": "QmbkE6vtgwng1STKqxd7csmxUA5jGwTEvcSdFiAWFSbZNF"
+    "StaticHash": "QmbkE6vtgwng1STKqxd7csmxUA5jGwTEvcSdFiAWFSbZNF",
+    "Color": "rainbow"
   },
   {
     "Index": 278,
@@ -3066,7 +3344,8 @@
     "Image": "hierarchy-collateral-assistant_clip_m1_OPT.gif",
     "ImageHash": "QmSxAmofCXg38y7Rhj4fEWJxh2ur6L2Mp91kMaNpMyKVLV",
     "InputHash": "QmYMvonoyCqMS8S3yeb6u9bt8h4KV6GdCVKv5qksf8Fqf5",
-    "StaticHash": "QmPkLiZgb6WApfFHCNnnPc1JMfbEA5htd2eqrhsrjeESWY"
+    "StaticHash": "QmPkLiZgb6WApfFHCNnnPc1JMfbEA5htd2eqrhsrjeESWY",
+    "Color": "combo"
   },
   {
     "Index": 279,
@@ -3077,7 +3356,8 @@
     "Image": "chipmunk-tsunami-wine_norm_m0_OPT.gif",
     "ImageHash": "QmR1xn3YGv7tvHXNE4esYGAymB4aRP4rhzFD6nonzkXJiH",
     "InputHash": "QmZiXQAZ7e9CT68XRkxo3d4UM638Hr3WxFHd2K4FgjUQ5J",
-    "StaticHash": "QmRzV9t77FWHdqDjxACS8Uc2zpssctscpmHV4LCdHvG5Mo"
+    "StaticHash": "QmRzV9t77FWHdqDjxACS8Uc2zpssctscpmHV4LCdHvG5Mo",
+    "Color": "gray"
   },
   {
     "Index": 280,
@@ -3088,7 +3368,8 @@
     "Image": "nit-wildlife-coevolution_clip_m1_OPT.gif",
     "ImageHash": "QmNZpzLoKNLH2thGYBDsSaFjzbm4QUFqpd28ty38h2arA1",
     "InputHash": "QmWhGyjYb3QtJ9dZ7L4CQtdJuVKziHzf8ocLMjjGK5J4JG",
-    "StaticHash": "QmW1AVQghZGqbmVgbYo3ShLFPXjbke74GhG9emiiUm4GpK"
+    "StaticHash": "QmW1AVQghZGqbmVgbYo3ShLFPXjbke74GhG9emiiUm4GpK",
+    "Color": "purple"
   },
   {
     "Index": 281,
@@ -3099,7 +3380,8 @@
     "Image": "battalion-osmosis-cashew_clip_m7_OPT.gif",
     "ImageHash": "QmZocdZKvU6TQ8Row6FNE9E8FiykKdtxnyt86LcJHymf4M",
     "InputHash": "QmSresKMUYjVz54M2CxG3XLACfJqaaMFHKcStKRFsArGxa",
-    "StaticHash": "QmXzcbDkJ1EkVTyUhu8QEumua7uYKfee7HvfMa5WgCLBKR"
+    "StaticHash": "QmXzcbDkJ1EkVTyUhu8QEumua7uYKfee7HvfMa5WgCLBKR",
+    "Color": "green"
   },
   {
     "Index": 282,
@@ -3110,7 +3392,8 @@
     "Image": "bail-antiquity-asset_clip_m1_OPT.gif",
     "ImageHash": "QmXnQ4nYRYy64ajUhGjowoyMJybJFWNNQqCpqbT6DrFXWf",
     "InputHash": "QmVtWkVBoMX57xaUiowLtjwDaYGVLG4KWw18UkQBm6xqi7",
-    "StaticHash": "QmbCdFuhhBS745J4LPirB6mBnRtY7xay8zcgcZMYxSCPN2"
+    "StaticHash": "QmbCdFuhhBS745J4LPirB6mBnRtY7xay8zcgcZMYxSCPN2",
+    "Color": "red"
   },
   {
     "Index": 283,
@@ -3121,7 +3404,8 @@
     "Image": "goodnight-smock-fibroblast_norm_m1_OPT.gif",
     "ImageHash": "QmXNdQeeuPpT32WZax9GZbJXFr22PKRhbpdziGayZ89271",
     "InputHash": "QmPCVTEXdNLKL2QtgBb6Vnqhq3m7spjH5rxL2eBWirSLSW",
-    "StaticHash": "QmQqbLjgiRQZY2Ve3qFWDcEFyUg4Ny5HVyMyewxhkDQsUr"
+    "StaticHash": "QmQqbLjgiRQZY2Ve3qFWDcEFyUg4Ny5HVyMyewxhkDQsUr",
+    "Color": "gray"
   },
   {
     "Index": 284,
@@ -3132,7 +3416,8 @@
     "Image": "curtailment-dromedary-interpreter_clip_m7_OPT.gif",
     "ImageHash": "QmQ6rQHMhd1E24nEKzmuoCDkD48vxkR379z7hvWUASHKAm",
     "InputHash": "QmVKigT78xADXoMXr576opGNe6PZoBtn4igRDaUhjRhFv1",
-    "StaticHash": "QmaNWj1jzeXFXbJK2PVohiyWWqGSMZxf6ge4CPcdaB5uCf"
+    "StaticHash": "QmaNWj1jzeXFXbJK2PVohiyWWqGSMZxf6ge4CPcdaB5uCf",
+    "Color": "purple"
   },
   {
     "Index": 285,
@@ -3143,7 +3428,8 @@
     "Image": "cope-receptor-antechamber_norm_m1_OPT.gif",
     "ImageHash": "QmYwi6eSHx4FQqfsXo96dUwdsAoQZm3tCiDZMLVxLFi8rs",
     "InputHash": "QmWQUTcXwVmtQ2uJtUDzYZgywyMQS5v3xBw4pqThVCunxP",
-    "StaticHash": "QmTER7TFfXZhBJfWVrFQxnzjMMYwiXF5jnMvu5GgkZwDqk"
+    "StaticHash": "QmTER7TFfXZhBJfWVrFQxnzjMMYwiXF5jnMvu5GgkZwDqk",
+    "Color": "gray"
   },
   {
     "Index": 286,
@@ -3154,7 +3440,8 @@
     "Image": "disability-futon-sequence_clip_m1_OPT.gif",
     "ImageHash": "QmPbTAMCQTYdiDfZ4Y36osuh9A6hcZhyX5Shkh3Wag3HGp",
     "InputHash": "QmPa4ZRQig5kHVoaTTBL8n1fgEcyonMyUGA2YdGDLRKtsX",
-    "StaticHash": "Qmdk7VGNUzSwwLJShAzdxWeMs6gXfo8YnSFfWVJcAAViTs"
+    "StaticHash": "Qmdk7VGNUzSwwLJShAzdxWeMs6gXfo8YnSFfWVJcAAViTs",
+    "Color": "yellow"
   },
   {
     "Index": 287,
@@ -3165,7 +3452,8 @@
     "Image": "forum-venue-desire_clip_m7_OPT.gif",
     "ImageHash": "QmXExBAg6QWae2hKxnuBzzxovMfs8zWFBS9cAeZk5JMVJ8",
     "InputHash": "QmbUyXhgrBadSBgEuS19LdQrTfVEKENY7WjkW4DH18Djit",
-    "StaticHash": "QmVq623vDGHM7muYzqRZGytt3hzRemEXjigCWE5M4hXbKY"
+    "StaticHash": "QmVq623vDGHM7muYzqRZGytt3hzRemEXjigCWE5M4hXbKY",
+    "Color": "purple"
   },
   {
     "Index": 288,
@@ -3176,7 +3464,8 @@
     "Image": "gaiters-satisfaction-replication_clip_m7_OPT.gif",
     "ImageHash": "QmcMCzmwyg4aFxyuzSREajiNm15jjym94ZKsWzJCAnh2yp",
     "InputHash": "QmeFwEUfANSaBZEMgwpTsEVfSKCYdiQuvqcL6Jomb9gTX8",
-    "StaticHash": "QmbnYuMg2Thdy1m5SjGPjeEmbA8L1PFufhsHy6nJB3HYps"
+    "StaticHash": "QmbnYuMg2Thdy1m5SjGPjeEmbA8L1PFufhsHy6nJB3HYps",
+    "Color": "brown"
   },
   {
     "Index": 289,
@@ -3187,7 +3476,8 @@
     "Image": "obsession-heel-mocha_clip_m0_OPT.gif",
     "ImageHash": "QmZTnP95JNzTnce1wtfREV5ypXWEisTskisY5xHzEfsqQp",
     "InputHash": "QmUhM9U8dyHy6KnVoG58R5dLCrCiwcA8YJvKr3voyqaLGt",
-    "StaticHash": "QmcVoiSMNTs2YRd4e7cjb7sH2FWGXKKfQn769LjANnUU8n"
+    "StaticHash": "QmcVoiSMNTs2YRd4e7cjb7sH2FWGXKKfQn769LjANnUU8n",
+    "Color": "blue"
   },
   {
     "Index": 290,
@@ -3198,7 +3488,8 @@
     "Image": "stem-platypus-wallet_clip_m1_OPT.gif",
     "ImageHash": "QmdxuYyzWWtEhxjSgCRVPb27aLF48o1XZxZMfb4bCYT9Y8",
     "InputHash": "QmTtVqEunKbqAgtzpexH4GGy5aN1vw3hmavX3eMozzSP4t",
-    "StaticHash": "QmQpPHjXZaixUW3aieYZSiD489iA6ojKu5r74Ede2Df11u"
+    "StaticHash": "QmQpPHjXZaixUW3aieYZSiD489iA6ojKu5r74Ede2Df11u",
+    "Color": "green"
   },
   {
     "Index": 291,
@@ -3209,7 +3500,8 @@
     "Image": "principal-collar-intuition_clip_m0_OPT.gif",
     "ImageHash": "QmQQtuqWUbJr76pbRVqdrsuCRcUMTVZAdx78gedoNZfxpf",
     "InputHash": "Qmd52eUGMfVEX3UdkVzrvrVp7bp6nPy7rpJMJ8PwvKpffU",
-    "StaticHash": "Qme659hT43zBL1sPd42ioaqg8ddz7pQbnKRvuaoaeg6sBc"
+    "StaticHash": "Qme659hT43zBL1sPd42ioaqg8ddz7pQbnKRvuaoaeg6sBc",
+    "Color": "yellow"
   },
   {
     "Index": 292,
@@ -3220,7 +3512,8 @@
     "Image": "incense-child-solvency_norm_m1_OPT.gif",
     "ImageHash": "QmaBu1i1zveTA1ZYSpPsW9fUoCzDnLq4M8bcZneQiYNQTp",
     "InputHash": "QmaAgJWGsMF4kdBhsZT55AYwKYmyqx6otggUW2dGsg17XK",
-    "StaticHash": "QmVHyZ7E5YXvRCMEP7UbTKpoyHKrn27M72oqRPio8LGRHc"
+    "StaticHash": "QmVHyZ7E5YXvRCMEP7UbTKpoyHKrn27M72oqRPio8LGRHc",
+    "Color": "green"
   },
   {
     "Index": 293,
@@ -3231,7 +3524,8 @@
     "Image": "recommendation-ruling-info_clip_m7_OPT.gif",
     "ImageHash": "QmXKM5F6KDptZmk6hZsWYYotESJcUcAcePKg4ijL1LbtQZ",
     "InputHash": "QmVA2MJMdvWC3Pk2cp9FsaUZimNqTVbVgoFY48umL6tRPX",
-    "StaticHash": "QmYfK3LjDb1j2LntNCpgVv3ZusQ7QvRbEzPdUZk295LD4q"
+    "StaticHash": "QmYfK3LjDb1j2LntNCpgVv3ZusQ7QvRbEzPdUZk295LD4q",
+    "Color": "rainbow"
   },
   {
     "Index": 294,
@@ -3242,7 +3536,8 @@
     "Image": "pathogenesis-permit-incubation_clip_m7_OPT.gif",
     "ImageHash": "QmfC2av7R2wSUYwVMrGj7FaYtsDbctsFBtXiq8oKBKLE2H",
     "InputHash": "QmV4Swp5XNoeEpxBFXoSf6nh79mnqdBCP7Mniu6xurVni9",
-    "StaticHash": "QmczeSWNAP22yj3Hv3anjtiAk9dX8uqvT1GBuZ4oiLnnAt"
+    "StaticHash": "QmczeSWNAP22yj3Hv3anjtiAk9dX8uqvT1GBuZ4oiLnnAt",
+    "Color": "combo"
   },
   {
     "Index": 295,
@@ -3253,7 +3548,8 @@
     "Image": "victory-tolerant-doubt_norm_m1_OPT.gif",
     "ImageHash": "QmeBaYxhoi3W6oDnFH739rJQuPjoeAity9KkfPwfXfP63m",
     "InputHash": "QmaXwrL84EY5yt7yKz21KLZwPB76JQYYVhwML5NAPAu4y1",
-    "StaticHash": "QmfDnPsHB5huk7aSzs1Vna4nti6sdWnSaWfNXE5sAW8qev"
+    "StaticHash": "QmfDnPsHB5huk7aSzs1Vna4nti6sdWnSaWfNXE5sAW8qev",
+    "Color": "white"
   },
   {
     "Index": 296,
@@ -3264,7 +3560,8 @@
     "Image": "kingfish-function-retina_norm_m1_OPT.gif",
     "ImageHash": "QmXTEsqpMMwkAfe1Fo6VbsqRbgqGUuSQ8obqmBgV1tiHiU",
     "InputHash": "QmSA6jj242yanx51NVxQkj9Gqnn9fqw4GcWAPCWG9GW5Ha",
-    "StaticHash": "QmVUUzdxn46qypQn3VGWzYKuY7133ZRbHSCSo3oCWB9FSx"
+    "StaticHash": "QmVUUzdxn46qypQn3VGWzYKuY7133ZRbHSCSo3oCWB9FSx",
+    "Color": "combo"
   },
   {
     "Index": 297,
@@ -3275,7 +3572,8 @@
     "Image": "worry-muscat-shame_norm_m0_OPT.gif",
     "ImageHash": "QmS2KeHnNpRoKR32g5sKrVA61xpSAJ6wp93b8zns56ia2d",
     "InputHash": "QmQA8jKDNpFgtaWarbAC1g1SWq7JTU7SY8wc8Giievscp8",
-    "StaticHash": "QmZSrdV3mFSviZDPmzsCjtsVvZAETbefGukTGY1EqUfMQn"
+    "StaticHash": "QmZSrdV3mFSviZDPmzsCjtsVvZAETbefGukTGY1EqUfMQn",
+    "Color": "gray"
   },
   {
     "Index": 298,
@@ -3286,7 +3584,8 @@
     "Image": "calculus-status-abuse_norm_m6_OPT.gif",
     "ImageHash": "QmSERMdZ1TUus553dPUXePnzQfjputVAuLWcwQAmFJ7zCy",
     "InputHash": "QmWjwQ2u3q58NJprs926mbCortEuMS8TkZZ4mmfWkUzFte",
-    "StaticHash": "QmQmFuEXfB9yQgAVMmSFTKo6LuWG3tpkMwchpH9HiPmjBp"
+    "StaticHash": "QmQmFuEXfB9yQgAVMmSFTKo6LuWG3tpkMwchpH9HiPmjBp",
+    "Color": "rainbow"
   },
   {
     "Index": 299,
@@ -3297,7 +3596,8 @@
     "Image": "wealth-leek-apparatus_norm_m1_OPT.gif",
     "ImageHash": "QmcP1kD7Eg97gYc8N7MN7Le5NeHWWhBGdJNo8Zqyp9XKBP",
     "InputHash": "QmS3PYn3hbwpTx9eGMKbvUi9e9eDjpRhP2oqcCZaHDHRxk",
-    "StaticHash": "Qmf4P6QA8Yh7Shr1yoby6KfZDmQdyP2pALiVh5wu6XBMiQ"
+    "StaticHash": "Qmf4P6QA8Yh7Shr1yoby6KfZDmQdyP2pALiVh5wu6XBMiQ",
+    "Color": "gray"
   },
   {
     "Index": 300,
@@ -3308,7 +3608,8 @@
     "Image": "cloak-spaghetti-barstool_clip_m1_OPT.gif",
     "ImageHash": "Qmf5n5JQqujuwpvjpApATqg3Cs7eAgjhFpq8y3E2USghB3",
     "InputHash": "QmfL4RNTJzeWsHCosEsxRUXcS8DYHjLLN9cm1cTDM6x2Ne",
-    "StaticHash": "QmWeqg9Cg2oRfLLUwUe9d6dLBjjz6T7pBNPG9bxaU3dDEy"
+    "StaticHash": "QmWeqg9Cg2oRfLLUwUe9d6dLBjjz6T7pBNPG9bxaU3dDEy",
+    "Color": "purple"
   },
   {
     "Index": 301,
@@ -3319,7 +3620,8 @@
     "Image": "investigation-developer-erection_clip_m1_OPT.gif",
     "ImageHash": "QmaZAXEHkUxJVMLTJ3cNfdE3zjy3cA2KscBLwB2x27dhDS",
     "InputHash": "QmcL3kqEwoWNJS8oaUPTpu9jyqWT6MNMZG5i7VWWdn4c4U",
-    "StaticHash": "QmSXp83xZmPTWCve5RjqrCTd7LnVas9aTtJNYF4fKdUxFN"
+    "StaticHash": "QmSXp83xZmPTWCve5RjqrCTd7LnVas9aTtJNYF4fKdUxFN",
+    "Color": "purple"
   },
   {
     "Index": 302,
@@ -3330,7 +3632,8 @@
     "Image": "emotion-scholarship-holder_clip_m7_OPT.gif",
     "ImageHash": "QmcyHd4NvcBCGmcSdFd56erykVEU8MHxur99sPhHokdpsq",
     "InputHash": "QmUaUrevdsTNQiy2z7bK4rBnYbY4Jesp8WuHCp7hAf4dBo",
-    "StaticHash": "QmRRL93eHB91suFJTm6thashUXyVB2dLdkuJAT3K212aE1"
+    "StaticHash": "QmRRL93eHB91suFJTm6thashUXyVB2dLdkuJAT3K212aE1",
+    "Color": "red"
   },
   {
     "Index": 303,
@@ -3341,7 +3644,8 @@
     "Image": "commercial-print-historian_clip_m7_OPT.gif",
     "ImageHash": "QmWrYXmyDjSJkLdWhyUhodkA13Gdy2PsUYzJH7WSQjZXtt",
     "InputHash": "QmZ15yJd2e6gum5tQnzW6AabPNyfd1RTBP7zSW1MXakv6f",
-    "StaticHash": "QmdLcXSiiNxQXcTkvXrKUTAkjBdBanM815Lqn7XkEP9AVE"
+    "StaticHash": "QmdLcXSiiNxQXcTkvXrKUTAkjBdBanM815Lqn7XkEP9AVE",
+    "Color": "red"
   },
   {
     "Index": 304,
@@ -3352,7 +3656,8 @@
     "Image": "limestone-nightingale-blight_norm_m6_OPT.gif",
     "ImageHash": "QmcznUyg24jnRSdQf1sjw1WAQ1JGkuWpTKfti4zYChsMwq",
     "InputHash": "QmRqmrH6AdUvtSSgZGTjSpXdFsiqHLuCnvKUSSA5Wdzrqx",
-    "StaticHash": "QmdhQFCurUnCj2qqY7Ff11ymikRvxHgtW4pReVxHn2Lhc7"
+    "StaticHash": "QmdhQFCurUnCj2qqY7Ff11ymikRvxHgtW4pReVxHn2Lhc7",
+    "Color": "brown"
   },
   {
     "Index": 305,
@@ -3363,7 +3668,8 @@
     "Image": "bandolier-inhibition-counsel_norm_m1_OPT.gif",
     "ImageHash": "QmY1wvHrPGpmRXuqc3xk5LyGHFYgjZTx4cAfNiXZzuoJut",
     "InputHash": "QmTJeas7pcWDziXFunBgSX5WAXiCvYBB9pRdDU7XEQYBwk",
-    "StaticHash": "QmdHuHLf6bzpFSgJVX9ihJP9o1dQAGLjzGYWwxkVFjceFw"
+    "StaticHash": "QmdHuHLf6bzpFSgJVX9ihJP9o1dQAGLjzGYWwxkVFjceFw",
+    "Color": "green"
   },
   {
     "Index": 306,
@@ -3374,7 +3680,8 @@
     "Image": "wing-lily-will_norm_m7_OPT.gif",
     "ImageHash": "QmWEe6P1WQXBdD7EbhnVxKg1kpG1wzUpethCkfZxnLz2dd",
     "InputHash": "QmRf8dmq17ZH7Ff9X9oV91K6EY4mdfWHSi2T5EhQrX6dgm",
-    "StaticHash": "QmZ47dn4KQbQR5TAy8ygzaJ4J4t7S4zQ92X5nNGmqdFVJv"
+    "StaticHash": "QmZ47dn4KQbQR5TAy8ygzaJ4J4t7S4zQ92X5nNGmqdFVJv",
+    "Color": "blue"
   },
   {
     "Index": 307,
@@ -3385,7 +3692,8 @@
     "Image": "lap-luggage-passbook_clip_m1_OPT.gif",
     "ImageHash": "QmSGwUugPkJD5ADWuTmMQqmex6eHnuspSSPyGNrQ8VtPJT",
     "InputHash": "QmbmkWGpHjqVYjRvwfmgBYTJV96ZoKSWN98aeujmUD73HP",
-    "StaticHash": "QmZjSvzJ2P7fWJXJdbqnxMQcmS65iy9tB6A3jAdfNVY9Hu"
+    "StaticHash": "QmZjSvzJ2P7fWJXJdbqnxMQcmS65iy9tB6A3jAdfNVY9Hu",
+    "Color": "rainbow"
   },
   {
     "Index": 308,
@@ -3396,7 +3704,8 @@
     "Image": "meatloaf-carnival-derivation_clip_m6_OPT.gif",
     "ImageHash": "QmNS6AgUCeonAjgV3wufaq5gXCsmWWKRK1jhNKSGaiTch1",
     "InputHash": "QmR4rwacG89FoAMCZSBL9D8EDNvGQv7g1J1SLgQvZTjGV4",
-    "StaticHash": "Qmd2BvuC4PKVzXZ5Xp28zyUe8cWAuovabQKX5oF7QSK6TR"
+    "StaticHash": "Qmd2BvuC4PKVzXZ5Xp28zyUe8cWAuovabQKX5oF7QSK6TR",
+    "Color": "rainbow"
   },
   {
     "Index": 309,
@@ -3407,7 +3716,8 @@
     "Image": "candidate-beginner-inspector_clip_m7_OPT.gif",
     "ImageHash": "QmZmzMDGbMoyj6mDxyM32swurFw9MRhmSnb71nNrNh8czh",
     "InputHash": "QmdHWUmf2qQDMeB67pDMCaH462CxTcWATuhK929jzD2h2p",
-    "StaticHash": "QmXYj4SfFM3YHKyQsMn2AZsdhmwDyqRcmbddEGe1jGdKfw"
+    "StaticHash": "QmXYj4SfFM3YHKyQsMn2AZsdhmwDyqRcmbddEGe1jGdKfw",
+    "Color": "rainbow"
   },
   {
     "Index": 310,
@@ -3418,7 +3728,8 @@
     "Image": "prostanoid-culture-acceptance_norm_m6_OPT.gif",
     "ImageHash": "QmPD8WDQ5SsxmwgoBArXvM9swqHNnJR1is4Jeh75jbHZKz",
     "InputHash": "QmZzfe3TTUqo72FkLgwPoE1UZz51RxoSxX7y7f2Xx1FPdo",
-    "StaticHash": "QmaPfXFoLcWsTa64AcqUMof5RmDCzebNefnZtfkBCN1dJ4"
+    "StaticHash": "QmaPfXFoLcWsTa64AcqUMof5RmDCzebNefnZtfkBCN1dJ4",
+    "Color": "green"
   },
   {
     "Index": 311,
@@ -3429,7 +3740,8 @@
     "Image": "menu-harbor-inside_norm_m1_OPT.gif",
     "ImageHash": "QmPiBaoECaoHZRt21KGTsZ4EsE5UKRFTQUL1VHijDjyGPc",
     "InputHash": "QmdZg33m4cFUepTvNVuFcjbAXDSr5AF96zmMrmJmhCQrA3",
-    "StaticHash": "QmVTt9GRVhSEqYPXxPiV6W5h6o23gQpMJTnKjQANkhtzkL"
+    "StaticHash": "QmVTt9GRVhSEqYPXxPiV6W5h6o23gQpMJTnKjQANkhtzkL",
+    "Color": "gray"
   },
   {
     "Index": 312,
@@ -3440,7 +3752,8 @@
     "Image": "pest-freezer-bureau_clip_m1_OPT.gif",
     "ImageHash": "QmNijaTbikMBsHn1dc8Frxct9yALNhAhkmeZe2StroESFM",
     "InputHash": "QmZpt7UEfsqZE5V43zuUgjQte43KwZ7dZHVwws4zeip27z",
-    "StaticHash": "QmUKxhFw4dtosbkEFfuYkgev9zjduYu25uRVnJvQm6r44F"
+    "StaticHash": "QmUKxhFw4dtosbkEFfuYkgev9zjduYu25uRVnJvQm6r44F",
+    "Color": "combo"
   },
   {
     "Index": 313,
@@ -3451,7 +3764,8 @@
     "Image": "consent-trail-picturesque_clip_m1_OPT.gif",
     "ImageHash": "QmXm7DuWxTE5LUw95ChZw3wvBUEhzEiQeu7ke8WxBMAMRr",
     "InputHash": "QmQhM75qjBWtaeahVudqA9YU7fvqY3pR58saBU5oeGyiNb",
-    "StaticHash": "QmWZTu6SfueGTmj8njJdECHMGUapjE74oxbzc6pzNAupSQ"
+    "StaticHash": "QmWZTu6SfueGTmj8njJdECHMGUapjE74oxbzc6pzNAupSQ",
+    "Color": "green"
   },
   {
     "Index": 314,
@@ -3462,7 +3776,8 @@
     "Image": "countryside-understanding-land_clip_m7_OPT.gif",
     "ImageHash": "QmSv4X9B9BmJhDJ1LGBWCupjtUeakCKRDcxz8NvgLyhxph",
     "InputHash": "Qmc8vMfmcGK66QfHQLSPsNQn5F77hQe9uraDU8AswRTZXa",
-    "StaticHash": "QmPHD1VTZEpVGbtenoyjhu4poZz6Cc8GCEtvgF8u9DGkqA"
+    "StaticHash": "QmPHD1VTZEpVGbtenoyjhu4poZz6Cc8GCEtvgF8u9DGkqA",
+    "Color": "rainbow"
   },
   {
     "Index": 315,
@@ -3473,7 +3788,8 @@
     "Image": "mattock-substance-pickaxe_clip_m1_OPT.gif",
     "ImageHash": "QmQyA5reM4VyXd8ruWCYgku4XqrGzVLagrWrqVrbsNLsyW",
     "InputHash": "QmQvMAKcCLezizqhSXjTwhWrN4CjDyb5hGd6RNrgcVSLfY",
-    "StaticHash": "QmWrJUr9kkzDsc63pjZ923awFZ7AorTvfXzmUQHRTecZsE"
+    "StaticHash": "QmWrJUr9kkzDsc63pjZ923awFZ7AorTvfXzmUQHRTecZsE",
+    "Color": "purple"
   },
   {
     "Index": 316,
@@ -3484,7 +3800,8 @@
     "Image": "education-worker-warden_clip_m1_OPT.gif",
     "ImageHash": "QmPbXKVGXWQfWcdcGKwSmH9y1xLXRkNDrBhhCUnp5G6GKi",
     "InputHash": "Qmd1BRYFFgqoGZpLryzmz4L3mA8tmQTMywxxHiHkHFfYud",
-    "StaticHash": "QmXT9u6VvoGheUEaSjF6ScaPyeHtSovPAqt9dNKU1hit4h"
+    "StaticHash": "QmXT9u6VvoGheUEaSjF6ScaPyeHtSovPAqt9dNKU1hit4h",
+    "Color": "yellow"
   },
   {
     "Index": 317,
@@ -3495,7 +3812,8 @@
     "Image": "menu-synergy-page_norm_m6_OPT.gif",
     "ImageHash": "QmTauvBRiidWPjL3gxNDEUHiDVB1MC8NwngkaAjjFT4UbN",
     "InputHash": "QmUYmCMrzo83eH9FRM7PN8gaTWVZRvJtQVVAnWxqQZ8fty",
-    "StaticHash": "QmPaUaFiLBWxLXqoJ5HMi7g73ZfPNXnfWiLNoWpNtvHkwY"
+    "StaticHash": "QmPaUaFiLBWxLXqoJ5HMi7g73ZfPNXnfWiLNoWpNtvHkwY",
+    "Color": "gray"
   },
   {
     "Index": 318,
@@ -3506,7 +3824,8 @@
     "Image": "lasagna-skill-birdhouse_norm_m6_OPT.gif",
     "ImageHash": "QmR9esUmVBZs4ed2mTG14h2J9uywQhj9iwkszAQka4bwwy",
     "InputHash": "QmdJXApBLJLM7ekvjJYRPmfu8zBs6Bn9xGN1uKYhLtwBas",
-    "StaticHash": "Qmd6qFU6CdD4t5ws7Wf7a2nN6rijxiyaSNCr56AmcMh4ha"
+    "StaticHash": "Qmd6qFU6CdD4t5ws7Wf7a2nN6rijxiyaSNCr56AmcMh4ha",
+    "Color": "white"
   },
   {
     "Index": 319,
@@ -3517,7 +3836,8 @@
     "Image": "tent-paper-inequality_clip_m0_OPT.gif",
     "ImageHash": "QmPfw5bYh16vQLoQ25SZYtXQ7xyepTvUSj3HXEoBpxywfk",
     "InputHash": "QmUtFUwB5wqVEaME6QWdQZuhrGmh8mRFLNxmZLhahSKBmi",
-    "StaticHash": "QmbQw2b2FTmAEdAwGFT28H1p9yi3TUABUvbBYXw9eKkcni"
+    "StaticHash": "QmbQw2b2FTmAEdAwGFT28H1p9yi3TUABUvbBYXw9eKkcni",
+    "Color": "green"
   },
   {
     "Index": 320,
@@ -3528,7 +3848,8 @@
     "Image": "report-chutney-rubbish_clip_m1_OPT.gif",
     "ImageHash": "QmToAWQYTNrTmW8SLALzRSwf9quY1kuXpsXWn1XrHLzKeK",
     "InputHash": "QmaX1GtdNZWmKK6qQWx4hCLmhYDZW4LCVYq5j1hHEPuUr9",
-    "StaticHash": "QmUyNxAp8G83tnuReMAAcboDjfu3ovHZqCb65ZiSfqGRKS"
+    "StaticHash": "QmUyNxAp8G83tnuReMAAcboDjfu3ovHZqCb65ZiSfqGRKS",
+    "Color": "white"
   },
   {
     "Index": 321,
@@ -3539,7 +3860,8 @@
     "Image": "youngster-softening-reason_norm_m6_OPT.gif",
     "ImageHash": "QmaQjuHhZFEUByWQ7vyh5LnZZtLq7WBauV9N3v3WBGuAkG",
     "InputHash": "QmSvL4ETwKawZkQvTi9aBiiTSyG6QhgqVLcKfup393b16F",
-    "StaticHash": "QmXAKkcusVwLZYF1GFhohUVDGcc1E19a14VUQuf2n6yWY9"
+    "StaticHash": "QmXAKkcusVwLZYF1GFhohUVDGcc1E19a14VUQuf2n6yWY9",
+    "Color": "blue"
   },
   {
     "Index": 322,
@@ -3550,7 +3872,8 @@
     "Image": "deposition-eponym-ephemeris_clip_m7_OPT.gif",
     "ImageHash": "QmQuC2YfjqFhFfsY8xmybuBGPcqCSaNWXXiuxgQ4H7ECvM",
     "InputHash": "QmQ4HCshkb3JxPiB2Kz7wvdYtxpVYBfgFFk6YNsPAf71E3",
-    "StaticHash": "QmNdwmsDNGTrtNaBPbpNsN15oh45KmnztM4y2ouRxScjvX"
+    "StaticHash": "QmNdwmsDNGTrtNaBPbpNsN15oh45KmnztM4y2ouRxScjvX",
+    "Color": "purple"
   },
   {
     "Index": 323,
@@ -3561,7 +3884,8 @@
     "Image": "text-tonic-vacation_norm_m7_OPT.gif",
     "ImageHash": "QmQpUSotcRJJs9d9fkdAcuYCsbgFxccQ5pBiSaojuDbCYW",
     "InputHash": "QmYqgueLYyn1EWvAPYjZ7R8PgiwYiVrTuMpzm4cLMMz1in",
-    "StaticHash": "QmckjC29Cq5JQTkDW8ozLtEhMK9bRg49anAKYS5dVrmNm1"
+    "StaticHash": "QmckjC29Cq5JQTkDW8ozLtEhMK9bRg49anAKYS5dVrmNm1",
+    "Color": "rainbow"
   },
   {
     "Index": 324,
@@ -3572,7 +3896,8 @@
     "Image": "spot-suburb-genre_clip_m0_OPT.gif",
     "ImageHash": "QmXfZhn7aA25ZoJYQU283sQ1Bd9WqgAqrSD9aR9ZfwPSkj",
     "InputHash": "QmcX3vUDPCa2xVtc5vTUQyvUv8NxpKF9hfvcMknwTxNWpW",
-    "StaticHash": "QmaPQe3pXyk8cP2nMoEsFri8MVPpP2XeUUKfq9AXZDyuwG"
+    "StaticHash": "QmaPQe3pXyk8cP2nMoEsFri8MVPpP2XeUUKfq9AXZDyuwG",
+    "Color": "blue"
   },
   {
     "Index": 325,
@@ -3583,7 +3908,8 @@
     "Image": "masterpiece-parrot-craft_clip_m6_OPT.gif",
     "ImageHash": "QmYjkCju6CD79uNNyY7iVbWWADBcsqPm3CnsqiwwQMYRyL",
     "InputHash": "QmQnDocV39poTnrYtpyjqLfUAgWAJGn1ZGvBsQVqiVieGU",
-    "StaticHash": "QmcpF2eNug5E2G6XA5SejTSTMEUzsH8ScDsgpbfk1oBytx"
+    "StaticHash": "QmcpF2eNug5E2G6XA5SejTSTMEUzsH8ScDsgpbfk1oBytx",
+    "Color": "combo"
   },
   {
     "Index": 326,
@@ -3594,7 +3920,8 @@
     "Image": "candy-subject-sponge_norm_m1_OPT.gif",
     "ImageHash": "QmUiGEoRd3fK5iATyZUoqmz3U2j3TnwSYLRRhXgYhMzn6P",
     "InputHash": "QmUsVJr5afwzSks1U1q7y7zCqCxXVkpsr76V1juQCqrS6D",
-    "StaticHash": "Qmctx5z9hhGwPKbNEVwrNvc1AUP6AHvPKf77WALnxuNYUa"
+    "StaticHash": "Qmctx5z9hhGwPKbNEVwrNvc1AUP6AHvPKf77WALnxuNYUa",
+    "Color": "gray"
   },
   {
     "Index": 327,
@@ -3605,7 +3932,8 @@
     "Image": "sailor-agony-income_clip_m7_OPT.gif",
     "ImageHash": "QmPoZ1fTRFEoyYoYMgtWfwQCCDqTEbcd9LZWT4qf8n4xXX",
     "InputHash": "QmdLU1Cb7cUZrJ7Q3YTjhP9sFxfsmcZosctADhHR9oiySq",
-    "StaticHash": "QmYz924QQG6YmAZTMjTdwsdjVPJL5VyEXBYkSP19aLqEXb"
+    "StaticHash": "QmYz924QQG6YmAZTMjTdwsdjVPJL5VyEXBYkSP19aLqEXb",
+    "Color": "rainbow"
   },
   {
     "Index": 328,
@@ -3616,7 +3944,8 @@
     "Image": "barrel-riverbed-indication_norm_m6_OPT.gif",
     "ImageHash": "Qmad7Ra2LcxNA2iJS2hpKPQdWJymomxnyyikWBQacWL8NX",
     "InputHash": "QmSbUmQyAtJVp4N8z1nHsz3KoJrFTSir4JZXtgbJdLDUiu",
-    "StaticHash": "Qmc5AY4ZwtAt78R7M2DnvFBcpVGtNE5PkQtWQMXgGvzGt1"
+    "StaticHash": "Qmc5AY4ZwtAt78R7M2DnvFBcpVGtNE5PkQtWQMXgGvzGt1",
+    "Color": "gray"
   },
   {
     "Index": 329,
@@ -3627,7 +3956,8 @@
     "Image": "marsh-kiwi-creator_norm_m1_OPT.gif",
     "ImageHash": "QmTTax8x75BmbdbssKk2CKEWForfY4ePhpdZGR7ufmmzjg",
     "InputHash": "QmVgBy8ujFwfrqMG3skSKDGC1vRh2q3LNogJRAWWbRRvhh",
-    "StaticHash": "QmQmmXsYddi9nxbBJYxZjn9sPfaNU89YfYQhjRtyNWP2mT"
+    "StaticHash": "QmQmmXsYddi9nxbBJYxZjn9sPfaNU89YfYQhjRtyNWP2mT",
+    "Color": "purple"
   },
   {
     "Index": 330,
@@ -3638,7 +3968,8 @@
     "Image": "underneath-neck-overweight_clip_m7_OPT.gif",
     "ImageHash": "QmSkfSGyxpVgJL2zS32TrEyZKb77TcY68S2V43jgq4kcbz",
     "InputHash": "QmZ9qhNyJ2SFD2hkj6QDU5swuSsdMgrSczgu4JSYbsb5AC",
-    "StaticHash": "QmVjkix6zXsxSqRNmiboNgu9xESSTX7bRhzVmqoDgaB2L3"
+    "StaticHash": "QmVjkix6zXsxSqRNmiboNgu9xESSTX7bRhzVmqoDgaB2L3",
+    "Color": "brown"
   },
   {
     "Index": 331,
@@ -3649,7 +3980,8 @@
     "Image": "music-making-howitzer-dick_norm_m6_OPT.gif",
     "ImageHash": "QmWehDhCwU9L99yP25oxyhyxPJyZshMusKDprerQuXrszu",
     "InputHash": "QmWiRdAkDtYcxY4g63ax1717PSKqxAUPTQAJQANKKPsc8y",
-    "StaticHash": "QmRnLsViXXPNQiTZL23YmdARWu6Cz2UFbp4DHS4defvRwp"
+    "StaticHash": "QmRnLsViXXPNQiTZL23YmdARWu6Cz2UFbp4DHS4defvRwp",
+    "Color": "combo"
   },
   {
     "Index": 332,
@@ -3660,7 +3992,8 @@
     "Image": "die-nickname-handle_norm_m1_OPT.gif",
     "ImageHash": "QmWUHZnBYDh5FbN26mJVxuUAAsYFtUxrk7zg6PHPBmenw7",
     "InputHash": "QmatXpoQVMv3g79iY4JBjafDvdZEufcF77jd7fvEDvDk6Z",
-    "StaticHash": "QmfMhmrvMhqNz1tzqaqkkwQUD8ELQfdmWHhqmrBzgRqa5m"
+    "StaticHash": "QmfMhmrvMhqNz1tzqaqkkwQUD8ELQfdmWHhqmrBzgRqa5m",
+    "Color": "yellow"
   },
   {
     "Index": 333,
@@ -3671,7 +4004,8 @@
     "Image": "member-park-consulting_norm_m6_OPT.gif",
     "ImageHash": "QmYnXuRxyM86pcZMJdJd1bhaYUNpC74hEk5GiQudSv2q5H",
     "InputHash": "QmWKAt1XxgMsK6RvztEU2gRdhqrFGf2dESjw5ph9hFiWVA",
-    "StaticHash": "QmaNMRoM451UcGxZ9x73W65p9M8E4CJbKYFKxskyAYEXFY"
+    "StaticHash": "QmaNMRoM451UcGxZ9x73W65p9M8E4CJbKYFKxskyAYEXFY",
+    "Color": "white"
   },
   {
     "Index": 334,
@@ -3682,7 +4016,8 @@
     "Image": "sailboat-heel-likelihood_clip_m1_OPT.gif",
     "ImageHash": "QmcYRc5CZRtxrNiHXcGRhugtQQWQCi6qnDymeFmZ5oARfW",
     "InputHash": "QmTAq6nFckYUpRnNjz1coCout9RxGsPpBKCUL3oRFq5u1i",
-    "StaticHash": "QmQGT69MxmCfaevebWa4AJ2cqwKQWK7RDestioCy14AuWa"
+    "StaticHash": "QmQGT69MxmCfaevebWa4AJ2cqwKQWK7RDestioCy14AuWa",
+    "Color": "green"
   },
   {
     "Index": 335,
@@ -3693,7 +4028,8 @@
     "Image": "adobe-prejudice-labor_clip_m6_OPT.gif",
     "ImageHash": "QmUDEBhyiqxaaCLPfoReGD3H79gHdPk8R6PdxeNBazXLcf",
     "InputHash": "QmZWwKVFSFc67ARKwn3CoFKEJBLAfPMDrE8T458XVB8s5y",
-    "StaticHash": "Qmf2K9yLT3LYFRpV67ApHJPMtJMrqT81qWfnTtBCLHeP1u"
+    "StaticHash": "Qmf2K9yLT3LYFRpV67ApHJPMtJMrqT81qWfnTtBCLHeP1u",
+    "Color": "white"
   },
   {
     "Index": 336,
@@ -3704,7 +4040,8 @@
     "Image": "boutique-relay-granola_clip_m1_OPT.gif",
     "ImageHash": "QmTQrdQpSkbecqvDAjXCcuG7bNvUkM7TpMTFAxxNWTMhna",
     "InputHash": "QmSMXYZf4wwyhwJKWVh9F1hS7Zndfpc7AdhBkjf99RNcC2",
-    "StaticHash": "QmQVPhEmwPK73ENPi35MvQweoC1ATAjnK3sZeRUZhacMEB"
+    "StaticHash": "QmQVPhEmwPK73ENPi35MvQweoC1ATAjnK3sZeRUZhacMEB",
+    "Color": "white"
   },
   {
     "Index": 337,
@@ -3715,7 +4052,8 @@
     "Image": "today-criterion-alibi_norm_m6_OPT.gif",
     "ImageHash": "Qmdgqx1yw6oAk3UHK44Jk4gJd9VSkHTLVZ99BGhughdnm6",
     "InputHash": "QmUCpiQRM8ENj7eWfCwQdUcoA775rWQ1o9Ry1cSdR264FA",
-    "StaticHash": "QmX24GDGjCycBhRKxekZk9KJC3ruYaM6fiGTt4WFXTcsMb"
+    "StaticHash": "QmX24GDGjCycBhRKxekZk9KJC3ruYaM6fiGTt4WFXTcsMb",
+    "Color": "rainbow"
   },
   {
     "Index": 338,
@@ -3726,7 +4064,8 @@
     "Image": "string-mister-man_clip_m1_OPT.gif",
     "ImageHash": "QmRWq96Vsxifh8e59PXWzVw5Hmq6ibFmESH2f5v1RVHhrZ",
     "InputHash": "QmXVPBgyfPHL5juSzptHvKFNFjCioVKWeqY98MQM4iMKSc",
-    "StaticHash": "QmZ7rUz1jrf8YFPV45d2bDSkimC6s4nsQPcuJW63sqPSgR"
+    "StaticHash": "QmZ7rUz1jrf8YFPV45d2bDSkimC6s4nsQPcuJW63sqPSgR",
+    "Color": "white"
   },
   {
     "Index": 339,
@@ -3737,7 +4076,8 @@
     "Image": "breast-valley-daybed_norm_m1_OPT.gif",
     "ImageHash": "QmSYmG6xNs6o836QzFJkftqX2tRgPJWBdLCfKQ3YSVAN9v",
     "InputHash": "Qmf6WykAYf2T7t8Wm327wTJQJ7paGQt78vXYZyikpA452M",
-    "StaticHash": "QmWzyREFAosWBaeVTT51o2iBHkuqYgmzrazzMvbKNfPS8f"
+    "StaticHash": "QmWzyREFAosWBaeVTT51o2iBHkuqYgmzrazzMvbKNfPS8f",
+    "Color": "brown"
   },
   {
     "Index": 340,
@@ -3748,6 +4088,7 @@
     "Image": "fen-plug-judgment_norm_m6_OPT.gif",
     "ImageHash": "QmaCLBMpBEFQU94cH552c8GiH5iBocwoF3mipZ1W1C58Um",
     "InputHash": "QmNgThDQA6FoQuWdP9aeixNiAEKfpqAgr7sHc3QoHoaozF",
-    "StaticHash": "QmPK8EeHqg4ZpLEKjXbmTieHvhSukzfe77KXme8QRgWpy6"
+    "StaticHash": "QmPK8EeHqg4ZpLEKjXbmTieHvhSukzfe77KXme8QRgWpy6",
+    "Color": "yellow"
   }
 ]

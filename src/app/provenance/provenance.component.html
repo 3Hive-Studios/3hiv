@@ -2,8 +2,18 @@
 
   <div class="header centered"><span class="cursed-text">BEHOLD</span> the pantheon</div>
 
+  <div class="centered">
+    <div>Filter Color</div>
+    <select [(ngModel)]="selectedColor" (change)="filterMonsByColor()">
+      <option value="" disabled selected>all</option>
+      <option *ngFor="let c of colorList" value="{{c}}">
+        {{c}}
+      </option>
+    </select>
+  </div>
+
   <div class="mon-item-holder">
-    <div class="mon-item" *ngFor="let m of monList">
+    <div *ngFor="let m of monList" class="mon-item">
       <div routerLink="/mon/{{m.Index}}" routerLinkActive="active">
         <div class="name"><b>#{{m.Index}} {{m.Name}}</b></div>
         <div>{{m.Epithets}}</div>

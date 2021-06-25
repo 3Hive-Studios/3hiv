@@ -8,9 +8,27 @@ import { ConstantsService } from '../constants.service';
 })
 export class ProvenanceComponent implements OnInit {
 
+  allMonsList: any;
   monList: any;
+  selectedColor: any;
+  colorList: any;
 
-  constructor(public constants: ConstantsService) { }
+  constructor(public constants: ConstantsService) {
+    this.selectedColor = "all";
+    this.colorList = [
+      'all',
+      'blue',
+      'brown',
+      'combo',
+      'gray',
+      'green',
+      'purple',
+      'rainbow',
+      'red',
+      'white',
+      'yellow'
+    ];
+   }
 
   ngOnInit(): void {
     this.loadData();
@@ -24,6 +42,11 @@ export class ProvenanceComponent implements OnInit {
       response["StaticURL"] = this.constants.IMAGE_PATH + path;
     }
     this.monList = fullResponseObj;
+    this.allMonsList = JSON.parse(JSON.stringify(fullResponseObj));
+  }
+
+  filterMonsByColor() {
+    this.monList = this.allMonsList.filter(m => m.Color === this.selectedColor);
   }
 
 }

@@ -105,6 +105,10 @@ button > a {
   padding: 1rem;
 }
 
+.xmon-squid {
+  filter: sepia(1) saturate(2.5)  hue-rotate(90deg);
+}
+
 .opensea-logo {
   width: 1.5rem;
   height: auto;
