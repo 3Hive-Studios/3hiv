@@ -177,6 +177,9 @@ input, textarea {
   border: 3px solid var(--dark-gray);
   border-radius: 4px;
 }
+.nice-button:hover {
+  border: 3px solid var(--gray);
+}
 
 @keyframes blinker {
   25% {

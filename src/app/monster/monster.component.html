@@ -16,10 +16,6 @@
     <span class="onchain-icon {{monData.superStatic}}" title="This 0xmon's static image and data is encoded on-chain" *ngIf="monData.isStaticUploaded"><a routerLink="/on-chain/{{monData.staticHash}}">⚡</a></span>
     <span class="onchain-icon" title="This 0xmon's animated image and data is encoded on-chain" *ngIf="monData.isAnimUploaded"><a routerLink="/on-chain/{{monData.animHash}}">🔒</a></span>
   </div>
-  <div class="centered external-links">
-    <button class="view-btn"><a href="https://etherscan.io/token/0x0427743df720801825a5c82e0582b1e915e0f750?a={{monId}}" target="_blank" rel="noopener noreferrer">Etherscan<svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 -256 1850 1850"><path d="M1438 819v320q0 119-84 203-85 85-204 85H318q-119 0-203-85-85-84-85-203V307q0-119 85-204 84-84 203-84h704q14 0 23 9t9 23v64q0 14-9 23t-23 9H318q-66 0-113 47t-47 113v832q0 66 47 113t113 47h832q66 0 113-47t47-113V819q0-14 9-23t23-9h64q14 0 23 9t9 23zm384-864v512q0 26-19 45t-45 19q-26 0-45-19l-176-176-652 652q-10 10-23 10t-23-10L725 874q-10-10-10-23t10-23l652-652L1201 0q-19-19-19-45t19-45q19-19 45-19h512q26 0 45 19t19 45z" fill="currentColor"/></svg></a></button>
-    <button class="view-btn open-sea"><a href="https://opensea.io/assets/0x0427743df720801825a5c82e0582b1e915e0f750/{{monId}}" target="_blank" rel="noopener noreferrer">OpenSea<svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 -256 1850 1850"><path d="M1438 819v320q0 119-84 203-85 85-204 85H318q-119 0-203-85-85-84-85-203V307q0-119 85-204 84-84 203-84h704q14 0 23 9t9 23v64q0 14-9 23t-23 9H318q-66 0-113 47t-47 113v832q0 66 47 113t113 47h832q66 0 113-47t47-113V819q0-14 9-23t23-9h64q14 0 23 9t9 23zm384-864v512q0 26-19 45t-45 19q-26 0-45-19l-176-176-652 652q-10 10-23 10t-23-10L725 874q-10-10-10-23t10-23l652-652L1201 0q-19-19-19-45t19-45q19-19 45-19h512q26 0 45 19t19 45z" fill="currentColor"/></svg></a></button>
-  </div>
   <div class="mon-data-card">
     <p><b>Name:</b> {{monData.name}}</p>
     <p><b>Epithets:</b> {{monData.epithets}}</p>
@@ -29,9 +25,14 @@
     <p><b>Parent 2:</b> &nbsp;  <a routerLink="/mon/{{monData.parent2Id}}" routerLink="active">{{monData.parent2Id}}</a></p> -->
     <div><b>Lore:</b> <div class="lore">{{monData.lore}}</div></div>
 
+    <div class="centered external-links">
+      <button class="view-btn"><a href="https://etherscan.io/token/0x0427743df720801825a5c82e0582b1e915e0f750?a={{monId}}" target="_blank" rel="noopener noreferrer">Etherscan<svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 -256 1850 1850"><path d="M1438 819v320q0 119-84 203-85 85-204 85H318q-119 0-203-85-85-84-85-203V307q0-119 85-204 84-84 203-84h704q14 0 23 9t9 23v64q0 14-9 23t-23 9H318q-66 0-113 47t-47 113v832q0 66 47 113t113 47h832q66 0 113-47t47-113V819q0-14 9-23t23-9h64q14 0 23 9t9 23zm384-864v512q0 26-19 45t-45 19q-26 0-45-19l-176-176-652 652q-10 10-23 10t-23-10L725 874q-10-10-10-23t10-23l652-652L1201 0q-19-19-19-45t19-45q19-19 45-19h512q26 0 45 19t19 45z" fill="currentColor"/></svg></a></button>
+      <button class="view-btn open-sea"><a href="https://opensea.io/assets/0x0427743df720801825a5c82e0582b1e915e0f750/{{monId}}" target="_blank" rel="noopener noreferrer">OpenSea<svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 -256 1850 1850"><path d="M1438 819v320q0 119-84 203-85 85-204 85H318q-119 0-203-85-85-84-85-203V307q0-119 85-204 84-84 203-84h704q14 0 23 9t9 23v64q0 14-9 23t-23 9H318q-66 0-113 47t-47 113v832q0 66 47 113t113 47h832q66 0 113-47t47-113V819q0-14 9-23t23-9h64q14 0 23 9t9 23zm384-864v512q0 26-19 45t-45 19q-26 0-45-19l-176-176-652 652q-10 10-23 10t-23-10L725 874q-10-10-10-23t10-23l652-652L1201 0q-19-19-19-45t19-45q19-19 45-19h512q26 0 45 19t19 45z" fill="currentColor"/></svg></a></button>
+    </div>
+
     <div class="nav-bar">
-      <button class="nice-button" routerLink="/mon/{{prevId}}" title="You can also use arrow keys to browse">← Prev 0xmon</button>
-      <button class="nice-button" routerLink="/mon/{{nextId}}" title="You can also use arrow keys to browse">Next 0xmon →</button>
+      <button class="nice-button left" routerLink="/mon/{{prevId}}" title="You can also use arrow keys to browse">← Prev 0xmon</button>
+      <button class="nice-button right" routerLink="/mon/{{nextId}}" title="You can also use arrow keys to browse">Next 0xmon →</button>
     </div>
     
     <div *ngIf="isOwner">
@@ -42,33 +43,42 @@
         <div><button class="view-btn protocard-btn" (click)="claimCard()">Mint ProtoCard</button></div>
       </div>
 
-      <button class="view-btn" (click)="toggleShowRegister()">Toggle On-chain Registration Menu</button>
+      <button class="nice-button" (click)="toggleShowRegister()">Toggle On-chain Registration Menu</button>
       <div class="register-portal" *ngIf="showRegister">
         <div class="register-header">Register Data On-chain</div>
         <div>Read <a href="https://blog.0xmons.xyz/79081566310">the blog post</a> if you don't understand what's happening below.</div>
         <div>
-          <p>Clicking Upload will encode the 0xmon's image and data into one payload transaction. You can choose to upload either the static version of the image or the animated version depending on your willingness to pay gas fees. Note that if this is your first time, there will be 3 transactions to accept.</p>
+          <p>Clicking Upload will encode the 0xmon's image and data into one payload transaction. You can choose to upload either the static version of the image or the animated version depending on your willingness to pay gas fees. Note that if this is your first time, there will be up to 3 transactions to accept.</p>
           <ol>
             <li>The first is to upload the data on-chain.</li>
-            <li>The second is to approve the spending of XMON (to pay the registration fee).</li>
+            <li>The second is to approve the spending of XMON (to pay the encoding fee), if you haven't approved it before.</li>
             <li>The third is to encode the uploaded data from the first tx onto the registry.</li>
           </ol>
           <p>Clicking Upload will fire off all 3 transactions! You DO NOT have to manually do anything with Register unless you want to only do the first transaction, and then come back later to do the other two. In that case, please keep track of the transaction hash of the first transaction, and if it was static or animated.</p>
         </div>
+        <div class="sub-title">Upload 0xmon</div>
+        <div>Note: Basically all you have to do is click Upload and approve all the txs that come up. The two other forms below are for people who want to get more technical.</div>
+        <div class="register-fee">Encoding fee: {{registerFee}}<span class="xmon-ticker">XMON</span></div>
         <select [(ngModel)]="uploadIsStatic">
           <option value="static">Static</option>
           <option value="anim">Animated</option>
         </select>
-        <button class="view-btn" (click)="uploadData()">Upload</button>
+        <button class="view-btn upload-btn" (click)="uploadData()">Upload</button>
         <br>
-        <div class="register-fee">Register fee: {{registerFee}}<span class="xmon-ticker">XMON</span></div>
-        <input type="text" placeholder="Transaction hash goes here" [(ngModel)]="enteredInTxHash">
-        <select [(ngModel)]="registerIsStatic">
-          <option value="static">Static</option>
-          <option value="anim">Animated</option>
-        </select>
-        <button class="view-btn" (click)="register()">Register</button>
+
+        <div class="register-tx">
+          <div class="sub-title">Register Transaction Hash</div>
+          <div>Note: This is only if you split up the transaction into two steps. If you clicked Upload above, you likely don't have to mess with this section.</div>
+          <input type="text" placeholder="Transaction hash goes here" [(ngModel)]="enteredInTxHash">
+          <select [(ngModel)]="registerIsStatic">
+            <option value="static">Static</option>
+            <option value="anim">Animated</option>
+          </select>
+          <button class="view-btn" (click)="register()">Register</button>
+        </div>
+
         <div class="direct-upload">
+          <div class="sub-title">Direct Upload</div>
           <div>Note: This is will likely cost <i>a lot</i> of gas. Uploads the entire encoded data onto the registry's storage. Read the blog post first to know what this does. Selecting Animated will likely just fail due to the absurd gas costs.</div>
           <select [(ngModel)]="directIsStatic">
             <option value="static">Static</option>
