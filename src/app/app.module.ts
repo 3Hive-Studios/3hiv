@@ -28,6 +28,8 @@ import { XxmonComponent } from './xxmon/xxmon.component';
 import { ProvenanceComponent } from './provenance/provenance.component';
 import { Story1Component } from './story1/story1.component';
 import { SignComponent } from './sign/sign.component';
+import { GraphQLModule } from './graphql.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -62,7 +64,9 @@ import { SignComponent } from './sign/sign.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    GraphQLModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
