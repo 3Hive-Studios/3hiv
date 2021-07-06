@@ -2,14 +2,28 @@
 
   <div class="header centered"><span class="cursed-text">BEHOLD</span> the pantheon</div>
 
-  <div class="centered">
-    <div>Filter Color</div>
-    <select [(ngModel)]="selectedColor" (change)="filterMonsByColor()">
-      <option value="" disabled selected>all</option>
-      <option *ngFor="let c of colorList" value="{{c}}">
-        {{c}}
-      </option>
-    </select>
+  <div class="two-cols centered">
+    <div>
+      <div>Filter Color</div>
+      <select [(ngModel)]="selectedColor" (change)="filterMons()">
+        <option *ngFor="let c of colorList" value="{{c}}">
+          {{c}}
+        </option>
+      </select>
+    </div>
+
+    <div>
+      <div>Filter Encoding</div>
+      <select [(ngModel)]="selectedEncoding" (change)="filterMons()">
+        <option value="all" selected>all</option>
+        <option value="onchain">all on chain</option>
+        <option value="offchain">all off chain</option>
+        <option value="static">on chain static</option>
+        <option value="animated">on chain animated</option>
+        <option value="storage">on chain storage</option>
+        <option value="calldata">on chain calldata</option>
+      </select>
+    </div>
   </div>
 
   <div class="mon-item-holder">
