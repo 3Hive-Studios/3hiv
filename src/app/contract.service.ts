@@ -125,6 +125,18 @@ export class ContractService {
     return new this.wallet.web3.eth.Contract(abi, address); 
   }
 
+  public get SOUNDSCAPES() {
+    const abi = require('../assets/abi/Soundscapes.json');
+    const address = this.constants.SOUNDSCAPES_ADDRESS;
+    return new this.wallet.web3.eth.Contract(abi, address); 
+  }
+
+  public get JPEG() {
+    const abi = require('../assets/abi/jpeg.json');
+    const address = this.constants.JPEG_ADDRESS;
+    return new this.wallet.web3.eth.Contract(abi, address); 
+  }
+
   public ERC20(address) {
     const abi = require('../assets/abi/ERC20.json');
     return new this.wallet.web3.eth.Contract(abi, address); 

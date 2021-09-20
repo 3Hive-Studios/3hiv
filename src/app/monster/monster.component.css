@@ -71,6 +71,17 @@
   font-style: italic;
 }
 
+.soundscape-line {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+audio {
+  width: 100%;
+}
+
 .view-btn {
   font-family: 'Courier New', Courier, monospace;
   font-size: 1rem;

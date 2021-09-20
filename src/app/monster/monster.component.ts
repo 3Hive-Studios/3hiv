@@ -5,6 +5,7 @@ import { ConstantsService } from '../constants.service';
 import { ContractService } from '../contract.service';
 import { UtilsService } from '../utils.service';
 import { WalletService } from '../wallet.service';
+import { LocalDataService } from '../localData.service';
 import BigNumber from 'bignumber.js';
 
 @Component({
@@ -14,7 +15,7 @@ import BigNumber from 'bignumber.js';
 })
 export class MonsterComponent implements OnInit {
 
-  constructor(public wallet: WalletService, public contract: ContractService, public constants: ConstantsService, private utils: UtilsService, private activatedRoute: ActivatedRoute, private router: Router) {
+  constructor(public wallet: WalletService, public contract: ContractService, public constants: ConstantsService, private utils: UtilsService, private activatedRoute: ActivatedRoute, private router: Router, public localData: LocalDataService) {
     this.resetData();
   }
 
@@ -24,6 +25,8 @@ export class MonsterComponent implements OnInit {
   minWidth: any;
   maxWidth: any;
   isOwner: boolean;
+
+  soundLink: any;
 
   staticURL: string;
   animURL: string;
@@ -62,28 +65,21 @@ export class MonsterComponent implements OnInit {
   ngOnInit(): void {
     this.hidePrev = true;
     this.hideNext = true;
-    this.loadLocalData();
-
-    this.monId = this.activatedRoute.snapshot.paramMap.get('id');
-    this.updatePrevNextIds();
-
-    if (this.wallet.connected) {
-      this.loadData();
-    }
-    this.wallet.connectedEvent.subscribe(() => {
-      this.loadData();
-    });
-    this.wallet.errorEvent.subscribe(() => {
-      this.resetData();
-    });
-
     this.activatedRoute.params.subscribe(routeParams => {
       this.monId = routeParams.id;
       this.updatePrevNextIds();
-      this.loadLocalData();
+      if (this.localData.dataLoaded) {
+        this.loadLocalData();
+      }
+      this.localData.dataLoadedEvent.subscribe(() => {
+        this.loadLocalData();
+      });
       if (this.wallet.connected) {
         this.loadData();
       }
+      this.wallet.connectedEvent.subscribe(() => {
+        this.loadData();
+      });
     });
   }
 
@@ -105,7 +101,7 @@ export class MonsterComponent implements OnInit {
       }
     }
 
-    // Check if width is already set
+    // Check if width is cached
     if (window["width"] !== undefined) {
       this.width = parseInt(window["width"]);
     }
@@ -116,7 +112,8 @@ export class MonsterComponent implements OnInit {
       this.monData = Object.assign({}, cachedResponse);
       this.isOwner = this.monData["isOwner"];
     }
-    // Otherwise make the web3 request and server request
+
+    // Otherwise make the web3 request
     else {
       let multicallFns = {
         "monData": {
@@ -162,8 +159,6 @@ export class MonsterComponent implements OnInit {
           "rarity": "uint256"
         }
       }, result["monData"]);
-
-      let numMons = await this.utils.decode("uint256", result["numMons"]);
       let owner = await this.utils.decode("address", result["owner"]);
       this.isOwner = owner.toLowerCase() == this.wallet.userAddress;
       this.monData["isOwner"] = owner.toLowerCase() == this.wallet.userAddress;
@@ -191,27 +186,6 @@ export class MonsterComponent implements OnInit {
         this.showRegister = false;
       }
 
-      if (parseInt(this.monId) >= this.constants.INDEX_TO_READ_ONCHAIN) {
-        let tokenURI;
-        if (parseInt(this.monId) <= numMons) {
-          tokenURI = this.utils.decode("string", result["tokenURI"]);
-        }
-        else {
-          tokenURI = "./assets/monData.json";
-        }
-        this.monData["tokenURI"] = tokenURI;
-        const response = await fetch(tokenURI);
-        const responseObj = await response.json();
-
-        // These are from server
-        this.monData["name"] = responseObj["name"];
-        this.monData["img"] = responseObj["image"];
-        this.monData["epithets"] = responseObj["epithets"];
-        this.monData["lore"] = responseObj["description"];
-        // this.staticURL = responseObj["static-image"];
-        // this.animURL = responseObj["image"];
-      }
-
       // These are from on-chain
       this.monData["parent1Id"] = monStruct["parent1Id"];
       this.monData["parent2Id"] = monStruct["parent2Id"];
@@ -225,9 +199,9 @@ export class MonsterComponent implements OnInit {
   }
 
   async loadLocalData() {
-    const response = await fetch(this.constants.LOCAL_MON_DATA);
-    const fullResponseObj = await response.json();
-    const responseObj = fullResponseObj[parseInt(this.monId)];
+
+    // Load the 0xmon info
+    const responseObj = this.localData.allMonData[parseInt(this.monId)];
     this.monData["name"] = responseObj["Name"];
     this.monData["epithets"] = responseObj["Epithets"];
     this.monData["lore"] = responseObj["Description"];
@@ -237,6 +211,9 @@ export class MonsterComponent implements OnInit {
     this.staticURL = this.constants.IMAGE_PATH + staticPath;
     this.animURL = this.constants.IMAGE_PATH + animPath;
     this.monData["img"] = this.constants.IMAGE_PATH + animPath;
+
+    // Load the Soundscape sound
+    this.soundLink = this.localData.allSounds[parseInt(this.monId)]["animation_url"];
   }
 
   async uploadData() {
@@ -352,6 +329,5 @@ export class MonsterComponent implements OnInit {
     if (e.key === "ArrowRight") {
       this.router.navigate(["mon", this.nextId]);
     }
-    this.loadLocalData();
   }
 }

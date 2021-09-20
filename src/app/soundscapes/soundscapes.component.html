@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="header centered"><span class="cursed-text">REVERBERATE</span> the chorus</div>
+  <div>
+    <img class="maze" src="../assets/1.png">
+  </div>
+  <div>
+    <audio class="maze" controls>
+      <source src="../assets/1.wav" type="audio/wav">
+    </audio> 
+  </div>
+  <div class="centered"><a href="https://opensea.io/assets/0x83b28b0a2d44f48ea81d9da535a5ccb74ef71a05/0" target="_blank">ft. Soundscape #0</a></div>
+
+  <div class="text">
+    Soundscapes are audiovisual NFTs that pair together a unique sound with an abstract image. Each sound is handcrafted by Robert Nikolajev and split into 10 distinct categories. The images were generated using the Python code <a href="https://github.com/0xmons/soundscapes-images/blob/main/ImageCreator.ipynb" target="_blank">here</a>. 
+    <p></p><p></p>
+    Each 0xmon NFT can claim a free corresponding Soundscape, giving a voice to their monster. Note that each Soundscape is b̳̼̩̬̮̻̝͗̒́o̶̟̤͔̯̲̓̈̈́u͛̀͏̲̭̗ņ̯̙͇̠̣ͫͬ̃͂ḓ̸̲͖̗̔ to its corresponding 0xmon. <b>This means you can only transfer the Soundscape NFT to or from an address that owns the associated 0xmon NFT.</b>
+  </div>
+
+  <div class="text">
+    <div class="sub-header">Claim Your Soundscapes</div>
+    <div *ngFor="let i of monIdList">
+      <div>
+        <button class="nice-button" (click)="claim(i)">Claim Soundscape for 0xmon #{{i}}</button>
+      </div>
+    </div>
+    <div *ngIf="allClaimed()">
+      No more to claim!
+    </div>
+  </div>
+</div>

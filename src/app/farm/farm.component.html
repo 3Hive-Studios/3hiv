@@ -52,7 +52,7 @@
       <hr>
       <div class="apy-stats">
         <div *ngIf="notStaking">Hypothetically, if you staked 1 LP token: </div>
-        <div>You are staking: <b>~{{stakedBalanceDAI.toFormat(8)}} DAI</b> worth of LP tokens.</div>
+        <div>You are staking: <b>~{{stakedBalanceDAI.toFormat(8)}} DAI</b> worth of LP tokens. ({{ethInXMONLp.toFormat(8)}} ETH and {{xmonInXMONLp.toFormat(8)}} XMON)</div>
         <div>You are earning: <b>~{{dailyXMONYield.toFormat(8)}}</b> <span class="xmon-ticker">XMON</span> <b> (~{{dailyXMONYieldDAI.toFormat(8)}} DAI)</b> per day.</div> 
         <div>Your floating returns per day is: <b>{{floatingYield}}%</b></div>
       </div>

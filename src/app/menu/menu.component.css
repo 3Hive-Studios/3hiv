@@ -32,7 +32,7 @@
   border-collapse: collapse;
 }
 .menu-list, .close-button {
-  font-size: 1.75rem;
+  font-size: 1.35rem;
   background-color: var(--black);
 } 
 

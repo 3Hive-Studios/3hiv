@@ -22,6 +22,7 @@ import { XxmonComponent } from './xxmon/xxmon.component';
 import { ProvenanceComponent } from './provenance/provenance.component';
 import { Story1Component } from './story1/story1.component';
 import { SignComponent } from './sign/sign.component';
+import { SoundscapesComponent } from './soundscapes/soundscapes.component';
 
 const routes: Routes = [
   {
@@ -83,10 +84,6 @@ const routes: Routes = [
     component: BundlerComponent
   },
   {
-    path: 'founder',
-    component: FounderComponent
-  },
-  {
     path: 'old-mon/:id',
     component: OldMonsComponent
   },
@@ -117,6 +114,10 @@ const routes: Routes = [
   {
     path: 'sign',
     component: SignComponent
+  },
+  {
+    path: 'sounds',
+    component: SoundscapesComponent
   },
   // wildcard
   {

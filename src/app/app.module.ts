@@ -30,6 +30,7 @@ import { Story1Component } from './story1/story1.component';
 import { SignComponent } from './sign/sign.component';
 import { GraphQLModule } from './graphql.module';
 import { HttpClientModule } from '@angular/common/http';
+import { SoundscapesComponent } from './soundscapes/soundscapes.component';
 
 @NgModule({
   declarations: [
@@ -59,6 +60,7 @@ import { HttpClientModule } from '@angular/common/http';
     ProvenanceComponent,
     Story1Component,
     SignComponent,
+    SoundscapesComponent
   ],
   imports: [
     BrowserModule,

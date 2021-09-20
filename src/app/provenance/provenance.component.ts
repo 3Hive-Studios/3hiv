@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ConstantsService } from '../constants.service';
 import { Apollo } from 'apollo-angular';
+import { LocalDataService } from '../localData.service';
 import gql from 'graphql-tag';
 
 @Component({
@@ -17,7 +18,7 @@ export class ProvenanceComponent implements OnInit {
   selectedEncoding: any;
   colorList: any;
 
-  constructor(public constants: ConstantsService, private apollo: Apollo) {
+  constructor(public constants: ConstantsService, private apollo: Apollo, public localData: LocalDataService) {
     this.selectedColor = "all";
     this.selectedEncoding = "all"
     this.colorList = [
@@ -57,12 +58,16 @@ export class ProvenanceComponent implements OnInit {
    }
 
   ngOnInit(): void {
-    this.loadData();
+    if (this.localData.dataLoaded) {
+      this.loadData();
+    }
+    this.localData.dataLoadedEvent.subscribe(() => {
+      this.loadData();
+    });
   }
 
   async loadData() {
-    const response = await fetch(this.constants.LOCAL_MON_DATA);
-    const fullResponseObj = await response.json();
+    const fullResponseObj = this.localData.allMonData;
     for (let response of fullResponseObj) {
       let path = response["Image"].replace("OPT", "STATIC")
       response["StaticURL"] = this.constants.IMAGE_PATH + path;

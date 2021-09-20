@@ -21,6 +21,9 @@ export class ConstantsService {
   OLD_MON_DATA = "./assets/oldMons.json";
   IPFS_GATEWAY = "https://ipfs.io/ipfs/";
   IMAGE_PATH = "./assets/final-sprites/";
+  ARWEAVE_GATEWAY = "https://arweave.net/";
+  SOUNDSCAPES_METADATA_PATH = "./assets/soundscapes.json";
+  SOUNDSCAPES_ARWEAVE_PATH = "./assets/soundsArweave.json";
 
   // Rinkeby addresses (note you have to change chainId in web3Enabled)
   // XMON_ADDRESS = '0x8dc2f7D19217245b117aEBa0f1D050c9e85c7767';
@@ -47,9 +50,11 @@ export class ConstantsService {
   TOKEN_FACTORY_ADDRESS = '0xA76cee17463Bd34Df43418E9B1AcdF508e929881';
   XXMON_ADDRESS = '0x0b5c9081e818E3B2CF677e7F42391de34d6ab2F3';
   PROTOCARDS_ADDRESS = '0xa1c07Dc4086AF57dB39821FD50417FDa449348a3';
+  SOUNDSCAPES_ADDRESS = '0x83B28b0A2D44F48EA81D9dA535A5cCb74EF71a05';
 
   // Non-0xmons addresses
   WETH_ADDRESS = '0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2';
   WETH_DAI_LP_ADDRESS = '0xA478c2975Ab1Ea89e8196811F51A7B7Ade33eB11';
   DAI_ADDRESS = '0x6b175474e89094c44da98b954eedeac495271d0f';
+  JPEG_ADDRESS = '0xDaCD63fd7cC98C16a329Fe1A56C759F0c9d2211B';
 }

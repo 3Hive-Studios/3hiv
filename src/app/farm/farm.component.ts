@@ -30,6 +30,8 @@ export class FarmComponent implements OnInit {
   stakedBalanceDAI: BigNumber;
   floatingYield: any;
   notStaking: boolean;
+  ethInXMONLp: BigNumber;
+  xmonInXMONLp: BigNumber;
 
   constructor(public wallet: WalletService, public contract: ContractService, public constants: ConstantsService, public utils: UtilsService) { 
     this.resetData();
@@ -71,6 +73,9 @@ export class FarmComponent implements OnInit {
     this.stakedBalanceDAI = new BigNumber(0);
     this.floatingYield = new BigNumber(0);
     this.notStaking = false;
+
+    this.ethInXMONLp = new BigNumber(0);
+    this.xmonInXMONLp = new BigNumber(0);
   }
 
   async loadData() {
@@ -133,9 +138,11 @@ export class FarmComponent implements OnInit {
 
     // APY calculations
     let ethInXMONLP = new BigNumber(this.utils.decode("uint256", results["ethInXMONLP"]));
+    this.ethInXMONLp = ethInXMONLP.div(this.constants.PRECISION);
     let xmonPriceInEth = ethInXMONLP.div(
       new BigNumber(this.utils.decode("uint256", results["XMONInXMONLP"]))
     );
+    this.xmonInXMONLp = new BigNumber(this.utils.decode("uint256", results["XMONInXMONLP"])).div(this.constants.PRECISION);
     let ethPriceDAI = new BigNumber(this.utils.decode("uint256", results["daiInETHDAILP"])).div(
       new BigNumber(this.utils.decode("uint256", results["ethInETHDAILP"]))
     );
