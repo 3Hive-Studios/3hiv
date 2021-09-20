@@ -138,11 +138,9 @@ export class FarmComponent implements OnInit {
 
     // APY calculations
     let ethInXMONLP = new BigNumber(this.utils.decode("uint256", results["ethInXMONLP"]));
-    this.ethInXMONLp = ethInXMONLP.div(this.constants.PRECISION);
     let xmonPriceInEth = ethInXMONLP.div(
       new BigNumber(this.utils.decode("uint256", results["XMONInXMONLP"]))
     );
-    this.xmonInXMONLp = new BigNumber(this.utils.decode("uint256", results["XMONInXMONLP"])).div(this.constants.PRECISION);
     let ethPriceDAI = new BigNumber(this.utils.decode("uint256", results["daiInETHDAILP"])).div(
       new BigNumber(this.utils.decode("uint256", results["ethInETHDAILP"]))
     );
@@ -157,6 +155,10 @@ export class FarmComponent implements OnInit {
 
     let floatingYield = this.dailyXMONYieldDAI.div(this.stakedBalanceDAI).times(new BigNumber(100));
     this.floatingYield = floatingYield;
+
+    // Hypothetical amounts
+    this.ethInXMONLp = ethInXMONLP.div(this.constants.PRECISION).times(this.poolProportion);
+    this.xmonInXMONLp = (new BigNumber(this.utils.decode("uint256", results["XMONInXMONLP"])).div(this.constants.PRECISION)).times(this.poolProportion);
 
     if (this.notStaking) {
       this.stakedBalance = new BigNumber(0);
