@@ -9,7 +9,6 @@ import { MonsterComponent } from './monster/monster.component';
 import { FarmComponent } from './farm/farm.component';
 import { CreditsComponent } from './credits/credits.component';
 import { SenderComponent } from './sender/sender.component';
-import { FounderComponent } from './founder/founder.component';
 import { OnChainComponent } from './on-chain/on-chain.component';
 import { MultisenderComponent } from './multisender/multisender.component';
 import { BundlerComponent } from './bundler/bundler.component';
