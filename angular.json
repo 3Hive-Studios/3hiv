@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "mons"
+    }
+  },
+  "defaultProject": "mons",
+  "cli": {
+    "analytics": false
+  }
 }
