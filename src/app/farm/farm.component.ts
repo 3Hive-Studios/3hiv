@@ -24,7 +24,7 @@ export class FarmComponent implements OnInit {
   endTime: any;
 
   // APY stats
-  poolProportion: any;
+  stakingPoolProportion: any;
   dailyXMONYield: BigNumber;
   dailyXMONYieldDAI: BigNumber;
   stakedBalanceDAI: BigNumber;
@@ -33,7 +33,7 @@ export class FarmComponent implements OnInit {
   ethInXMONLp: BigNumber;
   xmonInXMONLp: BigNumber;
 
-  constructor(public wallet: WalletService, public contract: ContractService, public constants: ConstantsService, public utils: UtilsService) { 
+  constructor(public wallet: WalletService, public contract: ContractService, public constants: ConstantsService, public utils: UtilsService) {
     this.resetData();
   }
 
@@ -67,7 +67,7 @@ export class FarmComponent implements OnInit {
     this.rewardsLPBalance = new BigNumber(0);
     this.endTime = 1611079200;
 
-    this.poolProportion = new BigNumber(0);
+    this.stakingPoolProportion = new BigNumber(0);
     this.dailyXMONYield = new BigNumber(0);
     this.dailyXMONYieldDAI = new BigNumber(0);
     this.stakedBalanceDAI = new BigNumber(0);
@@ -138,6 +138,7 @@ export class FarmComponent implements OnInit {
 
     // APY calculations
     let ethInXMONLP = new BigNumber(this.utils.decode("uint256", results["ethInXMONLP"]));
+    let xmonInXMONLP = new BigNumber(this.utils.decode("uint256", results["XMONInXMONLP"]));
     let xmonPriceInEth = ethInXMONLP.div(
       new BigNumber(this.utils.decode("uint256", results["XMONInXMONLP"]))
     );
@@ -145,11 +146,12 @@ export class FarmComponent implements OnInit {
       new BigNumber(this.utils.decode("uint256", results["ethInETHDAILP"]))
     );
     let xmonPriceDAI = xmonPriceInEth.times(ethPriceDAI);
-    let totalLPBalance =  new BigNumber(this.utils.decode("uint256", results["totalXMONLPBalance"]));
+    let totalLPBalance = new BigNumber(this.utils.decode("uint256", results["totalXMONLPBalance"]));
     let lpTokenPrice = ethInXMONLP.div(totalLPBalance).times(ethPriceDAI).times(new BigNumber(2));
 
-    this.poolProportion = this.stakedBalance.div(this.rewardsLPBalance);
-    this.dailyXMONYield = this.poolProportion.times(this.constants.XMON_PER_DAY);
+    let lpPoolProportion = this.stakedBalance.div(totalLPBalance.div(this.constants.PRECISION));
+    this.stakingPoolProportion = this.stakedBalance.div(this.rewardsLPBalance);
+    this.dailyXMONYield = this.stakingPoolProportion.times(this.constants.XMON_PER_DAY);
     this.dailyXMONYieldDAI = this.dailyXMONYield.times(xmonPriceDAI);
     this.stakedBalanceDAI = lpTokenPrice.times(this.stakedBalance);
 
@@ -157,8 +159,8 @@ export class FarmComponent implements OnInit {
     this.floatingYield = floatingYield;
 
     // Hypothetical amounts
-    this.ethInXMONLp = ethInXMONLP.div(this.constants.PRECISION).times(this.poolProportion);
-    this.xmonInXMONLp = (new BigNumber(this.utils.decode("uint256", results["XMONInXMONLP"])).div(this.constants.PRECISION)).times(this.poolProportion);
+    this.ethInXMONLp = ethInXMONLP.div(this.constants.PRECISION).times(lpPoolProportion);
+    this.xmonInXMONLp = xmonInXMONLP.div(this.constants.PRECISION).times(lpPoolProportion);
 
     if (this.notStaking) {
       this.stakedBalance = new BigNumber(0);
