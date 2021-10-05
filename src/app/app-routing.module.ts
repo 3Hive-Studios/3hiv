@@ -9,7 +9,6 @@ import { MonsterComponent } from './monster/monster.component';
 import { FarmComponent } from './farm/farm.component';
 import { CreditsComponent } from './credits/credits.component';
 import { SenderComponent } from './sender/sender.component';
-import { FounderComponent } from './founder/founder.component';
 import { OnChainComponent } from './on-chain/on-chain.component';
 import { MultisenderComponent } from './multisender/multisender.component';
 import { BundlerComponent } from './bundler/bundler.component';
@@ -23,6 +22,7 @@ import { ProvenanceComponent } from './provenance/provenance.component';
 import { Story1Component } from './story1/story1.component';
 import { SignComponent } from './sign/sign.component';
 import { SoundscapesComponent } from './soundscapes/soundscapes.component';
+import { ClusterComponent } from './cluster/cluster.component';
 
 const routes: Routes = [
   {
@@ -118,6 +118,10 @@ const routes: Routes = [
   {
     path: 'sounds',
     component: SoundscapesComponent
+  },
+  {
+    path: 'cluster',
+    component: ClusterComponent
   },
   // wildcard
   {

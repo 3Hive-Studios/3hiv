@@ -1,0 +1,33 @@
+.color-holder {
+  padding: 0.5rem 0.5rem;
+  margin: 0.5rem 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.color-item {
+  padding: 0.5rem 0.5rem;
+  margin: 0.5rem 0.5rem;
+}
+
+.color-picker {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.color-input {
+  margin-bottom: 0;
+}
+
+.delete-color-button {
+  font-size: 0.5rem;
+  margin: 0;
+}
+
+.add-colors-button {
+  font-size: 1rem;
+}
