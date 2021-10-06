@@ -2,28 +2,19 @@
 
   <div class="header centered"><span class="cursed-text">CLARIFY</span> the chaos</div>
 
-  <div>Run your own analysis on the 0xmons. Select your own color features and perform maChInE lEArNIng.</div>
+  <div>
+    You can find all the code for the visualization below <a href="https://github.com/0xmons/0xmons-clustering" target="_blank">here</a>.
+  </div>
 
-  <p></p>
-
-  <div>Max: {{maxColors}} colors. (More colors means longer calculation time.)</div>
-
-  <div class="color-holder">
-    <div *ngFor="let c of colorList.controls; let i = index" class="color-item" [formGroup]="c">
-      <div>Color {{i+1}}</div>
-      <div class="color-picker">
-        <input type="color" class="color-input" formControlName="color">
-        <button (click)="deleteColor(i)" class="delete-color-button">X</button>
-      </div>
+  <div class="two-cols">
+    <div>
+      <canvas #canvas width="600" height="600"
+      (pointerdown)="handleDown($event)"
+      (pointerup)="endDrag($event)"
+      (pointermove)="handleMove($event)"
+      (wheel)="zoom($event)"
+      ></canvas>
     </div>
-  </div>
-  <div class="centered">
-    <button (click)="addColor()" class="add-colors-button">Add Color</button>
-  </div>
-
-  <div class="chart">
-    <div>Loading {{loadingPercentage}}%</div>
-    <div><button (click)="analyze()">Run Analysis</button></div>
   </div>
 
 </div>

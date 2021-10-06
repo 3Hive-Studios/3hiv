@@ -8,7 +8,8 @@ export class ConstantsService {
   PRECISION = 1e18;
   DOOM_SCALING = 1e21;
   DOOM_SCALING_2 = 1e12;
-  XMON_PER_DAY = 3.57142857143;
+  // Reduced by half for this round
+  XMON_PER_DAY = 1.78571428572;
 
   INDEX_TO_READ_ONCHAIN = 149;
 

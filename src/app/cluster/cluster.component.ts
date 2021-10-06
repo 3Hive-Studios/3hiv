@@ -1,7 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup} from '@angular/forms';
+import { Component, OnInit, ViewChild, ElementRef, AfterViewInit , HostListener} from '@angular/core';
 import { LocalDataService } from '../localData.service';
-let pixels = require('image-pixels')
 
 @Component({
   selector: 'app-cluster',
@@ -9,134 +7,156 @@ let pixels = require('image-pixels')
   styleUrls: ['./cluster.component.css']
 })
 export class ClusterComponent implements OnInit {
+  
+  @ViewChild('canvas')
+  canvas: ElementRef<HTMLCanvasElement>;
+  public ctx: CanvasRenderingContext2D;
 
-  loadingPercentage = 0;
+  // Array of x/y values to show on canvas
+  monX: any;
+  monY: any;
 
-  startingColors = 12;
-  maxColors = 16;
-  defaultColors = [
-    "#ff0000", 	
-    "#ff8000", 	
-    "#ffff00", 	
-    "#80ff00", 	
-    "#a9a9a9", 	
-    "#dcbeff", 	
-    "#3cb44b", 	
-    "#0095ff", 	
-    "#0000ff", 	
-    "#8000ff", 	
-    "#ffffff", 	
-    "#000000"
-  ];
-  rainbowColors = ['#e6194B', '#3cb44b', '#ffe119', '#4363d8', '#f58231', '#911eb4', '#42d4f4', '#f032e6', '#bfef45', '#fabed4', '#469990', '#dcbeff', '#9A6324', '#fffac8', '#800000', '#aaffc3', '#808000', '#ffd8b1', '#000075', '#a9a9a9', '#ffffff', '#000000'];
-  colorList = this.fb.array([]);
-  colorRGB = [];
+  // Dragging flag
+  isDrag: boolean;
 
-  allMonsLoaded: boolean;
-  monImageArray = [];
-  knnMonImageArray = [];
+  // Starting offsets
+  startX: any;
+  startY: any;
+  offsetX: any;
+  offsetY: any;
 
-  constructor(private fb: FormBuilder, public localData: LocalDataService) { 
-    for (let i = 0; i < this.startingColors; i++) {
-      this.colorList.push(
-        this.fb.group({
-          color: [this.defaultColors[i]]
-        })
-      );
-    }
+  // Total x/y offsets
+  totalOffsetX = 0;
+  totalOffsetY = 0;
+
+  // Zoom scale
+  scale = 1;
+
+  // Mouse coordinates
+  mouseX: any;
+  mouseY: any;
+
+  constructor(public localData: LocalDataService) { 
   }
 
   ngOnInit(): void {
-    this.localData.dataLoadedEvent.subscribe(() => {
-      this.loadMonImages();
-    });
   }
 
-  addColor() {
-    if (this.colorList.length < this.maxColors) {
-      this.colorList.push(
-        this.fb.group({
-          color: ['']
-        })
-      );
+  ngAfterViewInit(): void {
+    this.ctx = this.canvas.nativeElement.getContext('2d');
+    this.loadData();
+  }
+
+  resetOffset() {
+    let boundingBox = this.canvas.nativeElement.getBoundingClientRect();
+    this.offsetX = boundingBox.left;
+    this.offsetY = boundingBox.top;
+  }
+
+  @HostListener("window:scroll", []) onWindowScroll() {
+    this.resetOffset();
+  }
+
+  async loadData() {
+    let monClusterData = (await (await fetch('../assets/monCluster6.json')).json());
+    this.monX = monClusterData[0];
+    this.monY = monClusterData[1];
+    this.drawDots();
+    this.resetOffset();
+  }
+
+  drawDots() {
+    let canvasW = this.canvas.nativeElement.width * this.scale;
+    let canvasH = this.canvas.nativeElement.height * this.scale;
+    this.ctx.clearRect(0, 0, canvasW, canvasH);
+    for (let i = 0; i < this.monX.length; i++) {
+      this.renderDot(this.scaleX(this.monX[i]), this.scaleY(this.monY[i]));
     }
   }
 
-  deleteColor(i) {
-    this.colorList.removeAt(i);
+  scaleX(x) {
+    return (x/4)+50;
   }
 
-  async loadMonImages() {
-    const toMatrix = (arr, width) => 
-    arr.reduce((rows, key, index) => (index % width == 0 ? rows.push([key]) 
-      : rows[rows.length-1].push(key)) && rows, []);
-    // for (let d of this.localData.allMonData) {
-    let max = 10;
-    for (let i = 0; i < max; i++) {
-      let d = this.localData.allMonData[i];
-      let img = d["Image"].replace("OPT", "STATIC");
-      let {data, width, height} = await pixels('./assets/final-sprites/' + img);
-      this.monImageArray.push(
-        toMatrix(data, 4)
-      );
-      this.loadingPercentage = 100*(i+1)/max;
-    }
-    this.allMonsLoaded = true;
+  scaleY(y) {
+    return (y/4)+30;
   }
 
-  hexToRgb(hex) {
-    var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
-    return result ? [
-      parseInt(result[1], 16),
-      parseInt(result[2], 16),
-      parseInt(result[3], 16)
-   ] : null;
+  renderDot(x,y) {
+    this.ctx.beginPath();
+    this.ctx.fillStyle = 'rgba(240, 240, 240, 0.5)';
+    let radius = 5;
+    this.ctx.arc(x+this.totalOffsetX, y+this.totalOffsetY, radius, 0, 2*Math.PI, true);
+    this.ctx.fill();
   }
 
-  // Assumes image is a list of [r,g,b,a] values
-  // colors is a list of [r,g,b] values
-  // Returns a list of indices for the closest color
-  knnImage(image, colors) {
-    let reducedImage = [];
-    for (let i of image) {
-      let closestColorIndex = 0;
-      let minDiff = 3*255*255;
-      // Go through all colors and take the L2 norm
-      // Find the closest one
-      for (let colorIndex = 0; colorIndex < colors.length; i++) {
-        let diff = ((i[0]-this.colorRGB[colorIndex][0])*(i[0]-this.colorRGB[colorIndex][0])
-        + (i[1]-this.colorRGB[colorIndex][1])*(i[1]-this.colorRGB[colorIndex][1])
-        + (i[2]-this.colorRGB[colorIndex][2])*(i[2]-this.colorRGB[colorIndex][2]));
-        if (diff < minDiff) {
-          minDiff = diff;
-          closestColorIndex = colorIndex;
-        }
+  handleDown(e) {
+    this.isDrag = true;
+    this.startX = parseInt(e.clientX - this.offsetX as any);
+    this.startY = parseInt(e.clientY - this.offsetY as any);
+
+    this.mouseX = parseInt(e.clientX - this.offsetX as any);
+    this.mouseY = parseInt(e.clientY - this.offsetY as any);
+    let closestIndex = -1;
+    let minDiff = Number.MAX_SAFE_INTEGER;
+    for (let i = 0; i < this.monX.length; i++) {
+      let diff = Math.abs(this.monX[i]-this.mouseX)+Math.abs(this.monY[i]-this.mouseY);
+      if (diff < minDiff) {
+        minDiff = diff;
+        closestIndex = i;
       }
-      reducedImage.push(closestColorIndex);
     }
-    return reducedImage;
+    // TODO: scale mouse coordinates with drag
+    console.log(this.mouseX, this.mouseY);
   }
 
-  // TODO: just make analyze unclickable until all mons loaded
-  analyze() {
-    this.colorRGB = [];
-    for (let i = 0; i < this.colorList.length; i++) {
-      let color = (this.colorList.at(i) as any).controls.color.value;
-      this.colorRGB.push(this.hexToRgb(color));
-    }
-    if (this.allMonsLoaded) {
-      this.knnMonImageArray = [];
-      for (let m of this.monImageArray) {
-        this.knnMonImageArray.push(this.knnImage(m, this.colorRGB))
-      }
-      console.log(this.knnMonImageArray);
+  endDrag(e) {
+    this.isDrag = false;
+  }
+
+  handleMove(e) {
+    // handle drag
+    this.mouseX = parseInt(e.clientX - this.offsetX as any);
+    this.mouseY = parseInt(e.clientY - this.offsetY as any);
+    if (this.isDrag) {
+      let dx = this.mouseX - this.startX;
+      let dy = this.mouseY - this.startY;
+      this.startX = this.mouseX;
+      this.startY = this.mouseY;
+      this.totalOffsetX += dx;
+      this.totalOffsetY += dy;
+      this.drawDots();
     }
     else {
-      alert("Not fully loaded!");
-      return;
     }
   }
 
-
-
+  zoom(e) {
+    let deltaY = e.deltaY;
+    let contentHeight = this.canvas.nativeElement.scrollHeight;
+    let visibleHeight = this.canvas.nativeElement.offsetHeight;
+    let scrollTop = this.canvas.nativeElement.scrollTop;
+    if (scrollTop === 0 && deltaY < 0) {
+      e.preventDefault();
+    }
+    else if (visibleHeight + scrollTop === contentHeight && deltaY > 0) {
+      e.preventDefault();
+    }
+    window.requestAnimationFrame(() => {
+      let scale, invScale;
+      if (e.deltaY < 0) {
+        scale = 1.12;
+        invScale = 0.9;
+        this.ctx.scale(scale, scale);
+      }
+      else {
+        scale = 0.9;
+        invScale = 1.12;
+        this.ctx.scale(scale, scale);
+      }
+      // Scale up as we zoom in
+      this.scale = invScale * this.scale;
+      this.drawDots();
+    });
+  }
 }
