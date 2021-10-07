@@ -3,7 +3,7 @@
   <div class="header centered"><span class="cursed-text">CLARIFY</span> the chaos</div>
 
   <div class="centered">
-    You can find all the code for the visualization below <a href="https://github.com/0xmons/0xmons-clustering" target="_blank">here</a>.
+    You can find the code that explains the rationale behind this visualization below <a href="https://github.com/0xmons/0xmons-clustering" target="_blank">here</a>.
   </div>
 
   <div class="two-cols">
@@ -20,7 +20,7 @@
         <img [src]="selectedImage">
       </div>
       <div>
-        <a routerLink="/mon/closestIndex">{{selectedName}}</a>
+        <a routerLink="/mon/{{selectedIndex}}" class="link">#{{selectedIndex}} {{selectedName}}</a>
       </div>
     </div>
   </div>

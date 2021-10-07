@@ -172,8 +172,8 @@ export class ClusterComponent implements OnInit {
         closestIndex = i;
       }
     }
-    this.selectedIndex = closestIndex;
     if (closestIndex !== -1) {
+      this.selectedIndex = closestIndex;
       window.requestAnimationFrame(() => {
         this.ctx.beginPath();
         this.ctx.fillStyle = 'rgba(40, 40, 40, 0.5)';
