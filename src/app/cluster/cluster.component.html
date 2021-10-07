@@ -2,18 +2,26 @@
 
   <div class="header centered"><span class="cursed-text">CLARIFY</span> the chaos</div>
 
-  <div>
+  <div class="centered">
     You can find all the code for the visualization below <a href="https://github.com/0xmons/0xmons-clustering" target="_blank">here</a>.
   </div>
 
   <div class="two-cols">
     <div>
-      <canvas #canvas width="600" height="600"
+      <canvas #canvas width="560" height="600"
       (pointerdown)="handleDown($event)"
       (pointerup)="endDrag($event)"
       (pointermove)="handleMove($event)"
       (wheel)="zoom($event)"
       ></canvas>
+    </div>
+    <div>
+      <div class="image-showcase">
+        <img [src]="selectedImage">
+      </div>
+      <div>
+        <a routerLink="/mon/closestIndex">{{selectedName}}</a>
+      </div>
     </div>
   </div>
 
