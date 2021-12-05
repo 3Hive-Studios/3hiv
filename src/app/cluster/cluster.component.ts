@@ -1,7 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup} from '@angular/forms';
+import { Component, OnInit, ViewChild, ElementRef, AfterViewInit , HostListener} from '@angular/core';
 import { LocalDataService } from '../localData.service';
-let pixels = require('image-pixels')
 
 @Component({
   selector: 'app-cluster',
@@ -9,134 +7,200 @@ let pixels = require('image-pixels')
   styleUrls: ['./cluster.component.css']
 })
 export class ClusterComponent implements OnInit {
+  
+  @ViewChild('canvas')
+  canvas: ElementRef<HTMLCanvasElement>;
+  public ctx: CanvasRenderingContext2D;
 
-  loadingPercentage = 0;
+  // Array of x/y values to show on canvas
+  monX: any;
+  monY: any;
 
-  startingColors = 12;
-  maxColors = 16;
-  defaultColors = [
-    "#ff0000", 	
-    "#ff8000", 	
-    "#ffff00", 	
-    "#80ff00", 	
-    "#a9a9a9", 	
-    "#dcbeff", 	
-    "#3cb44b", 	
-    "#0095ff", 	
-    "#0000ff", 	
-    "#8000ff", 	
-    "#ffffff", 	
-    "#000000"
+  monColors: any;
+  colors = [
+    [204,0,0,0.9],
+    [204,102,0,0.9],
+    [204,204,0,0.9],
+    [102,204,0,0.9],
+    [0,204,0,0.9],
+    [0,204,204,0.9],
+    [0,102,204,0.9],
+    [0,0,204,0.9],
+    [102,0,204,0.9],
+    [255,255,255,0.9]
   ];
-  rainbowColors = ['#e6194B', '#3cb44b', '#ffe119', '#4363d8', '#f58231', '#911eb4', '#42d4f4', '#f032e6', '#bfef45', '#fabed4', '#469990', '#dcbeff', '#9A6324', '#fffac8', '#800000', '#aaffc3', '#808000', '#ffd8b1', '#000075', '#a9a9a9', '#ffffff', '#000000'];
-  colorList = this.fb.array([]);
-  colorRGB = [];
 
-  allMonsLoaded: boolean;
-  monImageArray = [];
-  knnMonImageArray = [];
+  // Dragging flag
+  isDrag: boolean;
 
-  constructor(private fb: FormBuilder, public localData: LocalDataService) { 
-    for (let i = 0; i < this.startingColors; i++) {
-      this.colorList.push(
-        this.fb.group({
-          color: [this.defaultColors[i]]
-        })
-      );
-    }
+  // Starting offsets
+  startX: any;
+  startY: any;
+  offsetX: any;
+  offsetY: any;
+
+  // Total transformation
+  totalOffsetX = 0;
+  totalOffsetY = 0;
+
+  // Total scale
+  scale = 1;
+
+  // Mouse coordinates
+  mouseX: any;
+  mouseY: any;
+
+  // Currently highlighted circle
+  currentX: any;
+  currentY: any;
+  selectedIndex: any;
+  selectedImage: string;
+  selectedName: string;
+
+  constructor(public localData: LocalDataService) { 
   }
 
   ngOnInit(): void {
-    this.localData.dataLoadedEvent.subscribe(() => {
-      this.loadMonImages();
+  }
+
+  ngAfterViewInit(): void {
+    this.ctx = this.canvas.nativeElement.getContext('2d');
+    this.loadData();
+  }
+
+  resetOffset() {
+    let boundingBox = this.canvas.nativeElement.getBoundingClientRect();
+    this.offsetX = boundingBox.left;
+    this.offsetY = boundingBox.top;
+  }
+
+  @HostListener("window:scroll", []) onWindowScroll() {
+    this.resetOffset();
+  }
+
+  async loadData() {
+    let monClusterData = (await (await fetch('../assets/monCluster6.json')).json());
+    this.monX = monClusterData[0];
+    this.monY = monClusterData[1];
+    this.monColors = monClusterData[2];
+    this.drawDots();
+    this.resetOffset();
+  }
+
+  drawDots() {
+    window.requestAnimationFrame(() => {
+      // Save current transformation, clear canvas, and then redraw
+      this.ctx.save();
+      this.ctx.setTransform(1, 0, 0, 1, 0, 0);
+      this.ctx.clearRect(0, 0, this.canvas.nativeElement.width, this.canvas.nativeElement.height);
+      this.ctx.restore();
+      for (let i = 0; i < this.monX.length; i++) {
+        this.renderDot(this.scaleX(this.monX[i]), this.scaleY(this.monY[i]), this.getColor(this.monColors[i]));
+      }
     });
   }
 
-  addColor() {
-    if (this.colorList.length < this.maxColors) {
-      this.colorList.push(
-        this.fb.group({
-          color: ['']
-        })
-      );
-    }
+  scaleX(x) {
+    return (x/4)+50;
   }
 
-  deleteColor(i) {
-    this.colorList.removeAt(i);
+  scaleY(y) {
+    return (y/4)+30;
   }
 
-  async loadMonImages() {
-    const toMatrix = (arr, width) => 
-    arr.reduce((rows, key, index) => (index % width == 0 ? rows.push([key]) 
-      : rows[rows.length-1].push(key)) && rows, []);
-    // for (let d of this.localData.allMonData) {
-    let max = 10;
-    for (let i = 0; i < max; i++) {
-      let d = this.localData.allMonData[i];
-      let img = d["Image"].replace("OPT", "STATIC");
-      let {data, width, height} = await pixels('./assets/final-sprites/' + img);
-      this.monImageArray.push(
-        toMatrix(data, 4)
-      );
-      this.loadingPercentage = 100*(i+1)/max;
-    }
-    this.allMonsLoaded = true;
+  renderDot(x,y, color) {
+    this.ctx.beginPath();
+    this.ctx.fillStyle = color;
+    let radius = 6;
+    this.ctx.arc(x, y, radius, 0, 2*Math.PI, true);
+    this.ctx.fill();
   }
 
-  hexToRgb(hex) {
-    var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
-    return result ? [
-      parseInt(result[1], 16),
-      parseInt(result[2], 16),
-      parseInt(result[3], 16)
-   ] : null;
+  handleDown(e) {
+    this.isDrag = true;
+    this.startX = parseInt(e.clientX - this.offsetX as any);
+    this.startY = parseInt(e.clientY - this.offsetY as any);
   }
 
-  // Assumes image is a list of [r,g,b,a] values
-  // colors is a list of [r,g,b] values
-  // Returns a list of indices for the closest color
-  knnImage(image, colors) {
-    let reducedImage = [];
-    for (let i of image) {
-      let closestColorIndex = 0;
-      let minDiff = 3*255*255;
-      // Go through all colors and take the L2 norm
-      // Find the closest one
-      for (let colorIndex = 0; colorIndex < colors.length; i++) {
-        let diff = ((i[0]-this.colorRGB[colorIndex][0])*(i[0]-this.colorRGB[colorIndex][0])
-        + (i[1]-this.colorRGB[colorIndex][1])*(i[1]-this.colorRGB[colorIndex][1])
-        + (i[2]-this.colorRGB[colorIndex][2])*(i[2]-this.colorRGB[colorIndex][2]));
-        if (diff < minDiff) {
-          minDiff = diff;
-          closestColorIndex = colorIndex;
-        }
+  endDrag(e) {
+    this.isDrag = false;
+  }
+
+  handleMove(e) {
+    // handle drag
+    this.mouseX = parseInt(e.clientX - this.offsetX as any);
+    this.mouseY = parseInt(e.clientY - this.offsetY as any);
+    if (this.isDrag) {
+      let dx = this.mouseX - this.startX;
+      let dy = this.mouseY - this.startY;
+      if (this.scale > 1) {
+        dx = dx/this.scale;
+        dy = dy/this.scale;
       }
-      reducedImage.push(closestColorIndex);
+      this.startX = this.mouseX;
+      this.startY = this.mouseY;
+      this.totalOffsetX += dx;
+      this.totalOffsetY += dy;
+      this.ctx.translate(dx, dy);
+      this.drawDots();
     }
-    return reducedImage;
+    this.checkForOverlap(e);
   }
 
-  // TODO: just make analyze unclickable until all mons loaded
-  analyze() {
-    this.colorRGB = [];
-    for (let i = 0; i < this.colorList.length; i++) {
-      let color = (this.colorList.at(i) as any).controls.color.value;
-      this.colorRGB.push(this.hexToRgb(color));
-    }
-    if (this.allMonsLoaded) {
-      this.knnMonImageArray = [];
-      for (let m of this.monImageArray) {
-        this.knnMonImageArray.push(this.knnImage(m, this.colorRGB))
+  checkForOverlap(e) {
+    this.startX = parseInt(e.clientX - this.offsetX as any);
+    this.startY = parseInt(e.clientY - this.offsetY as any);
+    let t = this.ctx.getTransform();
+    let m = t["a"]*t["d"]-t["b"]*t["c"];
+    let invT = {
+      "a": t["d"]/m,
+      "c": -t["c"]/m,
+      "e": (t["c"]*t["f"]-t["d"]*t["e"])/m,
+      "b": t["b"]/m,
+      "d": t["a"]/m,
+      "f": (t["b"]*t["e"]-t["a"]*t["f"])/m
+    };
+    let newX = invT["a"]*this.startX + invT["c"]*this.startY + invT["e"];
+    let newY = invT["b"]*this.startX + invT["d"]*this.startY + invT["f"];
+    // Find closest point
+    let closestIndex = -1;
+    let minDistance = 5;
+    for (let i = 0; i < this.monX.length; i++) {
+      let distance = Math.abs(newX-this.scaleX(this.monX[i])) + Math.abs(newY-this.scaleY(this.monY[i]));
+      if (distance < minDistance) {
+        minDistance = distance;
+        closestIndex = i;
       }
-      console.log(this.knnMonImageArray);
     }
-    else {
-      alert("Not fully loaded!");
-      return;
+    if (closestIndex !== -1) {
+      this.selectedIndex = closestIndex;
+      window.requestAnimationFrame(() => {
+        this.ctx.beginPath();
+        this.ctx.fillStyle = 'rgba(40, 40, 40, 0.5)';
+        this.ctx.arc(this.scaleX(this.monX[closestIndex]), this.scaleY(this.monY[closestIndex]), 2, 0, 2*Math.PI, true);
+        this.ctx.fill();
+      });
+      if (this.localData.dataLoaded) {
+        this.selectedImage = "../assets/final-sprites/" + this.localData.allMonData[this.selectedIndex]["Image"].replace("OPT", "STATIC");
+        this.selectedName = this.localData.allMonData[this.selectedIndex]["Name"];
+      }
     }
   }
 
+  zoom(e) {
+    // Prevent scrolling
+    e.preventDefault();
+    this.mouseX = parseInt(e.clientX - this.offsetX as any);
+    this.mouseY = parseInt(e.clientY - this.offsetY as any);
+    this.ctx.translate(this.mouseX, this.mouseY);
+    let scale = e.deltaY < 0 ? 1.1 : 0.9;
+    this.scale *= scale;
+    this.ctx.scale(scale, scale);
+    this.ctx.translate(-this.mouseX, -this.mouseY);
+    this.drawDots();
+  }
 
-
+  getColor(i) {
+    return "rgba(" + this.colors[i][0] + "," + this.colors[i][1] + "," + this.colors[i][2] + "," + this.colors[i][3] + ")";
+  }
 }

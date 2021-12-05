@@ -118,7 +118,7 @@ export class Summon2Component implements OnInit {
     this.numMons = new BigNumber(this.wallet.web3.eth.abi.decodeParameter('uint256', multicallResults["numMons"]));
     this.maxMons = new BigNumber(this.wallet.web3.eth.abi.decodeParameter('uint256', multicallResults["maxMons"]));
     let claimMonStartNum = this.wallet.web3.eth.abi.decodeParameter('uint256', multicallResults["claimMonStart"]);
-    this.claimMonStart = new Date(claimMonStartNum*1000);
+    this.claimMonStart = new Date((claimMonStartNum as any)*1000);
     this.lastMigrationDate = this.wallet.web3.eth.abi.decodeParameter('uint256', multicallResults["lastMigrationDate"]);
     this.lastMigrationDate = new Date(this.lastMigrationDate*1000);
 
