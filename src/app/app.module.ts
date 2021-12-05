@@ -31,6 +31,7 @@ import { GraphQLModule } from './graphql.module';
 import { HttpClientModule } from '@angular/common/http';
 import { SoundscapesComponent } from './soundscapes/soundscapes.component';
 import { ClusterComponent } from './cluster/cluster.component';
+import { ShhhComponent } from './shhh/shhh.component';
 
 @NgModule({
   declarations: [
@@ -60,7 +61,8 @@ import { ClusterComponent } from './cluster/cluster.component';
     Story1Component,
     SignComponent,
     SoundscapesComponent,
-    ClusterComponent
+    ClusterComponent,
+    ShhhComponent
   ],
   imports: [
     BrowserModule,

@@ -23,6 +23,7 @@ import { Story1Component } from './story1/story1.component';
 import { SignComponent } from './sign/sign.component';
 import { SoundscapesComponent } from './soundscapes/soundscapes.component';
 import { ClusterComponent } from './cluster/cluster.component';
+import { ShhhComponent } from './shhh/shhh.component';
 
 const routes: Routes = [
   {
@@ -122,6 +123,10 @@ const routes: Routes = [
   {
     path: 'cluster',
     component: ClusterComponent
+  },
+  {
+    path: 'shhh',
+    component: ShhhComponent
   },
   // wildcard
   {

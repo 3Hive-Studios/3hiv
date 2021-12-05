@@ -1,0 +1,11 @@
+.holder {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 60rem;
+  margin: auto;
+}
+img {
+  width: 96px;
+  height: 96px;
+  margin: auto;
+}
