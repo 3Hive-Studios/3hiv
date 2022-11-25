@@ -1,6 +1,5 @@
-# 0xmons
 
-Front-end for the 0xmons project. Uses `bnc-onboard` for wallet connections, everything else is hand-grown, organic components.
+Front-end for the // project. Uses `bnc-onboard` for wallet connections, everything else is hand-grown, organic components.
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.3.
 
 ## Development server
